@@ -30,7 +30,7 @@ export default function CustomSheet({
 }: CustomSheetProps) {
 	return (
 		<Sheet>
-			<SheetTrigger>{trigger}</SheetTrigger>
+			<SheetTrigger>{trigger ? trigger : <p className='text-white'>{trigger}</p>}</SheetTrigger>
 			<SheetContent side={side} className={clsx(className)}>
 				<SheetHeader>
 					{title ? (

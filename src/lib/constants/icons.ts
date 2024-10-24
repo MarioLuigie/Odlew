@@ -9,5 +9,13 @@ export const Icons = {
   MENU_DESKTOP: {
     path: IconsPath.MENU_DESKTOP,
     alt: IconsAlt.MENU
+  },
+  CLOSE_MEDIUM_ORANGE: {
+    path: IconsPath.CLOSE_MEDIUM_ORANGE,
+    alt: IconsAlt.CLOSE
+  },
+  CLOSE_MEDIUM_GREY: {
+    path: IconsPath.CLOSE_MEDIUM_GREY,
+    alt: IconsAlt.CLOSE
   }
 }

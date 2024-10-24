@@ -12,7 +12,11 @@ const config: Config = {
         extend: {
             colors: {
                 background: '#DEDCD8',
-                foreground: 'var(--foreground)',
+                menuTextLight: '#EEE9E2',
+                menuTextDark: '#383638',
+                menuTopBg: '#463E46',
+                menuBottomBg: '#DAD7D1',
+                header: '#000000',
             },
             borderRadius: {
                 lg: 'var(--radius)',

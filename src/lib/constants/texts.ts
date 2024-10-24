@@ -1,5 +1,6 @@
 export const IconsAlt = {
   MENU: 'Menu',
+  CLOSE: 'Close',
 }
 
 export const ImagesAlt = {
