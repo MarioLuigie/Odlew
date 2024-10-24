@@ -32,8 +32,13 @@ export default function MenuSheet() {
 					))}
 				</ul>
 			</div>
-      <div className='bg-menuBottomBg h-full'>
+      <div className='bg-menuBottomBg h-full p-8'>
+					<div className='w-full flex justify-end bg-red-300 h-[50%]'>
+						<p className='text-menuTextDark text-[20px] pr-4 pt-6'>P.S. Odlew Odlewnia Artystyczna</p>
+						<div className='bg-menuTopBg w-[2px] h-full'>
 
+						</div>
+					</div>
       </div>
 		</CustomSheet>
 	)
