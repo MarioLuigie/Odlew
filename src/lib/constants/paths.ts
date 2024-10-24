@@ -8,5 +8,10 @@ export const ImagesPath = {
 }
 
 export const Routes = {
-  HOME: '/'
+  HOME: '/',
+  ABOUT: '/o-nas',
+  OFFER: '/oferta',
+  REALIZATIONS: '/realizacje',
+  CONTACT: '/kontakt',
+  
 }
