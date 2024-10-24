@@ -6,3 +6,7 @@ export const IconsPath = {
 export const ImagesPath = {
   LOGO: '/assets/images/logo.png',
 }
+
+export const Routes = {
+  HOME: '/'
+}
