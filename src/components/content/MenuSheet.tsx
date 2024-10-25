@@ -1,5 +1,7 @@
+'use client'
 // modules
 import Link from 'next/link'
+import { useState } from 'react'
 // lib
 import { MenuContent as menu } from '@/lib/constants'
 import SVG from '@/components/shared/SVG'
@@ -15,31 +17,41 @@ function MenuSheetTrigger() {
 }
 
 export default function MenuSheet() {
+	const [isSheetOpen, setIsSheetOpen] = useState<boolean>(false)
+
+	const handleCloseSheet = () => {
+		setIsSheetOpen(false)
+	}
+	
 	return (
 		<CustomSheet
 			side="top"
 			className="h-screen"
 			trigger={<MenuSheetTrigger />}
+			isOpen={isSheetOpen}
+			setIsOpen={setIsSheetOpen}
 		>
-			<div className='flex flex-col justify-end bg-menuTopBg p-8 h-[50%]'>
-				<ul className='flex flex-col gap-3'>
+			<div className="flex flex-col justify-end bg-menuTopBg p-8 h-[50%]">
+				<ul className="flex flex-col gap-3">
 					{menu.map((item) => (
 						<Link href={item.path} key={item.label}>
-							<li>
-								<p className='text-menuTextLight text-[28px] text-right'>{item.label}</p>
+							<li onClick={handleCloseSheet}>
+								<p className="text-menuTextLight text-[28px] text-right">
+									{item.label}
+								</p>
 							</li>
 						</Link>
 					))}
 				</ul>
 			</div>
-      <div className='bg-menuBottomBg h-full p-8'>
-					<div className='w-full flex justify-end bg-red-300 h-[50%]'>
-						<p className='text-menuTextDark text-[20px] pr-4 pt-6'>P.S. Odlew Odlewnia Artystyczna</p>
-						<div className='bg-menuTopBg w-[2px] h-full'>
-
-						</div>
-					</div>
-      </div>
+			<div className="bg-menuBottomBg h-full p-8">
+				<div className="w-full flex justify-end bg-red-300 h-[50%]">
+					<p className="text-menuTextDark text-[20px] pr-4 pt-6">
+						P.S. Odlew Odlewnia Artystyczna
+					</p>
+					<div className="bg-menuTopBg w-[2px] h-full"></div>
+				</div>
+			</div>
 		</CustomSheet>
 	)
 }

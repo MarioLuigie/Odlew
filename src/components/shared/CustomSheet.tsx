@@ -18,6 +18,8 @@ type CustomSheetProps = {
 	description?: string
 	trigger?: React.ReactNode | string
 	className?: string
+	isOpen?: boolean
+	setIsOpen?: React.Dispatch<React.SetStateAction<boolean>>
 }
 
 export default function CustomSheet({
@@ -27,10 +29,14 @@ export default function CustomSheet({
 	description,
 	trigger = 'Open',
 	className,
+	isOpen,
+	setIsOpen,
 }: CustomSheetProps) {
 	return (
-		<Sheet>
-			<SheetTrigger>{trigger ? trigger : <p className='text-white'>{trigger}</p>}</SheetTrigger>
+		<Sheet open={isOpen} onOpenChange={setIsOpen}>
+			<SheetTrigger>
+				{trigger ? trigger : <p className="text-white">{trigger}</p>}
+			</SheetTrigger>
 			<SheetContent side={side} className={clsx(className)}>
 				<SheetHeader>
 					{title ? (
