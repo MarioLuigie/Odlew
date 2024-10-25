@@ -3,6 +3,8 @@ export const IconsPath = {
   MENU_DESKTOP: '/assets/icons/menu-desktop.svg',
   CLOSE_MEDIUM_ORANGE: '/assets/icons/close-medium-orange.svg',
   CLOSE_MEDIUM_GREY: '/assets/icons/close-medium-grey.svg',
+  ITEM_BOTTOM_RIGHT_SMALL: '/assets/icons/item-bottom-right-small.svg',
+  ITEM_TOP_LEFT_SMALL: '/assets/icons/item-top-left-small.svg',
 }
 
 export const ImagesPath = {

@@ -1,12 +1,13 @@
 'use client'
 // modules
-import Link from 'next/link'
 import { useState } from 'react'
 // lib
-import { MenuContent as menu } from '@/lib/constants'
-import SVG from '@/components/shared/SVG'
 import { Icons } from '@/lib/constants/icons'
+// components
 import CustomSheet from '@/components/shared/CustomSheet'
+import Menu from '@/components/content/Menu'
+import SVG from '@/components/shared/SVG'
+import Drop from '@/components/content/Drop'
 
 function MenuSheetTrigger() {
 	return (
@@ -22,7 +23,7 @@ export default function MenuSheet() {
 	const handleCloseSheet = () => {
 		setIsSheetOpen(false)
 	}
-	
+
 	return (
 		<CustomSheet
 			side="top"
@@ -31,25 +32,21 @@ export default function MenuSheet() {
 			isOpen={isSheetOpen}
 			setIsOpen={setIsSheetOpen}
 		>
-			<div className="flex flex-col justify-end bg-menuTopBg p-8 h-[50%]">
-				<ul className="flex flex-col gap-3">
-					{menu.map((item) => (
-						<Link href={item.path} key={item.label}>
-							<li onClick={handleCloseSheet}>
-								<p className="text-menuTextLight text-[28px] text-right">
-									{item.label}
-								</p>
-							</li>
-						</Link>
-					))}
-				</ul>
+			<div className="h-[50%] p-8 flex flex-col justify-end bg-menuTopBg">
+				<Menu handleClose={handleCloseSheet} />
 			</div>
-			<div className="bg-menuBottomBg h-full p-8">
-				<div className="w-full flex justify-end bg-red-300 h-[50%]">
-					<p className="text-menuTextDark text-[20px] pr-4 pt-6">
+			<div className="h-[50%] p-8 bg-menuBottomBg">
+				<div className="h-[50%] w-full flex justify-end">
+					<p className="pr-4 pt-6 text-menuTextDark text-[24px]">
 						P.S. Odlew Odlewnia Artystyczna
 					</p>
-					<div className="bg-menuTopBg w-[2px] h-full"></div>
+					<div className="w-[2px] h-full bg-menuTopBg"></div>
+				</div>
+				<div className="h-full py-10 px-6 flex flex-col gap-2 justify-start text-[20px] text-menuTextDark">
+					<Drop />
+					<p>Adres: Jawornik 505, 32-400 Myślenice</p>
+					<p>E-mail: polewka.szymon@gmail.com</p>
+					<p>Tel: 665 981 994</p>
 				</div>
 			</div>
 		</CustomSheet>
