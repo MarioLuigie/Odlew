@@ -15,7 +15,7 @@ export default function Menu({ handleClose }: MenuProps) {
 				{menu.map((item) => (
 					<Link href={item.path} key={item.label}>
 						<li {...(handleClose && { onClick: handleClose })}>
-							<p className="text-menuTextLight text-[28px] text-right">
+							<p className="text-menuTextLight text-[26px] text-right">
 								{item.label}
 							</p>
 						</li>

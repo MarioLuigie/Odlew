@@ -27,22 +27,25 @@ export default function MenuSheet() {
 	return (
 		<CustomSheet
 			side="top"
-			className="h-screen"
+			className="min-h-screen max-h-screen flex flex-col gap-0"
 			trigger={<MenuSheetTrigger />}
 			isOpen={isSheetOpen}
 			setIsOpen={setIsSheetOpen}
 		>
-			<div className="h-[50%] p-8 flex flex-col justify-end bg-menuTopBg">
+			{/* TOP */}
+			<div className="h-[50%] p-8 grow flex flex-col justify-end bg-menuTopBg">
 				<Menu handleClose={handleCloseSheet} />
 			</div>
-			<div className="h-[50%] p-8 bg-menuBottomBg">
-				<div className="h-[50%] w-full flex justify-end">
-					<p className="pr-4 pt-6 text-menuTextDark text-[24px]">
+
+			{/* BOTTOM */}
+			<div className="h-[50%] p-8 grow flex-flex-col bg-menuBottomBg">
+				<div className="h-[200px] w-full flex justify-end bg-yellow-300">
+					<p className="pr-4 pt-6 text-menuTextDark text-[20px]">
 						P.S. Odlew Odlewnia Artystyczna
 					</p>
 					<div className="w-[2px] h-full bg-menuTopBg"></div>
 				</div>
-				<div className="h-full py-10 px-6 flex flex-col gap-2 justify-start text-[20px] text-menuTextDark">
+				<div className="h-full py-10 px-6 flex flex-col gap-2 justify-start text-[16px] text-menuTextDark bg-red-300">
 					<Drop />
 					<p>Adres: Jawornik 505, 32-400 Myślenice</p>
 					<p>E-mail: polewka.szymon@gmail.com</p>
