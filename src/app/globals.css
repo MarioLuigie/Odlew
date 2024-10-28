@@ -40,7 +40,12 @@ body {
 		/* background: #1e2238; */
 		background: transparent;
 	}
-  
+
+	.full-screen-height {
+		min-height: 100vh;
+		height: -webkit-fill-available; /* dla Safari */
+	}
+
 	:root {
 		--radius: 0.5rem;
 	}
