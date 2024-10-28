@@ -27,7 +27,7 @@ export default function MenuSheet() {
 	return (
 		<CustomSheet
 			side="top"
-			className="min-h-screen max-h-screen flex flex-col gap-0"
+			className="h-screen flex flex-col gap-0"
 			trigger={<MenuSheetTrigger />}
 			isOpen={isSheetOpen}
 			setIsOpen={setIsSheetOpen}
