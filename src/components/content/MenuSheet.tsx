@@ -27,13 +27,13 @@ export default function MenuSheet() {
 	return (
 		<CustomSheet
 			side="top"
-			className="h-screen full-screen-height flex flex-col gap-0"
+			className="h-screen flex flex-col gap-0"
 			trigger={<MenuSheetTrigger />}
 			isOpen={isSheetOpen}
 			setIsOpen={setIsSheetOpen}
 		>
 			<div className="h-[100px] bg-menuTopBg"></div>
-			<div className="bg-red-300 h-full flex flex-col overflow-y-scroll pointer-events-auto touch-auto">
+			<div className="h-full flex flex-col overflow-y-scroll pointer-events-auto touch-auto scroll-m-8">
 				{/* TOP */}
 				<div className="h-1/2 min-h-[300px] p-6 flex flex-col justify-start bg-menuTopBg">
 					<Navbar handleClose={handleCloseSheet} />
@@ -41,7 +41,7 @@ export default function MenuSheet() {
 
 				{/* BOTTOM */}
 				<div className="min-h-1/2 grow p-6 flex flex-col bg-menuBottomBg">
-					<div className="w-full h-full min-h-[100px] flex justify-end">
+					<div className="w-full h-full flex justify-end">
 						<p className="pr-3 text-[18px] text-right text-menuTextDark">
 							P.S. Odlew Odlewnia Artystyczna
 						</p>
