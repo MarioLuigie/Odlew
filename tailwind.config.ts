@@ -1,7 +1,8 @@
 import type { Config } from "tailwindcss";
 import tailwindcssAnimate from "tailwindcss-animate"; // Użyj importu zamiast require
 
-const headerHeight = '90px'
+// dimensions
+export const headerHeight = '90px'
 
 const config: Config = {
     darkMode: ["class"],
@@ -19,6 +20,7 @@ const config: Config = {
                 menuTopBg: '#463E46',
                 menuBottomBg: '#DAD7D1',
                 header: '#000000',
+                accent: '#E36A00',
             },
             borderRadius: {
                 lg: 'var(--radius)',
@@ -26,7 +28,7 @@ const config: Config = {
                 sm: 'calc(var(--radius) - 4px)',
             },
             height: {
-                [headerHeight]: headerHeight
+                header: headerHeight
             },
         },
     },
