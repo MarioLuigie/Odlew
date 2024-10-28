@@ -27,7 +27,7 @@ export default function MenuSheet() {
 	return (
 		<CustomSheet
 			side="top"
-			className="h-screen flex flex-col gap-0"
+			className="h-screen max-h-screen flex flex-col gap-0"
 			trigger={<MenuSheetTrigger />}
 			isOpen={isSheetOpen}
 			setIsOpen={setIsSheetOpen}
@@ -51,15 +51,6 @@ export default function MenuSheet() {
 					<div className="py-4 px-2 flex flex-col gap-4 justify-start">
 						<Drop />
 						<div className="flex flex-col gap-1 text-[15px] text-menuTextDark">
-							<p>Adres: Jawornik 505, Myślenice</p>
-							<p>E-mail: polewka.szymon@gmail.com</p>
-							<p>Tel: 665 981 994</p>
-							<p>Adres: Jawornik 505, Myślenice</p>
-							<p>E-mail: polewka.szymon@gmail.com</p>
-							<p>Tel: 665 981 994</p>
-							<p>Adres: Jawornik 505, Myślenice</p>
-							<p>E-mail: polewka.szymon@gmail.com</p>
-							<p>Tel: 665 981 994</p>
 							<p>Adres: Jawornik 505, Myślenice</p>
 							<p>E-mail: polewka.szymon@gmail.com</p>
 							<p>Tel: 665 981 994</p>
