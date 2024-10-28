@@ -8,7 +8,7 @@ type MenuProps = {
 	handleClose?: () => void
 }
 
-export default function Menu({ handleClose }: MenuProps) {
+export default function Navbar({ handleClose }: MenuProps) {
 	return (
 		<nav>
 			<ul className="flex flex-col gap-3 items-end">

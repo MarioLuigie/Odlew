@@ -5,7 +5,7 @@ import { useState } from 'react'
 import { Icons } from '@/lib/constants/icons'
 // components
 import CustomSheet from '@/components/shared/CustomSheet'
-import Menu from '@/components/content/Menu'
+import Navbar from '@/components/content/Navbar'
 import SVG from '@/components/shared/SVG'
 import Drop from '@/components/content/Drop'
 
@@ -34,7 +34,7 @@ export default function MenuSheet() {
 		>
 			{/* TOP */}
 			<div className="h-[50%] p-8 grow flex flex-col justify-end bg-menuTopBg">
-				<Menu handleClose={handleCloseSheet} />
+				<Navbar handleClose={handleCloseSheet} />
 			</div>
 
 			{/* BOTTOM */}
