@@ -33,7 +33,7 @@ export default function MenuSheet() {
 			setIsOpen={setIsSheetOpen}
 		>
 			<div className="h-[100px] bg-menuTopBg"></div>
-			<div className="h-full flex flex-col overflow-y-scroll pointer-events-auto touch-auto scroll-m-8">
+			<div className="h-full flex flex-col overflow-y-scroll pointer-events-auto touch-auto">
 				{/* TOP */}
 				<div className="h-1/2 min-h-[300px] p-6 flex flex-col justify-start bg-menuTopBg">
 					<Navbar handleClose={handleCloseSheet} />
@@ -51,6 +51,15 @@ export default function MenuSheet() {
 					<div className="py-4 px-2 flex flex-col gap-4 justify-start">
 						<Drop />
 						<div className="flex flex-col gap-1 text-[15px] text-menuTextDark">
+							<p>Adres: Jawornik 505, Myślenice</p>
+							<p>E-mail: polewka.szymon@gmail.com</p>
+							<p>Tel: 665 981 994</p>
+							<p>Adres: Jawornik 505, Myślenice</p>
+							<p>E-mail: polewka.szymon@gmail.com</p>
+							<p>Tel: 665 981 994</p>
+							<p>Adres: Jawornik 505, Myślenice</p>
+							<p>E-mail: polewka.szymon@gmail.com</p>
+							<p>Tel: 665 981 994</p>
 							<p>Adres: Jawornik 505, Myślenice</p>
 							<p>E-mail: polewka.szymon@gmail.com</p>
 							<p>Tel: 665 981 994</p>
