@@ -11,7 +11,7 @@ type MenuProps = {
 export default function Navbar({ handleClose }: MenuProps) {
 	return (
 		<nav>
-			<ul className="flex flex-col gap-3 items-end">
+			<ul className="flex flex-col gap-2 items-end">
 				{menu.map((item) => (
 					<Link href={item.path} key={item.label}>
 						<li {...(handleClose && { onClick: handleClose })}>

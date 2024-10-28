@@ -3,17 +3,44 @@
 @tailwind utilities;
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+	.text-balance {
+		text-wrap: balance;
+	}
 }
 
 @layer base {
-  :root {
-    --radius: 0.5rem;
-  }
+	/* Hidden scrollbar */
+	.remove-scrollbar {
+		/* Hidden scrollbar for other browsers */
+		scrollbar-width: none; /* Firefox */
+		-ms-overflow-style: none; /* IE 10+ */
+	}
+
+	.remove-scrollbar::-webkit-scrollbar {
+		width: 0px;
+		height: 0px;
+		border-radius: 0px;
+	}
+
+	.remove-scrollbar::-webkit-scrollbar-track {
+		background: transparent;
+	}
+
+	.remove-scrollbar::-webkit-scrollbar-thumb {
+		background: transparent;
+		border-radius: 0px;
+	}
+
+	.remove-scrollbar::-webkit-scrollbar-thumb:hover {
+		/* background: #1e2238; */
+		background: transparent;
+	}
+  
+	:root {
+		--radius: 0.5rem;
+	}
 }
