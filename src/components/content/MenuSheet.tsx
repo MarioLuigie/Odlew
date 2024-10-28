@@ -27,7 +27,7 @@ export default function MenuSheet() {
 	return (
 		<CustomSheet
 			side="top"
-			className="h-screen flex flex-col gap-0 overflow-hidden"
+			className="h-screen flex flex-col gap-0 overflow-hidden scroll-m-4"
 			trigger={<MenuSheetTrigger />}
 			isOpen={isSheetOpen}
 			setIsOpen={setIsSheetOpen}
