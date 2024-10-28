@@ -1,6 +1,6 @@
 // components
 import Logo from '@/components/content/Logo'
-import MenuSheet from '@/components/content/MenuSheet'
+import MenuSheet from '@/components/layout/menu/MenuSheet'
 
 export default function Header() {
 	return (

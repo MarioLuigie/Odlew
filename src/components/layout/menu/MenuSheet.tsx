@@ -7,7 +7,7 @@ import { Icons } from '@/lib/constants/icons'
 import { App } from '@/lib/constants/texts'
 // components
 import CustomSheet from '@/components/shared/CustomSheet'
-import Navbar from '@/components/content/Navbar'
+import Navbar from '@/components/layout/menu/Navbar'
 import SVG from '@/components/shared/SVG'
 import Drop from '@/components/content/Drop'
 
