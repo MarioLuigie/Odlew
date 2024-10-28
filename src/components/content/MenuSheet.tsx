@@ -33,14 +33,14 @@ export default function MenuSheet() {
 			setIsOpen={setIsSheetOpen}
 		>
 			<div className="h-[100px] bg-menuTopBg"></div>
-			<div className="h-full flex flex-col overflow-y-scroll pointer-events-auto touch-auto">
+			<div className="h-full flex flex-col overflow-y-scroll remove-scrollbar">
 				{/* TOP */}
 				<div className="h-1/2 min-h-[300px] p-6 flex flex-col justify-start bg-menuTopBg">
 					<Navbar handleClose={handleCloseSheet} />
 				</div>
 
 				{/* BOTTOM */}
-				<div className="min-h-1/2 grow p-6 flex flex-col bg-menuBottomBg">
+				<div className="min-h-1/2 grow p-6 pb-16 flex flex-col bg-menuBottomBg">
 					<div className="w-full h-full flex justify-end">
 						<p className="pr-3 text-[18px] text-right text-menuTextDark">
 							P.S. Odlew Odlewnia Artystyczna
@@ -56,7 +56,6 @@ export default function MenuSheet() {
 							<p>Tel: 665 981 994</p>
 						</div>
 					</div>
-					<div className='bg-menuBottomBg h-[60px]'></div>
 				</div>
 			</div>
 		</CustomSheet>
