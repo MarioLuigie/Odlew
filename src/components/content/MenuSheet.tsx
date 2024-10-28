@@ -41,14 +41,14 @@ export default function MenuSheet() {
 
 				{/* BOTTOM */}
 				<div className="min-h-1/2 grow p-6 flex flex-col bg-menuBottomBg">
-					<div className="w-full h-full flex justify-end">
+					<div className="w-full h-full min-h-[100px] flex justify-end">
 						<p className="pr-3 text-[18px] text-right text-menuTextDark">
 							P.S. Odlew Odlewnia Artystyczna
 						</p>
 						<div className="w-[2px] bg-menuTopBg"></div>
 					</div>
 
-					<div className="min-h-[400px] py-4 px-2 flex flex-col gap-4 justify-start">
+					<div className="py-4 px-2 flex flex-col gap-4 justify-start">
 						<Drop />
 						<div className="flex flex-col gap-1 text-[15px] text-menuTextDark">
 							<p>Adres: Jawornik 505, Myślenice</p>
