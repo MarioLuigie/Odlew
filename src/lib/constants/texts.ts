@@ -17,7 +17,8 @@ export const Menu = {
 }
 
 export const App = {
-  NAME: 'P.S. Odlew Odlewnia Artystyczna',
+  NAME: 'P.S. Odlew',
+  SUBNAME: 'Odlewnia Artystyczna',
   ADDRESS: 'Jawornik 505, Myślenice',
   EMAIL: 'polewka.szymon@gmail.com',
   PHONE: '+48 665 981 994',

@@ -44,9 +44,14 @@ export default function MenuSheet() {
 				<div className="min-h-1/2 grow p-6 pb-16 flex flex-col bg-menuBottomBg">
 					{/* Name */}
 					<div className="w-full h-full flex justify-end">
-						<p className="pr-3 text-[20px] text-right text-menuTextDark">
-							{App.NAME}
-						</p>
+						<div>
+							<p className="pr-3 text-[20px] text-right text-menuTextDark">
+								{App.NAME}
+							</p>
+							<p className="pr-3 text-[20px] text-right text-menuTextDark">
+								{App.SUBNAME}
+							</p>
+						</div>
 						<div className="w-[2px] bg-menuTopBg"></div>
 					</div>
 					{/* Contact */}
@@ -54,15 +59,15 @@ export default function MenuSheet() {
 						<Drop />
 						<div className="flex flex-col gap-3 text-[14px] text-menuTextDark">
 							<div className="flex gap-2">
-								<MapPinHouse size={20} className='text-accent'/>
+								<MapPinHouse size={20} className="text-accent" />
 								<p>{App.ADDRESS}</p>
 							</div>
 							<div className="flex gap-2">
-								<Mail size={20} className='text-accent'/>
+								<Mail size={20} className="text-accent" />
 								<p>{App.EMAIL}</p>
 							</div>
 							<div className="flex gap-2">
-								<Phone size={20} className='text-accent'/>
+								<Phone size={20} className="text-accent" />
 								<p>{App.PHONE}</p>
 							</div>
 						</div>
