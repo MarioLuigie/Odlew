@@ -27,7 +27,7 @@ export default function MenuSheet() {
 	return (
 		<CustomSheet
 			side="top"
-			className="h-screen max-h-screen flex flex-col gap-0"
+			className="h-screen flex flex-col gap-0"
 			trigger={<MenuSheetTrigger />}
 			isOpen={isSheetOpen}
 			setIsOpen={setIsSheetOpen}
@@ -56,6 +56,7 @@ export default function MenuSheet() {
 							<p>Tel: 665 981 994</p>
 						</div>
 					</div>
+					<div className='bg-menuBottomBg h-[60px]'></div>
 				</div>
 			</div>
 		</CustomSheet>
