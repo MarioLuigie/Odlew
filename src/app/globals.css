@@ -16,34 +16,44 @@ body {
 	/* Hidden scrollbar */
 	.remove-scrollbar {
 		/* Hidden scrollbar for other browsers */
-		scrollbar-width: none; /* Firefox */
-		-ms-overflow-style: none; /* IE 10+ */
-		-webkit-overflow-scrolling: touch;
+		scrollbar-width: none !important; /* Firefox */
+		-ms-overflow-style: none !important; /* IE 10+ */
 	}
 
 	.remove-scrollbar::-webkit-scrollbar {
-		width: 0px;
-		height: 0px;
-		border-radius: 0px;
+		width: 0px !important;
+		height: 0px !important;
+		border-radius: 0px !important;
 	}
 
 	.remove-scrollbar::-webkit-scrollbar-track {
-		background: transparent;
+		background: transparent !important;
 	}
 
 	.remove-scrollbar::-webkit-scrollbar-thumb {
-		background: transparent;
-		border-radius: 0px;
+		background: transparent !important;
+		border-radius: 0px !important;
 	}
 
 	.remove-scrollbar::-webkit-scrollbar-thumb:hover {
 		/* background: #1e2238; */
-		background: transparent;
+		background: transparent !important;
 	}
 
-	.full-screen-height {
-		min-height: 100vh;
-		height: -webkit-fill-available; /* dla Safari */
+	/* Show scrollbar */
+	.show-scrollbar {
+		/* Przywraca pasek przewijania */
+		overflow: auto;
+		scrollbar-width: thin; /* Firefox */
+	}
+
+	.show-scrollbar::-webkit-scrollbar {
+		width: 8px; /* Szerokość dla Chrome, Safari */
+	}
+
+	.show-scrollbar::-webkit-scrollbar-thumb {
+		background-color: #bdbdbd; /* Kolor paska przewijania */
+		border-radius: 4px;
 	}
 
 	:root {

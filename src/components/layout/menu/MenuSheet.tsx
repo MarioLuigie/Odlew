@@ -1,15 +1,14 @@
 'use client'
 // modules
 import { useState } from 'react'
-import { Mail, MapPinHouse, Phone } from 'lucide-react'
 // lib
 import { Icons } from '@/lib/constants/icons'
-import { App } from '@/lib/constants/texts'
 // components
 import CustomSheet from '@/components/shared/CustomSheet'
 import Navbar from '@/components/layout/menu/Navbar'
 import SVG from '@/components/shared/SVG'
-import Drop from '@/components/content/Drop'
+import CompanyName from '@/components/content/CompanyName'
+import Contact from '@/components/content/Contact'
 
 function MenuSheetTrigger() {
 	return (
@@ -42,36 +41,8 @@ export default function MenuSheet() {
 				</div>
 				{/* BOTTOM */}
 				<div className="min-h-1/2 grow p-6 pb-16 flex flex-col bg-menuBottomBg">
-					{/* Name */}
-					<div className="w-full h-full flex justify-end">
-						<div>
-							<p className="pr-3 text-[20px] text-right text-menuTextDark">
-								{App.NAME}
-							</p>
-							<p className="pr-3 text-[20px] text-right text-menuTextDark">
-								{App.SUBNAME}
-							</p>
-						</div>
-						<div className="w-[2px] bg-menuTopBg"></div>
-					</div>
-					{/* Contact */}
-					<div className="py-4 px-2 flex flex-col gap-5 justify-start">
-						<Drop />
-						<div className="flex flex-col gap-3 text-[14px] text-menuTextDark">
-							<div className="flex gap-2">
-								<MapPinHouse size={20} className="text-accent" />
-								<p>{App.ADDRESS}</p>
-							</div>
-							<div className="flex gap-2">
-								<Mail size={20} className="text-accent" />
-								<p>{App.EMAIL}</p>
-							</div>
-							<div className="flex gap-2">
-								<Phone size={20} className="text-accent" />
-								<p>{App.PHONE}</p>
-							</div>
-						</div>
-					</div>
+					<CompanyName mode="dark" />
+					<Contact />
 				</div>
 			</div>
 		</CustomSheet>

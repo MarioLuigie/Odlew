@@ -28,7 +28,8 @@ const config: Config = {
                 sm: 'calc(var(--radius) - 4px)',
             },
             height: {
-                header: headerHeight
+                header: headerHeight,
+                homePage: `calc(100vh - ${headerHeight})`,
             },
         },
     },
