@@ -6,7 +6,7 @@ export default function Footer() {
 	return (
 		<footer className="flex flex-col items-center justify-center bg-footer text-white p-6 py-12">
 			<div className='flex flex-col gap-12'>
-				<Logo variant="mono" w={270} />
+				<Logo variant="mono" w={250} />
 				<div className="flex w-full">
 					<div className="w-[2px] bg-accent ml-2"></div>
 					<Navbar

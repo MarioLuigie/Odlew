@@ -2,7 +2,7 @@ import type { Config } from "tailwindcss";
 import tailwindcssAnimate from "tailwindcss-animate"; // Użyj importu zamiast require
 
 // dimensions
-export const headerHeight = '90px'
+export const headerHeight = '100px'
 
 const config: Config = {
     darkMode: ["class"],

@@ -12,10 +12,10 @@ export default function HomePage() {
 				<CompanyName mode="light" className="h-auto" />
 				<CustomButton />
 			</section>
-			<section id="#about">ABOUT</section>
-			<section id="#offer">OFFER</section>
-			<section id="#realizations">REALIZATIONS</section>
-			<section id="#contact">CONTACT</section>
+			<section id="#about" className='h-[200px]'>ABOUT</section>
+			<section id="#offer" className='h-[200px]'>OFFER</section>
+			<section id="#realizations" className='h-[200px]'>REALIZATIONS</section>
+			<section id="#contact" className='h-[200px]'>CONTACT</section>
 		</div>
 	)
 }
