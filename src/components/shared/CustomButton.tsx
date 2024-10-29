@@ -1,11 +1,15 @@
 'use client'
-
+// modules
 import { Button } from '@/components/ui/button'
 
-export default function CustomButton() {
+type CustomButtonProps = {
+	onClick?: () => void
+}
+
+export default function CustomButton({ onClick }: CustomButtonProps) {
 	return (
 		<Button
-			onClick={() => console.log('Button clicked')}
+			onClick={onClick}
 			className="bg-accent text-md text-menuTextLight w-full rounded-l-full rounded-br-full py-6 hover:bg-accentHover"
 		>
 			Zobacz realizacje
