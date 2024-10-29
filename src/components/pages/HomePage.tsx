@@ -7,7 +7,7 @@ export default function HomePage() {
 		<div className="flex flex-col">
 			<section
 				id="#home"
-				className="h-customScreen flex flex-col justify-end gap-4 p-4 pb-20 homepage-background"
+				className="h-customScreen flex flex-col justify-end gap-4 p-4 pb-28 homepage-background"
 			>
 				<CompanyName mode="light" className="h-auto" />
 				<CustomButton />
