@@ -9,6 +9,7 @@ export const IconsPath = {
 
 export const ImagesPath = {
   LOGO: '/assets/images/logo.png',
+  LOGO_WHITE: '/assets/images/logo-white.png',
 }
 
 export const Routes = {

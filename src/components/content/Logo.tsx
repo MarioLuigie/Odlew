@@ -6,20 +6,31 @@ import { Images } from '@/lib/constants/images'
 import { Routes } from '@/lib/constants/paths'
 
 type LogoProps = {
-  w?: number
-  h?: number
+	w?: number
+	h?: number
+	variant?: 'color' | 'mono'
 }
 
-export default function Logo({w, h }: LogoProps) {
+export default function Logo({ w, h, variant='color' }: LogoProps) {
 	return (
 		<Link href={Routes.HOME}>
-			<Image
-				src={Images.LOGO.path}
-				height={h || 82}
-				width={w || 164}
-				alt={Images.LOGO.alt}
-				priority
-			/>
+			{variant === 'color' ? (
+				<Image
+					src={Images.LOGO.path}
+					height={h || 54}
+					width={w || 130}
+					alt={Images.LOGO.alt}
+					priority
+				/>
+			) : (
+				<Image
+					src={Images.LOGO_WHITE.path}
+					height={h || 54}
+					width={w || 130}
+					alt={Images.LOGO.alt}
+					priority
+				/>
+			)}
 		</Link>
 	)
 }

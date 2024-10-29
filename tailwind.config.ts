@@ -20,6 +20,7 @@ const config: Config = {
                 menuTopBg: '#463E46',
                 menuBottomBg: '#DAD7D1',
                 header: '#080808',
+                footer: '#22403E',
                 accent: '#E36A00',
                 accentHover: '#D06101',
             },
@@ -30,8 +31,11 @@ const config: Config = {
             },
             height: {
                 header: headerHeight,
-                homePage: `calc(100vh - ${headerHeight})`,
+                customScreen: `calc(100vh - ${headerHeight})`,
             },
+            minHeight: {
+                customScreen: `calc(100vh - ${headerHeight})`,
+            }
         },
     },
     plugins: [tailwindcssAnimate], 
