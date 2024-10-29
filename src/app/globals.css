@@ -10,9 +10,7 @@ body {
 	.text-balance {
 		text-wrap: balance;
 	}
-}
 
-@layer base {
 	/* Hidden scrollbar */
 	.remove-scrollbar {
 		/* Hidden scrollbar for other browsers */
@@ -39,7 +37,9 @@ body {
 		/* background: #1e2238; */
 		background: transparent !important;
 	}
+}
 
+@layer base {
 	/* Show scrollbar */
 	.show-scrollbar {
 		/* Przywraca pasek przewijania */
