@@ -37,7 +37,7 @@ export default function MenuSheet() {
 			<div className="h-full flex flex-col overflow-y-scroll remove-scrollbar">
 				{/* TOP */}
 				<div className="h-1/2 min-h-[300px] p-6 flex flex-col justify-start bg-menuTopBg">
-					<Navbar handleClose={handleCloseSheet} />
+					<Navbar handleClose={handleCloseSheet} capitalize='entire'/>
 				</div>
 				{/* BOTTOM */}
 				<div className="min-h-1/2 grow p-6 pb-16 flex flex-col bg-menuBottomBg">

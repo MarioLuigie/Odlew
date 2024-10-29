@@ -9,11 +9,11 @@ export const ImagesAlt = {
 }
 
 export const Menu = {
-  HOME: 'STRONA GŁÓWNA',
-  ABOUT: 'O NAS',
-  OFFER: 'OFERTA',
-  REALIZATIONS: 'REALIZACJE',
-  CONTACT: 'KONTAKT'
+  HOME: 'strona główna',
+  ABOUT: 'o nas',
+  OFFER: 'oferta',
+  REALIZATIONS: 'realizacje',
+  CONTACT: 'kontakt'
 }
 
 export const App = {
