@@ -21,6 +21,7 @@ const config: Config = {
                 menuBottomBg: '#DAD7D1',
                 header: '#080808',
                 accent: '#E36A00',
+                accentHover: '#D06101',
             },
             borderRadius: {
                 lg: 'var(--radius)',
