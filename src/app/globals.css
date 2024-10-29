@@ -59,4 +59,11 @@ body {
 	:root {
 		--radius: 0.5rem;
 	}
+
+	.homepage-background {
+		background-image: url('/assets/images/homepage-bg.jpg');
+		background-size: cover; /* Sprawi, że obrazek pokryje cały obszar */
+		background-position: center; /* Wyśrodkowanie tła */
+	}
+	
 }

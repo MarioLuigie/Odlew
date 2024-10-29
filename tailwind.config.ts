@@ -19,7 +19,7 @@ const config: Config = {
                 menuTextDark: '#383638',
                 menuTopBg: '#463E46',
                 menuBottomBg: '#DAD7D1',
-                header: '#000000',
+                header: '#080808',
                 accent: '#E36A00',
             },
             borderRadius: {

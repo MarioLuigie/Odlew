@@ -3,9 +3,10 @@ import { cn } from '@/lib/utils'
 
 type CompanyNameProps = {
 	mode: 'dark' | 'light'
+	className?: string
 }
 
-export default function CompanyName({ mode }: CompanyNameProps) {
+export default function CompanyName({ mode, className }: CompanyNameProps) {
 	const textStyles = 'pr-3 text-[20px] text-right'
 
 	const textVariants = {
@@ -19,7 +20,7 @@ export default function CompanyName({ mode }: CompanyNameProps) {
 	}
 
 	return (
-		<div className="w-full h-full flex justify-end">
+		<div className={cn('w-full h-full flex justify-end', className)}>
 			<div>
 				<p className={cn(textStyles, textVariants[mode])}>{App.NAME}</p>
 				<p className={cn(textStyles, textVariants[mode])}>{App.SUBNAME}</p>
