@@ -27,7 +27,7 @@ export default function Navbar({
 		<nav className='w-full'>
 			<ul className={cn("flex flex-col gap-2 items-end", className)}>
 				{MenuContent.map((item) => (
-					<Link href={item.path} key={item.label} className="w-full">
+					<Link href={item.path} key={item.label}>
 						<li
 							{...(handleClose && { onClick: handleClose })}
 							className="w-full"
