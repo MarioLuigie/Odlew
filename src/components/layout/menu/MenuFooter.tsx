@@ -9,7 +9,7 @@ function MenuContentItem({ item }: { item: MenuContentItem }) {
 		<div className="w-full border-b-[1px]">
 			<Link href={item.path} key={item.label} className="inline-block pr-3">
 				<li className="py-2">
-					<p className="text-menuTextLight text-[22px]">
+					<p className="text-menuTextLight text-[20px]">
 						{capitalizeFirstLetter(item.label)}
 					</p>
 				</li>
