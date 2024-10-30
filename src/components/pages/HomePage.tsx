@@ -9,7 +9,7 @@ export default function HomePage() {
 		<div className="flex flex-col">
 			<section
 				id="home"
-				className="h-customScreen flex flex-col justify-end gap-4 p-5 pb-28 homepage-background scroll-mt-header"
+				className="h-customScreen p-5 pb-28 flex flex-col justify-end gap-4 homepage-background scroll-mt-header"
 			>
 				<CompanyName mode="light" className="h-auto" />
 				<CustomButton navlink path="/realizacje">
