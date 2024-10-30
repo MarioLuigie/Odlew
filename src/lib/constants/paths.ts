@@ -20,3 +20,11 @@ export const Routes = {
   CONTACT: '/kontakt',
   POLICY: '/polityka-prywatnosci',
 }
+
+export const HomePageSections = {
+  HOME: '/#home',
+  ABOUT: '/#o-nas',
+  OFFER: '/#oferta',
+  REALIZATIONS: '/#realizacje',
+  CONTACT: '/#kontakt',
+}

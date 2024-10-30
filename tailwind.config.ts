@@ -39,6 +39,9 @@ const config: Config = {
             },
             margin: {
                 header: headerHeight,
+            },
+            scrollMargin: {
+                header: headerHeight,
             }
         },
     },

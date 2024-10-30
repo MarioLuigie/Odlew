@@ -6,16 +6,24 @@ export default function HomePage() {
 	return (
 		<div className="flex flex-col">
 			<section
-				id="#home"
-				className="h-customScreen flex flex-col justify-end gap-4 p-4 pb-28 homepage-background"
+				id="home"
+				className="h-customScreen flex flex-col justify-end gap-6 p-5 pb-28 homepage-background scroll-mt-header"
 			>
 				<CompanyName mode="light" className="h-auto" />
 				<CustomButton />
 			</section>
-			<section id="#about" className='h-[200px]'>ABOUT</section>
-			<section id="#offer" className='h-[200px]'>OFFER</section>
-			<section id="#realizations" className='h-[200px]'>REALIZATIONS</section>
-			<section id="#contact" className='h-[200px]'>CONTACT</section>
+			<section id="o-nas" className="h-[200px] scroll-mt-header">
+				ABOUT
+			</section>
+			<section id="oferta" className="h-[200px] scroll-mt-header">
+				OFFER
+			</section>
+			<section id="realizacje" className="h-[200px] scroll-mt-header">
+				REALIZATIONS
+			</section>
+			<section id="kontakt" className="h-[200px] scroll-mt-header">
+				CONTACT
+			</section>
 		</div>
 	)
 }
