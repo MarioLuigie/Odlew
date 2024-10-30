@@ -34,7 +34,7 @@ export default function MenuSheet() {
 			setIsOpen={setIsSheetOpen}
 		>
 			<div className="h-[100px] bg-menuTopBg"></div>
-			<div className="h-full flex flex-col overflow-y-scroll remove-scrollbar">
+			<div className="h-full flex flex-col overflow-y-scroll hide-scrollbar">
 				{/* TOP */}
 				<div className="h-1/2 min-h-[300px] p-6 flex flex-col justify-start bg-menuTopBg">
 					<Navbar handleClose={handleCloseSheet} capitalize='entire'/>

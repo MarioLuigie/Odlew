@@ -13,29 +13,46 @@ body {
 }
 
 @layer base {
+	/* Style scrollbar*/
+	::-webkit-scrollbar {
+		width: 2px;
+		height: 2px;
+	}
+	::-webkit-scrollbar-track {
+		background: #333;
+	}
+
+	::-webkit-scrollbar-thumb {
+		background: #555;
+	}
+
+	::-webkit-scrollbar-thumb:hover {
+		background: #222;
+	}
+
 	/* Hidden scrollbar */
-	.remove-scrollbar {
+	.hide-scrollbar {
 		/* Hidden scrollbar for other browsers */
 		scrollbar-width: none !important; /* Firefox */
 		-ms-overflow-style: none !important; /* IE 10+ */
 	}
 
-	.remove-scrollbar::-webkit-scrollbar {
+	.hide-scrollbar::-webkit-scrollbar {
 		width: 0px !important;
 		height: 0px !important;
 		border-radius: 0px !important;
 	}
 
-	.remove-scrollbar::-webkit-scrollbar-track {
+	.hide-scrollbar::-webkit-scrollbar-track {
 		background: transparent !important;
 	}
 
-	.remove-scrollbar::-webkit-scrollbar-thumb {
+	.hide-scrollbar::-webkit-scrollbar-thumb {
 		background: transparent !important;
 		border-radius: 0px !important;
 	}
 
-	.remove-scrollbar::-webkit-scrollbar-thumb:hover {
+	.hide-scrollbar::-webkit-scrollbar-thumb:hover {
 		/* background: #1e2238; */
 		background: transparent !important;
 	}
@@ -65,5 +82,4 @@ body {
 		background-size: cover; /* Sprawi, że obrazek pokryje cały obszar */
 		background-position: center; /* Wyśrodkowanie tła */
 	}
-	
 }

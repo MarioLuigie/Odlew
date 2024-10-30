@@ -13,7 +13,8 @@ export const Menu = {
   ABOUT: 'o nas',
   OFFER: 'oferta',
   REALIZATIONS: 'realizacje',
-  CONTACT: 'kontakt'
+  CONTACT: 'kontakt',
+  POLICY: 'polityka prywatności',
 }
 
 export const App = {

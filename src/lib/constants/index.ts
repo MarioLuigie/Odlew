@@ -8,3 +8,7 @@ export const MenuContent = [
   {label: Menu.REALIZATIONS, path: Routes.REALIZATIONS },
   {label: Menu.CONTACT, path: Routes.CONTACT },
 ]
+
+export const MenuContentPlus = [
+  {label: Menu.POLICY, path: Routes.POLICY },
+]

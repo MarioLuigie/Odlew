@@ -35,6 +35,10 @@ const config: Config = {
             },
             minHeight: {
                 customScreen: `calc(100vh - ${headerHeight})`,
+                header: headerHeight,
+            },
+            margin: {
+                header: headerHeight,
             }
         },
     },

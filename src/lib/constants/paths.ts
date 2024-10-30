@@ -18,5 +18,5 @@ export const Routes = {
   OFFER: '/oferta',
   REALIZATIONS: '/realizacje',
   CONTACT: '/kontakt',
-  
+  POLICY: '/polityka-prywatnosci',
 }
