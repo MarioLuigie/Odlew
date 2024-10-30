@@ -1,3 +1,5 @@
+'use client'
+
 //components
 import CompanyName from '@/components/content/CompanyName'
 import CustomButton from '@/components/shared/CustomButton'
@@ -10,7 +12,10 @@ export default function HomePage() {
 				className="h-customScreen flex flex-col justify-end gap-6 p-5 pb-28 homepage-background scroll-mt-header"
 			>
 				<CompanyName mode="light" className="h-auto" />
-				<CustomButton />
+				<CustomButton onClick={() => console.log('Click')}>Zobacz realizacje</CustomButton>
+
+				<CustomButton navlink path='/realizacje'>Zobacz realizacje</CustomButton>
+
 			</section>
 			<section id="o-nas" className="h-[200px] scroll-mt-header">
 				ABOUT
