@@ -49,6 +49,7 @@ export default function HomePage() {
 							width={600}
 							height={600}
 							priority
+							className='rounded-sm'
 						/>
 					))}
 				</div>
