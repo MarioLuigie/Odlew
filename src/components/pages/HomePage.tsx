@@ -2,11 +2,16 @@
 // modules
 import Image from 'next/image'
 // lib
-import { AboutImages, OfferImages } from '@/lib/constants/images'
+import {
+	AboutImages,
+	OfferImages,
+	ProductImages,
+} from '@/lib/constants/images'
 //components
 import CompanyName from '@/components/content/CompanyName'
 import CustomButton from '@/components/shared/CustomButton'
 import TextContent from '@/components/pages/TextContent'
+import Title from '@/components/pages/Title'
 
 export default function HomePage() {
 	return (
@@ -27,25 +32,21 @@ export default function HomePage() {
 				id="o-nas"
 				className="min-h-customScreen flex flex-col bg-background scroll-mt-header"
 			>
-				<TextContent
-					title={
-						<>
-							<p>Kim jesteśmy?</p>
-							<p>Co tworzymy?</p>
-							<p>Dokąd zmierzamy?</p>
-						</>
-					}
-					content={
-						<p>
-							Jesteśmy rodzinną firmą zajmującą się odlewnictwem
-							artystycznym. Założoną w 2020 roku jako ewolucja trwającej
-							ponad 40 lat rzemieślniczej pracy artysty Józefa Polewki,
-							który samodzielnie wykonywał i nadal wykonuje odlewy swoich
-							prac. Wyróżnia nas w pełni indywidualne podejście do
-							klienta oraz dbałość o najwyższą jakość.
-						</p>
-					}
-				/>
+				<Title>
+					<p>Kim jesteśmy?</p>
+					<p>Co tworzymy?</p>
+					<p>Dokąd zmierzamy?</p>
+				</Title>
+				<TextContent>
+					<p>
+						Jesteśmy rodzinną firmą zajmującą się odlewnictwem
+						artystycznym. Założoną w 2020 roku jako ewolucja trwającej
+						ponad 40 lat rzemieślniczej pracy artysty Józefa Polewki,
+						który samodzielnie wykonywał i nadal wykonuje odlewy swoich
+						prac. Wyróżnia nas w pełni indywidualne podejście do klienta
+						oraz dbałość o najwyższą jakość.
+					</p>
+				</TextContent>
 				<div className="px-5">
 					<CustomButton navlink path="/o-nas">
 						Czytaj więcej
@@ -60,7 +61,7 @@ export default function HomePage() {
 							width={600}
 							height={600}
 							priority
-							className='w-full'
+							className="w-full"
 						/>
 					))}
 				</div>
@@ -77,25 +78,21 @@ export default function HomePage() {
 				id="oferta"
 				className="min-h-customScreen bg-background scroll-mt-header"
 			>
-				<TextContent
-					title={
-						<>
-							<p>Co oferujemy</p>
-							<p>i dla kogo?</p>
-						</>
-					}
-					content={
-						<p>
-							Współpracujemy z artystami którzy swoje prace tworzą w
-							plastycznym materiale tj wosk, glina, plastelina lub drewno
-							a chcą je utrwalić w metalowej postaci. Z każdym kto chce
-							mieć coś stworzonego “wyrzeźbionego” przez siebie. Stworzyć
-							oryginalny prezent dla bliskiej osoby. Do współpracy
-							zachęcamy instytucje kultury, urzędy i organizacje chcące
-							upamiętnić ważne wydarzenia lub osoby.
-						</p>
-					}
-				/>
+				<Title>
+					<p>Co oferujemy</p>
+					<p>i dla kogo?</p>
+				</Title>
+				<TextContent>
+					<p>
+						Współpracujemy z artystami którzy swoje prace tworzą w
+						plastycznym materiale tj wosk, glina, plastelina lub drewno a
+						chcą je utrwalić w metalowej postaci. Z każdym kto chce mieć
+						coś stworzonego “wyrzeźbionego” przez siebie. Stworzyć
+						oryginalny prezent dla bliskiej osoby. Do współpracy zachęcamy
+						instytucje kultury, urzędy i organizacje chcące upamiętnić
+						ważne wydarzenia lub osoby.
+					</p>
+				</TextContent>
 				<div className="px-5">
 					<CustomButton navlink path="/oferta">
 						Czytaj więcej
@@ -110,7 +107,7 @@ export default function HomePage() {
 							width={600}
 							height={600}
 							priority
-							className='w-full'
+							className="w-full"
 						/>
 					))}
 				</div>
@@ -119,9 +116,41 @@ export default function HomePage() {
 			{/* REALIZATIONS */}
 			<section
 				id="realizacje"
-				className="h-customScreen bg-background scroll-mt-header"
+				className="min-h-customScreen bg-background scroll-mt-header"
 			>
-				REALIZATIONS
+				<Title>
+					<p>Nasze realizacje</p>
+					<p>i ich znaczenie</p>
+				</Title>
+				<TextContent>
+					<p>
+						Nasze realizacje to nie tylko dzieła sztuki, ale także
+						wyjątkowe projekty, które łączą pasję z rzemiosłem. Pracujemy
+						nad różnorodnymi realizacjami, od indywidualnych zleceń po
+						większe projekty artystyczne i kulturalne. Współpraca z
+						artystami oraz klientami pozwala nam tworzyć niepowtarzalne
+						dzieła, które mają swoje miejsce w galeriach, instytucjach
+						oraz prywatnych kolekcjach.
+					</p>
+				</TextContent>
+				<div className="mt-12 flex flex-col gap-1 overflow-x-auto">
+					{ProductImages.slice(0, 3).map((image, i) => (
+						<Image
+							key={i}
+							src={image.path}
+							alt={image.alt}
+							width={2400}
+							height={2400}
+							priority
+							className="w-full"
+						/>
+					))}
+				</div>
+				<div className="px-5 my-12">
+					<CustomButton navlink path="/realizacje">
+						Zobacz więcej
+					</CustomButton>
+				</div>
 			</section>
 
 			{/* CONTACT */}

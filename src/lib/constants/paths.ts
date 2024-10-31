@@ -16,6 +16,16 @@ export const ImagesPath = {
   ABOUT_2: '/assets/images/about-2.jpg',
   ABOUT_3: '/assets/images/about-3.jpg',
   OFFER: '/assets/images/offer.jpg',
+  PRODUCT_1: '/assets/images/products/product-1.jpg',
+  PRODUCT_2: '/assets/images/products/product-2.jpg',
+  PRODUCT_3: '/assets/images/products/product-3.jpg',
+  PRODUCT_4: '/assets/images/products/product-4.jpg',
+  PRODUCT_5: '/assets/images/products/product-5.jpg',
+  PRODUCT_6: '/assets/images/products/product-6.jpg',
+  PRODUCT_7: '/assets/images/products/product-7.jpg',
+  PRODUCT_8: '/assets/images/products/product-8.jpg',
+  PRODUCT_9: '/assets/images/products/product-9.jpg',
+  PRODUCT_10: '/assets/images/products/product-10.jpg',
 }
 
 export const Routes = {
