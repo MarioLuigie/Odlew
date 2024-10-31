@@ -14,6 +14,10 @@ export const Images = {
 		path: ImagesPath.LOGO_WHITE,
 		alt: ImagesAlt.LOGO,
 	},
+  LOGO_WHITE_MIN: {
+		path: ImagesPath.LOGO_WHITE_MIN,
+		alt: ImagesAlt.LOGO,
+	},
 }
 
 export const AboutImages = [

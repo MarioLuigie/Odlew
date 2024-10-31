@@ -11,6 +11,7 @@ export const ImagesPath = {
   LOGO: '/assets/images/logo.png',
   LOGO_MIN: '/assets/images/logo-min.png',
   LOGO_WHITE: '/assets/images/logo-white.png',
+  LOGO_WHITE_MIN: '/assets/images/logo-white-min.png',
   ABOUT_1: '/assets/images/about-1.jpg',
   ABOUT_2: '/assets/images/about-2.jpg',
   ABOUT_3: '/assets/images/about-3.jpg',

@@ -16,7 +16,7 @@ export default function Logo({
 }: LogoProps) {
 	const imageSrc =
 		variant === 'color' ? Images.LOGO.path : Images.LOGO_WHITE.path
-	const mobileImageSrc = variant === 'color' ? Images.LOGO_MIN.path : imageSrc
+	const mobileImageSrc = variant === 'color' ? Images.LOGO_MIN.path : Images.LOGO_WHITE_MIN.path
 	const imageAlt = Images.LOGO.alt
 
 	return (
