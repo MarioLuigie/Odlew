@@ -15,12 +15,13 @@ const config: Config = {
         extend: {
             colors: {
                 background: '#DEDCD8',
+                mottoBg: '#BCB8B5',
+                headerBg: '#080808',
+                footerBg: '#22403E',
                 menuTextLight: '#EEE9E2',
                 menuTextDark: '#383638',
                 menuTopBg: '#463E46',
                 menuBottomBg: '#DAD7D1',
-                header: '#080808',
-                footer: '#22403E',
                 accent: '#E36A00',
                 accentHover: '#D06101',
             },
