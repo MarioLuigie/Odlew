@@ -10,13 +10,13 @@ export default function CompanyName({ mode, className }: CompanyNameProps) {
 	const textStyles = 'pr-3 text-[20px] text-right'
 
 	const textVariants = {
-		dark: 'text-menuTextDark',
-		light: 'text-menuTextLight',
+		dark: 'text-textDark',
+		light: 'text-textLight',
 	}
 
 	const lineVariants = {
-		dark: 'bg-menuTextDark',
-		light: 'bg-menuTextLight',
+		dark: 'bg-textDark',
+		light: 'bg-textLight',
 	}
 
 	return (

@@ -34,3 +34,10 @@ export const AboutImages = [
 		alt: ImagesAlt.ABOUT,
 	},
 ]
+
+export const OfferImages = [
+	{
+		path: ImagesPath.OFFER,
+		alt: ImagesAlt.OFFER,
+	},
+]

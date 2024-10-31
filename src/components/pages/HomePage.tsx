@@ -1,10 +1,12 @@
 'use client'
+// modules
+import Image from 'next/image'
 // lib
-import { AboutImages } from '@/lib/constants/images'
+import { AboutImages, OfferImages } from '@/lib/constants/images'
 //components
 import CompanyName from '@/components/content/CompanyName'
 import CustomButton from '@/components/shared/CustomButton'
-import Image from 'next/image'
+import TextContent from '@/components/pages/TextContent'
 
 export default function HomePage() {
 	return (
@@ -25,22 +27,26 @@ export default function HomePage() {
 				id="o-nas"
 				className="min-h-customScreen flex flex-col bg-background scroll-mt-header"
 			>
-				<div className="mb-6 px-5 pt-5 flex flex-col text-2xl">
-					<p>Kim jesteśmy?</p>
-					<p>Co tworzymy?</p>
-					<p>Dokąd zmierzamy?</p>
-				</div>
-				<div className="text-justify mb-8 px-5">
-					<p>
-						Jesteśmy rodzinną firmą zajmującą się odlewnictwem
-						artystycznym. Założoną w 2020 roku jako ewolucja trwającej
-						ponad 40 lat rzemieślniczej pracy artysty Józefa Polewki,
-						który samodzielnie wykonywał i nadal wykonuje odlewy swoich
-						prac. Wyróżnia nas w pełni indywidualne podejście do klienta
-						oraz dbałość o najwyższą jakość.
-					</p>
-				</div>
-				<div className='px-5'>
+				<TextContent
+					title={
+						<>
+							<p>Kim jesteśmy?</p>
+							<p>Co tworzymy?</p>
+							<p>Dokąd zmierzamy?</p>
+						</>
+					}
+					content={
+						<p>
+							Jesteśmy rodzinną firmą zajmującą się odlewnictwem
+							artystycznym. Założoną w 2020 roku jako ewolucja trwającej
+							ponad 40 lat rzemieślniczej pracy artysty Józefa Polewki,
+							który samodzielnie wykonywał i nadal wykonuje odlewy swoich
+							prac. Wyróżnia nas w pełni indywidualne podejście do
+							klienta oraz dbałość o najwyższą jakość.
+						</p>
+					}
+				/>
+				<div className="px-5">
 					<CustomButton navlink path="/o-nas">
 						Czytaj więcej
 					</CustomButton>
@@ -54,11 +60,12 @@ export default function HomePage() {
 							width={600}
 							height={600}
 							priority
+							className='w-full'
 						/>
 					))}
 				</div>
 				<div className="h-customScreen flex flex-col justify-center items-center bg-mottoBg">
-					<div className='flex flex-col justify-center items-center gap-4 text-[32px] text-menuTextLight'>
+					<div className="flex flex-col justify-center items-center gap-4 text-[32px] text-textLight">
 						<p>Są rzeczy trudne</p>
 						<p>ale nie niemozliwe</p>
 					</div>
@@ -68,9 +75,45 @@ export default function HomePage() {
 			{/* OFFER */}
 			<section
 				id="oferta"
-				className="h-customScreen bg-background scroll-mt-header"
+				className="min-h-customScreen bg-background scroll-mt-header"
 			>
-				OFFER
+				<TextContent
+					title={
+						<>
+							<p>Co oferujemy</p>
+							<p>i dla kogo?</p>
+						</>
+					}
+					content={
+						<p>
+							Współpracujemy z artystami którzy swoje prace tworzą w
+							plastycznym materiale tj wosk, glina, plastelina lub drewno
+							a chcą je utrwalić w metalowej postaci. Z każdym kto chce
+							mieć coś stworzonego “wyrzeźbionego” przez siebie. Stworzyć
+							oryginalny prezent dla bliskiej osoby. Do współpracy
+							zachęcamy instytucje kultury, urzędy i organizacje chcące
+							upamiętnić ważne wydarzenia lub osoby.
+						</p>
+					}
+				/>
+				<div className="px-5">
+					<CustomButton navlink path="/oferta">
+						Czytaj więcej
+					</CustomButton>
+				</div>
+				<div className="mt-12 flex gap-2 overflow-x-auto">
+					{OfferImages.map((image, i) => (
+						<Image
+							key={i}
+							src={image.path}
+							alt={image.alt}
+							width={600}
+							height={600}
+							priority
+							className='w-full'
+						/>
+					))}
+				</div>
 			</section>
 
 			{/* REALIZATIONS */}

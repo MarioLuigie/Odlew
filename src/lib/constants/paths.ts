@@ -15,6 +15,7 @@ export const ImagesPath = {
   ABOUT_1: '/assets/images/about-1.jpg',
   ABOUT_2: '/assets/images/about-2.jpg',
   ABOUT_3: '/assets/images/about-3.jpg',
+  OFFER: '/assets/images/offer.jpg',
 }
 
 export const Routes = {

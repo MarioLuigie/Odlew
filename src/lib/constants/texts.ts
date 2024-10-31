@@ -7,6 +7,7 @@ export const IconsAlt = {
 export const ImagesAlt = {
   LOGO: 'Logo',
   ABOUT: 'Zdjęcie o nas',
+  OFFER: 'Zdjęcie oferta',
 }
 
 export const Menu = {

@@ -20,7 +20,7 @@ export default function CustomButton({
 	className,
 }: CustomButtonProps) {
 	const buttonClasses =
-		'bg-accent text-md text-menuTextLight w-full rounded-l-full rounded-br-full py-6 hover:bg-accentHover'
+		'bg-accent text-md text-textLight w-full rounded-l-full rounded-br-full py-6 hover:bg-accentHover'
 
 	if (navlink && path) {
 		return (
