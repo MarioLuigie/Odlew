@@ -154,7 +154,8 @@ export default function HomePage() {
 					<Title className='p-0'>
 						<p>Opinie klientów</p>
 					</Title>
-					<div>
+					<div className='flex flex-col gap-2'>
+						<Opinion />
 						<Opinion />
 					</div>
 				</div>
