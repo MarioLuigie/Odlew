@@ -16,6 +16,7 @@ export const Menu = {
   ABOUT: 'o nas',
   OFFER: 'oferta',
   REALIZATIONS: 'realizacje',
+  HOW_WORK: 'jak pracujemy',
   CONTACT: 'kontakt',
   POLICY: 'polityka prywatności',
 }

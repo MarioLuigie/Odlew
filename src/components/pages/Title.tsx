@@ -1,5 +1,20 @@
-export default function Title({ children }: {children: React.ReactNode}) {
+import { cn } from '@/lib/utils'
+
+export default function Title({
+	children,
+	className,
+}: {
+	children: React.ReactNode
+	className?: string
+}) {
 	return (
-		<div className="mb-6 px-5 pt-5 flex flex-col text-2xl text-textDark">{children}</div>
+		<div
+			className={cn(
+				'mb-6 px-5 pt-5 flex flex-col text-2xl text-textDark',
+				className
+			)}
+		>
+			{children}
+		</div>
 	)
 }

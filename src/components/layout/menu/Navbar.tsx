@@ -34,7 +34,7 @@ export default function Navbar({
 						>
 							<p
 								className={cn(
-									`text-textLight w-full text-[26px]`,
+									`text-textLight w-full text-[24px]`,
 									textPosition[position],
 								)}
 							>

@@ -2,16 +2,13 @@
 // modules
 import Image from 'next/image'
 // lib
-import {
-	AboutImages,
-	OfferImages,
-	ProductImages,
-} from '@/lib/constants/images'
+import { AboutImages, OfferImages, ProductImages } from '@/lib/constants/images'
 //components
 import CompanyName from '@/components/content/CompanyName'
 import CustomButton from '@/components/shared/CustomButton'
 import TextContent from '@/components/pages/TextContent'
 import Title from '@/components/pages/Title'
+import Opinion from '@/components/pages/Opinion'
 
 export default function HomePage() {
 	return (
@@ -150,6 +147,16 @@ export default function HomePage() {
 					<CustomButton navlink path="/realizacje">
 						Zobacz więcej
 					</CustomButton>
+				</div>
+
+				{/* Opinions */}
+				<div className='p-6'>
+					<Title className='p-0'>
+						<p>Opinie klientów</p>
+					</Title>
+					<div>
+						<Opinion />
+					</div>
 				</div>
 			</section>
 
