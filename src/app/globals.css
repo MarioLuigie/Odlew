@@ -59,17 +59,17 @@ body {
 
 	/* Show scrollbar */
 	.show-scrollbar {
-		/* Przywraca pasek przewijania */
+		/* return visible of scrollbar */
 		overflow: auto;
 		scrollbar-width: thin; /* Firefox */
 	}
 
 	.show-scrollbar::-webkit-scrollbar {
-		width: 8px; /* Szerokość dla Chrome, Safari */
+		width: 8px; /* Width for Chrome, Safari */
 	}
 
 	.show-scrollbar::-webkit-scrollbar-thumb {
-		background-color: #bdbdbd; /* Kolor paska przewijania */
+		background-color: #bdbdbd; /* Scrollbars color */
 		border-radius: 4px;
 	}
 
@@ -78,8 +78,8 @@ body {
 	}
 
 	.homepage-background {
-		background-image: url('/assets/images/homepage-bg.jpg');
-		background-size: cover; /* Sprawi, że obrazek pokryje cały obszar */
-		background-position: center; /* Wyśrodkowanie tła */
+		background-image: url('/assets/images/home-bg.jpg');
+		background-size: cover; 
+		background-position: center; 
 	}
 }

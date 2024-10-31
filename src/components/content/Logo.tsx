@@ -1,7 +1,5 @@
-// modules
 import Image from 'next/image'
 import Link from 'next/link'
-// lib
 import { Images } from '@/lib/constants/images'
 import { Routes } from '@/lib/constants/paths'
 
@@ -9,29 +7,36 @@ type LogoProps = {
 	w?: number
 	h?: number
 	variant?: 'color' | 'mono'
-	min?: boolean
 }
 
-export default function Logo({ w, h, variant='color' }: LogoProps) {
+export default function Logo({
+	w = 130,
+	h = 54,
+	variant = 'color',
+}: LogoProps) {
+	const imageSrc =
+		variant === 'color' ? Images.LOGO.path : Images.LOGO_WHITE.path
+	const mobileImageSrc = variant === 'color' ? Images.LOGO_MIN.path : imageSrc
+	const imageAlt = Images.LOGO.alt
+
 	return (
 		<Link href={Routes.HOME}>
-			{variant === 'color' ? (
-				<Image
-					src={Images.LOGO.path}
-					height={h || 54}
-					width={w || 130}
-					alt={Images.LOGO.alt}
-					priority
-				/>
-			) : (
-				<Image
-					src={Images.LOGO_WHITE.path}
-					height={h || 54}
-					width={w || 130}
-					alt={Images.LOGO.alt}
-					priority
-				/>
-			)}
+			<Image
+				src={imageSrc}
+				height={h}
+				width={w}
+				alt={imageAlt}
+				priority
+				className="hidden md:block"
+			/>
+			<Image
+				src={mobileImageSrc}
+				height={h}
+				width={50}
+				alt={imageAlt}
+				priority
+				className="md:hidden"
+			/>
 		</Link>
 	)
 }

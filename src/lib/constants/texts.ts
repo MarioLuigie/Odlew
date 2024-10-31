@@ -1,11 +1,12 @@
 export const IconsAlt = {
   MENU: 'Menu',
-  CLOSE: 'Close',
-  ITEM: 'Item',
+  CLOSE: 'Zamykanie',
+  ITEM: 'Element',
 }
 
 export const ImagesAlt = {
   LOGO: 'Logo',
+  ABOUT: 'Zdjęcie o nas',
 }
 
 export const Menu = {
