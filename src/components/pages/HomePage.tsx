@@ -16,16 +16,35 @@ export default function HomePage() {
 					Zobacz realizacje
 				</CustomButton>
 			</section>
-			<section id="o-nas" className="h-customScreen bg-background scroll-mt-header">
-				ABOUT
+			<section
+				id="o-nas"
+				className="h-customScreen p-5 bg-background scroll-mt-header"
+			>
+				<div className='mb-6 flex flex-col text-2xl'>
+					<p>Kim jesteśmy?</p>
+					<p>Co tworzymy?</p>
+					<p>Dokąd zmierzamy?</p>
+				</div>
+				<div className='text-justify'>
+					<p>Jesteśmy rodzinną firmą zajmującą się odlewnictwem artystycznym. Założoną w 2020 roku jako ewolucja trwającej ponad 40 lat rzemieślniczej pracy artysty Józefa Polewki, który samodzielnie wykonywał i nadal wykonuje odlewy swoich prac. Wyróżnia nas w pełni indywidualne podejście do klienta oraz dbałość o najwyższą jakość.</p>
+				</div>
 			</section>
-			<section id="oferta" className="h-customScreen bg-background scroll-mt-header">
+			<section
+				id="oferta"
+				className="h-customScreen bg-background scroll-mt-header"
+			>
 				OFFER
 			</section>
-			<section id="realizacje" className="h-customScreen bg-background scroll-mt-header">
+			<section
+				id="realizacje"
+				className="h-customScreen bg-background scroll-mt-header"
+			>
 				REALIZATIONS
 			</section>
-			<section id="kontakt" className="h-customScreen bg-background scroll-mt-header">
+			<section
+				id="kontakt"
+				className="h-customScreen bg-background scroll-mt-header"
+			>
 				CONTACT
 			</section>
 		</div>

@@ -9,6 +9,7 @@ type LogoProps = {
 	w?: number
 	h?: number
 	variant?: 'color' | 'mono'
+	min?: boolean
 }
 
 export default function Logo({ w, h, variant='color' }: LogoProps) {
