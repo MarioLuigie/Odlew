@@ -6,9 +6,9 @@ import { AboutImages, OfferImages, ProductImages } from '@/lib/constants/images'
 //components
 import CompanyName from '@/components/content/CompanyName'
 import CustomButton from '@/components/shared/CustomButton'
-import TextContent from '@/components/pages/TextContent'
-import Title from '@/components/pages/Title'
-import OpinionsList from '@/components/pages/OpinionsList'
+import TextContent from '@/components/content/TextContent'
+import Title from '@/components/content/Title'
+import OpinionsList from '@/components/pages/homePage/OpinionsList'
 
 export default function HomePage() {
 	return (
