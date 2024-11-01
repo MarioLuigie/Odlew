@@ -7,7 +7,7 @@ type CompanyNameProps = {
 }
 
 export default function CompanyName({ mode, className }: CompanyNameProps) {
-	const textStyles = 'pr-3 text-[20px] text-right'
+	const textStyles = 'pr-3 text-[21px] text-right'
 
 	const textVariants = {
 		dark: 'text-textDark',

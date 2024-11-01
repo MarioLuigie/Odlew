@@ -9,6 +9,7 @@ import CustomButton from "@/components/shared/CustomButton"
 import TextContent from "@/components/content/TextContent"
 import Title from "@/components/content/Title"
 import OpinionsCarouselList from "@/components/content/OpinionsCarouselList"
+import Contact from "@/components/content/Contact"
 
 export default function HomePage() {
   return (
@@ -62,9 +63,10 @@ export default function HomePage() {
           ))}
         </div>
         <div className="h-customScreen flex flex-col justify-center items-center bg-mottoBg">
-          <div className="flex flex-col justify-center items-center gap-4 text-[32px] text-textLight">
+          <div className="flex flex-col justify-center items-center text-[28px] font-semibold text-zinc-500">
             <p>Są rzeczy trudne</p>
-            <p>ale nie niemozliwe</p>
+            <p>ale</p>
+            <p>nie niemożliwe</p>
           </div>
         </div>
       </section>
@@ -167,9 +169,18 @@ export default function HomePage() {
       {/* CONTACT */}
       <section
         id="kontakt"
-        className="h-customScreen bg-background scroll-mt-header"
+        className="min-h-customScreen bg-background scroll-mt-header"
       >
-        CONTACT
+        <Title>
+          <p>Kontakt</p>
+        </Title>
+        <div className="p-6 flex flex-col">
+          <CompanyName mode="dark" />
+          <Contact />
+        </div>
+        <Title>
+          <p>Napisz do nas</p>
+        </Title>
       </section>
     </div>
   )
