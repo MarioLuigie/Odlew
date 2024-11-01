@@ -9,7 +9,7 @@ import {
 // lib
 import { Opinions } from "@/lib/constants"
 // components
-import Opinion from "@/components/pages/homePage/Opinion"
+import Opinion from "@/components/content/Opinion"
 
 export default function OpinionsCarouselList() {
   return (

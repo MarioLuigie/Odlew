@@ -8,7 +8,7 @@ import CompanyName from "@/components/content/CompanyName"
 import CustomButton from "@/components/shared/CustomButton"
 import TextContent from "@/components/content/TextContent"
 import Title from "@/components/content/Title"
-import OpinionsCarouselList from "@/components/pages/homePage/OpinionsCarouselList"
+import OpinionsCarouselList from "@/components/content/OpinionsCarouselList"
 
 export default function HomePage() {
   return (
