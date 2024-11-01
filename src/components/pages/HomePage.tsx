@@ -8,7 +8,7 @@ import CompanyName from '@/components/content/CompanyName'
 import CustomButton from '@/components/shared/CustomButton'
 import TextContent from '@/components/pages/TextContent'
 import Title from '@/components/pages/Title'
-import Opinion from '@/components/pages/Opinion'
+import OpinionsList from '@/components/pages/OpinionsList'
 
 export default function HomePage() {
 	return (
@@ -155,8 +155,7 @@ export default function HomePage() {
 						<p>Opinie klientów</p>
 					</Title>
 					<div className='flex flex-col gap-2'>
-						<Opinion />
-						<Opinion />
+						<OpinionsList />
 					</div>
 				</div>
 			</section>
