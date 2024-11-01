@@ -1,13 +1,26 @@
-type Opinion = {
+import { cn } from "@/lib/utils"
+
+type OpinionProp = {
   name: string
   opinion: string
   date: string
   stars: number
 }
 
-export default function Opinion({ opinion }: { opinion: Opinion }) {
+export default function Opinion({
+  opinion,
+  className,
+}: {
+  opinion: OpinionProp
+  className?: string
+}) {
   return (
-    <div className="p-4 pb-12 min-h-[180px] bg-opinionBg rounded-3xl shadow-md text-textDark">
+    <div
+      className={cn(
+        "p-4 pb-12 min-h-[180px] bg-opinionBg rounded-3xl text-textDark",
+        className
+      )}
+    >
       {/* STARS */}
       <div></div>
 
