@@ -20,6 +20,7 @@ const config: Config = {
                 footerBg: '#22403E',
                 menuTopBg: '#463E46',
                 menuBottomBg: '#DAD7D1',
+                opinionBg: '#ebebeb',
                 accent: '#E36A00',
                 accentHover: '#D06101',
                 textLight: '#EEE9E2',

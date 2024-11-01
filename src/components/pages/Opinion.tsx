@@ -7,7 +7,7 @@ type Opinion = {
 
 export default function Opinion({ opinion }: { opinion: Opinion }) {
   return (
-    <div className="p-4 pb-12 min-h-[180px] bg-mottoBg rounded-3xl">
+    <div className="p-4 pb-12 min-h-[180px] bg-opinionBg rounded-3xl shadow-md text-textDark">
       {/* STARS */}
       <div></div>
 
