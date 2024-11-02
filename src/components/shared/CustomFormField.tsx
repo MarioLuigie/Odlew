@@ -31,7 +31,8 @@ import SVG from '@/components/shared/SVG'
 import { Eye, EyeOff, Calendar } from 'lucide-react'
 
 interface CustomFormFieldProps {
-	control: Control<FieldValues>
+	// eslint-disable-next-line @typescript-eslint/no-explicit-any
+	control: Control<any>
 	typeField: FormFieldType
 	name: string
 	label?: string
@@ -192,7 +193,7 @@ export default function CustomFormField(props: CustomFormFieldProps) {
 			render={({ field }) => (
 				<FormItem className="flex flex-col flex-1">
 					{typeField !== FormFieldType.CHECKBOX && label && (
-						<FormLabel className="mb-1">{label}</FormLabel>
+						<FormLabel className="mb-[2px]">{label}</FormLabel>
 					)}
 					<RenderField field={field} props={props} />
 					{description && <FormDescription>{description}</FormDescription>}

@@ -1,18 +1,95 @@
-'use client'
+"use client"
 // modules
-import { zodResolver } from '@hookform/resolvers/zod'
-import { useForm, SubmitHandler } from 'react-hook-form'
+import { zodResolver } from "@hookform/resolvers/zod"
+import { useForm, SubmitHandler } from "react-hook-form"
 // lib
-import { FormFieldType } from '@/lib/types/enums'
+import { FormFieldType } from "@/lib/types/enums"
+import { ContactFormSchema, ContactFormValues } from "@/lib/types/zod"
 // components
-import { Form, FormControl } from '@/components/ui/form'
-import CustomFormField from '@/components/shared/CustomFormField'
+import { Form } from "@/components/ui/form"
+import CustomFormField from "@/components/shared/CustomFormField"
+import SubmitButton from "@/components/shared/SubmitButton"
 
 export default function ContactForm() {
+  const form = useForm<ContactFormValues>({
+    resolver: zodResolver(ContactFormSchema),
+  })
 
+  const { isSubmitting } = form.formState
+
+  const onSubmit: SubmitHandler<ContactFormValues> = async (
+    contactFormValues: ContactFormValues
+  ) => {
+    try {
+      console.log("contact form values:", contactFormValues)
+
+      form.reset()
+    } catch (err: unknown) {
+      if (err instanceof Error) {
+        console.error(
+          "Error from onSubmit for ContactForm while sending email",
+          err.message
+        )
+      } else {
+        console.error("An unknown error occurred:", err)
+      }
+      throw new Error("An error occurred while sending email from form.")
+    }
+  }
   return (
-    <div>
-
-    </div>
+    <Form {...form}>
+      <form
+        onSubmit={form.handleSubmit(onSubmit)}
+        className="flex flex-col gap-6"
+      >
+        {/* Name */}
+        <CustomFormField
+          control={form.control}
+          typeField={FormFieldType.INPUT}
+          name="name"
+          label="Imię*"
+          placeholder="Twoje imię"
+          // iconSrc={Icons.USER_ICON.path}
+          // iconAlt={Icons.USER_ICON.alt}
+        />
+        {/* Topic */}
+        <CustomFormField
+          control={form.control}
+          typeField={FormFieldType.INPUT}
+          name="topic"
+          label="Temat"
+          placeholder="Temat wiadomości"
+          // iconSrc={Icons.USER_ICON.path}
+          // iconAlt={Icons.USER_ICON.alt}
+        />
+        {/* Email */}
+        <div className="flex flex-col lg:flex-row gap-4">
+          <CustomFormField
+            control={form.control}
+            typeField={FormFieldType.INPUT}
+            name="email"
+            label="Adres e-mail*"
+            placeholder="Twój e-mail"
+            // iconSrc={Icons.EMAIL_ICON.path}
+            // iconAlt={Icons.EMAIL_ICON.alt}
+          />
+        </div>
+        {/* Message */}
+        <div className="flex flex-col lg:flex-row gap-4">
+          <CustomFormField
+            control={form.control}
+            typeField={FormFieldType.TEXTAREA}
+            name="message"
+            label="Wiadomość*"
+            placeholder="Treść wiadomości"
+            // iconSrc={Icons.EMAIL_ICON.path}
+            // iconAlt={Icons.EMAIL_ICON.alt}
+          />
+        </div>
+        <SubmitButton isLoading={isSubmitting} className="w-full">
+          Wyślij
+        </SubmitButton>
+      </form>
+    </Form>
   )
 }

@@ -21,6 +21,7 @@ const config: Config = {
                 menuTopBg: '#463E46',
                 menuBottomBg: '#DAD7D1',
                 opinionBg: '#ebebeb',
+                inputBg: '#ebebeb',
                 accent: '#E36A00',
                 accentHover: '#D06101',
                 textLight: '#EEE9E2',

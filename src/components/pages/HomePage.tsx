@@ -10,6 +10,7 @@ import TextContent from "@/components/content/TextContent"
 import Title from "@/components/content/Title"
 import OpinionsCarouselList from "@/components/content/OpinionsCarouselList"
 import Contact from "@/components/content/Contact"
+import ContactForm from "@/components/forms/ContactForm"
 
 export default function HomePage() {
   return (
@@ -169,7 +170,7 @@ export default function HomePage() {
       {/* CONTACT */}
       <section
         id="kontakt"
-        className="min-h-customScreen bg-background scroll-mt-header"
+        className="min-h-customScreen pb-8 bg-background scroll-mt-header"
       >
         <Title>
           <p>Kontakt</p>
@@ -181,6 +182,9 @@ export default function HomePage() {
         <Title>
           <p>Napisz do nas</p>
         </Title>
+        <div className="flex flex-col px-6">
+          <ContactForm />
+        </div>
       </section>
     </div>
   )
