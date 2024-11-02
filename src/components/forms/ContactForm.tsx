@@ -33,13 +33,13 @@ export default function ContactForm() {
     } catch (err: unknown) {
       if (err instanceof Error) {
         console.error(
-          "Error from onSubmit for ContactForm while sending email",
+          "Error from onSubmit for ContactForm while sending message",
           err.message
         )
       } else {
         console.error("An unknown error occurred:", err)
       }
-      throw new Error("An error occurred while sending email from form.")
+      throw new Error("An error occurred while sending message from form.")
     }
   }
   return (
