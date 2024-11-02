@@ -1,9 +1,8 @@
-
 'use client'
 // modules
 import { useState } from 'react'
 import { E164Number } from 'libphonenumber-js/core'
-import { Control } from 'react-hook-form'
+import { Control, FieldValues } from 'react-hook-form'
 import 'react-phone-number-input/style.css'
 import PhoneInput from 'react-phone-number-input'
 import ReactDatePicker from 'react-datepicker'
@@ -15,7 +14,6 @@ import {
 } from '@/components/ui/select'
 // lib
 import { FormFieldType } from '@/lib/types/enums'
-import { Icons } from '@/lib/constants'
 // components
 import {
 	FormControl,
@@ -30,10 +28,10 @@ import { Textarea } from '@/components/ui/textarea'
 import { Checkbox } from '@/components/ui/checkbox'
 import { Label } from '@/components/ui/label'
 import SVG from '@/components/shared/SVG'
-import { Eye, EyeOff } from 'lucide-react'
+import { Eye, EyeOff, Calendar } from 'lucide-react'
 
 interface CustomFormFieldProps {
-	control: Control<any>
+	control: Control<FieldValues>
 	typeField: FormFieldType
 	name: string
 	label?: string
@@ -47,14 +45,14 @@ interface CustomFormFieldProps {
 	dateFormat?: string
 	showTimeSelect?: boolean
 	children?: React.ReactNode
-	renderSkeleton?: (field: any) => React.ReactNode
+	renderSkeleton?: (field: FieldValues) => React.ReactNode
 }
 
 const RenderField = ({
 	field,
 	props,
 }: {
-	field: any
+	field: FieldValues
 	props: CustomFormFieldProps
 }) => {
 	const [isPasswordHidden, setIsPasswordHidden] = useState<boolean>(true)
@@ -64,7 +62,7 @@ const RenderField = ({
 				<div className="flex rounded-md border border-dark-500 bg-input">
 					{props.iconSrc && (
 						<div className="text-textAccent flex-center ml-2">
-							<SVG src={props.iconSrc} height={24} width={24} />
+							<SVG src={props.iconSrc} className='w-[24px] h-[24px]' />
 						</div>
 					)}
 					<FormControl>
@@ -123,11 +121,7 @@ const RenderField = ({
 			return (
 				<div className="flex rounded-md border border-dark-500 bg-input">
 					<div className="text-textAccent flex-center ml-2">
-						<SVG
-							src={Icons.CALENDAR_ICON.path}
-							height={24}
-							width={24}
-						/>
+            <Calendar />
 					</div>
 					<FormControl>
 						<ReactDatePicker
@@ -188,15 +182,7 @@ export default function CustomFormField(props: CustomFormFieldProps) {
 		typeField,
 		name,
 		label,
-		placeholder,
 		description,
-		disabled = false,
-		iconSrc,
-		iconAlt,
-		dateFormat,
-		showTimeSelect,
-		children,
-		renderSkeleton,
 	} = props
 
 	return (
