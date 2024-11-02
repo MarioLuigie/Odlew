@@ -10,6 +10,7 @@ type CustomButtonProps = {
 	navlink?: boolean
 	path?: string
 	className?: string
+	disabled?: boolean
 }
 
 export default function CustomButton({
@@ -18,6 +19,7 @@ export default function CustomButton({
 	navlink,
 	path,
 	className,
+	disabled=false,
 }: CustomButtonProps) {
 	const buttonClasses =
 		'bg-accent text-md text-textLight w-full rounded-l-full rounded-br-full py-6 hover:bg-accentHover'
@@ -39,7 +41,7 @@ export default function CustomButton({
 	}
 
 	return (
-		<Button onClick={onClick} className={cn(buttonClasses, className)}>
+		<Button onClick={onClick} className={cn(buttonClasses, className)} disabled={disabled}>
 			{children}
 		</Button>
 	)

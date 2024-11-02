@@ -26,14 +26,14 @@ export const Opinions = [
     stars: 5
   },
   {
-    name: 'Jagoda Głodna',
+    name: 'Jagoda Hungry',
     opinion: 'Dobra współpraca, odlew rzeźby wyszedł ładnie.',
     date: '01-01-2024',
     stars: 5
   },
   {
-    name: 'Kate Moss',
-    opinion: 'The best of the best! I really like it!',
+    name: 'Laura Mossi',
+    opinion: 'I am loving it! I really like it and I recommend doing business with this company.',
     date: '03-03-2024',
     stars: 5
   },

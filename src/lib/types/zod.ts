@@ -16,3 +16,5 @@ export const ContactFormSchema = z.object({
     .min(40, "Wiadomość musi zawierać min. 40 znaków")
     .max(500, "Wiadomość musi zawierać min. 500 znaków"),
 })
+
+export type ContactFormValues = z.infer<typeof ContactFormSchema>
