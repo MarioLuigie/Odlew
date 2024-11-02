@@ -13,7 +13,7 @@ export default function Footer() {
 				</div>
 				<Copyright />
 			</div>
-			<small className='text-zinc-400'>Created by &copy; ARWcode 2024</small>
+			<small className='text-teal-600'>Created by &copy; ARWcode 2024</small>
 		</footer>
 	)
 }
