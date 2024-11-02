@@ -13,6 +13,12 @@ import SubmitButton from "@/components/shared/SubmitButton"
 export default function ContactForm() {
   const form = useForm<ContactFormValues>({
     resolver: zodResolver(ContactFormSchema),
+    defaultValues: {
+      name: "",
+      topic: "", 
+      email: "",
+      message: "",
+    },
   })
 
   const { isSubmitting } = form.formState
