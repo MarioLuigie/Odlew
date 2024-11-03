@@ -1,5 +1,5 @@
-import Title from "@/components/content/Title"
-import TextContent from "@/components/content/TextContent"
+import Title from "@/components/shared/Title"
+import TextContent from "@/components/shared/TextContent"
 import CustomProfileSection from "@/components/shared/CustomProfileSection"
 
 export default function AboutPage() {
