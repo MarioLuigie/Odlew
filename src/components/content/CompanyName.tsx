@@ -1,31 +1,20 @@
-import { App } from '@/lib/constants/texts'
-import { cn } from '@/lib/utils'
+// lib
+import { App } from "@/lib/constants/texts"
+import { cn } from "@/lib/utils"
+// components
+import TextVerticalLine from "@/components/shared/TextVerticalLine"
 
-type CompanyNameProps = {
-	mode: 'dark' | 'light'
-	className?: string
-}
+export default function CompanyName({ mode }: { mode: "dark" | "light" }) {
+  const textStyles = "text-[21px] text-right"
+  const textVariants = {
+    dark: "text-textDark",
+    light: "text-textLight",
+  }
 
-export default function CompanyName({ mode, className }: CompanyNameProps) {
-	const textStyles = 'pr-3 text-[21px] text-right'
-
-	const textVariants = {
-		dark: 'text-textDark',
-		light: 'text-textLight',
-	}
-
-	const lineVariants = {
-		dark: 'bg-textDark',
-		light: 'bg-textLight',
-	}
-
-	return (
-		<div className={cn('w-full h-full flex justify-end', className)}>
-			<div>
-				<p className={cn(textStyles, textVariants[mode])}>{App.NAME}</p>
-				<p className={cn(textStyles, textVariants[mode])}>{App.SUBNAME}</p>
-			</div>
-			<div className={cn('w-[2px]', lineVariants[mode])}></div>
-		</div>
-	)
+  return (
+    <TextVerticalLine className="text-right" mode={mode}>
+      <p className={cn(textStyles, textVariants[mode])}>{App.NAME}</p>
+      <p className={cn(textStyles, textVariants[mode])}>{App.SUBNAME}</p>
+    </TextVerticalLine>
+  )
 }
