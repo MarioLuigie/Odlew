@@ -12,7 +12,7 @@ export default function CompanyName({ mode }: { mode: "dark" | "light" }) {
   }
 
   return (
-    <TextVerticalLine className="text-right" mode={mode}>
+    <TextVerticalLine className="text-right h-auto" mode={mode}>
       <p className={cn(textStyles, textVariants[mode])}>{App.NAME}</p>
       <p className={cn(textStyles, textVariants[mode])}>{App.SUBNAME}</p>
     </TextVerticalLine>
