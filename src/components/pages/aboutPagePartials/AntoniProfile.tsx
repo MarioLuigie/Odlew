@@ -5,7 +5,7 @@ import TextVerticalLine from "@/components/shared/TextVerticalLine"
 
 export default function AntoniProfile() {
   return (
-    <CustomProfileSection>
+    <CustomProfileSection className="bg-background">
       <TextVerticalLine className="p-6 h-[130px] text-right">
         <p className="font-medium text-2xl">Antoni Polewka</p>
       </TextVerticalLine>

@@ -5,7 +5,7 @@ import TextVerticalLine from "@/components/shared/TextVerticalLine"
 
 export default function JozefProfile() {
   return (
-    <CustomProfileSection>
+    <CustomProfileSection className="bg-background">
       <TextVerticalLine className="p-6 h-[130px] text-right">
         <p className="font-medium text-2xl">Józef Polewka</p>
         <p>Artysta - rzeźbiarz</p>

@@ -1,8 +1,5 @@
-export default function Page() {
+import RealizationsPage from "@/components/pages/RealizationsPage"
 
-  return (
-    <div className="text-white">
-      Realizacje
-    </div>
-  )
+export default function Page() {
+  return <RealizationsPage />
 }

@@ -1,8 +1,5 @@
-export default function Page() {
+import OfferPage from "@/components/pages/OfferPage"
 
-  return (
-    <div className="text-white">
-      Oferta
-    </div>
-  )
+export default function Page() {
+  return <OfferPage />
 }

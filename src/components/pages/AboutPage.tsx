@@ -7,11 +7,13 @@ import AntoniProfile from "@/components/pages/aboutPagePartials/AntoniProfile"
 export default function AboutPage() {
   return (
     <div className="min-h-customScreen bg-background">
-      <Title>Nasz Zespół</Title>
-      <TextContent>
-        Dzięki więzom rodzinnym doskonale się rozumiemy. Nasza współpraca opiera
-        się na wzajemnym zaufaniu i szacunku.
-      </TextContent>
+      <div className="bg-menuTopBg pb-6">
+        <Title className="text-textLight">Nasz Zespół</Title>
+        <TextContent className="text-textLight">
+          Dzięki więzom rodzinnym doskonale się rozumiemy. Nasza współpraca
+          opiera się na wzajemnym zaufaniu i szacunku.
+        </TextContent>
+      </div>
       <JozefProfile />
       <SzymonProfile />
       <AntoniProfile />

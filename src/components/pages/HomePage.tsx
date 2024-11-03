@@ -45,7 +45,7 @@ export default function HomePage() {
             indywidualne podejście do klienta oraz dbałość o najwyższą jakość.
           </p>
         </TextContent>
-        <div className="px-5">
+        <div className="px-5 my-12">
           <CustomButton navlink path="/o-nas">
             Czytaj więcej
           </CustomButton>
@@ -91,7 +91,7 @@ export default function HomePage() {
             organizacje chcące upamiętnić ważne wydarzenia lub osoby.
           </p>
         </TextContent>
-        <div className="px-5">
+        <div className="px-5 my-12">
           <CustomButton navlink path="/oferta">
             Czytaj więcej
           </CustomButton>
