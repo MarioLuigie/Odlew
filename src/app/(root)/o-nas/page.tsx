@@ -1,9 +1,5 @@
-export default function Page() {
+import AboutPage from "@/components/pages/AboutPage"
 
-  return (
-    <div className="text-white">
-      O nas
-      {/* WORKING PROCESS - HOW DO WE WORK? */}
-    </div>
-  )
+export default function Page() {
+  return <AboutPage />
 }
