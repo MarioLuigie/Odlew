@@ -5,7 +5,7 @@ export default function PrivatePolicyPage() {
     <div className="min-h-customScreen bg-background">
       <Title>Polityka prywatności</Title>
 
-      <div className="max-w-4xl mx-auto p-5 shadow-lg rounded-lg text">
+      <div className="max-w-4xl mx-auto p-5">
         <p className="text-gray-600 mb-4 text-justify">
           Witamy na stronie naszej odlewni artystycznej, specjalizującej się w
           wykonywaniu artystycznych odlewów z brązu na zamówienie. Szanujemy
@@ -142,7 +142,7 @@ export default function PrivatePolicyPage() {
         <p className="text-gray-600 mb-4 text-justify">
           W razie pytań dotyczących Polityki Prywatności lub przetwarzania
           danych osobowych prosimy o kontakt pod adresem e-mail:{" "}
-          <span className="font-medium">[adres e-mail]</span>.
+          <span className="font-medium">polewka.szymon@gmail.com</span>.
         </p>
       </div>
     </div>
