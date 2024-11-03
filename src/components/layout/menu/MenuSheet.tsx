@@ -8,7 +8,7 @@ import CustomSheet from '@/components/shared/CustomSheet'
 import Navbar from '@/components/layout/menu/Navbar'
 import SVG from '@/components/shared/SVG'
 import CompanyName from '@/components/content/CompanyName'
-import Contact from '@/components/content/Contact'
+import ContactInfo from '@/components/content/ContactInfo'
 
 function MenuSheetTrigger() {
 	return (
@@ -42,7 +42,7 @@ export default function MenuSheet() {
 				{/* BOTTOM */}
 				<div className="min-h-1/2 grow p-6 pb-16 flex flex-col bg-menuBottomBg">
 					<CompanyName mode="dark" />
-					<Contact />
+					<ContactInfo />
 				</div>
 			</div>
 		</CustomSheet>
