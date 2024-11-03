@@ -13,7 +13,7 @@ export default function Offer() {
         id="oferta"
         className="min-h-customScreen bg-background scroll-mt-header"
       >
-        <Title>
+        <Title className="mb-6">
           <p>Co oferujemy</p>
           <p>i dla kogo?</p>
         </Title>

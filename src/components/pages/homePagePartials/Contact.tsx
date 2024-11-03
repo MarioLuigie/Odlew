@@ -10,14 +10,14 @@ export default function Contact() {
     id="kontakt"
     className="min-h-customScreen pb-8 bg-background scroll-mt-header"
   >
-    <Title>
+    <Title className="mb-6">
       <p>Kontakt</p>
     </Title>
     <div className="p-6 flex flex-col">
       <CompanyName mode="dark" />
       <ContactInfo />
     </div>
-    <Title>
+    <Title className="mb-6">
       <p>Napisz do nas</p>
     </Title>
     <div className="flex flex-col px-6">

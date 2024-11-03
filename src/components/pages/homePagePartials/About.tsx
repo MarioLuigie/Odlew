@@ -13,7 +13,7 @@ export default function About() {
       id="o-nas"
       className="min-h-customScreen flex flex-col bg-background scroll-mt-header"
     >
-      <Title>
+      <Title className="mb-6">
         <p>Kim jesteśmy?</p>
         <p>Co tworzymy?</p>
         <p>Dokąd zmierzamy?</p>

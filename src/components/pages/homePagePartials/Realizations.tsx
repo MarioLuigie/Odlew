@@ -14,7 +14,7 @@ export default function Realizations() {
         id="realizacje"
         className="min-h-customScreen bg-background scroll-mt-header"
       >
-        <Title>
+        <Title className="mb-6">
           <p>Nasze realizacje</p>
           <p>i ich znaczenie</p>
         </Title>

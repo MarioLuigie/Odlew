@@ -1,8 +1,5 @@
-export default function Page() {
+import ContactPage from "@/components/pages/ContactPage"
 
-  return (
-    <div className="text-white">
-      Kontakt
-    </div>
-  )
+export default function Page() {
+  return <ContactPage />
 }
