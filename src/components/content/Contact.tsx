@@ -3,7 +3,7 @@ import { Mail, MapPinHouse, Phone } from 'lucide-react'
 // lib
 import { App } from '@/lib/constants/texts'
 // components
-import Drop from '@/components/content/Drop'
+import Drop from '@/components/shared/Drop'
 
 export default function Contact() {
 	return (
