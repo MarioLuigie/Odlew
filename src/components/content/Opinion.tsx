@@ -1,5 +1,8 @@
+"use client"
 import { cn } from "@/lib/utils"
-import ReactStars from "react-stars"
+import dynamic from "next/dynamic"
+
+const ReactStars = dynamic(() => import("react-stars"), { ssr: false })
 
 type OpinionProp = {
   name: string
