@@ -60,7 +60,7 @@ const RenderField = ({
 	switch (props.typeField) {
 		case FormFieldType.INPUT:
 			return (
-				<div className="flex rounded-md border border-dark-500 bg-input">
+				<div className="flex bg-transparent">
 					{props.iconSrc && (
 						<div className="text-textAccent flex-center ml-2">
 							<SVG src={props.iconSrc} className='w-[24px] h-[24px]' />
@@ -70,7 +70,7 @@ const RenderField = ({
 						<Input
 							{...field}
 							placeholder={props.placeholder}
-							className="shad-input border-0"
+							className="shad-input"
 							disabled={props.disabled}
 							type={isPasswordHidden ? props.type : 'text'}
 							autoFocus={props.autoFocus}

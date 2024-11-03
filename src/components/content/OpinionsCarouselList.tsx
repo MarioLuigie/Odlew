@@ -20,10 +20,10 @@ export default function OpinionsCarouselList() {
       orientation="vertical"
       className="w-full bg-transparent px-4"
     >
-      <CarouselContent className="-mt-1 h-[250px]">
+      <CarouselContent className="-mt-1 h-[260px]">
         {Opinions.map((opinion, i) => (
           <CarouselItem className="pt-1 md:basis-1/2" key={i}>
-            <Opinion opinion={opinion} className="h-[246px]"/>
+            <Opinion opinion={opinion} className="h-[256px]"/>
           </CarouselItem>
         ))}
       </CarouselContent>

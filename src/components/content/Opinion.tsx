@@ -39,7 +39,7 @@ export default function Opinion({
       </div>
 
       {/* CLIENT NAME AND DATE */}
-      <div className="flex justify-between w-full pb-6 text-sm">
+      <div className="flex justify-between w-full pb-6 text-sm text-textSecondary">
         <p>{opinion?.name}</p>
         <p>{opinion?.date}</p>
       </div>

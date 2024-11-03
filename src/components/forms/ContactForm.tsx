@@ -92,7 +92,7 @@ export default function ContactForm() {
             // iconAlt={Icons.EMAIL_ICON.alt}
           />
         </div>
-        <SubmitButton isLoading={isSubmitting} className="w-full">
+        <SubmitButton isLoading={isSubmitting} className="w-full mt-2">
           Wyślij
         </SubmitButton>
       </form>

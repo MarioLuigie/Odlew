@@ -26,6 +26,7 @@ const config: Config = {
                 accentHover: '#D06101',
                 textLight: '#EEE9E2',
                 textDark: '#383638',
+                textSecondary: '#757575',
             },
             borderRadius: {
                 lg: 'var(--radius)',

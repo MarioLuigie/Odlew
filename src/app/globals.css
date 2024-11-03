@@ -16,7 +16,7 @@ body {
   }
 
   .shad-input {
-    @apply bg-inputBg rounded-2xl shadow-md placeholder:text-zinc-400 border-zinc-500 h-11 focus-visible:ring-0 focus-visible:ring-offset-0 !important;
+    @apply bg-inputBg rounded-l-full rounded-br-full rounded-none border-0 shadow-md placeholder:text-zinc-400 border-zinc-500 h-11 focus-visible:ring-0 focus-visible:ring-offset-0 !important;
   }
 
   .shad-input-icon {
@@ -24,7 +24,7 @@ body {
   }
 
   .shad-textArea {
-    @apply bg-inputBg rounded-2xl shadow-md placeholder:text-zinc-400 min-h-32 max-h-64 focus-visible:ring-0 focus-visible:ring-offset-0 !important;
+    @apply bg-inputBg rounded-l-3xl rounded-br-3xl rounded-none shadow-md placeholder:text-zinc-400 min-h-32 max-h-64 focus-visible:ring-0 focus-visible:ring-offset-0 !important;
   }
 }
 
