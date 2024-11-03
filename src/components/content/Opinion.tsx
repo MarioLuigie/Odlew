@@ -1,4 +1,5 @@
 import { cn } from "@/lib/utils"
+import ReactStars from "react-stars"
 
 type OpinionProp = {
   name: string
@@ -14,6 +15,11 @@ export default function Opinion({
   opinion: OpinionProp
   className?: string
 }) {
+  // Handler and calling server action inside to save rating to db
+  const ratingChanged = (newRating: number) => {
+    console.log(newRating)
+  }
+
   return (
     <div
       className={cn(
@@ -21,8 +27,16 @@ export default function Opinion({
         className
       )}
     >
-      {/* STARS */}
-      <div></div>
+      {/* STARS RATING */}
+      <div className="pb-4">
+        <ReactStars
+          count={5}
+          onChange={ratingChanged}
+          size={24}
+          color1={"#bebebe"}
+          color2={"#E36A00"}
+        />
+      </div>
 
       {/* CLIENT NAME AND DATE */}
       <div className="flex justify-between w-full pb-6 text-sm">
