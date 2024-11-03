@@ -4,7 +4,7 @@ import CustomButton from "@/components/shared/CustomButton"
 
 export default function OfferPage() {
   return (
-    <div className="min-h-customScreen bg-background">
+    <div className="min-h-customScreen bg-background pb-12">
       <div className="bg-menuTopBg p-5">
         <Title className="text-textLight pb-5">Nasza Oferta</Title>
         <TextContent className="text-textLight">
@@ -21,6 +21,16 @@ export default function OfferPage() {
         <CustomButton navlink path="/realizacje" className="my-8">
           Zobacz realizacje
         </CustomButton>
+      </div>
+      <div className="bg-background px-5">
+        <Title className="mb-8">Poznaj nasz proces</Title>
+        <div className="flex flex-col gap-8">
+          {Array.from({ length: 12 }, (_, i) => (
+            <div key={i} className="w-full h-[300px] bg-mottoBg rounded-xl flex justify-center items-center">
+              {i}
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   )
