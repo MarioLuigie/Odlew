@@ -14,11 +14,11 @@ export default function Realizations() {
         id="realizacje"
         className="min-h-customScreen bg-background scroll-mt-header"
       >
-        <Title className="mb-6">
+        <Title className="mb-6 px-5">
           <p>Nasze realizacje</p>
           <p>i ich znaczenie</p>
         </Title>
-        <TextContent>
+        <TextContent className="px-5">
           <p>
             Nasze realizacje to nie tylko dzieła sztuki, ale także wyjątkowe
             projekty, które łączą pasję z rzemiosłem. Pracujemy nad różnorodnymi
@@ -49,7 +49,7 @@ export default function Realizations() {
 
         {/* Opinions */}
         <div>
-          <Title className="p-6">
+          <Title className="mb-12 px-5">
             <p>Opinie klientów</p>
           </Title>
 

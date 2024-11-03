@@ -13,11 +13,11 @@ export default function Offer() {
         id="oferta"
         className="min-h-customScreen bg-background scroll-mt-header"
       >
-        <Title className="mb-6">
+        <Title className="mb-6 px-5">
           <p>Co oferujemy</p>
           <p>i dla kogo?</p>
         </Title>
-        <TextContent>
+        <TextContent className="px-5">
           <p>
             Współpracujemy z artystami którzy swoje prace tworzą w plastycznym
             materiale tj wosk, glina, plastelina lub drewno a chcą je utrwalić w

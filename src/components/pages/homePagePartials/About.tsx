@@ -13,12 +13,12 @@ export default function About() {
       id="o-nas"
       className="min-h-customScreen flex flex-col bg-background scroll-mt-header"
     >
-      <Title className="mb-6">
+      <Title className="mb-6 px-5">
         <p>Kim jesteśmy?</p>
         <p>Co tworzymy?</p>
         <p>Dokąd zmierzamy?</p>
       </Title>
-      <TextContent>
+      <TextContent className="px-5">
         <p>
           Jesteśmy rodzinną firmą zajmującą się odlewnictwem artystycznym.
           Założoną w 2020 roku jako ewolucja trwającej ponad 40 lat

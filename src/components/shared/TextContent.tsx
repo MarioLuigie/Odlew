@@ -8,7 +8,7 @@ export default function TextContent({
   className?: string
 }) {
 	return (
-		<div className={cn('text-justify px-5 text-textDark', className)}>
+		<div className={cn('text-justify text-textDark', className)}>
 			{children}
 		</div>
 	)

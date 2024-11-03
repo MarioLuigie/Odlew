@@ -6,10 +6,10 @@ import TextVerticalLine from "@/components/shared/TextVerticalLine"
 export default function AntoniProfile() {
   return (
     <CustomProfileSection className="bg-background">
-      <TextVerticalLine className="p-6 h-[130px] text-right">
+      <TextVerticalLine className="p-5 h-[130px] text-right">
         <p className="font-medium text-2xl">Antoni Polewka</p>
       </TextVerticalLine>
-      <TextContent>
+      <TextContent className="px-5">
         Jako najmłodszy w rodzinie już od młodzieńczych lat obcowałem z tym jak
         Tata pracował nad swoimi rzeźbami i przyglądałem się każdemu z etapów
         ich powstawania. Kiedy podrosłem to wtedy jak tylko mogłem pomagałem w

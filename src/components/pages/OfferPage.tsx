@@ -1,18 +1,27 @@
 import TextContent from "@/components/shared/TextContent"
 import Title from "@/components/shared/Title"
+import CustomButton from "@/components/shared/CustomButton"
 
 export default function OfferPage() {
   return (
     <div className="min-h-customScreen bg-background">
-      <div className="bg-menuTopBg pb-6">
-        <Title className="text-textLight">Nasza Oferta</Title>
+      <div className="bg-menuTopBg p-5">
+        <Title className="text-textLight pb-5">Nasza Oferta</Title>
         <TextContent className="text-textLight">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
-          eos sequi laborum explicabo voluptas eaque, exercitationem error ipsum
-          praesentium? Ipsa, ut.
+          Kompleksowo realizujemy zamysł i projekt klienta. Oferujemy wykonanie
+          gotowego odlewu od szkicu lub pomysłu autora. Wykonujemy pomniki,
+          tablice pamiątkowe, statuetki, medale okolicznościowe, rzeźby,
+          płaskorzeźby, elementy ozdobne, kopie istniejących przedmiotów lub
+          ozdobnych przedmiotów użytkowych. Specjalizujemy się w odlewnictwie
+          brązu i mosiądzu w technologii wytapianych modeli woskowych przy
+          użyciu mas gipsowych. Pozwala to na wykonywanie odlewów których
+          kształt zależy tylko od wyobraźni autora. Stworzymy rzeźbę na każdą
+          okazję.
         </TextContent>
+        <CustomButton navlink path="/realizacje" className="my-8">
+          Zobacz realizacje
+        </CustomButton>
       </div>
     </div>
   )
 }
-

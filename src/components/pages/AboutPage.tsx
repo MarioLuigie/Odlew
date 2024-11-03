@@ -7,8 +7,8 @@ import AntoniProfile from "@/components/pages/aboutPagePartials/AntoniProfile"
 export default function AboutPage() {
   return (
     <div className="min-h-customScreen bg-background">
-      <div className="bg-menuTopBg pb-6">
-        <Title className="text-textLight">Nasz Zespół</Title>
+      <div className="bg-menuTopBg p-5">
+        <Title className="text-textLight pb-5">Nasz Zespół</Title>
         <TextContent className="text-textLight">
           Dzięki więzom rodzinnym doskonale się rozumiemy. Nasza współpraca
           opiera się na wzajemnym zaufaniu i szacunku.

@@ -10,7 +10,7 @@ export default function Title({
 	return (
 		<div
 			className={cn(
-				'px-5 pt-5 flex flex-col text-[21px] leading-7 font-[600] text-textDark',
+				'pt-5 flex flex-col text-[21px] leading-7 font-[600] text-textDark',
 				className
 			)}
 		>
