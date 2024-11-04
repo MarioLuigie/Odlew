@@ -1,23 +1,30 @@
 'use client'
-import { cn } from '@/lib/utils'
+// modules
 import dynamic from 'next/dynamic'
+// lib
+import { IOpinion } from '@/lib/models/opinion.model'
+import { cn } from '@/lib/utils'
 
 const ReactStars = dynamic(() => import('react-stars'), { ssr: false })
 
-type OpinionProp = {
-	name: string
-	opinion: string
-	date: string
-	stars: number
-}
+// type OpinionProp = {
+// 	name: string
+// 	opinion: string
+// 	added: string
+// 	stars: number
+// }
 
 export default function Opinion({
 	opinion,
 	className,
 }: {
-	opinion: OpinionProp
+	opinion: IOpinion
 	className?: string
 }) {
+	const formattedDate = opinion?.added
+		? new Date(opinion.added).toLocaleDateString()
+		: 'Brak daty'
+
 	// Handler and calling server action inside to save rating to db
 	// const ratingChanged = (newRating: number) => {
 	// 	console.log(newRating)
@@ -34,8 +41,8 @@ export default function Opinion({
 			<div className="pb-4">
 				<ReactStars
 					count={5}
-          value={4}
-          edit={false}
+					value={opinion.stars}
+					edit={false}
 					size={24}
 					color1={'#bebebe'}
 					color2={'#E36A00'}
@@ -45,7 +52,7 @@ export default function Opinion({
 			{/* CLIENT NAME AND DATE */}
 			<div className="flex justify-between w-full pb-6 text-sm text-textSecondary">
 				<p>{opinion?.name}</p>
-				<p>{opinion?.date}</p>
+				<p>{formattedDate}</p>
 			</div>
 
 			{/* OPINION */}

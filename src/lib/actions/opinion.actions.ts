@@ -8,11 +8,11 @@ import { deepClone } from '@/lib/utils'
 // GET
 export async function getOpinions(): Promise<Result<IOpinion[]>> {
 	try {
-		const posts = await OpinionModel.find()
-
+		const opinions = await OpinionModel.find()
+    console.log('Opinions:', opinions)
 		return {
 			success: true,
-			data: deepClone(posts),
+			data: deepClone(opinions),
 		}
 	} catch (err) {
 		console.error(err)
@@ -39,6 +39,8 @@ export async function createOpinion(
 			opinion: opinionFormValues.opinion,
 			accepted: true, // ! Important change to false in the future
 		})
+
+    console.log('*** Created Opinion', createdOpinion)
 
 		return {
 			success: true,

@@ -7,11 +7,16 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel"
 // lib
-import { Opinions } from "@/lib/constants"
+// import { Opinions } from "@/lib/constants"
+import { IOpinion } from "@/lib/models/opinion.model"
 // components
 import Opinion from "@/components/content/Opinion"
 
-export default function OpinionsCarouselList() {
+export default function OpinionsCarouselList({
+	opinions,
+}: {
+	opinions: IOpinion[] | undefined
+}) {
   return (
     <Carousel
       opts={{
@@ -21,7 +26,7 @@ export default function OpinionsCarouselList() {
       className="w-full bg-transparent px-4"
     >
       <CarouselContent className="-mt-1 h-[260px]">
-        {Opinions.map((opinion, i) => (
+        {opinions && opinions.map((opinion, i) => (
           <CarouselItem className="pt-1 md:basis-1/2" key={i}>
             <Opinion opinion={opinion} className="h-[256px]"/>
           </CarouselItem>

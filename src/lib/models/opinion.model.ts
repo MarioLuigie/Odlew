@@ -1,12 +1,13 @@
 // modules
-import { Schema, model, models } from 'mongoose'
+import { Schema, model, models, ObjectId } from 'mongoose'
 
 export interface IOpinion extends Document {
-	_id: string
+	_id: ObjectId
 	name: string
 	stars: number
 	opinion: string
   accepted: boolean
+	added: Date
 }
 
 const OpinionSchema = new Schema({
@@ -26,6 +27,10 @@ const OpinionSchema = new Schema({
 		type: Boolean,
 		default: false,
 	},
+	added: {
+		type: Date,
+		default: Date.now
+	}
 })
 
 export const OpinionModel =
