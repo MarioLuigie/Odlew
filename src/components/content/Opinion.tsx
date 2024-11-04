@@ -34,7 +34,7 @@ export default function Opinion({
 			<div className="pb-4">
 				<ReactStars
 					count={5}
-          value={2.5}
+          value={4}
           edit={false}
 					size={24}
 					color1={'#bebebe'}
