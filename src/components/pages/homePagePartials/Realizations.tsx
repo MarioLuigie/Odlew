@@ -7,11 +7,11 @@ import { getOpinions } from '@/lib/actions/opinion.actions'
 import CustomButton from '@/components/shared/CustomButton'
 import TextContent from '@/components/shared/TextContent'
 import Title from '@/components/shared/Title'
-import Opinions from '@/components/pages/homePagePartials/Opinions'
+// import Opinions from '@/components/pages/homePagePartials/Opinions'
 
 export default async function Realizations() {
 	const { data: opinions } = await getOpinions()
-
+	console.log(opinions)
 	return (
 		<section
 			id="realizacje"
@@ -50,7 +50,7 @@ export default async function Realizations() {
 					Zobacz więcej
 				</CustomButton>
 			</div>
-			<Opinions opinions={opinions} />
+			{/* <Opinions opinions={opinions} /> */}
 		</section>
 	)
 }

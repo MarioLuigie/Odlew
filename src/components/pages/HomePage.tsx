@@ -2,7 +2,7 @@
 import Start from "@/components/pages/homePagePartials/Start"
 import About from "@/components/pages/homePagePartials/About"
 import Offer from "@/components/pages/homePagePartials/Offer "
-// import Realizations from "@/components/pages/homePagePartials/Realizations"
+import Realizations from "@/components/pages/homePagePartials/Realizations"
 import Contact from "@/components/pages/homePagePartials/Contact"
 
 export default function HomePage() {
@@ -11,7 +11,7 @@ export default function HomePage() {
       <Start />
       <About />
       <Offer />
-      {/* <Realizations /> */}
+      <Realizations />
       <Contact />
     </div>
   )
