@@ -13,6 +13,6 @@ export function capitalizeEntireText(str: string) {
   return str.toUpperCase()
 }
 
-export function deepClone(data: object): object {
+export function deepClone(data: object) {
   return JSON.parse(JSON.stringify(data))
 }
