@@ -1,11 +1,18 @@
+// components
+import CustomDialog from '@/components/shared/CustomDialog'
+
 type CreateOpinionDialogProps = {
-  isOpen: boolean
+	isOpen: boolean
 	handleClose: () => void
 }
 
 export default function CreateOpinionDialog({
-  isOpen,
+	isOpen,
 	handleClose,
 }: CreateOpinionDialogProps) {
-	return <div></div>
+	return (
+		<CustomDialog handleClose={handleClose} isOpen={isOpen} className='h-full bg-background'>
+			<div>Opinion Dialog</div>
+		</CustomDialog>
+	)
 }

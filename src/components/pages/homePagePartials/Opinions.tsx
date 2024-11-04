@@ -10,13 +10,13 @@ import CreateOpinionDialog from '@/components/dialogs/CreateOpinionDialog'
 export default function Opinions() {
 	const [isDialogOpen, setIsDialogOpen] = useState<boolean>(false)
 
-  const handleCloseDialog = () => {
-    setIsDialogOpen(false)
-  }
+	const handleOpenDialog = () => {
+		setIsDialogOpen(true)
+	}
 
-  const handleOpenDialog = () => {
-    setIsDialogOpen(true)
-  }
+	const handleCloseDialog = () => {
+		setIsDialogOpen(false)
+	}
 
 	return (
 		<div>
@@ -32,7 +32,13 @@ export default function Opinions() {
 				<CustomButton onClick={handleOpenDialog}>
 					Napisz opinię
 				</CustomButton>
-        {isDialogOpen && <CreateOpinionDialog handleClose={handleCloseDialog} />}
+
+				{isDialogOpen && (
+					<CreateOpinionDialog
+						isOpen={isDialogOpen}
+						handleClose={handleCloseDialog}
+					/>
+				)}
 			</div>
 		</div>
 	)
