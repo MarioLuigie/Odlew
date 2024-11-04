@@ -5,7 +5,6 @@ import { useForm, SubmitHandler } from 'react-hook-form'
 // lib
 import { FormFieldType } from '@/lib/types/enums'
 import { OpinionFormSchema, OpinionFormValues } from '@/lib/types/zod'
-import { IOpinion } from '@/lib/models/opinion.model'
 // components
 import { Form } from '@/components/ui/form'
 import CustomFormField from '@/components/shared/CustomFormField'
