@@ -1,4 +1,4 @@
-// Url params, route query, page params
+// PARAMS, SEARCHPARAMS
 declare interface SingleSlugParams {
 	[key: string]: string
 }
@@ -25,4 +25,15 @@ declare type PageProps = {
 	searchParams: SearchParams
 }
 
+// DATA RESULT
+declare type Result<T> = {
+	success: boolean
+	data?: T
+	errors?: { [key: string]: string }
+}
 
+declare type DataResult<T> = {
+	success: boolean
+	data: T
+	errors?: { [key: string]: string }
+}
