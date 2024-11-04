@@ -7,13 +7,6 @@ import { cn } from '@/lib/utils'
 
 const ReactStars = dynamic(() => import('react-stars'), { ssr: false })
 
-// type OpinionProp = {
-// 	name: string
-// 	opinion: string
-// 	added: string
-// 	stars: number
-// }
-
 export default function Opinion({
 	opinion,
 	className,
@@ -24,11 +17,6 @@ export default function Opinion({
 	const formattedDate = opinion?.added
 		? new Date(opinion.added).toLocaleDateString()
 		: 'Brak daty'
-
-	// Handler and calling server action inside to save rating to db
-	// const ratingChanged = (newRating: number) => {
-	// 	console.log(newRating)
-	// }
 
 	return (
 		<div

@@ -7,7 +7,6 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel"
 // lib
-// import { Opinions } from "@/lib/constants"
 import { IOpinion } from "@/lib/models/opinion.model"
 // components
 import Opinion from "@/components/content/Opinion"
