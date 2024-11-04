@@ -14,8 +14,8 @@ const OpinionSchema = new Schema({
 		default: '',
 	},
 	stars: {
-		type: String,
-		default: '',
+		type: Number,
+		default: 0,
 	},
 	opinion: {
 		type: String,
