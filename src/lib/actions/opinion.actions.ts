@@ -9,8 +9,8 @@ import { deepClone } from '@/lib/utils'
 export async function getOpinions(): Promise<Result<IOpinion[]>> {
 	try {
 		await connectToDB()
-		
-		const opinions = await OpinionModel.find()
+
+		const opinions = await OpinionModel.find().lean()
     console.log('Opinions:', opinions)
 		return {
 			success: true,
