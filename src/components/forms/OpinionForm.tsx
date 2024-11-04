@@ -30,9 +30,7 @@ export default function OpinionForm() {
 	) => {
 		try {
 			console.log(opinionFormValues)
-			const result: Result<IOpinion> = await handleCreateOpinion(
-				opinionFormValues
-			)
+			await handleCreateOpinion(opinionFormValues)
 
 			form.reset()
 		} catch (err: unknown) {

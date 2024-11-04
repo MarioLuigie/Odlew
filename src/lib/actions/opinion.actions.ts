@@ -43,5 +43,7 @@ export async function createOpinion(
 // DELETE
 export async function deleteOpinion() {
 	try {
-	} catch (err) {}
+	} catch (err) {
+    console.error(err)
+  }
 }
