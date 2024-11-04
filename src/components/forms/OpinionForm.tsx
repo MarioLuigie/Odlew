@@ -49,6 +49,8 @@ export default function OpinionForm() {
 				onSubmit={form.handleSubmit(onSubmit)}
 				className="flex flex-col gap-6"
 			>
+        {/* Stars */}
+
 				{/* Name */}
 				<CustomFormField
 					control={form.control}
@@ -59,8 +61,6 @@ export default function OpinionForm() {
 					// iconSrc={Icons.USER_ICON.path}
 					// iconAlt={Icons.USER_ICON.alt}
 				/>
-				{/* Stars */}
-
 				{/* Message */}
 				<div className="flex flex-col lg:flex-row gap-4">
 					<CustomFormField
@@ -75,7 +75,7 @@ export default function OpinionForm() {
 				</div>
 				<div>
 					<SubmitButton isLoading={isSubmitting} className="w-full mt-2">
-						Wyślij
+						Wyślij opinię
 					</SubmitButton>
 					<FieldsRequiredDesc className='mt-2'/>
 				</div>

@@ -95,7 +95,7 @@ export default function ContactForm() {
 				</div>
 				<div>
 					<SubmitButton isLoading={isSubmitting} className="w-full mt-2">
-						Wyślij
+						Wyślij wiadomość
 					</SubmitButton>
 					<FieldsRequiredDesc className='mt-2'/>
 				</div>
