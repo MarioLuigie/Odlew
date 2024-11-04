@@ -21,6 +21,10 @@ const OpinionSchema = new Schema({
 		type: String,
 		default: '',
 	},
+  accepted: {
+		type: Boolean,
+		default: false,
+	},
 })
 
 export const OpinionModel =

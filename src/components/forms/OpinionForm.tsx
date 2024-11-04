@@ -10,6 +10,7 @@ import { Form } from '@/components/ui/form'
 import CustomFormField from '@/components/shared/CustomFormField'
 import SubmitButton from '@/components/shared/SubmitButton'
 import FieldsRequiredDesc from '../content/FieldsRequiredDesc'
+import { handleCreateOpinion } from '@/lib/handlers/opinion.handlers'
 
 export default function OpinionForm() {
 	const form = useForm<OpinionFormValues>({
@@ -28,7 +29,7 @@ export default function OpinionForm() {
 	) => {
 		try {
 			console.log(opinionFormValues)
-
+			await handleCreateOpinion(opinionFormValues)
 			form.reset()
 		} catch (err: unknown) {
 			if (err instanceof Error) {
@@ -49,15 +50,6 @@ export default function OpinionForm() {
 				onSubmit={form.handleSubmit(onSubmit)}
 				className="flex flex-col gap-6"
 			>
-				{/* STARS RATING */}
-        <CustomFormField
-					control={form.control}
-					typeField={FormFieldType.STARS}
-					name="stars"
-					label="Ocena*"
-					// iconSrc={Icons.USER_ICON.path}
-					// iconAlt={Icons.USER_ICON.alt}
-				/>
 				{/* Name */}
 				<CustomFormField
 					control={form.control}
@@ -80,6 +72,15 @@ export default function OpinionForm() {
 						// iconAlt={Icons.EMAIL_ICON.alt}
 					/>
 				</div>
+				{/* STARS RATING */}
+        <CustomFormField
+					control={form.control}
+					typeField={FormFieldType.STARS}
+					name="stars"
+					label="Ocena*"
+					// iconSrc={Icons.USER_ICON.path}
+					// iconAlt={Icons.USER_ICON.alt}
+				/>
 				<div>
 					<SubmitButton isLoading={isSubmitting} className="w-full mt-2">
 						Wyślij opinię
