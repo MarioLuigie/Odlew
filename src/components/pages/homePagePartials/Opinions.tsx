@@ -4,7 +4,7 @@ import { useState } from 'react'
 // lib
 import { IOpinion } from '@/lib/models/opinion.model'
 // components
-import OpinionsCarouselList from '@/components/content/OpinionsCarouselList'
+// import OpinionsCarouselList from '@/components/content/OpinionsCarouselList'
 import CustomButton from '@/components/shared/CustomButton'
 import Title from '@/components/shared/Title'
 import CreateOpinionDialog from '@/components/dialogs/CreateOpinionDialog'
@@ -15,7 +15,7 @@ export default function Opinions({
 	opinions: IOpinion[] | undefined
 }) {
 	const [isDialogOpen, setIsDialogOpen] = useState<boolean>(false)
-
+	console.log(opinions)
 	const handleOpenDialog = () => {
 		setIsDialogOpen(true)
 	}
@@ -31,7 +31,7 @@ export default function Opinions({
 			</Title>
 
 			<div className="w-full flex justify-center">
-				<OpinionsCarouselList opinions={opinions} />
+				{/* <OpinionsCarouselList opinions={opinions} /> */}
 			</div>
 
 			<div className="px-5 my-12">
