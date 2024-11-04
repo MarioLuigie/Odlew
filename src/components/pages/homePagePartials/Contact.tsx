@@ -22,10 +22,6 @@ export default function Contact() {
     </Title>
     <div className="flex flex-col px-6">
       <ContactForm />
-      <div className="flex justify-center items-center gap-1 mt-4 text-zinc-500">
-        <small className="text-[20px]">*</small>
-        <small>Pola oznaczone gwiazdką są obowiązkowe</small>
-      </div>
     </div>
   </section>
   )

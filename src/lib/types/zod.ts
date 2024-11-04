@@ -28,7 +28,7 @@ export const OpinionFormSchema = z.object({
   .max(40, "Imie może zawierać max. 40 znaków"),
   stars: z
   .number(),
-  message: z
+  opinion: z
   .string()
   .min(40, "Opinia musi zawierać min. 5 znaków")
   .max(500, "Opinia może zawierać max. 200 znaków"),
