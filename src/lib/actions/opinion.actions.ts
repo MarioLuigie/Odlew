@@ -1,23 +1,45 @@
 'use server'
-
-import { OpinionFormValues } from "@/lib/types/zod";
+// lib
+import { OpinionFormValues } from '@/lib/types/zod'
+import { IOpinion, OpinionModel } from '@/lib/models/opinion.model'
+import { connectToDB } from '@/lib/utils/db'
+import { deepClone } from '@/lib/utils'
 
 // CREATE
 export async function createOpinion(opinionFormValues: OpinionFormValues) {
-  console.log(opinionFormValues)
-  try {
+	console.log(opinionFormValues)
 
-    return {
-      success: true,
-      data: {},
-    }
-  } catch (err) {
-    console.error(err)
+	try {
+		await connectToDB()
+
+		const createdOpinion: IOpinion = await OpinionModel.create({
+			name: opinionFormValues.name,
+			stars: opinionFormValues.stars,
+			opinion: opinionFormValues.opinion,
+			accepted: true, // ! Important change to false in the future
+		})
+
+		return {
+			success: true,
+			data: deepClone(createdOpinion),
+		}
+	} catch (err) {
+		console.error(err)
+
+		return {
+			success: false,
+			errors: {
+				error: 'Coś poszło nie tak podczas dodawania opini. Spróbuj później.',
+			},
+		}
+	}
+}
+
+// DELETE
+export async function deleteOpinion() {
+  try {
     
-    return {
-      success: false,
-      data: {},
-      error: ''
-    }
+  } catch (err) {
+    
   }
 }

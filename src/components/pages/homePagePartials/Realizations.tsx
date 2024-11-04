@@ -8,7 +8,7 @@ import TextContent from "@/components/shared/TextContent"
 import Title from "@/components/shared/Title"
 import Opinions from "@/components/pages/homePagePartials/Opinions"
 
-export default function Realizations() {
+export default async function Realizations() {
   return (
 <section
         id="realizacje"

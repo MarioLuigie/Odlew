@@ -12,3 +12,7 @@ export function capitalizeFirstLetter(str: string) {
 export function capitalizeEntireText(str: string) {
   return str.toUpperCase()
 }
+
+export function deepClone(data: any) {
+  return JSON.parse(JSON.stringify(data))
+}

@@ -1,4 +1,3 @@
-"use client"
 //components
 import Start from "@/components/pages/homePagePartials/Start"
 import About from "@/components/pages/homePagePartials/About"

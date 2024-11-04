@@ -5,6 +5,7 @@ import { useForm, SubmitHandler } from 'react-hook-form'
 // lib
 import { FormFieldType } from '@/lib/types/enums'
 import { OpinionFormSchema, OpinionFormValues } from '@/lib/types/zod'
+import { IOpinion } from '@/lib/models/opinion.model'
 // components
 import { Form } from '@/components/ui/form'
 import CustomFormField from '@/components/shared/CustomFormField'
@@ -29,7 +30,10 @@ export default function OpinionForm() {
 	) => {
 		try {
 			console.log(opinionFormValues)
-			await handleCreateOpinion(opinionFormValues)
+			const result: Result<IOpinion> = await handleCreateOpinion(
+				opinionFormValues
+			)
+
 			form.reset()
 		} catch (err: unknown) {
 			if (err instanceof Error) {
@@ -75,7 +79,7 @@ export default function OpinionForm() {
 				</div>
 
 				{/* STARS */}
-        <CustomFormField
+				<CustomFormField
 					control={form.control}
 					typeField={FormFieldType.STARS}
 					name="stars"
@@ -83,7 +87,7 @@ export default function OpinionForm() {
 					// iconSrc={Icons.USER_ICON.path}
 					// iconAlt={Icons.USER_ICON.alt}
 				/>
-				
+
 				<div>
 					<SubmitButton isLoading={isSubmitting} className="w-full mt-2">
 						Wyślij opinię
