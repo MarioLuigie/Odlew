@@ -5,8 +5,13 @@ import { IOpinion, OpinionModel } from '@/lib/models/opinion.model'
 import { connectToDB } from '@/lib/utils/db'
 import { deepClone } from '@/lib/utils'
 
+// GET
+export async function getOpinions() {}
+
 // CREATE
-export async function createOpinion(opinionFormValues: OpinionFormValues) {
+export async function createOpinion(
+	opinionFormValues: OpinionFormValues
+): Promise<Result<IOpinion>> {
 	console.log(opinionFormValues)
 
 	try {
@@ -37,9 +42,6 @@ export async function createOpinion(opinionFormValues: OpinionFormValues) {
 
 // DELETE
 export async function deleteOpinion() {
-  try {
-    
-  } catch (err) {
-    
-  }
+	try {
+	} catch (err) {}
 }
