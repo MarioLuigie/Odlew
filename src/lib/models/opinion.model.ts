@@ -6,6 +6,7 @@ export interface IOpinion extends Document {
 	name: string
 	stars: number
 	opinion: string
+  accepted: boolean
 }
 
 const OpinionSchema = new Schema({

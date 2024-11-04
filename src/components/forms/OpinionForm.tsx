@@ -50,7 +50,7 @@ export default function OpinionForm() {
 				onSubmit={form.handleSubmit(onSubmit)}
 				className="flex flex-col gap-6"
 			>
-				{/* Name */}
+				{/* NAME */}
 				<CustomFormField
 					control={form.control}
 					typeField={FormFieldType.INPUT}
@@ -60,7 +60,8 @@ export default function OpinionForm() {
 					// iconSrc={Icons.USER_ICON.path}
 					// iconAlt={Icons.USER_ICON.alt}
 				/>
-				{/* Message */}
+
+				{/* OPINION */}
 				<div className="flex flex-col lg:flex-row gap-4">
 					<CustomFormField
 						control={form.control}
@@ -72,7 +73,8 @@ export default function OpinionForm() {
 						// iconAlt={Icons.EMAIL_ICON.alt}
 					/>
 				</div>
-				{/* STARS RATING */}
+
+				{/* STARS */}
         <CustomFormField
 					control={form.control}
 					typeField={FormFieldType.STARS}
@@ -81,6 +83,7 @@ export default function OpinionForm() {
 					// iconSrc={Icons.USER_ICON.path}
 					// iconAlt={Icons.USER_ICON.alt}
 				/>
+				
 				<div>
 					<SubmitButton isLoading={isSubmitting} className="w-full mt-2">
 						Wyślij opinię

@@ -25,7 +25,4 @@ declare type PageProps = {
 	searchParams: SearchParams
 }
 
-declare type MenuContentItem = {
-	label: string
-	path: string
-}
+

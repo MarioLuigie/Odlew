@@ -4,6 +4,11 @@ import Link from 'next/link'
 import { MenuFooterContent } from '@/lib/constants'
 import { capitalizeFirstLetter } from '@/lib/utils'
 
+type MenuContentItem = {
+	label: string
+	path: string
+}
+
 function MenuContentItem({ item }: { item: MenuContentItem }) {
 	return (
 		<div className="w-full border-b-[1px]">
