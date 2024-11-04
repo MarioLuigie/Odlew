@@ -6,7 +6,7 @@ import { ProductImages } from "@/lib/constants/images"
 import CustomButton from "@/components/shared/CustomButton"
 import TextContent from "@/components/shared/TextContent"
 import Title from "@/components/shared/Title"
-import OpinionsCarouselList from "@/components/content/OpinionsCarouselList"
+import Opinions from "@/components/pages/homePagePartials/Opinions"
 
 export default function Realizations() {
   return (
@@ -46,23 +46,7 @@ export default function Realizations() {
             Zobacz więcej
           </CustomButton>
         </div>
-
-        {/* Opinions */}
-        <div>
-          <Title className="mb-12 px-5">
-            <p>Opinie klientów</p>
-          </Title>
-
-          <div className="w-full flex justify-center">
-            <OpinionsCarouselList />
-          </div>
-
-          <div className="px-5 my-12">
-            <CustomButton navlink path="/realizacje">
-              Napisz opinię
-            </CustomButton>
-          </div>
-        </div>
+          <Opinions />
       </section>
   )
 }
