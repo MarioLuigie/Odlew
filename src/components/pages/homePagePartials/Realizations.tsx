@@ -2,6 +2,7 @@
 import Image from "next/image"
 // lib
 import { ProductImages } from "@/lib/constants/images"
+import { getOpinions } from "@/lib/actions/opinion.actions"
 // components
 import CustomButton from "@/components/shared/CustomButton"
 import TextContent from "@/components/shared/TextContent"
@@ -9,6 +10,9 @@ import Title from "@/components/shared/Title"
 import Opinions from "@/components/pages/homePagePartials/Opinions"
 
 export default async function Realizations() {
+  const result = await getOpinions()
+
+  console.log('*** Opinions list:', result.data)
   return (
 <section
         id="realizacje"

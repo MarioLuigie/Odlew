@@ -6,7 +6,23 @@ import { connectToDB } from '@/lib/utils/db'
 import { deepClone } from '@/lib/utils'
 
 // GET
-export async function getOpinions() {}
+export async function getOpinions(): Promise<Result<IOpinion[]>> {
+	try {
+		const posts = await OpinionModel.find()
+
+		return {
+			success: true,
+			data: deepClone(posts),
+		}
+	} catch (err) {
+		console.error(err)
+		return {
+			success: false,
+			data: [],
+			errors: { error: 'Problem z pobraniem zasobu.' },
+		}
+	}
+}
 
 // CREATE
 export async function createOpinion(
@@ -44,6 +60,6 @@ export async function createOpinion(
 export async function deleteOpinion() {
 	try {
 	} catch (err) {
-    console.error(err)
-  }
+		console.error(err)
+	}
 }
