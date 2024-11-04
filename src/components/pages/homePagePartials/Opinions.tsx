@@ -1,9 +1,23 @@
+'use client'
+// modules
+import { useState } from 'react'
 // components
-import OpinionsCarouselList from "@/components/content/OpinionsCarouselList";
-import CustomButton from "@/components/shared/CustomButton";
-import Title from "@/components/shared/Title";
+import OpinionsCarouselList from '@/components/content/OpinionsCarouselList'
+import CustomButton from '@/components/shared/CustomButton'
+import Title from '@/components/shared/Title'
+import CreateOpinionDialog from '@/components/dialogs/CreateOpinionDialog'
 
 export default function Opinions() {
+	const [isDialogOpen, setIsDialogOpen] = useState<boolean>(false)
+
+  const handleCloseDialog = () => {
+    setIsDialogOpen(false)
+  }
+
+  const handleOpenDialog = () => {
+    setIsDialogOpen(true)
+  }
+
 	return (
 		<div>
 			<Title className="mb-12 px-5">
@@ -15,9 +29,10 @@ export default function Opinions() {
 			</div>
 
 			<div className="px-5 my-12">
-				<CustomButton navlink path="/realizacje">
+				<CustomButton onClick={handleOpenDialog}>
 					Napisz opinię
 				</CustomButton>
+        {isDialogOpen && <CreateOpinionDialog handleClose={handleCloseDialog} />}
 			</div>
 		</div>
 	)

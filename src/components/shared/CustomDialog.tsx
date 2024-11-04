@@ -7,18 +7,28 @@ import {
 	DialogTrigger,
 } from '@/components/ui/dialog'
 
-export default function CustomDialog() {
+type CustomDialogProps = {
+	children: React.ReactNode
+	trigger?: React.ReactNode
+	title?: string
+	description?: string
+}
+
+export default function CustomDialog({
+	children,
+	trigger,
+	title,
+	description,
+}: CustomDialogProps) {
 	return (
 		<Dialog>
-			<DialogTrigger>Open</DialogTrigger>
+			<DialogTrigger>{trigger || 'Open'}</DialogTrigger>
 			<DialogContent>
 				<DialogHeader>
-					<DialogTitle>Are you absolutely sure?</DialogTitle>
-					<DialogDescription>
-						This action cannot be undone. This will permanently delete
-						your account and remove your data from our servers.
-					</DialogDescription>
+					<DialogTitle>{title}</DialogTitle>
+					<DialogDescription>{description}</DialogDescription>
 				</DialogHeader>
+				{children}
 			</DialogContent>
 		</Dialog>
 	)
