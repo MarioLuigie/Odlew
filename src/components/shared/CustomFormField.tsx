@@ -179,16 +179,15 @@ const RenderField = ({
 		case FormFieldType.STARS:
 			return (
 				<FormControl>
-					<div className="pb-4">
-						<ReactStars
-							count={5}
-							onChange={field.onChange}
-							value={field.value}
-							size={28}
-							color1={'#bebebe'}
-							color2={'#E36A00'}
-						/>
-					</div>
+					<ReactStars
+						count={5}
+						onChange={field.onChange}
+						value={field.value}
+						size={33}
+						half={false}
+						color1={'#bebebe'}
+						color2={'#E36A00'}
+					/>
 				</FormControl>
 			)
 	}
