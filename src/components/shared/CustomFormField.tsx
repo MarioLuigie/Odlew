@@ -29,6 +29,7 @@ import { Checkbox } from '@/components/ui/checkbox'
 import { Label } from '@/components/ui/label'
 import SVG from '@/components/shared/SVG'
 import { Eye, EyeOff, Calendar } from 'lucide-react'
+import ReactStars from 'react-stars'
 
 interface CustomFormFieldProps {
 	// eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -63,7 +64,7 @@ const RenderField = ({
 				<div className="flex bg-transparent">
 					{props.iconSrc && (
 						<div className="text-textAccent flex-center ml-2">
-							<SVG src={props.iconSrc} className='w-[24px] h-[24px]' />
+							<SVG src={props.iconSrc} className="w-[24px] h-[24px]" />
 						</div>
 					)}
 					<FormControl>
@@ -122,7 +123,7 @@ const RenderField = ({
 			return (
 				<div className="flex rounded-md border border-dark-500 bg-input">
 					<div className="text-textAccent flex-center ml-2">
-            <Calendar />
+						<Calendar />
 					</div>
 					<FormControl>
 						<ReactDatePicker
@@ -174,17 +175,27 @@ const RenderField = ({
 					</div>
 				</FormControl>
 			)
+
+		case FormFieldType.STARS:
+			return (
+				<FormControl>
+					<div className="pb-4">
+						<ReactStars
+							count={5}
+							onChange={field.onChange}
+							value={field.value}
+							size={28}
+							color1={'#bebebe'}
+							color2={'#E36A00'}
+						/>
+					</div>
+				</FormControl>
+			)
 	}
 }
 
 export default function CustomFormField(props: CustomFormFieldProps) {
-	const {
-		control,
-		typeField,
-		name,
-		label,
-		description,
-	} = props
+	const { control, typeField, name, label, description } = props
 
 	return (
 		<FormField
@@ -193,7 +204,9 @@ export default function CustomFormField(props: CustomFormFieldProps) {
 			render={({ field }) => (
 				<FormItem className="flex flex-col flex-1">
 					{typeField !== FormFieldType.CHECKBOX && label && (
-						<FormLabel className="mb-[2px] text-textDark">{label}</FormLabel>
+						<FormLabel className="mb-[2px] text-textDark">
+							{label}
+						</FormLabel>
 					)}
 					<RenderField field={field} props={props} />
 					{description && <FormDescription>{description}</FormDescription>}

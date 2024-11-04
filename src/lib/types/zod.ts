@@ -30,8 +30,8 @@ export const OpinionFormSchema = z.object({
   .number(),
   opinion: z
   .string()
-  .min(40, "Opinia musi zawierać min. 5 znaków")
-  .max(500, "Opinia może zawierać max. 200 znaków"),
+  .min(5, "Opinia musi zawierać min. 5 znaków")
+  .max(200, "Opinia może zawierać max. 200 znaków"),
 })
 
 export type OpinionFormValues = z.infer<typeof OpinionFormSchema>

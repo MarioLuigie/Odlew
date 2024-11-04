@@ -49,8 +49,15 @@ export default function OpinionForm() {
 				onSubmit={form.handleSubmit(onSubmit)}
 				className="flex flex-col gap-6"
 			>
-        {/* Stars */}
-
+				{/* STARS RATING */}
+        <CustomFormField
+					control={form.control}
+					typeField={FormFieldType.STARS}
+					name="stars"
+					label="Ocena*"
+					// iconSrc={Icons.USER_ICON.path}
+					// iconAlt={Icons.USER_ICON.alt}
+				/>
 				{/* Name */}
 				<CustomFormField
 					control={form.control}
@@ -77,7 +84,7 @@ export default function OpinionForm() {
 					<SubmitButton isLoading={isSubmitting} className="w-full mt-2">
 						Wyślij opinię
 					</SubmitButton>
-					<FieldsRequiredDesc className='mt-2'/>
+					<FieldsRequiredDesc className="mt-2" />
 				</div>
 			</form>
 		</Form>

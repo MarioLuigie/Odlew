@@ -6,4 +6,5 @@ export enum FormFieldType {
 	CHECKBOX = 'checkbox',
 	DATE_PICKER = 'datePicker',
 	SKELETON = 'skeleton',
+	STARS = 'stars'
 }

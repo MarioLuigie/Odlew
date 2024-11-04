@@ -19,9 +19,9 @@ export default function Opinion({
 	className?: string
 }) {
 	// Handler and calling server action inside to save rating to db
-	const ratingChanged = (newRating: number) => {
-		console.log(newRating)
-	}
+	// const ratingChanged = (newRating: number) => {
+	// 	console.log(newRating)
+	// }
 
 	return (
 		<div
@@ -33,10 +33,9 @@ export default function Opinion({
 			{/* STARS RATING */}
 			<div className="pb-4">
 				<ReactStars
-					value={3.5}
-					edit={false}
 					count={5}
-					onChange={ratingChanged}
+          value={2.5}
+          edit={false}
 					size={24}
 					color1={'#bebebe'}
 					color2={'#E36A00'}
