@@ -7,7 +7,7 @@ export interface IOpinion extends Document {
 	stars: number
 	opinion: string
   accepted: boolean
-	added: string
+	createdAt: string
 }
 
 const OpinionSchema = new Schema({
@@ -27,11 +27,16 @@ const OpinionSchema = new Schema({
 		type: Boolean,
 		default: false,
 	},
-	added: {
+	createdAt: {
 		type: String,
-		default: '01-01-2024'
+		// default: new Date(),
 	}
 })
 
 export const OpinionModel =
 	models?.Opinion || model<IOpinion>('Opinion', OpinionSchema)
+
+
+
+
+

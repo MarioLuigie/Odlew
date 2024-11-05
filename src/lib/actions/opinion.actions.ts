@@ -44,6 +44,7 @@ export async function createOpinion(
 			stars: opinionFormValues.stars,
 			opinion: opinionFormValues.opinion,
 			accepted: true, // ! Important change to false in the future
+			createdAt: new Date().toISOString(),
 		})
 
 		console.log('*** Created Opinion', createdOpinion)
