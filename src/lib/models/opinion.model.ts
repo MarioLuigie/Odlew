@@ -29,7 +29,7 @@ const OpinionSchema = new Schema({
 	},
 	createdAt: {
 		type: String,
-		// default: new Date(),
+		// default: 'brak daty',
 	}
 })
 

@@ -14,10 +14,6 @@ export default function Opinion({
 	opinion: IOpinion
 	className?: string
 }) {
-	const formattedDate = opinion.createdAt
-		? (opinion.createdAt)
-		: 'Brak daty'
-
 	return (
 		<div
 			className={cn(
@@ -40,7 +36,7 @@ export default function Opinion({
 			{/* CLIENT NAME AND DATE */}
 			<div className="flex justify-between w-full pb-6 text-sm text-textSecondary">
 				<p>{opinion?.name}</p>
-				<p>{formattedDate}</p>
+				<p>{opinion.createdAt ? opinion.createdAt : 'Brak daty'}</p>
 			</div>
 
 			{/* OPINION */}
