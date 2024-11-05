@@ -11,7 +11,8 @@ export async function getOpinions(): Promise<Result<IOpinion[]>> {
 		await connectToDB()
 
 		const opinions = await OpinionModel.find().lean()
-    console.log('Opinions:', opinions)
+
+		console.log('Opinions:', opinions)
 		return {
 			success: true,
 			data: deepClone(opinions),
@@ -42,7 +43,7 @@ export async function createOpinion(
 			accepted: true, // ! Important change to false in the future
 		})
 
-    console.log('*** Created Opinion', createdOpinion)
+		console.log('*** Created Opinion', createdOpinion)
 
 		return {
 			success: true,
