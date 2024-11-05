@@ -15,7 +15,7 @@ export default function Opinion({
 	className?: string
 }) {
 	const formattedDate = opinion?.added
-		? new Date(opinion.added).toLocaleDateString()
+		? (opinion.added)
 		: 'Brak daty'
 
 	return (
