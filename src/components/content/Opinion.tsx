@@ -3,7 +3,7 @@
 import dynamic from 'next/dynamic'
 // lib
 import { IOpinion } from '@/lib/models/opinion.model'
-import { cn } from '@/lib/utils'
+import { cn, formatDate } from '@/lib/utils'
 
 const ReactStars = dynamic(() => import('react-stars'), { ssr: false })
 
@@ -36,7 +36,7 @@ export default function Opinion({
 			{/* CLIENT NAME AND DATE */}
 			<div className="flex justify-between w-full pb-6 text-sm text-textSecondary">
 				<p>{opinion?.name}</p>
-				<p>{opinion.createdAt ? opinion.createdAt : 'Brak daty'}</p>
+				<p>{opinion.createdAt ? formatDate(opinion.createdAt) : 'Brak daty'}</p>
 			</div>
 
 			{/* OPINION */}

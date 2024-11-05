@@ -3,7 +3,8 @@
 import { OpinionFormValues } from '@/lib/types/zod'
 import { IOpinion, OpinionModel } from '@/lib/models/opinion.model'
 import { connectToDB } from '@/lib/utils/db'
-import { deepClone, formatDate } from '@/lib/utils'
+import { deepClone } from '@/lib/utils'
+// import { deepClone, formatDate } from '@/lib/utils'
 import { revalidatePath } from 'next/cache'
 
 // GET
@@ -36,7 +37,7 @@ export async function createOpinion(
 ): Promise<Result<IOpinion>> {
 	console.log(opinionFormValues)
 	// const date = '02-02-2000'
-	const date = formatDate(new Date, 'datetime')
+	// const date = formatDate(new Date, 'datetime')
 	// const date = new Date().toISOString()
 
 	try {
@@ -47,7 +48,7 @@ export async function createOpinion(
 			stars: opinionFormValues.stars,
 			opinion: opinionFormValues.opinion,
 			accepted: true, // ! Important change to false in the future
-			createdAt: date,
+			// createdAt: date,
 		})
 
 		console.log('*** Created Opinion', createdOpinion)
