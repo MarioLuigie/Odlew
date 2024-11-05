@@ -35,7 +35,8 @@ export async function createOpinion(
 	opinionFormValues: OpinionFormValues
 ): Promise<Result<IOpinion>> {
 	console.log(opinionFormValues)
-	const date = new Date().toISOString()
+	const date = '02-02-2000'
+	// const date = new Date().toISOString()
 
 	try {
 		await connectToDB()
