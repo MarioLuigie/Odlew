@@ -1,10 +1,12 @@
 'use server'
+// modules
+import mongoose from 'mongoose'
+import { revalidatePath } from 'next/cache'
 // lib
 import { OpinionFormValues } from '@/lib/types/zod'
 import { IOpinion, OpinionModel } from '@/lib/models/opinion.model'
 import { connectToDB } from '@/lib/utils/db'
 import { deepClone } from '@/lib/utils'
-import { revalidatePath } from 'next/cache'
 
 // GET
 export async function getOpinions(): Promise<Result<IOpinion[]>> {
@@ -15,7 +17,8 @@ export async function getOpinions(): Promise<Result<IOpinion[]>> {
 		
 		revalidatePath('/')
 
-		console.log('Opinions:', opinions)
+		console.log('FETCHED OPINIONS:', opinions)
+
 		return {
 			success: true,
 			data: deepClone(opinions),
@@ -46,7 +49,7 @@ export async function createOpinion(
 			accepted: true, // ! Important change to false in the future
 		})
 
-		console.log('*** Created Opinion', createdOpinion)
+		console.log('CREATED OPINION', createdOpinion)
 
 		revalidatePath('/')
 
@@ -67,9 +70,47 @@ export async function createOpinion(
 }
 
 // DELETE
-export async function deleteOpinion() {
+export async function deleteOpinion(id: string) {
 	try {
+		if (!id) {
+			return {
+				success: false,
+				errors: { error: 'Invalid ID' },
+			}
+		}
+
+		if (!mongoose.Types.ObjectId.isValid(id)) {
+			return {
+				success: false,
+				errors: { error: 'Invalid ObjectId format' },
+			}
+		}
+
+		connectToDB()
+
+		const deletedOpinion = await OpinionModel.findByIdAndDelete(id)
+
+		if (!deletedOpinion) {
+			return {
+				success: false,
+				errors: { error: 'Post to delete not found' },
+			}
+		}
+
+		console.log('DELETED OPINION:', deletedOpinion)
+
+		revalidatePath('/')
+
+		return {
+			success: true,
+			data: deepClone(deletedOpinion)
+		}
 	} catch (err) {
 		console.error(err)
+
+		return {
+			success: false,
+			errors: { error: 'Something went wrong while deletion'}
+		}
 	}
 }

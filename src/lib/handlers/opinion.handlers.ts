@@ -1,4 +1,4 @@
-import { createOpinion } from '@/lib/actions/opinion.actions'
+import { createOpinion, deleteOpinion } from '@/lib/actions/opinion.actions'
 import { OpinionFormValues } from '@/lib/types/zod'
 import { IOpinion } from '@/lib/models/opinion.model'
 
@@ -9,4 +9,10 @@ export const handleCreateOpinion = async (
 	const result: Result<IOpinion> = await createOpinion(opinionFormValues)
 
 	return result
+}
+
+// DELETE
+export const handleDeleteOpinion = async (id: string) => {
+	const deletedOpinion = await deleteOpinion(id)
+	console.log('DELETED OPINION:', deletedOpinion)
 }
