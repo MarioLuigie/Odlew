@@ -11,8 +11,8 @@ export async function getOpinions(): Promise<Result<IOpinion[]>> {
 	try {
 		await connectToDB()
 
-		const opinions = await OpinionModel.find().lean()
-
+		const opinions = await OpinionModel.find().sort({ _id: -1 }).lean()
+		
 		revalidatePath('/')
 
 		console.log('Opinions:', opinions)
