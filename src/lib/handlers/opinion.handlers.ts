@@ -7,7 +7,6 @@ export const handleCreateOpinion = async (
 	opinionFormValues: OpinionFormValues
 ) => {
 	const result: Result<IOpinion> = await createOpinion(opinionFormValues)
-
 	return result
 }
 
