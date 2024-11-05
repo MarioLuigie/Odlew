@@ -4,6 +4,7 @@ import { OpinionFormValues } from '@/lib/types/zod'
 import { IOpinion, OpinionModel } from '@/lib/models/opinion.model'
 import { connectToDB } from '@/lib/utils/db'
 import { deepClone } from '@/lib/utils'
+import { revalidatePath } from 'next/cache'
 
 // GET
 export async function getOpinions(): Promise<Result<IOpinion[]>> {
@@ -11,6 +12,8 @@ export async function getOpinions(): Promise<Result<IOpinion[]>> {
 		await connectToDB()
 
 		const opinions = await OpinionModel.find().lean()
+
+		revalidatePath('/')
 
 		console.log('Opinions:', opinions)
 		return {
@@ -44,6 +47,8 @@ export async function createOpinion(
 		})
 
 		console.log('*** Created Opinion', createdOpinion)
+
+		revalidatePath('/')
 
 		return {
 			success: true,
