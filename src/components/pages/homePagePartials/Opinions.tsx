@@ -15,7 +15,8 @@ export default function Opinions({
 	opinions: IOpinion[] | undefined
 }) {
 	const [isDialogOpen, setIsDialogOpen] = useState<boolean>(false)
-	console.log(opinions)
+	// console.log(opinions)
+	
 	const handleOpenDialog = () => {
 		setIsDialogOpen(true)
 	}
