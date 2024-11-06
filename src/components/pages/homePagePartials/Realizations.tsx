@@ -8,6 +8,7 @@ import CustomButton from '@/components/shared/CustomButton'
 import TextContent from '@/components/shared/TextContent'
 import Title from '@/components/shared/Title'
 import Opinions from '@/components/pages/homePagePartials/Opinions'
+import HowWork from '@/components/pages/homePagePartials/HowWork'
 
 export default async function Realizations() {
 	const { data: opinions } = await getOpinions()
@@ -50,6 +51,7 @@ export default async function Realizations() {
 					Zobacz więcej
 				</CustomButton>
 			</div>
+			<HowWork />
 			<Opinions opinions={opinions} />
 		</section>
 	)
