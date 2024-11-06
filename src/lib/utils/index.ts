@@ -1,5 +1,11 @@
 import { clsx, type ClassValue } from 'clsx'
 import { twMerge } from 'tailwind-merge'
+// import { auth } from '@clerk/nextjs/server'
+
+// export async function checkIsAdmin(): Promise<boolean> {
+// 	const { sessionClaims } = await auth()
+// 	return sessionClaims?.metadata.role === 'admin'
+// }
 
 export function cn(...inputs: ClassValue[]) {
 	return twMerge(clsx(inputs))

@@ -37,3 +37,13 @@ declare type DataResult<T> = {
 	data: T
 	errors?: { [key: string]: string }
 }
+
+type LayoutProps = {
+	children: React.ReactNode
+}
+
+interface CustomJwtSessionClaims {
+	metadata: {
+		role?: 'admin' | 'moderator'
+	}
+}

@@ -35,6 +35,7 @@ export const Routes = {
   REALIZATIONS: '/realizacje',
   CONTACT: '/kontakt',
   POLICY: '/polityka-prywatnosci',
+  SIGN_IN: '/sign-in'
 }
 
 export const HomePageSections = {
