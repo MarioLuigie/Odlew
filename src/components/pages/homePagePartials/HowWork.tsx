@@ -11,7 +11,7 @@ export default function HowWork() {
 	const [activContentIndex, setActiveContentIndex] = useState<number>(0)
 
 	return (
-		<div id="tabs" className="min-h-customScreen mb-4">
+		<div id="tabs" className="mb-4">
 			<Title className="mb-6 px-5">
 				<p>Jak pracujemy?</p>
 			</Title>
@@ -19,7 +19,7 @@ export default function HowWork() {
 				<button
 					onClick={() => setActiveContentIndex(0)}
 					className={cn(
-						'relative w-full py-2 px-4 rounded-l-full rounded-br-full border-2 border-accent text-center',
+						'relative w-full py-2 px-4 rounded-l-full rounded-br-full border-2 border-accent text-center transition-all ease-in-out',
 						activContentIndex === 0 ? 'bg-accent text-textLight' : ''
 					)}
 				>
@@ -33,7 +33,7 @@ export default function HowWork() {
 				<button
 					onClick={() => setActiveContentIndex(1)}
 					className={cn(
-						'relative w-full py-2 px-4 rounded-l-full rounded-br-full border-2 border-accent text-center',
+						'relative w-full py-2 px-4 rounded-l-full rounded-br-full border-2 border-accent text-center transition-all ease-in-out',
 						activContentIndex === 1 ? 'bg-accent text-textLight' : ''
 					)}
 				>
@@ -47,7 +47,7 @@ export default function HowWork() {
 				<button
 					onClick={() => setActiveContentIndex(2)}
 					className={cn(
-						'relative w-full py-2 px-4 rounded-l-full rounded-br-full border-2 border-accent text-center',
+						'relative w-full py-2 px-4 rounded-l-full rounded-br-full border-2 border-accent text-center transition-all ease-in-out',
 						activContentIndex === 2 ? 'bg-accent text-textLight' : ''
 					)}
 				>
@@ -61,7 +61,7 @@ export default function HowWork() {
 				<button
 					onClick={() => setActiveContentIndex(3)}
 					className={cn(
-						'relative w-full py-2 px-4 rounded-l-full rounded-br-full border-2 border-accent text-center',
+						'relative w-full py-2 px-4 rounded-l-full rounded-br-full border-2 border-accent text-center transition-all ease-in-out',
 						activContentIndex === 3 ? 'bg-accent text-textLight' : ''
 					)}
 				>
@@ -71,7 +71,7 @@ export default function HowWork() {
 					</div>
 				</button>
 			</menu>
-			<div id="tab-content" className="w-full min-h-[200px] bg-mottoBg px-5 py-8">
+			<div id="tab-content" className="w-full min-h-[240px] bg-mottoBg px-5 py-8 transition-all ease-in-out">
 					<p className='text-justify'>{HowWorkContent[activContentIndex]}</p>
 			</div>
 		</div>
