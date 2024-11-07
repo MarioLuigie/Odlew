@@ -30,11 +30,24 @@ export const App = {
 }
 
 export const HowWorkContent = [
-	'Podczas kontaktu, dokładnie omawiamy potrzeby klienta i zakres prac. Prosimy o przesłanie kompletnych informacji na temat projektu m.in. wymiary, zdjęcia, zawartość. Na podstawie otrzymanych informacji dokonujemy wyceny oraz określamy przybliżony termin realizacji.',
-
-	'Przedstawiamy wykonany przez nas projekt, który poddajemy akceptacji zamawiającemu.',
-
-	'Po uzyskaniu akceptacji projektu przystępujemy do realizacji zamówienia z największą starannością. Na każdym etapie realizacji utrzymujemy stały kontakt z klientem.',
-
-	'Gotowy odlew prezentujemy klientowi podczas osobistego odbioru. Oferujemy również wysyłkę kurierską mniejszych realizacji jak również transport większych realizacji.',
+	{
+		tabLabel: 'Kontakt z klientem',
+		tabContent:
+			'Podczas kontaktu, dokładnie omawiamy potrzeby klienta i zakres prac. Prosimy o przesłanie kompletnych informacji na temat projektu m.in. wymiary, zdjęcia, zawartość. Na podstawie otrzymanych informacji dokonujemy wyceny oraz określamy przybliżony termin realizacji.',
+	},
+	{
+		tabLabel: 'Tworzenie projektu',
+		tabContent:
+			'Przedstawiamy wykonany przez nas projekt, który poddajemy akceptacji zamawiającemu.',
+	},
+	{
+		tabLabel: 'Realizacja projektu',
+		tabContent:
+			'Po uzyskaniu akceptacji projektu przystępujemy do realizacji zamówienia z największą starannością. Na każdym etapie realizacji utrzymujemy stały kontakt z klientem.',
+	},
+	{
+		tabLabel: 'Odbiór realizacji',
+		tabContent:
+			'Gotowy odlew prezentujemy klientowi podczas osobistego odbioru. Oferujemy również wysyłkę kurierską mniejszych realizacji jak również transport większych realizacji.',
+	},
 ]
