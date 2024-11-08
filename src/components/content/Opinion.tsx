@@ -4,6 +4,7 @@ import dynamic from 'next/dynamic'
 // lib
 import { IOpinion } from '@/lib/models/opinion.model'
 import { cn, formatDate } from '@/lib/utils'
+import { useIsAdmin } from '@/lib/utils/hooks'
 
 const ReactStars = dynamic(() => import('react-stars'), { ssr: false })
 
@@ -14,6 +15,7 @@ export default function Opinion({
 	opinion: IOpinion
 	className?: string
 }) {
+	const { isAdmin } = useIsAdmin()
 	return (
 		<div
 			className={cn(
@@ -22,7 +24,7 @@ export default function Opinion({
 			)}
 		>
 			{/* STARS RATING */}
-			<div className="pb-4">
+			<div className="pb-4 flex justify-between items-center">
 				<ReactStars
 					count={5}
 					value={opinion.stars}
@@ -31,12 +33,19 @@ export default function Opinion({
 					color1={'#bebebe'}
 					color2={'#E36A00'}
 				/>
+				{isAdmin && (
+					<div>
+						<p>Delete</p>
+					</div>
+				)}
 			</div>
 
 			{/* CLIENT NAME AND DATE */}
 			<div className="flex justify-between w-full pb-6 text-sm text-textSecondary">
 				<p>{opinion?.name}</p>
-				<p>{opinion.createdAt ? formatDate(opinion.createdAt) : 'Brak daty'}</p>
+				<p>
+					{opinion.createdAt ? formatDate(opinion.createdAt) : 'Brak daty'}
+				</p>
 			</div>
 
 			{/* OPINION */}
