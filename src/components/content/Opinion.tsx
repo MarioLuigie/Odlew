@@ -4,18 +4,20 @@ import dynamic from 'next/dynamic'
 // lib
 import { IOpinion } from '@/lib/models/opinion.model'
 import { cn, formatDate } from '@/lib/utils'
-import { useIsAdmin } from '@/lib/utils/hooks'
+// components
+import OpinionManipulation from '@/components/content/manipulations/OpinionManipulation'
 
 const ReactStars = dynamic(() => import('react-stars'), { ssr: false })
 
 export default function Opinion({
 	opinion,
 	className,
+	isAdmin,
 }: {
 	opinion: IOpinion
 	className?: string
+	isAdmin: boolean
 }) {
-	const { isAdmin } = useIsAdmin()
 	return (
 		<div
 			className={cn(
@@ -34,9 +36,7 @@ export default function Opinion({
 					color2={'#E36A00'}
 				/>
 				{isAdmin && (
-					<div>
-						<p>Delete</p>
-					</div>
+					<OpinionManipulation />
 				)}
 			</div>
 
