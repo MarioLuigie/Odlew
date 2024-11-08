@@ -11,8 +11,10 @@ import CreateOpinionDialog from '@/components/dialogs/CreateOpinionDialog'
 
 export default function Opinions({
 	opinions,
+	isAdmin,
 }: {
 	opinions: IOpinion[] | undefined
+	isAdmin: boolean
 }) {
 	const [isDialogOpen, setIsDialogOpen] = useState<boolean>(false)
 	// console.log(opinions)
@@ -32,7 +34,7 @@ export default function Opinions({
 			</Title>
 
 			<div className="w-full flex justify-center">
-				<OpinionsCarouselList opinions={opinions} />
+				<OpinionsCarouselList opinions={opinions} isAdmin={isAdmin} />
 			</div>
 
 			<div className="px-5 my-12">

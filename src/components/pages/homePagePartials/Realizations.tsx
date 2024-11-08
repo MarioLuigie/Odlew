@@ -9,9 +9,12 @@ import TextContent from '@/components/shared/TextContent'
 import Title from '@/components/shared/Title'
 import Opinions from '@/components/pages/homePagePartials/Opinions'
 import HowWork from '@/components/pages/homePagePartials/HowWork'
+import { checkIsAdmin } from '@/lib/utils/services'
 
 export default async function Realizations() {
 	const { data: opinions } = await getOpinions()
+	const isAdmin = await checkIsAdmin()
+
 	console.log(opinions)
 	return (
 		<section
@@ -52,7 +55,7 @@ export default async function Realizations() {
 				</CustomButton>
 			</div>
 			<HowWork />
-			<Opinions opinions={opinions} />
+			<Opinions opinions={opinions} isAdmin={isAdmin} />
 		</section>
 	)
 }
