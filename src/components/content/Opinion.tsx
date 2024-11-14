@@ -36,7 +36,7 @@ export default function Opinion({
 					color2={'#E36A00'}
 				/>
 				{isAdmin && (
-					<OpinionManipulation />
+					<OpinionManipulation opinionId={opinion._id} />
 				)}
 			</div>
 

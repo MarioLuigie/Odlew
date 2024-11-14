@@ -1,8 +1,8 @@
 // modules
-import { Schema, model, models, ObjectId } from 'mongoose'
+import { Schema, model, models } from 'mongoose'
 
 export interface IOpinion extends Document {
-	_id: ObjectId
+	_id: string
 	name: string
 	stars: number
 	opinion: string

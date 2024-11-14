@@ -1,4 +1,3 @@
-
 import {
 	DropdownMenu,
 	DropdownMenuContent,
@@ -18,14 +17,12 @@ type CustomManipulationProps = {
 
 export default function CustomManipulation({
 	label,
-	trigger='Open',
+	trigger = 'Open',
 	manipulations,
 }: CustomManipulationProps) {
 	return (
 		<DropdownMenu>
-			<DropdownMenuTrigger>
-				{trigger}
-			</DropdownMenuTrigger>
+			<DropdownMenuTrigger>{trigger}</DropdownMenuTrigger>
 			<DropdownMenuContent
 				className={cn('bg-background shodow-md w-[160px]')}
 			>
@@ -36,10 +33,12 @@ export default function CustomManipulation({
 					</>
 				)}
 				{manipulations.map((manipulation, i) => (
-          <DropdownMenuItem key={i}>
-            <div>{manipulation.label}</div>
-          </DropdownMenuItem>
-        ))}
+					<DropdownMenuItem key={i}>
+						<button className={cn('font-semibold', manipulation.name === 'delete' && 'text-red-600')} onClick={() => manipulation.onClick(manipulation._id)}>
+							{manipulation.label}
+						</button>
+					</DropdownMenuItem>
+				))}
 			</DropdownMenuContent>
 		</DropdownMenu>
 	)

@@ -5,6 +5,7 @@ import { useForm, SubmitHandler } from 'react-hook-form'
 // lib
 import { FormFieldType } from '@/lib/types/enums'
 import { ContactFormSchema, ContactFormValues } from '@/lib/types/zod'
+import { handleCreateContact } from '@/lib/handlers/contact.handlers'
 // components
 import { Form } from '@/components/ui/form'
 import CustomFormField from '@/components/shared/CustomFormField'
@@ -29,7 +30,7 @@ export default function ContactForm() {
 	) => {
 		try {
 			console.log('contact form values:', contactFormValues)
-
+			await handleCreateContact(contactFormValues)
 			form.reset()
 		} catch (err: unknown) {
 			if (err instanceof Error) {
