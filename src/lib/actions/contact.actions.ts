@@ -26,13 +26,14 @@ export const createContact = async (
 		console.log('Created Contact:', createdContact)
 
     const transporter = nodemailer.createTransport({
-      service: 'gmail', // lub inny dostawca SMTP
+      host: 'smtp.gmail.com',
+      port: 587,
+      secure: false, // use false for STARTTLS; true for SSL on port 465
       auth: {
-        user: process.env.EMAIL_USER,
-        pass: process.env.EMAIL_PASSWORD,
-      },
-    })
-
+        user: 'YOUR_GMAIL_ADDRESS',
+        pass: 'YOUR_APP_PASSWORD',
+      }
+    });
     const mailOptions = {
       from: process.env.EMAIL_USER,
       to: process.env.OWNER_EMAIL, // Adres e-mail właściciela strony
