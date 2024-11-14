@@ -7,6 +7,7 @@ import { OpinionFormValues } from '@/lib/types/zod'
 import { IOpinion, OpinionModel } from '@/lib/models/opinion.model'
 import { connectToDB } from '@/lib/utils/db'
 import { deepClone } from '@/lib/utils'
+import { Routes } from '@/lib/constants/paths'
 
 // GET
 export async function getOpinions(): Promise<Result<IOpinion[]>> {
@@ -15,7 +16,7 @@ export async function getOpinions(): Promise<Result<IOpinion[]>> {
 
 		const opinions = await OpinionModel.find().sort({ _id: -1 }).lean()
 		
-		revalidatePath('/')
+		revalidatePath(Routes.HOME)
 
 		console.log('FETCHED OPINIONS:', opinions)
 
@@ -51,7 +52,7 @@ export async function createOpinion(
 
 		console.log('CREATED OPINION', createdOpinion)
 
-		revalidatePath('/')
+		revalidatePath(Routes.HOME)
 
 		return {
 			success: true,
@@ -99,7 +100,7 @@ export async function deleteOpinion(id: string) {
 
 		console.log('DELETED OPINION:', deletedOpinion)
 
-		revalidatePath('/')
+		revalidatePath(Routes.HOME)
 
 		return {
 			success: true,
