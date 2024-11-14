@@ -33,6 +33,26 @@ export const createContact = async (
       },
     })
 
+    const mailOptions = {
+      from: process.env.EMAIL_USER,
+      to: process.env.OWNER_EMAIL, // Adres e-mail właściciela strony
+      subject: `Nowa wiadomość od ${contactFormValues.name} - Temat: ${contactFormValues.topic}`,
+      text: `
+        Nowa wiadomość została wysłana przez formularz kontaktowy na stronie.
+
+        Szczegóły wiadomości:
+
+        Imię: ${contactFormValues.name}
+        E-mail: ${contactFormValues.email}
+        Temat: ${contactFormValues.topic}
+        Wiadomość: ${contactFormValues.message}
+
+        Id zapisu w MongoDB: ${createdContact._id}
+      `,
+    }
+
+    await transporter.sendMail(mailOptions)
+
 		return {
       success: true,
       data: deepClone(createdContact)
