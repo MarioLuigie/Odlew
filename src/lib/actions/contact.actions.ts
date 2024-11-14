@@ -2,6 +2,7 @@
 // modules
 // import mongoose from 'mongoose'
 // import { revalidatePath } from 'next/cache'
+import nodemailer from 'nodemailer'
 // lib
 import { ContactFormValues } from '@/lib/types/zod'
 import { IContact, ContactModel } from '@/lib/models/contact.model'
@@ -23,6 +24,14 @@ export const createContact = async (
 		)
 
 		console.log('Created Contact:', createdContact)
+
+    const transporter = nodemailer.createTransport({
+      service: 'gmail', // lub inny dostawca SMTP
+      auth: {
+        user: process.env.EMAIL_USER,
+        pass: process.env.EMAIL_PASSWORD,
+      },
+    })
 
 		return {
       success: true,
