@@ -51,29 +51,24 @@ export const createContact = async (
 		console.log('AccessToken:', accessToken)
 
 		const transporter = nodemailer.createTransport({
-			// host: 'smtp.gmail.com',
-			service: 'gmail',
-			// port: 587,
-			// secure: false, // Używamy STARTTLS, więc ustawiamy `secure` na `false`
+			host: 'smtp.gmail.com',
+			port: 587,
 			auth: {
 				type: 'OAuth2',
-				user: process.env.USER_EMAIL,
+				user: process.env.EMAIL_USER,
 				accessToken,
 				clientId: process.env.CLIENT_ID,
 				clientSecret: process.env.CLIENT_SECRET,
 				refreshToken: process.env.REFRESH_TOKEN,
 			},
-			tls: {
-				rejectUnauthorized: false,
-			},
 		} as nodemailer.TransportOptions)
 
 		const mailOptions = {
 			from: process.env.EMAIL_USER,
-			to: process.env.OWNER_EMAIL, // Adres e-mail właściciela strony
+			to: process.env.OWNER_EMAIL,
 			subject: `Nowa wiadomość od ${contactFormValues.name} - Temat: ${contactFormValues.topic}`,
 			text: `
-        Nowa wiadomość została wysłana przez formularz kontaktowy na stronie.
+        Nowa wiadomość została wysłana przez formularz kontaktowy na stronie Odlew Odlewnia Artystyczna .
 
         Szczegóły wiadomości:
 
@@ -102,3 +97,72 @@ export const createContact = async (
 		}
 	}
 }
+
+// TEST NODEMAILER
+
+// 'use server'
+// // modules
+// import nodemailer from 'nodemailer'
+// // lib
+// import { ContactFormValues } from '@/lib/types/zod'
+// import { IContact, ContactModel } from '@/lib/models/contact.model'
+// import { connectToDB } from '@/lib/utils/db'
+// import { deepClone } from '@/lib/utils'
+
+// export const createContact = async (
+// 	contactFormValues: ContactFormValues
+// ): Promise<Result<IContact>> => {
+// 	console.log('ContactFormValues-createContact:', contactFormValues)
+
+// 	try {
+// 		await connectToDB()
+
+// 		const createdContact: IContact = await ContactModel.create(
+// 			contactFormValues
+// 		)
+
+// 		console.log('Created Contact:', createdContact)
+
+//     const transporter = nodemailer.createTransport({
+//       host: 'smtp.ethereal.email',
+//       port: 587,
+//       auth: {
+//           user: process.env.EMAIL_USER,
+//           pass: process.env.EMAIL_PASSWORD,
+//       }
+//   });
+
+// 		const mailOptions = {
+// 			from: process.env.EMAIL_USER,
+// 			to: process.env.OWNER_EMAIL,
+// 			subject: `Nowa wiadomość od ${contactFormValues.name} - Temat: ${contactFormValues.topic}`,
+// 			text: `
+//         Nowa wiadomość została wysłana przez formularz kontaktowy na stronie Odlew Odlewnia Artystyczna .
+
+//         Szczegóły wiadomości:
+
+//         Imię: ${contactFormValues.name}
+//         E-mail: ${contactFormValues.email}
+//         Temat: ${contactFormValues.topic}
+//         Wiadomość: ${contactFormValues.message}
+
+//         Id zapisu w MongoDB: ${createdContact._id}
+//       `,
+// 		}
+
+// 		await transporter.sendMail(mailOptions)
+
+// 		return {
+// 			success: true,
+// 			data: deepClone(createdContact),
+// 		}
+// 	} catch (err) {
+// 		console.error(err)
+// 		return {
+// 			success: false,
+// 			errors: {
+// 				error: 'Coś poszło nie tak podczas wysyłania wiadomości. Spróbuj później.',
+// 			},
+// 		}
+// 	}
+// }
