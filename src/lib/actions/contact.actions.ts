@@ -1,7 +1,5 @@
 'use server'
 // modules
-// import mongoose from 'mongoose'
-// import { revalidatePath } from 'next/cache'
 import nodemailer from 'nodemailer'
 import { google } from 'googleapis'
 // lib
@@ -9,7 +7,6 @@ import { ContactFormValues } from '@/lib/types/zod'
 import { IContact, ContactModel } from '@/lib/models/contact.model'
 import { connectToDB } from '@/lib/utils/db'
 import { deepClone } from '@/lib/utils'
-// import { Routes } from '@/lib/constants/paths'
 
 export const createContact = async (
 	contactFormValues: ContactFormValues
