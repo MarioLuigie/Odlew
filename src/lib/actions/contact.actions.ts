@@ -51,9 +51,10 @@ export const createContact = async (
 		console.log('AccessToken:', accessToken)
 
 		const transporter = nodemailer.createTransport({
-			host: 'smtp.gmail.com',
-			port: 587,
-			secure: false, // Używamy STARTTLS, więc ustawiamy `secure` na `false`
+			// host: 'smtp.gmail.com',
+			service: 'gmail',
+			// port: 587,
+			// secure: false, // Używamy STARTTLS, więc ustawiamy `secure` na `false`
 			auth: {
 				type: 'OAuth2',
 				user: process.env.USER_EMAIL,
