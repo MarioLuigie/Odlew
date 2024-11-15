@@ -14,8 +14,7 @@ import { deepClone } from '@/lib/utils'
 export const createContact = async (
 	contactFormValues: ContactFormValues
 ): Promise<Result<IContact>> => {
-
-  const OAuth2 = google.auth.OAuth2
+	const OAuth2 = google.auth.OAuth2
 	console.log('ContactFormValues-createContact:', contactFormValues)
 	console.log('google:', google)
 	console.log('OAuth2:', OAuth2)
@@ -29,50 +28,50 @@ export const createContact = async (
 
 		console.log('Created Contact:', createdContact)
 
-    const oauth2Client = new OAuth2(
-      process.env.CLIENT_ID,
-      process.env.CLIENT_SECRET,
-      "https://developers.google.com/oauthplayground"
-    );
+		const oauth2Client = new OAuth2(
+			process.env.CLIENT_ID,
+			process.env.CLIENT_SECRET,
+			'https://developers.google.com/oauthplayground'
+		)
 
-    oauth2Client.setCredentials({
-      refresh_token: process.env.REFRESH_TOKEN,
-    });
+		oauth2Client.setCredentials({
+			refresh_token: process.env.REFRESH_TOKEN,
+		})
 
-    const accessToken = await new Promise((resolve, reject) => {
-      oauth2Client.getAccessToken((err, token) => {
-        if (err) {
-          console.log("*ERR: ", err)
-          reject();
-        }
-        resolve(token); 
-      });
-    });
+		const accessToken = await new Promise((resolve, reject) => {
+			oauth2Client.getAccessToken((err, token) => {
+				if (err) {
+					console.log('*ERR: ', err)
+					reject()
+				}
+				resolve(token)
+			})
+		})
 
-    console.log('AccessToken:', accessToken)
+		console.log('AccessToken:', accessToken)
 
-    const transporter = nodemailer.createTransport({
-      host: "smtp.gmail.com",
-      port: 587,
-      secure: false, // Używamy STARTTLS, więc ustawiamy `secure` na `false`
-      auth: {
-        type: "OAuth2",
-        user: process.env.USER_EMAIL,
-        accessToken,
-        clientId: process.env.CLIENT_ID,
-        clientSecret: process.env.CLIENT_SECRET,
-        refreshToken: process.env.REFRESH_TOKEN,
-      },
-      tls: {
-        rejectUnauthorized: false,
-      },
-    } as nodemailer.TransportOptions)
-    
-    const mailOptions = {
-      from: process.env.EMAIL_USER,
-      to: process.env.OWNER_EMAIL, // Adres e-mail właściciela strony
-      subject: `Nowa wiadomość od ${contactFormValues.name} - Temat: ${contactFormValues.topic}`,
-      text: `
+		const transporter = nodemailer.createTransport({
+			host: 'smtp.gmail.com',
+			port: 587,
+			secure: false, // Używamy STARTTLS, więc ustawiamy `secure` na `false`
+			auth: {
+				type: 'OAuth2',
+				user: process.env.USER_EMAIL,
+				accessToken,
+				clientId: process.env.CLIENT_ID,
+				clientSecret: process.env.CLIENT_SECRET,
+				refreshToken: process.env.REFRESH_TOKEN,
+			},
+			tls: {
+				rejectUnauthorized: false,
+			},
+		} as nodemailer.TransportOptions)
+
+		const mailOptions = {
+			from: process.env.EMAIL_USER,
+			to: process.env.OWNER_EMAIL, // Adres e-mail właściciela strony
+			subject: `Nowa wiadomość od ${contactFormValues.name} - Temat: ${contactFormValues.topic}`,
+			text: `
         Nowa wiadomość została wysłana przez formularz kontaktowy na stronie.
 
         Szczegóły wiadomości:
@@ -84,21 +83,21 @@ export const createContact = async (
 
         Id zapisu w MongoDB: ${createdContact._id}
       `,
-    }
+		}
 
-    await transporter.sendMail(mailOptions)
+		await transporter.sendMail(mailOptions)
 
 		return {
-      success: true,
-      data: deepClone(createdContact)
-    }
+			success: true,
+			data: deepClone(createdContact),
+		}
 	} catch (err) {
 		console.error(err)
-    return {
+		return {
 			success: false,
 			errors: {
 				error: 'Coś poszło nie tak podczas wysyłania wiadomości. Spróbuj później.',
-			}
-    }
+			},
+		}
 	}
 }
