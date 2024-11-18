@@ -1,9 +1,12 @@
+'use client'
+
 import Logo from '@/components/content/Logo'
 import MenuFooter from '@/components/layout/menu/MenuFooter'
 import Copyright from '@/components/content/Copyright'
 import Link from 'next/link'
 import { Routes } from '@/lib/constants/paths'
 import { SignedIn, SignedOut, SignOutButton } from '@clerk/nextjs'
+import { toastSuccess } from '@/lib/utils/toasts'
 
 export default function Footer() {
 	return (
@@ -25,6 +28,7 @@ export default function Footer() {
 			<SignedIn>
 				<SignOutButton />
 			</SignedIn>
+			<button className='mt-4 p-4 bg-red-300 rounded-xl' onClick={() => toastSuccess('Success')}>TOAST</button>
 		</footer>
 	)
 }

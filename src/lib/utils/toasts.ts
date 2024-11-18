@@ -1,5 +1,5 @@
 // components
-import { toast } from '@/components/ui/use-toast'
+import { toast } from '@/hooks/use-toast'
 import { toStringArray } from '@/lib/utils'
 
 export function toastError(
@@ -30,6 +30,7 @@ export function toastSuccess(
 	data: string | string[] | { [key: string]: string }
 ) {
 	toStringArray(data).forEach((msg) => {
+    console.log(msg)
 		toast({
 			title: 'Sukces!',
 			variant: 'success',
