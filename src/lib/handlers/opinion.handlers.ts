@@ -20,6 +20,12 @@ export const handleCreateOpinion = async (
 
 // DELETE
 export const handleDeleteOpinion = async (id: string) => {
-	const deletedOpinion = await deleteOpinion(id)
-	console.log('DELETED OPINION:', deletedOpinion)
+	const result: Result<IOpinion>  = await deleteOpinion(id)
+
+	if (result.success) {
+		toastSuccess('Opinia została usunięta pomyślnie.')
+	} else if (result.errors) {
+		toastError(result.errors)
+	}
+	return result
 }
