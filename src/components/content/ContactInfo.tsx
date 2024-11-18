@@ -8,7 +8,7 @@ import Drop from '@/components/shared/Drop'
 export default function ContactInfo() {
 	return (
 		<div className="py-4 px-2 flex flex-col gap-5 justify-start">
-			<Drop text='2' />
+			<Drop />
 			<div className="flex flex-col gap-3 text-[14px] text-textDark">
 				<div className="flex gap-2">
 					<MapPinHouse size={20} className="text-accent" />
