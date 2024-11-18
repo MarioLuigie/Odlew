@@ -8,6 +8,7 @@ import { IContact, ContactModel } from '@/lib/models/contact.model'
 import { connectToDB } from '@/lib/utils/db'
 import { deepClone } from '@/lib/utils'
 import { generateEmailTemplate } from '@/lib/utils/services'
+import { Domains } from '@/lib/constants/paths'
 
 export const createContact = async (
 	contactFormValues: ContactFormValues
@@ -29,7 +30,7 @@ export const createContact = async (
 		const oauth2Client = new OAuth2(
 			process.env.CLIENT_ID,
 			process.env.CLIENT_SECRET,
-			'https://developers.google.com/oauthplayground'
+			Domains.OAUTHPLAYGROUND
 		)
 
 		oauth2Client.setCredentials({

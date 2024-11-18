@@ -1,5 +1,6 @@
 export const Domains = {
-  default: 'https://odlew.vercel.app'
+  OWN: 'https://odlew.vercel.app',
+  OAUTHPLAYGROUND: 'https://developers.google.com/oauthplayground',
 }
 
 export const IconsPath = {
