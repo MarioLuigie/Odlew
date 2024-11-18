@@ -30,7 +30,6 @@ export default function OpinionForm() {
 		try {
 			console.log(opinionFormValues)
 			await handleCreateOpinion(opinionFormValues)
-
 			form.reset()
 		} catch (err: unknown) {
 			if (err instanceof Error) {
@@ -58,8 +57,6 @@ export default function OpinionForm() {
 					name="name"
 					label="Imię*"
 					placeholder="Twoje imię"
-					// iconSrc={Icons.USER_ICON.path}
-					// iconAlt={Icons.USER_ICON.alt}
 				/>
 
 				{/* OPINION */}
@@ -70,8 +67,6 @@ export default function OpinionForm() {
 						name="opinion"
 						label="Opinia*"
 						placeholder="Treść opini"
-						// iconSrc={Icons.EMAIL_ICON.path}
-						// iconAlt={Icons.EMAIL_ICON.alt}
 					/>
 				</div>
 
@@ -81,8 +76,6 @@ export default function OpinionForm() {
 					typeField={FormFieldType.STARS}
 					name="stars"
 					label="Ocena*"
-					// iconSrc={Icons.USER_ICON.path}
-					// iconAlt={Icons.USER_ICON.alt}
 				/>
 
 				<div>
