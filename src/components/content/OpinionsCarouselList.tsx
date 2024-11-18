@@ -19,9 +19,6 @@ export default function OpinionsCarouselList({
 	opinions: IOpinion[] | undefined
   isAdmin: boolean
 }) {
-
-  console.log('Carousel', isAdmin);
-
 	return (
 		<Carousel
 			opts={{
