@@ -55,7 +55,7 @@ export const generateEmailTemplate = async (
 				<body>
 						<div class="container">
 								<div class="header">
-										<img class="logo" src=${Domains.vercel + ImagesPath.LOGO_MIN} alt="Logo">
+										<img class="logo" src=${Domains.default + ImagesPath.LOGO_MIN} alt="Logo">
 										<h1>Nowa wiadomość z formularza kontaktowego!</h1>
 								</div>
 								<div class="message-details">

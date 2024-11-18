@@ -1,5 +1,5 @@
 export const Domains = {
-  vercel: 'https://odlew.vercel.app'
+  default: 'https://odlew.vercel.app'
 }
 
 export const IconsPath = {
