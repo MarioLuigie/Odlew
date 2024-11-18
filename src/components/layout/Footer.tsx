@@ -16,7 +16,7 @@ export default function Footer() {
 				</div>
 				<Copyright />
 			</div>
-			<small className="text-teal-600">Created by &copy; ARWcode 2024</small>
+			<small className="text-teal-600 mb-4">Created by &copy; ARWcode 2024</small>
 			<SignedOut>
 				<Link href={Routes.SIGN_IN}>
 					<small>admin</small>

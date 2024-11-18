@@ -1,3 +1,7 @@
+export const Domains = {
+  vercel: 'https://odlew.vercel.app'
+}
+
 export const IconsPath = {
   MENU_MOBILE: '/assets/icons/menu-mobile.svg',
   MENU_DESKTOP: '/assets/icons/menu-desktop.svg',
