@@ -2,22 +2,21 @@
 import { cva } from 'class-variance-authority'
 // lib
 import { cn } from '@/lib/utils'
-// components
-import SVG from '@/components/shared/SVG'
-import { Icons } from '@/lib/constants/icons'
 
 type DropProps = {
-	corner?: 'bottom-left' | 'top-left' | 'top-right'
+	corner?: 'bottom-right' | 'bottom-left' | 'top-left' | 'top-right'
 	className?: string
+	text?: string
 }
 
-export default function Drop({ corner, className }: DropProps) {
+export default function Drop({ corner, className, text }: DropProps) {
 	const dropVariants = cva('flex', {
 		variants: {
 			corner: {
-				['bottom-left']: 'scale-x-[-1] flex-row-reverse',
-				['top-left']: 'scale-x-[-1] scale-y-[-1] flex-row-reverse',
-				['top-right']: 'scale-y-[-1]',
+				['bottom-left']: 'rounded-bl-none',
+				['bottom-right']: 'rounded-br-none',
+				['top-left']: 'rounded-tl-none',
+				['top-right']: 'rounded-tr-none',
 			},
 		},
 		defaultVariants: {
@@ -26,9 +25,14 @@ export default function Drop({ corner, className }: DropProps) {
 	})
 
 	return (
-		<SVG
-			src={Icons.ITEM_BOTTOM_RIGHT_SMALL.path}
-			className={cn(className, dropVariants({ corner }))}
-		/>
+		<div
+			className={cn(
+				'w-[35px] h-[35px] flex justify-center items-center bg-accent rounded-full',
+				className,
+				dropVariants({ corner })
+			)}
+		>
+			{text && <p className="text-[20px] text-textLight">{text}</p>}
+		</div>
 	)
 }
