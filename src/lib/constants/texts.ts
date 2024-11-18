@@ -8,6 +8,7 @@ export const ImagesAlt = {
 	LOGO: 'Logo',
 	ABOUT: 'Zdjęcie o nas',
 	OFFER: 'Zdjęcie oferta',
+	CONTACT: 'Kontakt',
 	PRODUCT: 'Zdjęcie produktu',
 }
 

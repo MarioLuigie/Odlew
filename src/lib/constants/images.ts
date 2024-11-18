@@ -88,3 +88,11 @@ export const ProductImages = [
 		alt: ImagesAlt.PRODUCT,
 	},
 ]
+
+// CONTACT
+export const ContactImages = [
+	{
+		path: ImagesPath.CONTACT,
+		alt: ImagesAlt.CONTACT,
+	},
+]

@@ -1,3 +1,7 @@
+// modules
+import Image from 'next/image'
+// lib
+import { ContactImages } from '@/lib/constants/images'
 // components
 import Title from "@/components/shared/Title"
 import CompanyName from "@/components/content/CompanyName"
@@ -13,6 +17,12 @@ export default function Contact() {
     <Title className="mb-6 px-5">
       <p>Kontakt</p>
     </Title>
+    <Image 
+      src={ContactImages[0].path}
+      alt={ContactImages[0].alt}
+      width={1000}
+      height={1000}
+    />
     <div className="p-6 flex flex-col">
       <CompanyName mode="dark" />
       <ContactInfo />
