@@ -1,6 +1,7 @@
 // components
 import { toast } from '@/hooks/use-toast'
 import { toStringArray } from '@/lib/utils'
+import { LucideIcons } from '@/lib/types/enums'
 
 export function toastError(
 	data: string | string[] | { [key: string]: string },
@@ -37,6 +38,7 @@ export function toastSuccess(
 			title,
 			variant: 'success',
 			description,
+			icon: LucideIcons.MoveDownRight
 		})
 	})
 }

@@ -33,7 +33,7 @@ export default function Test() {
 			<p className="bg-zinc-200 rounded-sm p-2 mt-2">Components:</p>
 			<div className="p-4 flex gap-3 items-center">
 				<p>Drop.tsx</p>
-				<Drop variant="outline" color='#eecd13' corner="bottom-right">
+				<Drop variant="fill" color='#eecd13' corner="bottom-right">
 					<MoveDownRight />
 				</Drop>
 			</div>

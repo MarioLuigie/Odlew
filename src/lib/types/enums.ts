@@ -8,3 +8,10 @@ export enum FormFieldType {
 	SKELETON = 'skeleton',
 	STARS = 'stars'
 }
+
+export enum LucideIcons {
+	MoveDownRight = 'MoveDownRight',
+	ArrowDownUp = 'ArrowDownUp',
+	ChevronLeft = 'ChevronLeft',
+	ChevronRight = 'ChevronRight',
+}

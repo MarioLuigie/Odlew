@@ -8,7 +8,7 @@ type DropProps = {
 	className?: string
 	variant?: 'outline' | 'fill'
 	color?: string
-	children?: React.ReactNode
+	children?: React.ReactNode | string
 }
 
 export default function Drop({
