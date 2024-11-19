@@ -50,7 +50,7 @@ export default function Drop({
 	const textStyle = color
 		? variant === 'outline'
 			? { color }
-			: { color: 'white' }
+			: { color: '#ebebeb' }
 		: undefined
 
 	return (
