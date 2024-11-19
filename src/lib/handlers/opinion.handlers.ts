@@ -10,7 +10,7 @@ export const handleCreateOpinion = async (
 	const result: Result<IOpinion> = await createOpinion(opinionFormValues)
 
 	if (result.success) {
-		toastSuccess('Dziękujemy! Twoja opinia została wysłana pomyślnie.')
+		toastSuccess('Dziękujemy! Twoja opinia została pomyślnie dodana.', 'Dodawanie opini.')
 	} else if (result.errors) {
 		toastError(result.errors)
 	}
@@ -23,7 +23,7 @@ export const handleDeleteOpinion = async (id: string) => {
 	const result: Result<IOpinion>  = await deleteOpinion(id)
 
 	if (result.success) {
-		toastSuccess('Opinia została usunięta pomyślnie.')
+		toastSuccess('Opinia została pomyślnie usunięta.', 'Usuwanie opini.')
 	} else if (result.errors) {
 		toastError(result.errors)
 	}

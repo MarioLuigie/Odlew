@@ -3,38 +3,41 @@ import { toast } from '@/hooks/use-toast'
 import { toStringArray } from '@/lib/utils'
 
 export function toastError(
-	data: string | string[] | { [key: string]: string }
+	data: string | string[] | { [key: string]: string },
+	title: string = 'Błąd!'
 ) {
-	toStringArray(data).forEach((msg) => {
+	toStringArray(data).forEach((description) => {
 		toast({
-			title: 'Błąd!',
+			title,
 			variant: 'error',
-			description: msg,
+			description,
 		})
 	})
 }
 
 export function toastWarning(
-	data: string | string[] | { [key: string]: string }
+	data: string | string[] | { [key: string]: string },
+	title: string = 'Ostrzeżenie!'
 ) {
-	toStringArray(data).forEach((msg) => {
+	toStringArray(data).forEach((description) => {
 		toast({
-			title: 'Ostrzeżenie!',
+			title,
 			variant: 'warning',
-			description: msg,
+			description,
 		})
 	})
 }
 
 export function toastSuccess(
-	data: string | string[] | { [key: string]: string }
+	data: string | string[] | { [key: string]: string },
+	title: string = 'Sukces!'
 ) {
-	toStringArray(data).forEach((msg) => {
-    console.log(msg)
+	toStringArray(data).forEach((description) => {
+    console.log(description)
 		toast({
-			title: 'Sukces!',
+			title,
 			variant: 'success',
-			description: msg,
+			description,
 		})
 	})
 }
