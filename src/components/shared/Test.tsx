@@ -8,7 +8,7 @@ export default function Test() {
 				Use only for test your code!
 			</small>
 			<p className="bg-zinc-200 rounded-sm p-2">Actions:</p>
-			<div className='p-2 mt-2 rounded-md'>
+			<div className="p-2 mt-2 rounded-md">
 				<div className="py-4 px-2 flex gap-3 items-center border-b-[1px] border-zinc-500">
 					<p>call for a toast</p>
 					<button
@@ -24,7 +24,9 @@ export default function Test() {
 					</button>
 				</div>
 			</div>
-			<small className='text-zinc-600 py-2 absolute bottom-0 right-0 w-full flex justify-center items-center'>&copy; ARWcode 2024. All rights reserved.</small>
+			<small className="text-zinc-600 py-2 absolute bottom-0 right-0 w-full flex justify-center items-center">
+				&copy; ARWcode 2024. All rights reserved.
+			</small>
 		</div>
 	)
 }
