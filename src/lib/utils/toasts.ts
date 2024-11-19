@@ -33,7 +33,6 @@ export function toastSuccess(
 	title: string = 'Sukces!'
 ) {
 	toStringArray(data).forEach((description) => {
-    console.log(description)
 		toast({
 			title,
 			variant: 'success',
