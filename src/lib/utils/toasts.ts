@@ -38,7 +38,8 @@ export function toastSuccess(
 			title,
 			variant: 'success',
 			description,
-			icon: LucideIcons.MoveDownRight
+			// icon: LucideIcons.MoveDownRight
+			drop: true
 		})
 	})
 }

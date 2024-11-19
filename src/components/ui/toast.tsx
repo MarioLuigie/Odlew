@@ -7,6 +7,8 @@ import { cn } from '@/lib/utils'
 import { Cross2Icon } from '@radix-ui/react-icons'
 import LucideIcon from '@/components/shared/LucideIcon'
 import { LucideIcons } from '@/lib/types/enums'
+import Drop from '../shared/Drop'
+import { MoveDownRight } from 'lucide-react'
 
 const ToastProvider = ToastPrimitives.Provider
 
@@ -48,8 +50,20 @@ const toastVariants = cva(
 const Toast = React.forwardRef<
 	React.ElementRef<typeof ToastPrimitives.Root>,
 	React.ComponentPropsWithoutRef<typeof ToastPrimitives.Root> &
-		VariantProps<typeof toastVariants> & { icon?: LucideIcons } // Dodanie props `icon`
->(({ className, variant, icon, ...props }, ref) => {
+		VariantProps<typeof toastVariants> & {
+			icon?: LucideIcons
+			drop?: boolean
+		} // Dodanie props `icon`
+>(({ className, variant, icon, drop = false, ...props }, ref) => {
+	const dropColor =
+		variant === 'success'
+			? 'green'
+			: variant === 'error'
+			? 'red'
+			: variant === 'warning'
+			? 'yellow'
+			: 'black'
+      
 	return (
 		<ToastPrimitives.Root
 			ref={ref}
@@ -61,6 +75,11 @@ const Toast = React.forwardRef<
 				<div className="flex flex-col space-y-1">{props.children}</div>
 				{/* Renderowanie ikony, jeśli została podana */}
 				{icon && <LucideIcon className="flex-shrink-0" icon={icon} />}
+				{drop && (
+					<Drop variant="outline" color={dropColor} corner="bottom-right">
+						<MoveDownRight />
+					</Drop>
+				)}
 			</div>
 		</ToastPrimitives.Root>
 	)
