@@ -7,25 +7,25 @@ import { toastSuccess, toastError } from '@/lib/utils/toasts'
 export const handleCreateOpinion = async (
 	opinionFormValues: OpinionFormValues
 ) => {
-	const result: Result<IOpinion> = await createOpinion(opinionFormValues)
+	const res: Result<IOpinion> = await createOpinion(opinionFormValues)
 
-	if (result.success) {
+	if (res.success) {
 		toastSuccess('Dziękujemy! Twoja opinia została pomyślnie dodana.', 'Dodawanie opini.')
-	} else if (result.errors) {
-		toastError(result.errors)
+	} else if (res.errors) {
+		toastError(res.errors)
 	}
 
-	return result
+	return res
 }
 
 // DELETE
 export const handleDeleteOpinion = async (id: string) => {
-	const result: Result<IOpinion>  = await deleteOpinion(id)
+	const res: Result<IOpinion>  = await deleteOpinion(id)
 
-	if (result.success) {
+	if (res.success) {
 		toastSuccess('Opinia została pomyślnie usunięta.', 'Usuwanie opini.')
-	} else if (result.errors) {
-		toastError(result.errors)
+	} else if (res.errors) {
+		toastError(res.errors)
 	}
-	return result
+	return res
 }

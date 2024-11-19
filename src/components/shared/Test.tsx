@@ -1,5 +1,6 @@
 'use client'
 import { toastSuccess } from '@/lib/utils/toasts'
+import Drop from './Drop'
 
 export default function Test() {
 	return (
@@ -22,6 +23,9 @@ export default function Test() {
 					>
 						TOAST
 					</button>
+				</div>
+				<div>
+					<Drop variant="outline" color='#d1f141' corner='bottom-right' />
 				</div>
 			</div>
 			<small className="text-zinc-600 py-2 absolute bottom-0 right-0 w-full flex justify-center items-center">
