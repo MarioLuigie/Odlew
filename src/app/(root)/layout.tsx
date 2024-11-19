@@ -1,5 +1,6 @@
 // components
 import { Header, Main, Footer } from '@/components/layout/index'
+import Test from '@/components/shared/Test'
 
 export default function Layout({ children }: { children: React.ReactNode }) {
 	return (
@@ -7,6 +8,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 			<Header />
 			<Main>{children}</Main>
 			<Footer />
+			<Test />
 		</div>
 	)
 }

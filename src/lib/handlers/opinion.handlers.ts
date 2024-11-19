@@ -10,7 +10,7 @@ export const handleCreateOpinion = async (
 	const result: Result<IOpinion> = await createOpinion(opinionFormValues)
 
 	if (result.success) {
-		toastSuccess('Dziękujemy! Twoja opinia została wysłana pomyślnie.')
+		toastSuccess('Dziękujemy! Twoja opinia została wysłana pomyślnie.', 'Dodawanie opini')
 	} else if (result.errors) {
 		toastError(result.errors)
 	}
