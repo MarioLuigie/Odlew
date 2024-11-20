@@ -70,7 +70,7 @@ const Toast = React.forwardRef<
 			className={cn(toastVariants({ variant }), className)}
 			{...props}
 		>
-			<div className="flex items-center space-x-4">
+			<div className="w-full flex items-center justify-between space-x-4">
 				{/* Blok z tytułem i opisem */}
 				<div className="flex flex-col space-y-1">{props.children}</div>
 				{/* Renderowanie ikony, jeśli została podana */}
