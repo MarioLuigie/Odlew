@@ -7,7 +7,7 @@ import { cn } from '@/lib/utils'
 import { Cross2Icon } from '@radix-ui/react-icons'
 import LucideIcon from '@/components/shared/LucideIcon'
 import { LucideIcons } from '@/lib/types/enums'
-import Drop from '../shared/Drop'
+import Drop from '@/components/shared/Drop'
 import { MoveDownRight } from 'lucide-react'
 
 const ToastProvider = ToastPrimitives.Provider
