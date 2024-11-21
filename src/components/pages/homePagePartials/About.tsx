@@ -1,7 +1,7 @@
 // modules
 import Image from "next/image"
 // lib
-import { AboutImages } from "@/lib/constants/images"
+import { HomeAboutImages } from "@/lib/constants/images"
 // components
 import CustomButton from "@/components/shared/CustomButton"
 import TextContent from "@/components/shared/TextContent"
@@ -33,7 +33,7 @@ export default function About() {
         </CustomButton>
       </div>
       <div className="mt-12 flex gap-2 overflow-x-auto">
-        {AboutImages.map((image, i) => (
+        {HomeAboutImages.map((image, i) => (
           <Image
             key={i}
             src={image.path}

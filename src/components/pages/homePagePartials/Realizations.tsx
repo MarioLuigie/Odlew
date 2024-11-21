@@ -1,7 +1,7 @@
 // modules
 import Image from 'next/image'
 // lib
-import { ProductImages } from '@/lib/constants/images'
+import { HomeProductImages } from '@/lib/constants/images'
 import { getOpinions } from '@/lib/actions/opinion.actions'
 // components
 import CustomButton from '@/components/shared/CustomButton'
@@ -37,7 +37,7 @@ export default async function Realizations() {
 				</p>
 			</TextContent>
 			<div className="mt-12 flex flex-col gap-1 overflow-x-auto">
-				{ProductImages.slice(0, 3).map((image, i) => (
+				{HomeProductImages.slice(0, 3).map((image, i) => (
 					<Image
 						key={i}
 						src={image.path}

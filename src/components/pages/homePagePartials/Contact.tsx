@@ -1,7 +1,7 @@
 // modules
 import Image from 'next/image'
 // lib
-import { ContactImages } from '@/lib/constants/images'
+import { HomeContactImages } from '@/lib/constants/images'
 // components
 import Title from "@/components/shared/Title"
 import CompanyName from "@/components/content/CompanyName"
@@ -18,8 +18,8 @@ export default function Contact() {
       <p>Kontakt</p>
     </Title>
     <Image 
-      src={ContactImages[0].path}
-      alt={ContactImages[0].alt}
+      src={HomeContactImages[0].path}
+      alt={HomeContactImages[0].alt}
       width={1000}
       height={1000}
     />
