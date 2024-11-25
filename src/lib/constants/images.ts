@@ -1,7 +1,7 @@
 import { ImagesPath } from '@/lib/constants/paths'
 import { ImagesAlt } from '@/lib/constants/texts'
 
-// GENERAL 
+// GENERAL
 export const Images = {
 	LOGO: {
 		path: ImagesPath.LOGO,
@@ -15,7 +15,7 @@ export const Images = {
 		path: ImagesPath.LOGO_WHITE,
 		alt: ImagesAlt.LOGO,
 	},
-  LOGO_WHITE_MIN: {
+	LOGO_WHITE_MIN: {
 		path: ImagesPath.LOGO_WHITE_MIN,
 		alt: ImagesAlt.LOGO,
 	},
@@ -98,91 +98,111 @@ export const HomeContactImages = [
 ]
 
 export const OfferImages = {
-	section_1: [
-		{
-			path: ImagesPath.OFFER_1,
-			alt: ImagesAlt.OFFER,
-		},
-	],
-	section_2: [
-		{
-			path: ImagesPath.OFFER_2,
-			alt: ImagesAlt.OFFER,
-		},
-		{
-			path: ImagesPath.OFFER_3,
-			alt: ImagesAlt.OFFER,
-		},
-	],
-	section_3: [
-		{
-			path: ImagesPath.OFFER_4,
-			alt: ImagesAlt.OFFER,
-		},
-	],
-	section_4: [
-		{
-			path: ImagesPath.OFFER_5,
-			alt: ImagesAlt.OFFER,
-		},
-		{
-			path: ImagesPath.OFFER_6,
-			alt: ImagesAlt.OFFER,
-		},
-		{
-			path: ImagesPath.OFFER_7,
-			alt: ImagesAlt.OFFER,
-		},
-		{
-			path: ImagesPath.OFFER_8,
-			alt: ImagesAlt.OFFER,
-		},
-		{
-			path: ImagesPath.OFFER_9,
-			alt: ImagesAlt.OFFER,
-		},
-		{
-			path: ImagesPath.OFFER_10,
-			alt: ImagesAlt.OFFER,
-		},
-		{
-			path: ImagesPath.OFFER_11,
-			alt: ImagesAlt.OFFER,
-		},
-		{
-			path: ImagesPath.OFFER_12,
-			alt: ImagesAlt.OFFER,
-		},
-		{
-			path: ImagesPath.OFFER_13,
-			alt: ImagesAlt.OFFER,
-		},
-	],
-	section_5: [
-		{
-			path: ImagesPath.OFFER_14,
-			alt: ImagesAlt.OFFER,
-		},
-	],
-	section_6: [
-		{
-			path: ImagesPath.OFFER_15,
-			alt: ImagesAlt.OFFER,
-		},
-		{
-			path: ImagesPath.OFFER_16,
-			alt: ImagesAlt.OFFER,
-		},
-	],
-	section_7: [
-		{
-			path: ImagesPath.OFFER_17,
-			alt: ImagesAlt.OFFER,
-		},
-		{
-			path: ImagesPath.OFFER_18,
-			alt: ImagesAlt.OFFER,
-		},
-	]
+	section_1: {
+		title: 'Szkic koncepcyjny',
+		images: [
+			{
+				path: ImagesPath.OFFER_1,
+				alt: ImagesAlt.OFFER,
+			},
+		],
+	},
+	section_2: {
+		title: 'Tworzenie modelu woskowego',
+		images: [
+			{
+				path: ImagesPath.OFFER_2,
+				alt: ImagesAlt.OFFER,
+			},
+			{
+				path: ImagesPath.OFFER_3,
+				alt: ImagesAlt.OFFER,
+			},
+		],
+	},
+	section_3: {
+		title: 'Tworzenie układu modelowego',
+		images: [
+			{
+				path: ImagesPath.OFFER_4,
+				alt: ImagesAlt.OFFER,
+			},
+		],
+	},
+	section_4: {
+		title: 'Przygotowanie do zalewania ciekłym metalem',
+		images: [
+			{
+				path: ImagesPath.OFFER_5,
+				alt: ImagesAlt.OFFER,
+			},
+			{
+				path: ImagesPath.OFFER_6,
+				alt: ImagesAlt.OFFER,
+			},
+			{
+				path: ImagesPath.OFFER_7,
+				alt: ImagesAlt.OFFER,
+			},
+			{
+				path: ImagesPath.OFFER_8,
+				alt: ImagesAlt.OFFER,
+			},
+			{
+				path: ImagesPath.OFFER_9,
+				alt: ImagesAlt.OFFER,
+			},
+			{
+				path: ImagesPath.OFFER_10,
+				alt: ImagesAlt.OFFER,
+			},
+			{
+				path: ImagesPath.OFFER_11,
+				alt: ImagesAlt.OFFER,
+			},
+			{
+				path: ImagesPath.OFFER_12,
+				alt: ImagesAlt.OFFER,
+			},
+			{
+				path: ImagesPath.OFFER_13,
+				alt: ImagesAlt.OFFER,
+			},
+		],
+	},
+	section_5: {
+		title: 'Zalewanie formy ciekłym metalem',
+		images: [
+			{
+				path: ImagesPath.OFFER_14,
+				alt: ImagesAlt.OFFER,
+			},
+		],
+	},
+	section_6: {
+		title: 'Obróbka surowego odlewu',
+		images: [
+			{
+				path: ImagesPath.OFFER_15,
+				alt: ImagesAlt.OFFER,
+			},
+			{
+				path: ImagesPath.OFFER_16,
+				alt: ImagesAlt.OFFER,
+			},
+		],
+	},
+	section_7: {
+		title: 'Gotowy odlew',
+		images: [
+			{
+				path: ImagesPath.OFFER_17,
+				alt: ImagesAlt.OFFER,
+			},
+			{
+				path: ImagesPath.OFFER_18,
+				alt: ImagesAlt.OFFER,
+			},
+		],
+	},
 }
-
