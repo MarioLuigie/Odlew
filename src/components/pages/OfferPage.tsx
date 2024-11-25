@@ -1,7 +1,11 @@
+// lib
+import { OfferImages } from '@/lib/constants/images'
+// components
 import TextContent from '@/components/shared/TextContent'
 import Title from '@/components/shared/Title'
 import CustomButton from '@/components/shared/CustomButton'
 import Drop from '@/components/shared/Drop'
+import Image from 'next/image'
 
 export default function OfferPage() {
 	return (
@@ -26,7 +30,7 @@ export default function OfferPage() {
 			<div className="bg-background px-5">
 				<Title className="mb-8">Poznaj nasz proces</Title>
 				<div className="flex flex-col gap-8">
-					{Array.from({ length: 12 }, (_, i) => (
+					{/* {Array.from({ length: 12 }, (_, i) => (
 						<div key={i} className="flex flex-col gap-3">
 							<div className="flex justify-start items-center gap-2">
 								<Drop>{i + 1}</Drop>
@@ -35,6 +39,28 @@ export default function OfferPage() {
 							<div className="w-full h-[300px] bg-mottoBg rounded-lg flex justify-center items-center">
 								{i}
 							</div>
+						</div>
+					))} */}
+					{OfferImages.map((section, i) => (
+						<div key={i} className="flex flex-col gap-3">
+							<div className="flex justify-start items-center gap-2">
+								<Drop>{i + 1}</Drop>
+								<p>{section.title}</p>
+							</div>
+							{section.images.map((image, i) => (
+								<div
+									key={i}
+									className="w-full h-[300px] bg-mottoBg rounded-lg flex justify-center items-center"
+								>
+									<Image
+										src={image.path}
+										alt={image.alt}
+										width={1000}
+										height={1000}
+										className='h-full object-cover rounded-lg'
+									/>
+								</div>
+							))}
 						</div>
 					))}
 				</div>

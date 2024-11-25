@@ -97,8 +97,8 @@ export const HomeContactImages = [
 	},
 ]
 
-export const OfferImages = {
-	section_1: {
+export const OfferImages = [
+	{
 		title: 'Szkic koncepcyjny',
 		images: [
 			{
@@ -107,7 +107,7 @@ export const OfferImages = {
 			},
 		],
 	},
-	section_2: {
+	{
 		title: 'Tworzenie modelu woskowego',
 		images: [
 			{
@@ -120,7 +120,7 @@ export const OfferImages = {
 			},
 		],
 	},
-	section_3: {
+	{
 		title: 'Tworzenie układu modelowego',
 		images: [
 			{
@@ -129,7 +129,7 @@ export const OfferImages = {
 			},
 		],
 	},
-	section_4: {
+	{
 		title: 'Przygotowanie do zalewania ciekłym metalem',
 		images: [
 			{
@@ -170,7 +170,7 @@ export const OfferImages = {
 			},
 		],
 	},
-	section_5: {
+	{
 		title: 'Zalewanie formy ciekłym metalem',
 		images: [
 			{
@@ -179,7 +179,7 @@ export const OfferImages = {
 			},
 		],
 	},
-	section_6: {
+	{
 		title: 'Obróbka surowego odlewu',
 		images: [
 			{
@@ -192,7 +192,7 @@ export const OfferImages = {
 			},
 		],
 	},
-	section_7: {
+	{
 		title: 'Gotowy odlew',
 		images: [
 			{
@@ -205,4 +205,4 @@ export const OfferImages = {
 			},
 		],
 	},
-}
+]
