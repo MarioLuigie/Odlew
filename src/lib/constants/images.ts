@@ -97,95 +97,92 @@ export const HomeContactImages = [
 	},
 ]
 
-export const OfferImages_1 = [
-	{
-		path: ImagesPath.OFFER_1,
-		alt: ImagesAlt.OFFER,
-	},
-]
+export const OfferImages = {
+	section_1: [
+		{
+			path: ImagesPath.OFFER_1,
+			alt: ImagesAlt.OFFER,
+		},
+	],
+	section_2: [
+		{
+			path: ImagesPath.OFFER_2,
+			alt: ImagesAlt.OFFER,
+		},
+		{
+			path: ImagesPath.OFFER_3,
+			alt: ImagesAlt.OFFER,
+		},
+	],
+	section_3: [
+		{
+			path: ImagesPath.OFFER_4,
+			alt: ImagesAlt.OFFER,
+		},
+	],
+	section_4: [
+		{
+			path: ImagesPath.OFFER_5,
+			alt: ImagesAlt.OFFER,
+		},
+		{
+			path: ImagesPath.OFFER_6,
+			alt: ImagesAlt.OFFER,
+		},
+		{
+			path: ImagesPath.OFFER_7,
+			alt: ImagesAlt.OFFER,
+		},
+		{
+			path: ImagesPath.OFFER_8,
+			alt: ImagesAlt.OFFER,
+		},
+		{
+			path: ImagesPath.OFFER_9,
+			alt: ImagesAlt.OFFER,
+		},
+		{
+			path: ImagesPath.OFFER_10,
+			alt: ImagesAlt.OFFER,
+		},
+		{
+			path: ImagesPath.OFFER_11,
+			alt: ImagesAlt.OFFER,
+		},
+		{
+			path: ImagesPath.OFFER_12,
+			alt: ImagesAlt.OFFER,
+		},
+		{
+			path: ImagesPath.OFFER_13,
+			alt: ImagesAlt.OFFER,
+		},
+	],
+	section_5: [
+		{
+			path: ImagesPath.OFFER_14,
+			alt: ImagesAlt.OFFER,
+		},
+	],
+	section_6: [
+		{
+			path: ImagesPath.OFFER_15,
+			alt: ImagesAlt.OFFER,
+		},
+		{
+			path: ImagesPath.OFFER_16,
+			alt: ImagesAlt.OFFER,
+		},
+	],
+	section_7: [
+		{
+			path: ImagesPath.OFFER_17,
+			alt: ImagesAlt.OFFER,
+		},
+		{
+			path: ImagesPath.OFFER_18,
+			alt: ImagesAlt.OFFER,
+		},
+	]
+}
 
-export const OfferImages_2 = [
-	{
-		path: ImagesPath.OFFER_2,
-		alt: ImagesAlt.OFFER,
-	},
-	{
-		path: ImagesPath.OFFER_3,
-		alt: ImagesAlt.OFFER,
-	},
-]
-
-export const OfferImages_3 = [
-	{
-		path: ImagesPath.OFFER_4,
-		alt: ImagesAlt.OFFER,
-	},
-]
-
-export const OfferImages_4 = [
-	{
-		path: ImagesPath.OFFER_5,
-		alt: ImagesAlt.OFFER,
-	},
-	{
-		path: ImagesPath.OFFER_6,
-		alt: ImagesAlt.OFFER,
-	},
-	{
-		path: ImagesPath.OFFER_7,
-		alt: ImagesAlt.OFFER,
-	},
-	{
-		path: ImagesPath.OFFER_8,
-		alt: ImagesAlt.OFFER,
-	},
-	{
-		path: ImagesPath.OFFER_9,
-		alt: ImagesAlt.OFFER,
-	},
-	{
-		path: ImagesPath.OFFER_10,
-		alt: ImagesAlt.OFFER,
-	},
-	{
-		path: ImagesPath.OFFER_11,
-		alt: ImagesAlt.OFFER,
-	},
-	{
-		path: ImagesPath.OFFER_12,
-		alt: ImagesAlt.OFFER,
-	},
-	{
-		path: ImagesPath.OFFER_13,
-		alt: ImagesAlt.OFFER,
-	},
-]
-
-export const OfferImages_5 = [
-	{
-		path: ImagesPath.OFFER_14,
-		alt: ImagesAlt.OFFER,
-	},
-]
-
-export const OfferImages_6 = [
-	{
-		path: ImagesPath.OFFER_15,
-		alt: ImagesAlt.OFFER,
-	},
-	{
-		path: ImagesPath.OFFER_16,
-		alt: ImagesAlt.OFFER,
-	},
-]
-
-export const OfferImages_7 = [
-	{
-		path: ImagesPath.OFFER_17,
-		alt: ImagesAlt.OFFER,
-	},
-	{
-		path: ImagesPath.OFFER_18,
-		alt: ImagesAlt.OFFER,
-	},
-]
