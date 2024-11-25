@@ -99,7 +99,7 @@ export const HomeContactImages = [
 
 export const OfferImages = [
 	{
-		title: 'Szkic koncepcyjny',
+		title: 'Wykonanie szkicu koncepcyjnego',
 		images: [
 			{
 				path: ImagesPath.OFFER_1,
@@ -121,7 +121,7 @@ export const OfferImages = [
 		],
 	},
 	{
-		title: 'Tworzenie układu modelowego',
+		title: 'Budowanie układu modelowego',
 		images: [
 			{
 				path: ImagesPath.OFFER_4,
@@ -130,7 +130,7 @@ export const OfferImages = [
 		],
 	},
 	{
-		title: 'Przygotowanie do zalewania ciekłym metalem',
+		title: 'Przygotowanie formy do zalewania ciekłym metalem',
 		images: [
 			{
 				path: ImagesPath.OFFER_5,
@@ -193,7 +193,7 @@ export const OfferImages = [
 		],
 	},
 	{
-		title: 'Gotowy odlew',
+		title: 'Prezentacja gotowego odlewu',
 		images: [
 			{
 				path: ImagesPath.OFFER_17,
