@@ -190,7 +190,7 @@ export const ProductImages = [
 	},
 	{
 		author: 'Józef Polewka',
-		title: 'Głowa człowieka',
+		title: 'W jednym kierunku',
 		image: {
 			path: ImagesPath.PRODUCT_3,
 			alt: ImagesAlt.PRODUCT,
@@ -198,9 +198,17 @@ export const ProductImages = [
 	},
 	{
 		author: 'Józef Polewka',
-		title: 'Głowa człowieka',
+		title: 'Anioł Stróż',
 		image: {
 			path: ImagesPath.PRODUCT_4,
+			alt: ImagesAlt.PRODUCT,
+		},
+	},
+	{
+		author: 'Józef Polewka',
+		title: 'Anioł Stróż',
+		image: {
+			path: ImagesPath.PRODUCT_5,
 			alt: ImagesAlt.PRODUCT,
 		},
 	},
@@ -214,15 +222,7 @@ export const ProductImages = [
 	},
 	{
 		author: 'Józef Polewka',
-		title: 'Głowa człowieka',
-		image: {
-			path: ImagesPath.PRODUCT_5,
-			alt: ImagesAlt.PRODUCT,
-		},
-	},
-	{
-		author: 'Józef Polewka',
-		title: 'Głowa człowieka',
+		title: 'Papież Jan Paweł II',
 		image: {
 			path: ImagesPath.PRODUCT_6,
 			alt: ImagesAlt.PRODUCT,
@@ -230,7 +230,7 @@ export const ProductImages = [
 	},
 	{
 		author: 'Józef Polewka',
-		title: 'Głowa człowieka',
+		title: 'Praczka',
 		image: {
 			path: ImagesPath.PRODUCT_7,
 			alt: ImagesAlt.PRODUCT,
@@ -238,7 +238,7 @@ export const ProductImages = [
 	},
 	{
 		author: 'Józef Polewka',
-		title: 'Głowa człowieka',
+		title: 'Praczka',
 		image: {
 			path: ImagesPath.PRODUCT_8,
 			alt: ImagesAlt.PRODUCT,
@@ -246,7 +246,7 @@ export const ProductImages = [
 	},
 	{
 		author: 'Józef Polewka',
-		title: 'Głowa człowieka',
+		title: 'Ptaki kiwi',
 		image: {
 			path: ImagesPath.PRODUCT_9,
 			alt: ImagesAlt.PRODUCT,
@@ -254,9 +254,65 @@ export const ProductImages = [
 	},
 	{
 		author: 'Józef Polewka',
-		title: 'Głowa człowieka',
+		title: 'Ptaki kiwi',
 		image: {
 			path: ImagesPath.PRODUCT_10,
+			alt: ImagesAlt.PRODUCT,
+		},
+	},
+	{
+		author: 'Józef Polewka',
+		title: 'Kształt',
+		image: {
+			path: ImagesPath.PRODUCT_11,
+			alt: ImagesAlt.PRODUCT,
+		},
+	},
+	{
+		author: 'Józef Polewka',
+		title: 'Złota łyżeczka',
+		image: {
+			path: ImagesPath.PRODUCT_12,
+			alt: ImagesAlt.PRODUCT,
+		},
+	},
+	{
+		author: 'Józef Polewka',
+		title: 'Cwaniara',
+		image: {
+			path: ImagesPath.PRODUCT_13,
+			alt: ImagesAlt.PRODUCT,
+		},
+	},
+	{
+		author: 'Józef Polewka',
+		title: 'Kiwi',
+		image: {
+			path: ImagesPath.PRODUCT_14,
+			alt: ImagesAlt.PRODUCT,
+		},
+	},
+	{
+		author: 'Józef Polewka',
+		title: 'Cisza',
+		image: {
+			path: ImagesPath.PRODUCT_15,
+			alt: ImagesAlt.PRODUCT,
+		},
+	},
+	{
+		author: 'Józef Polewka',
+		title: 'Bez tytułu',
+		image: {
+			path: ImagesPath.PRODUCT_16,
+			alt: ImagesAlt.PRODUCT,
+		},
+	},
+	{
+		author: 'Józef Polewka',
+		title: 'Stańczyk',
+		image: {
+			path: ImagesPath.PRODUCT_17,
 			alt: ImagesAlt.PRODUCT,
 		},
 	},
