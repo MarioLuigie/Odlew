@@ -59,34 +59,6 @@ export const HomeProductImages = [
 		path: ImagesPath.PRODUCT_4,
 		alt: ImagesAlt.PRODUCT,
 	},
-	{
-		path: ImagesPath.PRODUCT_2,
-		alt: ImagesAlt.PRODUCT,
-	},
-	{
-		path: ImagesPath.PRODUCT_5,
-		alt: ImagesAlt.PRODUCT,
-	},
-	{
-		path: ImagesPath.PRODUCT_6,
-		alt: ImagesAlt.PRODUCT,
-	},
-	{
-		path: ImagesPath.PRODUCT_7,
-		alt: ImagesAlt.PRODUCT,
-	},
-	{
-		path: ImagesPath.PRODUCT_8,
-		alt: ImagesAlt.PRODUCT,
-	},
-	{
-		path: ImagesPath.PRODUCT_9,
-		alt: ImagesAlt.PRODUCT,
-	},
-	{
-		path: ImagesPath.PRODUCT_10,
-		alt: ImagesAlt.PRODUCT,
-	},
 ]
 
 // HOME-CONTACT
@@ -206,3 +178,86 @@ export const OfferImages = [
 		],
 	},
 ]
+
+export const ProductImages = [
+	{
+		author: 'Józef Polewka',
+		title: 'Głowa człowieka',
+		image: {
+			path: ImagesPath.PRODUCT_1,
+			alt: ImagesAlt.PRODUCT,
+		},
+	},
+	{
+		author: 'Józef Polewka',
+		title: 'Głowa człowieka',
+		image: {
+			path: ImagesPath.PRODUCT_3,
+			alt: ImagesAlt.PRODUCT,
+		},
+	},
+	{
+		author: 'Józef Polewka',
+		title: 'Głowa człowieka',
+		image: {
+			path: ImagesPath.PRODUCT_4,
+			alt: ImagesAlt.PRODUCT,
+		},
+	},
+	{
+		author: 'Józef Polewka',
+		title: 'Głowa człowieka',
+		image: {
+			path: ImagesPath.PRODUCT_2,
+			alt: ImagesAlt.PRODUCT,
+		},
+	},
+	{
+		author: 'Józef Polewka',
+		title: 'Głowa człowieka',
+		image: {
+			path: ImagesPath.PRODUCT_5,
+			alt: ImagesAlt.PRODUCT,
+		},
+	},
+	{
+		author: 'Józef Polewka',
+		title: 'Głowa człowieka',
+		image: {
+			path: ImagesPath.PRODUCT_6,
+			alt: ImagesAlt.PRODUCT,
+		},
+	},
+	{
+		author: 'Józef Polewka',
+		title: 'Głowa człowieka',
+		image: {
+			path: ImagesPath.PRODUCT_7,
+			alt: ImagesAlt.PRODUCT,
+		},
+	},
+	{
+		author: 'Józef Polewka',
+		title: 'Głowa człowieka',
+		image: {
+			path: ImagesPath.PRODUCT_8,
+			alt: ImagesAlt.PRODUCT,
+		},
+	},
+	{
+		author: 'Józef Polewka',
+		title: 'Głowa człowieka',
+		image: {
+			path: ImagesPath.PRODUCT_9,
+			alt: ImagesAlt.PRODUCT,
+		},
+	},
+	{
+		author: 'Józef Polewka',
+		title: 'Głowa człowieka',
+		image: {
+			path: ImagesPath.PRODUCT_10,
+			alt: ImagesAlt.PRODUCT,
+		},
+	},
+];
