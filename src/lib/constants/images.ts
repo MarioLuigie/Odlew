@@ -19,6 +19,10 @@ export const Images = {
 		path: ImagesPath.LOGO_WHITE_MIN,
 		alt: ImagesAlt.LOGO,
 	},
+	REALIZATIONS: {
+		path: ImagesPath.PRODUCT_10,
+		alt: ImagesAlt.PRODUCT,
+	},
 }
 
 // HOME-ABOUT
@@ -246,22 +250,6 @@ export const ProductImages = [
 	},
 	{
 		author: 'Józef Polewka',
-		title: 'Ptaki kiwi',
-		image: {
-			path: ImagesPath.PRODUCT_9,
-			alt: ImagesAlt.PRODUCT,
-		},
-	},
-	{
-		author: 'Józef Polewka',
-		title: 'Ptaki kiwi',
-		image: {
-			path: ImagesPath.PRODUCT_10,
-			alt: ImagesAlt.PRODUCT,
-		},
-	},
-	{
-		author: 'Józef Polewka',
 		title: 'Kształt',
 		image: {
 			path: ImagesPath.PRODUCT_11,
@@ -281,6 +269,14 @@ export const ProductImages = [
 		title: 'Cwaniara',
 		image: {
 			path: ImagesPath.PRODUCT_13,
+			alt: ImagesAlt.PRODUCT,
+		},
+	},
+	{
+		author: 'Józef Polewka',
+		title: 'Ptaki kiwi',
+		image: {
+			path: ImagesPath.PRODUCT_9,
 			alt: ImagesAlt.PRODUCT,
 		},
 	},
@@ -324,4 +320,4 @@ export const ProductImages = [
 			alt: ImagesAlt.PRODUCT,
 		},
 	},
-];
+]
