@@ -2,6 +2,7 @@ import TextContent from '@/components/shared/TextContent'
 import Title from '@/components/shared/Title'
 import Image from 'next/image'
 import { ProductImages } from '@/lib/constants/images'
+import CustomButton from '../shared/CustomButton'
 
 export default function RealizationsPage() {
 	return (
@@ -23,7 +24,7 @@ export default function RealizationsPage() {
 								alt={productImage.image.alt}
 								width={1000}
 								height={1000}
-								className="h-full object-cover rounded-lg"
+								className="min-h-[300px] object-cover rounded-lg"
 							/>
 						</div>
 						<div className="flex flex-col pb-6">
@@ -32,6 +33,11 @@ export default function RealizationsPage() {
 						</div>
 					</div>
 				))}
+			</div>
+      <div className="p-5 pb-16">
+				<CustomButton navlink path="/kontakt">
+					Skontaktuj się z nami
+				</CustomButton>
 			</div>
 		</div>
 	)

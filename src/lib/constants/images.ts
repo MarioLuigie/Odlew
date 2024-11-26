@@ -316,4 +316,12 @@ export const ProductImages = [
 			alt: ImagesAlt.PRODUCT,
 		},
 	},
+	{
+		author: 'Józef Polewka',
+		title: 'Świecznik',
+		image: {
+			path: ImagesPath.PRODUCT_18,
+			alt: ImagesAlt.PRODUCT,
+		},
+	},
 ];

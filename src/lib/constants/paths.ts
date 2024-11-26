@@ -39,6 +39,7 @@ export const ImagesPath = {
   PRODUCT_15: '/assets/images/products/product-15.jpg',
   PRODUCT_16: '/assets/images/products/product-16.jpg',
   PRODUCT_17: '/assets/images/products/product-17.jpg',
+  PRODUCT_18: '/assets/images/products/product-18.jpg',
   OFFER_1: '/assets/images/offer/offer-1.jpg',
   OFFER_2: '/assets/images/offer/offer-2.jpg',
   OFFER_3: '/assets/images/offer/offer-3.jpg',
