@@ -47,3 +47,8 @@ interface CustomJwtSessionClaims {
 		role?: 'admin' | 'moderator'
 	}
 }
+
+declare type Picture = {
+	path: string
+	alt: string
+}

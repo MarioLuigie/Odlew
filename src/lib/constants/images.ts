@@ -73,6 +73,22 @@ export const HomeContactImages = [
 	},
 ]
 
+// HOME-ABOUT
+export const AboutImages = {
+	jozef: {
+		path: ImagesPath.ABOUT_1,
+		alt: ImagesAlt.ABOUT,
+	},
+	szymon: {
+		path: ImagesPath.ABOUT_2,
+		alt: ImagesAlt.ABOUT,
+	},
+	antoni: {
+		path: ImagesPath.ABOUT_3,
+		alt: ImagesAlt.ABOUT,
+	},
+}
+
 export const OfferImages = [
 	{
 		title: 'Wykonanie szkicu koncepcyjnego',
