@@ -16,7 +16,7 @@ export default function JozefProfile() {
         Moja przygoda z płynnym brązem zaczęła się w szkole im. Kenara w
         Zakopanem wraz z osobą nauczyciela Bronisława Krzysztofa. Zaszczepiona
         pasja do dnia dzisiejszego nie wygasła, a nawet więcej, jest
-        kontynuowana w pracy i ogromnym zaangażowaniu moich synów Szymona i
+        kontynuowana w pracy i ogromnym zaangażowaniem moich synów Szymona i
         Antoniego, których wspieram swoim doświadczeniem i artystyczną
         wrażliwością.
       </TextContent>
