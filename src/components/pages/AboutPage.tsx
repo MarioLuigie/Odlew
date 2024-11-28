@@ -12,8 +12,9 @@ export default function AboutPage() {
 			<Image
 				src={AboutImages.team.path}
 				alt={AboutImages.team.alt}
-				width={1000}
-				height={1000}
+				width={2400}
+				height={2400}
+        className='w-full'
 			/>
 			<div className="bg-menuTopBg p-5">
 				<Title className="text-textLight pb-5">Nasz Zespół</Title>
