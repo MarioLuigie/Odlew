@@ -76,15 +76,19 @@ export const HomeContactImages = [
 // HOME-ABOUT
 export const AboutImages = {
 	jozef: {
-		path: ImagesPath.ABOUT_1,
+		path: ImagesPath.ABOUT_4,
 		alt: ImagesAlt.ABOUT,
 	},
 	szymon: {
-		path: ImagesPath.ABOUT_2,
+		path: ImagesPath.ABOUT_5,
 		alt: ImagesAlt.ABOUT,
 	},
 	antoni: {
-		path: ImagesPath.ABOUT_3,
+		path: ImagesPath.ABOUT_6,
+		alt: ImagesAlt.ABOUT,
+	},
+	team: {
+		path: ImagesPath.ABOUT_7,
 		alt: ImagesAlt.ABOUT,
 	},
 }

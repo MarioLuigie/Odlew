@@ -2,10 +2,11 @@
 import CustomProfileSection from "@/components/shared/CustomProfileSection"
 import TextContent from "@/components/shared/TextContent"
 import TextVerticalLine from "@/components/shared/TextVerticalLine"
+import { AboutImages } from "@/lib/constants/images"
 
 export default function SzymonProfile() {
   return (
-    <CustomProfileSection className="bg-background">
+    <CustomProfileSection className="bg-background" picture={AboutImages.szymon}>
       <TextVerticalLine className="p-5 h-[130px] text-right">
         <p className="font-medium text-2xl">Szymon Polewka</p>
         <p>Właściciel firmy</p>

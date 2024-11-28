@@ -15,8 +15,8 @@ export default function About() {
     >
       <Title className="mb-6 px-5">
         <p>Kim jesteśmy?</p>
-        <p>Co tworzymy?</p>
-        <p>Dokąd zmierzamy?</p>
+        {/* <p>Co tworzymy?</p>
+        <p>Dokąd zmierzamy?</p> */}
       </Title>
       <TextContent className="px-5">
         <p>
@@ -27,7 +27,7 @@ export default function About() {
           indywidualne podejście do klienta oraz dbałość o najwyższą jakość.
         </p>
       </TextContent>
-      <div className="px-5 my-12">
+      <div className="px-5 mt-6">
         <CustomButton navlink path="/o-nas">
           Czytaj więcej
         </CustomButton>
