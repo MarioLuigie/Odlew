@@ -1,10 +1,13 @@
+// modules
+import Image from 'next/image'
+// lib
+import { AboutImages } from '@/lib/constants/images'
+// components
 import TextContent from '@/components/shared/TextContent'
 import Title from '@/components/shared/Title'
 import JozefProfile from '@/components/pages/aboutPagePartials/JozefProfile'
 import SzymonProfile from '@/components/pages/aboutPagePartials/SzymonProfile'
 import AntoniProfile from '@/components/pages/aboutPagePartials/AntoniProfile'
-import Image from 'next/image'
-import { AboutImages } from '@/lib/constants/images'
 
 export default function AboutPage() {
 	return (
