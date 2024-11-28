@@ -1,8 +1,9 @@
+// lib
+import { AboutImages } from "@/lib/constants/images"
 // components
 import CustomProfileSection from "@/components/shared/CustomProfileSection"
 import TextContent from "@/components/shared/TextContent"
 import TextVerticalLine from "@/components/shared/TextVerticalLine"
-import { AboutImages } from "@/lib/constants/images"
 
 export default function SzymonProfile() {
   return (
