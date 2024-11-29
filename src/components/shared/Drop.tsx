@@ -19,7 +19,7 @@ export default function Drop({
 	children,
 }: DropProps) {
 	const dropVariants = cva(
-		'w-[35px] h-[35px] flex justify-center items-center rounded-full',
+		'w-[35px] min-w-[35px] min-h-[35px] h-[35px] flex justify-center items-center rounded-full',
 		{
 			variants: {
 				corner: {
