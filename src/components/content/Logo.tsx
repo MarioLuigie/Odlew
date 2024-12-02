@@ -27,7 +27,7 @@ export default function Logo({
 				width={w}
 				alt={imageAlt}
 				priority
-				className="hidden dsktp:block"
+				className="hidden dp:block"
 			/>
 			<Image
 				src={mobileImageSrc}
@@ -35,7 +35,7 @@ export default function Logo({
 				width={50}
 				alt={imageAlt}
 				priority
-				className="dsktp:hidden"
+				className="dp:hidden"
 			/>
 		</Link>
 	)
