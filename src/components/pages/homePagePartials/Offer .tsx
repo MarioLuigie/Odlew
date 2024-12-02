@@ -38,8 +38,8 @@ export default function Offer() {
               key={i}
               src={image.path}
               alt={image.alt}
-              width={600}
-              height={600}
+              width={2400}
+              height={2400}
               priority
               className="w-full"
             />
