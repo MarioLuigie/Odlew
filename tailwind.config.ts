@@ -46,6 +46,9 @@ const config: Config = {
             },
             scrollMargin: {
                 header: headerHeight,
+            },
+            screens: {
+                'dp': '768px'
             }
         },
     },
