@@ -12,20 +12,20 @@ body {
 	}
 
 	.shad-input-label {
-    @apply text-14-medium text-zinc-700 !important;
-  }
+		@apply text-14-medium text-zinc-700 !important;
+	}
 
-  .shad-input {
-    @apply bg-inputBg rounded-l-full rounded-br-full rounded-none border-0 shadow-md placeholder:text-zinc-400 border-zinc-500 h-11 focus-visible:ring-0 focus-visible:ring-offset-0 !important;
-  }
+	.shad-input {
+		@apply bg-inputBg rounded-l-full rounded-br-full rounded-none border-0 shadow-md placeholder:text-zinc-400 border-zinc-500 h-11 focus-visible:ring-0 focus-visible:ring-offset-0 !important;
+	}
 
-  .shad-input-icon {
-    @apply bg-inputBg rounded-2xl shadow-md placeholder:text-zinc-400 border-zinc-500 h-11 focus-visible:ring-0 focus-visible:ring-offset-0 !important;
-  }
+	.shad-input-icon {
+		@apply bg-inputBg rounded-2xl shadow-md placeholder:text-zinc-400 border-zinc-500 h-11 focus-visible:ring-0 focus-visible:ring-offset-0 !important;
+	}
 
-  .shad-textArea {
-    @apply bg-inputBg rounded-l-3xl rounded-br-3xl rounded-none shadow-md placeholder:text-zinc-400 min-h-32 max-h-64 focus-visible:ring-0 focus-visible:ring-offset-0 !important;
-  }
+	.shad-textArea {
+		@apply bg-inputBg rounded-l-3xl rounded-br-3xl rounded-none shadow-md placeholder:text-zinc-400 min-h-32 max-h-64 focus-visible:ring-0 focus-visible:ring-offset-0 !important;
+	}
 }
 
 @layer base {
@@ -44,6 +44,12 @@ body {
 
 	::-webkit-scrollbar-thumb:hover {
 		background: #222;
+	}
+
+	/* Style scrollbar for Firefox */
+	* {
+		scrollbar-width: thin; /* Ustawia szerokość paska przewijania (thin, auto) */
+		scrollbar-color: #555 #333; /* Kolor paska (thumb) i tła (track) */
 	}
 
 	/* Hidden scrollbar */
@@ -95,7 +101,7 @@ body {
 
 	.homepage-background {
 		background-image: url('/assets/images/home-bg.jpg');
-		background-size: cover; 
-		background-position: center; 
+		background-size: cover;
+		background-position: center;
 	}
 }
