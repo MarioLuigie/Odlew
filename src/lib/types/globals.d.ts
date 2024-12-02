@@ -52,3 +52,4 @@ declare type Picture = {
 	path: string
 	alt: string
 }
+
