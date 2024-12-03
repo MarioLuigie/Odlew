@@ -3,9 +3,9 @@ import CustomButton from '@/components/shared/CustomButton'
 
 export default function Start() {
 	return (
-		<div className="w-full dp:flex">
+		<section className="w-full dp:flex">
 			{/* DESKTOP */}
-			<div className="hidden dp:flex dp:flex-col dp:justify-center dp:items-end dp:w-1/2 dp:bg-mottoBg dp:p-8">
+			<div className="hidden dp:flex dp:flex-col dp:justify-center dp:items-end dp:w-1/2 dp:bg-backgroundDark dp:p-8">
 				<div className="hidden dp:text-textDark dp:flex dp:flex-col dp:text-right">
 					<p className="text-[30px] xl:text-[45px]">P.S Odlew</p>
 					<p className="text-[65px] xl:text-[105px] leading-[75px] xl:leading-[110px]">
@@ -15,7 +15,7 @@ export default function Start() {
 				<CustomButton
 					navlink
 					path="/realizacje"
-					className="max-w-[240px] mt-20"
+					className="mt-16"
 				>
 					Zobacz realizacje
 				</CustomButton>
@@ -31,6 +31,6 @@ export default function Start() {
 					Zobacz realizacje
 				</CustomButton>
 			</div>
-		</div>
+		</section>
 	)
 }

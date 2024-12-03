@@ -15,7 +15,8 @@ const config: Config = {
         extend: {
             colors: {
                 background: '#DEDCD8',
-                mottoBg: '#BCB8B5',
+                backgroundDark: '#BCB8B5',
+                mottoBg: '#22403E',
                 headerBg: '#080808',
                 footerBg: '#22403E',
                 menuTopBg: '#463E46',
@@ -41,6 +42,9 @@ const config: Config = {
                 customScreen: `calc(100vh - ${headerHeight})`,
                 header: headerHeight,
             },
+            maxHeight: {
+                customScreen: `calc(100vh - ${headerHeight})`,
+            },
             margin: {
                 header: headerHeight,
             },
@@ -48,7 +52,7 @@ const config: Config = {
                 header: headerHeight,
             },
             screens: {
-                'dp': '768px'
+                'dp': '768px',
             }
         },
     },

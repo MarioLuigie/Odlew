@@ -21,41 +21,58 @@ export default async function Realizations() {
 			id="realizacje"
 			className="min-h-customScreen bg-background scroll-mt-header"
 		>
-			<Title className="mb-6 px-5">
-				<p>Nasze realizacje</p>
-				<p>i ich znaczenie</p>
-			</Title>
-			<TextContent className="px-5">
-				<p>
-					Nasze realizacje to nie tylko dzieła sztuki, ale także wyjątkowe
-					projekty, które łączą pasję z rzemiosłem. Pracujemy nad
-					różnorodnymi realizacjami, od indywidualnych zleceń po większe
-					projekty artystyczne i kulturalne. Współpraca z artystami oraz
-					klientami pozwala nam tworzyć niepowtarzalne dzieła, które mają
-					swoje miejsce w galeriach, instytucjach oraz prywatnych
-					kolekcjach.
-				</p>
-			</TextContent>
-			<div className="mt-12 flex flex-col gap-1 overflow-x-auto">
-				{HomeProductImages.slice(0, 3).map((image, i) => (
-					<Image
-						key={i}
-						src={image.path}
-						alt={image.alt}
-						width={2400}
-						height={2400}
-						priority
-						className="w-full"
-					/>
-				))}
+			<div className="dp:flex dp:flex-col dp:min-h-customScreen">
+				<div className='dp:flex'>
+					<div className="dp:w-1/2 textPageContainer">
+						<div>
+							<Title className="mb-6 px-5">
+								<p>Nasze realizacje</p>
+								<p>i ich znaczenie</p>
+							</Title>
+							<TextContent className="px-5">
+								<p>
+									Nasze realizacje to nie tylko dzieła sztuki, ale
+									także wyjątkowe projekty, które łączą pasję z
+									rzemiosłem. Pracujemy nad różnorodnymi realizacjami,
+									od indywidualnych zleceń po większe projekty
+									artystyczne i kulturalne. Współpraca z artystami oraz
+									klientami pozwala nam tworzyć niepowtarzalne dzieła,
+									które mają swoje miejsce w galeriach, instytucjach
+									oraz prywatnych kolekcjach.
+								</p>
+							</TextContent>
+							<div className="px-5 my-12 dp:block hidden">
+								<CustomButton navlink path="/realizacje">
+									Zobacz więcej
+								</CustomButton>
+							</div>
+						</div>
+					</div>
+					<div className="dp:w-1/2 dp:bg-backgroundDark">
+						<div className="mt-12 dp:mt-0 flex flex-col gap-1 overflow-x-auto">
+							{HomeProductImages.slice(0, 3).map((image, i) => (
+								<Image
+									key={i}
+									src={image.path}
+									alt={image.alt}
+									width={2400}
+									height={2400}
+									priority
+									className="w-full"
+								/>
+							))}
+						</div>
+
+						<div className="px-5 my-12 dp:hidden">
+							<CustomButton navlink path="/realizacje">
+								Zobacz więcej
+							</CustomButton>
+						</div>
+					</div>
+				</div>
+				<HowWork />
+				<Opinions opinions={opinions} isAdmin={isAdmin} />
 			</div>
-			<div className="px-5 my-12">
-				<CustomButton navlink path="/realizacje">
-					Zobacz więcej
-				</CustomButton>
-			</div>
-			<HowWork />
-			<Opinions opinions={opinions} isAdmin={isAdmin} />
 		</section>
 	)
 }

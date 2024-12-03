@@ -22,7 +22,7 @@ export default function CustomButton({
   disabled = false,
 }: CustomButtonProps) {
   const buttonClasses =
-    "bg-accent text-md text-textLight w-full rounded-l-full rounded-br-full py-6 hover:bg-accentHover shadow-lg"
+    "bg-accent text-md text-textLight w-full rounded-l-full rounded-br-full py-6 hover:bg-accentHover shadow-lg dp:max-w-[240px]"
 
   if (navlink && path) {
     return (

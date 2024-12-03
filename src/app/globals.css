@@ -26,6 +26,14 @@ body {
 	.shad-textArea {
 		@apply bg-inputBg rounded-l-3xl rounded-br-3xl rounded-none shadow-md placeholder:text-zinc-400 min-h-32 max-h-64 focus-visible:ring-0 focus-visible:ring-offset-0 !important;
 	}
+
+	.titlePage {
+		@apply mb-6 dp:mb-16 px-5 dp:text-[40px] lg:text-[45px] xl:text-[50px] dp:leading-[50px] lg:leading-[55px] xl:leading-[65px] dp:font-medium
+	}
+
+	.textPageContainer {
+		@apply dp:flex dp:items-center dp:px-6 lg:px-16 xl:px-28 2xl:px-36
+	}
 }
 
 @layer base {
@@ -47,10 +55,10 @@ body {
 	}
 
 	/* Style scrollbar for Firefox */
-	* {
-		scrollbar-width: thin; /* Ustawia szerokość paska przewijania (thin, auto) */
-		scrollbar-color: #555 #333; /* Kolor paska (thumb) i tła (track) */
-	}
+	/* * {
+		scrollbar-width: thin; 
+		scrollbar-color: #555 #333;
+	} */
 
 	/* Hidden scrollbar */
 	.hide-scrollbar {

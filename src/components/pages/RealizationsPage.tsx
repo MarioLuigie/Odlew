@@ -21,7 +21,7 @@ export default function RealizationsPage() {
 			<div className="flex flex-col gap-3 p-5">
 				{ProductImages.map((productImage, i) => (
 					<div className="flex flex-col gap-2" key={i}>
-						<div className="w-full min-h-[300px] bg-mottoBg rounded-lg flex justify-center items-center">
+						<div className="w-full min-h-[300px] bg-backgroundDark rounded-lg flex justify-center items-center">
 							<Image
 								src={productImage.image.path}
 								alt={productImage.image.alt}

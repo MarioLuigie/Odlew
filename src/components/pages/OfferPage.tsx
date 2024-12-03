@@ -50,7 +50,7 @@ export default function OfferPage() {
 							{section.images.map((image, i) => (
 								<div
 									key={i}
-									className="w-full h-[300px] bg-mottoBg rounded-lg flex justify-center items-center"
+									className="w-full h-[300px] bg-backgroundDark rounded-lg flex justify-center items-center"
 								>
 									<Image
 										src={image.path}
