@@ -11,7 +11,7 @@ export default function Offer() {
 	return (
 		<section
 			id="oferta"
-			className="min-h-customScreen bg-background scroll-mt-header border-[1px] border-zinc-400"
+			className="min-h-customScreen bg-background scroll-mt-header border-b-[1px] border-zinc-400"
 		>
 			<div className="dp:flex dp:min-h-customScreen">
 				<div className="dp:w-1/2 textPageContainer">
