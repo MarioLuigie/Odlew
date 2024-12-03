@@ -32,22 +32,22 @@ export const App = {
 
 export const HowWorkContent = [
 	{
-		tabLabel: 'Kontakt z klientem',
+		tabLabel: 'Kontakt',
 		tabContent:
 			'Podczas kontaktu, dokładnie omawiamy potrzeby klienta i zakres prac. Prosimy o przesłanie kompletnych informacji na temat projektu m.in. wymiary, zdjęcia, zawartość. Na podstawie otrzymanych informacji dokonujemy wyceny oraz określamy przybliżony termin realizacji.',
 	},
 	{
-		tabLabel: 'Tworzenie projektu',
+		tabLabel: 'Projekt',
 		tabContent:
 			'Przedstawiamy wykonany przez nas projekt, który poddajemy akceptacji zamawiającemu.',
 	},
 	{
-		tabLabel: 'Realizacja projektu',
+		tabLabel: 'Realizacja',
 		tabContent:
 			'Po uzyskaniu akceptacji projektu przystępujemy do realizacji zamówienia z największą starannością. Na każdym etapie realizacji utrzymujemy stały kontakt z klientem.',
 	},
 	{
-		tabLabel: 'Odbiór realizacji',
+		tabLabel: 'Odbiór / Transport',
 		tabContent:
 			'Gotowy odlew prezentujemy klientowi podczas osobistego odbioru. Oferujemy również wysyłkę kurierską mniejszych realizacji jak również transport większych realizacji.',
 	},

@@ -48,7 +48,7 @@ export default async function Realizations() {
 							</div>
 						</div>
 					</div>
-					<div className="dp:w-1/2 dp:bg-backgroundDark dp:p-56 dp:flex dp:justify-center dp:items-center">
+					<div className="dp:w-1/2 dp:bg-backgroundDark dp:flex dp:justify-center dp:items-center overflow-hidden">
 						<div className="mt-12 dp:mt-0 flex flex-col gap-1">
 							{HomeProductImages.slice(1, 2).map((image, i) => (
 								<Image
@@ -58,7 +58,7 @@ export default async function Realizations() {
 									width={2400}
 									height={2400}
 									priority
-									className="w-full"
+									className="w-full mx-auto"
 								/>
 							))}
 						</div>
