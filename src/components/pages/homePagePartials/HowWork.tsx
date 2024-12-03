@@ -56,12 +56,12 @@ export default function HowWork() {
 					</div>
 				))}
 			</menu>
-			<div className="px-5">
+			<div>
 				<div
 					id="tab-content"
-					className="w-full min-h-[240px] px-5 py-8 transition-all ease-in-out border-2 border-accent rounded-2xl shadow-lg"
+					className="w-full min-h-[240px] px-5 py-8 transition-all ease-in-out bg-menuTopBg"
 				>
-					<p className="text-justify">
+					<p className="text-justify text-textLight">
 						{HowWorkContent[activeTabIndex].tabContent}
 					</p>
 				</div>
