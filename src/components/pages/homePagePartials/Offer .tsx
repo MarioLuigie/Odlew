@@ -22,13 +22,13 @@ export default function Offer() {
 						</Title>
 						<TextContent className="px-5 dp:text-lg">
 							<p>
-								Współpracujemy z artystami którzy swoje prace tworzą w
-								plastycznym materiale tj wosk, glina, plastelina lub
-								drewno a chcą je utrwalić w metalowej postaci. Z każdym
-								kto chce mieć coś stworzonego “wyrzeźbionego” przez
+								Współpracujemy z artystami, którzy swoje prace tworzą w
+								plastycznym materiale tj. wosk, glina, plastelina lub
+								drewno, a chcą je utrwalić w metalowej postaci. Z każdym
+								kto chce mieć coś stworzonego - “wyrzeźbionego” przez
 								siebie. Stworzyć oryginalny prezent dla bliskiej osoby.
 								Do współpracy zachęcamy instytucje kultury, urzędy i
-								organizacje chcące upamiętnić ważne wydarzenia lub
+								organizacje, chcące upamiętnić ważne wydarzenia lub
 								osoby.
 							</p>
 						</TextContent>
