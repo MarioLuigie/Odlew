@@ -45,7 +45,7 @@ export default function About() {
 				</div>
 
 				{/* IMAGES */}
-				<div className="dp:w-1/2 dp:pt-12 dp:bg-backgroundDark">
+				<div className="dp:w-1/2 dp:pt-2 dp:bg-backgroundDark">
 					<div className="mt-12 dp:mt-0 flex gap-2 dp:gap-6 overflow-x-auto dp:flex-col dp:overflow-y-auto dp:max-h-customScreen">
 						{HomeAboutImages.map((image, i) => (
 							<Image
