@@ -8,6 +8,7 @@ import OpinionsCarouselList from '@/components/content/OpinionsCarouselList'
 import CustomButton from '@/components/shared/CustomButton'
 import Title from '@/components/shared/Title'
 import CreateOpinionDialog from '@/components/dialogs/CreateOpinionDialog'
+import TextContent from '@/components/shared/TextContent'
 
 export default function Opinions({
 	opinions,
@@ -18,7 +19,7 @@ export default function Opinions({
 }) {
 	const [isDialogOpen, setIsDialogOpen] = useState<boolean>(false)
 	// console.log(opinions)
-	
+
 	const handleOpenDialog = () => {
 		setIsDialogOpen(true)
 	}
@@ -28,26 +29,49 @@ export default function Opinions({
 	}
 
 	return (
-		<div>
-			<Title className="mb-12 px-5">
-				<p>Opinie klientów</p>
-			</Title>
-
-			<div className="w-full flex justify-center">
-				<OpinionsCarouselList opinions={opinions} isAdmin={isAdmin} />
+		<div className="dp:flex dp:min-h-customScreen">
+			<div className="dp:w-1/2 dp:bg-backgroundDark textPageContainer">
+				<div>
+					<Title className="mb-12 px-5 hidden dp:flex dp:text-[55px] dp:font-normal titlePage">
+						<p>Opinie klientów</p>
+					</Title>
+					<TextContent className="px-5 dp:text-lg hidden dp:block">
+						<p>
+							Dziękujemy, że wybraliście naszą ofertę! Wasza opinia jest
+							dla nas niezwykle cenna i pomaga nam stale się rozwijać, by
+							lepiej spełniać Wasze oczekiwania. Jeśli jesteście
+							zadowoleni z naszych usług, podzielcie się swoją opinią na
+							naszej stronie - zajmie to tylko chwilę, a dla nas znaczy
+							naprawdę wiele. Każda recenzja to nie tylko wsparcie, ale
+							także motywacja do dalszego działania. Dziękujemy za
+							poświęcony czas i zaufanie!
+						</p>
+					</TextContent>
+				</div>
 			</div>
+			<div className="dp:w-1/2 textPageContainer">
+				<div>
+					<Title className="mb-12 px-5 dp:hidden">
+						<p>Opinie klientów</p>
+					</Title>
 
-			<div className="px-5 my-12">
-				<CustomButton onClick={handleOpenDialog}>
-					Napisz opinię
-				</CustomButton>
+					<div className="w-full flex justify-center">
+						<OpinionsCarouselList opinions={opinions} isAdmin={isAdmin} />
+					</div>
 
-				{isDialogOpen && (
-					<CreateOpinionDialog
-						isOpen={isDialogOpen}
-						handleClose={handleCloseDialog}
-					/>
-				)}
+					<div className="px-5 my-12">
+						<CustomButton onClick={handleOpenDialog}>
+							Napisz opinię
+						</CustomButton>
+
+						{isDialogOpen && (
+							<CreateOpinionDialog
+								isOpen={isDialogOpen}
+								handleClose={handleCloseDialog}
+							/>
+						)}
+					</div>
+				</div>
 			</div>
 		</div>
 	)

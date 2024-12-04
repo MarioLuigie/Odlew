@@ -36,7 +36,7 @@ export default function HowWork() {
 	}
 
 	return (
-		<div className="mb-4 dp:flex dp:border-b-[1px] dp:border-zinc-400 dp:min-h-customScreen">
+		<div className="mb-4 dp:mb-0 dp:flex dp:border-b-[1px] dp:border-zinc-400 dp:min-h-customScreen">
 			<div className="dp:w-1/2 textPageContainer dp:justify-end">
 				<div>
 					<Title className="titlePage">
