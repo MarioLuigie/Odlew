@@ -16,8 +16,8 @@ export default function Contact() {
 		>
 			<div className="dp:flex dp:min-h-customScreen">
 				<div className="dp:w-1/2 textPageContainer">
-					<div>
-						<Title className="mb-6 px-5">
+					<div className='dp:w-full'>
+						<Title className="mb-6 dp:mt-12 px-5 dp:text-[55px] dp:font-normal">
 							<p>Kontakt</p>
 						</Title>
 						<div className="p-6 flex flex-col">
@@ -32,13 +32,13 @@ export default function Contact() {
 						</div>
 					</div>
 				</div>
-				<div className="hidden dp:w-1/2 dp:bg-backgroundDark dp:flex">
+				<div className="hidden dp:p-52 dp:w-1/2 dp:bg-backgroundDark dp:flex dp:justify-center dp:items-center">
 					<Image
 						src={HomeContactImages[0].path}
 						alt={HomeContactImages[0].alt}
-						width={1000}
-						height={1000}
-            className="h-customScreen w-auto object-cover"
+						width={2400}
+						height={2400}
+            className="h-full min-w-[300px] object-cover"
 					/>
 				</div>
 			</div>

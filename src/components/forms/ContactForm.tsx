@@ -98,7 +98,7 @@ export default function ContactForm() {
 					<SubmitButton isLoading={isSubmitting} className="w-full mt-2">
 						Wyślij wiadomość
 					</SubmitButton>
-					<FieldsRequiredDesc className='mt-2'/>
+					<FieldsRequiredDesc className='mt-2 dp:justify-start'/>
 				</div>
 			</form>
 		</Form>
