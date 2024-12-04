@@ -27,7 +27,7 @@ export default function Contact() {
 						<Title className="mb-6 px-5">
 							<p>Napisz do nas</p>
 						</Title>
-						<div className="flex flex-col px-6 pb-4">
+						<div className="flex flex-col px-6 pb-4 dp:pb-0">
 							<ContactForm />
 						</div>
 					</div>
