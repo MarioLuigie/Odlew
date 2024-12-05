@@ -64,7 +64,7 @@ export default function About() {
 
 			{/* MOTTO */}
 			<div className="h-customScreen flex flex-col justify-center items-center bg-mottoBg">
-				<div className="flex flex-col justify-center items-center text-[28px] dp:text-8xl dp:leading-[190px] font-semibold text-textLight">
+				<div className="flex flex-col justify-center items-center text-[30px] leading-[70px] dp:text-6xl dp:leading-[150px] font-semibold text-textLight">
 					<p>Są rzeczy trudne</p>
 					<p>ale</p>
 					<p>nie niemożliwe!</p>
