@@ -32,7 +32,7 @@ export default function Contact() {
 						</div>
 					</div>
 				</div>
-				<div className="hidden dp:p-52 dp:w-1/2 dp:bg-backgroundDark dp:flex dp:justify-center dp:items-center">
+				<div className="hidden dp:p-36 dp:w-1/2 dp:bg-backgroundDark dp:flex dp:justify-center dp:items-center">
 					<Image
 						src={HomeContactImages[0].path}
 						alt={HomeContactImages[0].alt}
