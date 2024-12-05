@@ -1,5 +1,7 @@
+'use client'
 // modules
 import Image from 'next/image'
+import { useState } from 'react'
 // lib
 import { AboutImages } from '@/lib/constants/images'
 // components
@@ -8,8 +10,19 @@ import Title from '@/components/shared/Title'
 import JozefProfile from '@/components/pages/aboutPagePartials/JozefProfile'
 import SzymonProfile from '@/components/pages/aboutPagePartials/SzymonProfile'
 import AntoniProfile from '@/components/pages/aboutPagePartials/AntoniProfile'
+import UserProfileDialog from '@/components/dialogs/UserProfileDialog'
 
 export default function AboutPage() {
+	const [isDialogOpen, setIsDialogOpen] = useState<boolean>(false)
+
+	const handleOpenDialog = () => {
+		setIsDialogOpen(true)
+	}
+
+	const handleCloseDialog = () => {
+		setIsDialogOpen(false)
+	}
+
 	return (
 		<div className="min-h-customScreen bg-background">
 			<Image
@@ -31,6 +44,18 @@ export default function AboutPage() {
 					i osiąganiu wspólnych celów.
 				</TextContent>
 			</div>
+			<div
+				className="w-40 h-40 bg-red-400 border-2 border-red-700 cursor-pointer"
+				onClick={handleOpenDialog}
+			>
+				LINK TO PROFILE DETAILS
+			</div>
+			{isDialogOpen && (
+				<UserProfileDialog
+					isOpen={isDialogOpen}
+					handleClose={handleCloseDialog}
+				/>
+			)}
 			<JozefProfile />
 			<SzymonProfile />
 			<AntoniProfile />
