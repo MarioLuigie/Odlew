@@ -17,13 +17,18 @@ export default function AboutPage() {
 				alt={AboutImages.team.alt}
 				width={2400}
 				height={2400}
-        className='w-full'
+				className="w-full"
 			/>
-			<div className="bg-menuTopBg p-5">
+			<div className="bg-menuTopBg p-5 pb-10">
 				<Title className="text-textLight pb-5">Nasz Zespół</Title>
 				<TextContent className="text-textLight">
-					Dzięki więzom rodzinnym doskonale się rozumiemy. Nasza współpraca
-					opiera się na wzajemnym zaufaniu i szacunku.
+					Dzięki więzom rodzinnym nasz zespół doskonale się rozumie, co
+					przekłada się na efektywną i harmonijną współpracę. Fundamentem
+					naszych działań jest wzajemne zaufanie, które pozwala nam
+					podejmować wspólne decyzje z pełnym przekonaniem. Szanujemy
+					nawzajem swoje pomysły i perspektywy, co wzmacnia naszą relację
+					zawodową. Taka atmosfera sprzyja tworzeniu wyjątkowych projektów
+					i osiąganiu wspólnych celów.
 				</TextContent>
 			</div>
 			<JozefProfile />

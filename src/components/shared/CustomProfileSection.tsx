@@ -14,18 +14,19 @@ export default function CustomProfileSection({
 	className,
 }: CustomProfileSectionProps) {
 	return (
-		<div className={cn('flex flex-col pb-8', className)}>
+		<div className={cn('flex flex-col pb-8 dp:pb-0 dp:flex-row dp:border-b-[1px] border-zinc-400', className)}>
 			{picture && (
-				<div>
+				<div className='dp:w-1/2'>
 					<Image
 						src={picture.path}
 						alt={picture.alt}
 						width={2400}
 						height={2400}
+						className='dp:object-fill'
 					/>
 				</div>
 			)}
-			<div>{children}</div>
+			<div className='dp:w-1/2'>{children}</div>
 		</div>
 	)
 }
