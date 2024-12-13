@@ -8,11 +8,11 @@ import TextVerticalLine from "@/components/shared/TextVerticalLine"
 export default function SzymonProfile() {
   return (
     <CustomProfileSection className="bg-background" picture={AboutImages.szymon}>
-      <TextVerticalLine className="p-5 h-[130px] text-right">
+      <TextVerticalLine className="p-5 h-[110px] text-right mt-4 dp:mt-0">
         <p className="font-medium text-2xl">Szymon Polewka</p>
         <p>Właściciel firmy</p>
       </TextVerticalLine>
-      <TextContent className="px-5">
+      <TextContent className="px-5 mt-4 dp:mt-0">
         Jestem absolwentem Metalurgii na Wydziale Odlewniczym krakowskiego AGH.
         Jako pracę dyplomową wykonałem odlew małej formy rzeźbiarskiej autorstwa
         Ojca. To On zaraził mnie odlewnictwem i przekazał swoją wiedzę.

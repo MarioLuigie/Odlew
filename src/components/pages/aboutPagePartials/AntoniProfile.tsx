@@ -8,10 +8,10 @@ import TextVerticalLine from "@/components/shared/TextVerticalLine"
 export default function AntoniProfile() {
   return (
     <CustomProfileSection className="bg-background" picture={AboutImages.antoni}>
-      <TextVerticalLine className="p-5 h-[130px] text-right">
+      <TextVerticalLine className="p-5 h-[110px] text-right">
         <p className="font-medium text-2xl">Antoni Polewka</p>
       </TextVerticalLine>
-      <TextContent className="px-5">
+      <TextContent className="px-5 mt-4 dp:mt-0">
         Jako najmłodszy w rodzinie już od młodzieńczych lat obcowałem z tym jak
         Tata pracował nad swoimi rzeźbami i przyglądałem się każdemu z etapów
         ich powstawania. Kiedy podrosłem to wtedy jak tylko mogłem pomagałem w
