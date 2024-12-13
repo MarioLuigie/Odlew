@@ -33,29 +33,40 @@ export default function CustomDialog({
 		<Dialog open={isOpen} onOpenChange={handleClose}>
 			<DialogTrigger>Open</DialogTrigger>
 			<DialogContent className={cn('border-0 px-0', className)}>
-				<DialogHeader className='text-left mt-8'>
-					{title ? (
-						<DialogTitle>
-							{title}
-						</DialogTitle>
-					) : (
-						<VisuallyHidden>
-							<DialogTitle>To okno modalne nie ma określonego tytułu.</DialogTitle>
-						</VisuallyHidden>
-					)}
-
-					{description ? (
-						<DialogDescription>
-							{description}
-						</DialogDescription>
-					) : (
-						<VisuallyHidden>
+				{title || description ? (
+					<DialogHeader className="text-left mt-8 dp:mt-0 dp:bg-yellow-400">
+						{title ? (
+							<DialogTitle>{title}</DialogTitle>
+						) : (
+							<VisuallyHidden>
+								<DialogTitle>
+									To okno modalne nie ma określonego tytułu.
+								</DialogTitle>
+							</VisuallyHidden>
+						)}
+						{description ? (
+							<DialogDescription>{description}</DialogDescription>
+						) : (
+							<VisuallyHidden>
+								<DialogDescription>
+									To okno modalne nie ma określonego opisu.
+								</DialogDescription>
+							</VisuallyHidden>
+						)}
+					</DialogHeader>
+				) : (
+					<VisuallyHidden>
+						<DialogHeader className="text-left mt-8 dp:mt-0 dp:bg-yellow-400">
+							<DialogTitle>
+								To okno modalne nie ma określonego tytułu.
+							</DialogTitle>
 							<DialogDescription>
 								To okno modalne nie ma określonego opisu.
 							</DialogDescription>
-						</VisuallyHidden>
-					)}
-				</DialogHeader>
+						</DialogHeader>
+					</VisuallyHidden>
+				)}
+
 				{children}
 			</DialogContent>
 		</Dialog>
