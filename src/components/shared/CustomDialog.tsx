@@ -33,7 +33,7 @@ export default function CustomDialog({
 		<Dialog open={isOpen} onOpenChange={handleClose}>
 			<DialogTrigger>Open</DialogTrigger>
 			<DialogContent className={cn('border-0 px-0', className)}>
-				<DialogHeader className='text-left mt-8'>
+				<DialogHeader className='text-left mt-8 dp:hidden'>
 					{title ? (
 						<DialogTitle>
 							{title}
