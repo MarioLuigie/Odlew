@@ -9,9 +9,9 @@ export default function RealizationsPage() {
 			<Image
 				src={Images.REALIZATIONS.path}
 				alt={Images.REALIZATIONS.alt}
-				width={1000}
-				height={1000}
-				className="min-h-[300px] object-cover rounded-lg"
+				width={2400}
+				height={2400}
+				className="min-h-[300px] dp:min-h-auto dp:max-w-[900px] object-cover rounded-lg"
 			/>
 			<div className="bg-background p-5 py-8">
 				<Title className="text-textDark text-center">

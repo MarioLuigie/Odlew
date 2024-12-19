@@ -16,7 +16,7 @@ export default function OfferPage() {
 					alt={Images.OFFER.alt}
 					width={2400}
 					height={2400}
-					className="min-h-[300px] object-cover rounded-lg"
+					className="min-h-[300px] dp:min-h-auto dp:max-w-[900px] object-cover rounded-lg"
 				/>
 				<Title className="text-textLight pb-5">Nasza Oferta</Title>
 				<TextContent className="text-textLight">
