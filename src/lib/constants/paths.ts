@@ -62,7 +62,7 @@ export const ImagesPath = {
   OFFER_16: '/assets/images/offer/offer-16.jpg',
   OFFER_17: '/assets/images/offer/offer-17.jpg',
   OFFER_18: '/assets/images/offer/offer-18.jpg',
-
+  OFFER_19: '/assets/images/offer/offer-19.jpg',
 }
 
 export const Routes = {

@@ -1,5 +1,5 @@
 // lib
-import { OfferImages } from '@/lib/constants/images'
+import { OfferImages, Images } from '@/lib/constants/images'
 // components
 import TextContent from '@/components/shared/TextContent'
 import Title from '@/components/shared/Title'
@@ -11,6 +11,13 @@ export default function OfferPage() {
 	return (
 		<div className="min-h-customScreen bg-background pb-12">
 			<div className="bg-menuTopBg p-5">
+				<Image
+					src={Images.OFFER.path}
+					alt={Images.OFFER.alt}
+					width={2400}
+					height={2400}
+					className="min-h-[300px] object-cover rounded-lg"
+				/>
 				<Title className="text-textLight pb-5">Nasza Oferta</Title>
 				<TextContent className="text-textLight">
 					Kompleksowo realizujemy zamysł i projekt klienta. Oferujemy
@@ -50,14 +57,14 @@ export default function OfferPage() {
 							{section.images.map((image, i) => (
 								<div
 									key={i}
-									className="w-full h-[300px] bg-backgroundDark rounded-lg flex justify-center items-center"
+									className="w-full h-[300px] dp:h-full bg-backgroundDark rounded-lg flex justify-center items-center"
 								>
 									<Image
 										src={image.path}
 										alt={image.alt}
-										width={1000}
-										height={1000}
-										className='h-full object-cover rounded-lg'
+										width={2500}
+										height={2500}
+										className="h-full object-cover rounded-lg"
 									/>
 								</div>
 							))}

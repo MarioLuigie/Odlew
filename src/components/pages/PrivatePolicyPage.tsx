@@ -3,7 +3,7 @@ import Title from "@/components/shared/Title"
 export default function PrivatePolicyPage() {
   return (
     <div className="min-h-customScreen bg-background">
-      <Title className="px-5">Polityka prywatności</Title>
+      <Title className="px-5 dp:items-center dp:text-3xl dp:pt-12">Polityka prywatności</Title>
 
       <div className="max-w-4xl mx-auto p-5">
         <p className="text-gray-600 mb-4 text-justify">

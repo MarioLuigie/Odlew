@@ -23,6 +23,10 @@ export const Images = {
 		path: ImagesPath.PRODUCT_10,
 		alt: ImagesAlt.PRODUCT,
 	},
+	OFFER: {
+		path: ImagesPath.OFFER_19,
+		alt: ImagesAlt.OFFER,
+	},
 }
 
 // HOME-ABOUT
