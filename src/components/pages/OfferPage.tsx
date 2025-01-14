@@ -54,7 +54,7 @@ export default function OfferPage() {
 					{OfferImages.map((section, i) => (
 						<div key={i} className="flex flex-col gap-3 dp:max-w-[600px]">
 							<div className="flex justify-start items-center gap-2">
-								<Drop className='h-[600px]'>{i + 1}</Drop>
+								<Drop className='dp:min-w-12 dp:min-h-12 dp:text-xl'>{i + 1}</Drop>
 								<p className='dp:text-xl'>{section.title}</p>
 							</div>
 							{section.images.map((image, i) => (
