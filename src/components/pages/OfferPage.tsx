@@ -1,11 +1,11 @@
 // lib
-import { OfferImages, Images } from '@/lib/constants/images'
+import { Images } from '@/lib/constants/images'
 // components
 import TextContent from '@/components/shared/TextContent'
 import Title from '@/components/shared/Title'
 import CustomButton from '@/components/shared/CustomButton'
-import Drop from '@/components/shared/Drop'
 import Image from 'next/image'
+import OfferPictures from '@/components/pages/offerPagePartials/OfferPictures'
 
 export default function OfferPage() {
 	return (
@@ -41,46 +41,22 @@ export default function OfferPage() {
 			</div>
 			<div className="bg-background px-5">
 				<Title className="mb-8 dp:text-3xl">Poznaj nasz proces</Title>
-				<div className="flex flex-col gap-8 dp:flex-row dp:flex-wrap dp:justify-center">
-					{/* {Array.from({ length: 12 }, (_, i) => (
-						<div key={i} className="flex flex-col gap-3">
-							<div className="flex justify-start items-center gap-2">
-								<Drop>{i + 1}</Drop>
-                <p>Szkic koncepcyjny</p>
-							</div>
-							<div className="w-full h-[300px] bg-mottoBg rounded-lg flex justify-center items-center">
-								{i}
-							</div>
-						</div>
-					))} */}
-					{OfferImages.map((section, i) => (
-						<div key={i}>
-							<div className="flex flex-col gap-3 dp:max-w-[600px]">
-								<div className="flex justify-start items-center gap-2">
-									<Drop className="dp:min-w-12 dp:min-h-12 dp:text-xl">
-										{i + 1}
-									</Drop>
-									<p className="dp:text-xl">{section.title}</p>
-								</div>
-								{section.images.map((image, i) => (
-									<div
-										key={i}
-										className="w-full h-[300px] dp:h-full bg-backgroundDark rounded-lg flex justify-center items-center"
-									>
-										<Image
-											src={image.path}
-											alt={image.alt}
-											width={2500}
-											height={2500}
-											className="h-full object-cover rounded-lg"
-										/>
-									</div>
-								))}
-							</div>
-						</div>
-					))}
-				</div>
+				<OfferPictures />
 			</div>
 		</div>
 	)
+}
+
+{
+	/* {Array.from({ length: 12 }, (_, i) => (
+	<div key={i} className="flex flex-col gap-3">
+		<div className="flex justify-start items-center gap-2">
+			<Drop>{i + 1}</Drop>
+			<p>Szkic koncepcyjny</p>
+		</div>
+		<div className="w-full h-[300px] bg-mottoBg rounded-lg flex justify-center items-center">
+			{i}
+		</div>
+	</div>
+))} */
 }
