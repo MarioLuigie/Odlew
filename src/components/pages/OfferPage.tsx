@@ -10,29 +10,32 @@ import Image from 'next/image'
 export default function OfferPage() {
 	return (
 		<div className="min-h-customScreen bg-background pb-12">
-			<div className="bg-menuTopBg p-5">
+			<div className="bg-menuTopBg">
 				<Image
 					src={Images.OFFER.path}
 					alt={Images.OFFER.alt}
 					width={2400}
 					height={2400}
-					className="min-h-[300px] dp:min-h-auto dp:max-w-[900px] object-cover rounded-lg"
+					className="w-full"
 				/>
-				<Title className="text-textLight pb-5">Nasza Oferta</Title>
-				<TextContent className="text-textLight">
-					Kompleksowo realizujemy zamysł i projekt klienta. Oferujemy
-					wykonanie gotowego odlewu od szkicu lub pomysłu autora.
-					Wykonujemy pomniki, tablice pamiątkowe, statuetki, medale
-					okolicznościowe, rzeźby, płaskorzeźby, elementy ozdobne, kopie
-					istniejących przedmiotów lub ozdobnych przedmiotów użytkowych.
-					Specjalizujemy się w odlewnictwie brązu i mosiądzu w technologii
-					wytapianych modeli woskowych przy użyciu mas gipsowych. Pozwala
-					to na wykonywanie odlewów których kształt zależy tylko od
-					wyobraźni autora. Stworzymy rzeźbę na każdą okazję.
-				</TextContent>
-				<CustomButton navlink path="/realizacje" className="my-8">
-					Zobacz realizacje
-				</CustomButton>
+				<div className='p-5'>
+					<Title className="text-textLight pb-5 dp:text-3xl">Nasza Oferta</Title>
+					<TextContent className="text-textLight dp:text-xl">
+						Kompleksowo realizujemy zamysł i projekt klienta. Oferujemy
+						wykonanie gotowego odlewu od szkicu lub pomysłu autora.
+						Wykonujemy pomniki, tablice pamiątkowe, statuetki, medale
+						okolicznościowe, rzeźby, płaskorzeźby, elementy ozdobne, kopie
+						istniejących przedmiotów lub ozdobnych przedmiotów użytkowych.
+						Specjalizujemy się w odlewnictwie brązu i mosiądzu w
+						technologii wytapianych modeli woskowych przy użyciu mas
+						gipsowych. Pozwala to na wykonywanie odlewów których kształt
+						zależy tylko od wyobraźni autora. Stworzymy rzeźbę na każdą
+						okazję.
+					</TextContent>
+					<CustomButton navlink path="/realizacje" className="my-8">
+						Zobacz realizacje
+					</CustomButton>
+				</div>
 			</div>
 			<div className="bg-background px-5">
 				<Title className="mb-8">Poznaj nasz proces</Title>

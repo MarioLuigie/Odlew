@@ -42,7 +42,7 @@ export default function AboutPage() {
 	}
 
 	return (
-		<div className="min-h-customScreen bg-background">
+		<div className="min-h-customScreen bg-background flex flex-col">
 			<Image
 				src={AboutImages.team.path}
 				alt={AboutImages.team.alt}
@@ -50,9 +50,11 @@ export default function AboutPage() {
 				height={2400}
 				className="w-full"
 			/>
-			<div className="bg-menuTopBg p-5 pb-10">
-				<Title className="text-textLight pb-5">Nasz Zespół</Title>
-				<TextContent className="text-textLight">
+			<div className="bg-menuTopBg p-5 pb-10 grow flex flex-col justify-center">
+				<Title className="text-textLight pb-5 dp:text-3xl">
+					Nasz Zespół
+				</Title>
+				<TextContent className="text-textLight dp:text-xl">
 					Dzięki więzom rodzinnym nasz zespół doskonale się rozumie, co
 					przekłada się na efektywną i harmonijną współpracę. Fundamentem
 					naszych działań jest wzajemne zaufanie, które pozwala nam
@@ -61,25 +63,46 @@ export default function AboutPage() {
 					zawodową. Taka atmosfera sprzyja tworzeniu wyjątkowych projektów
 					i osiąganiu wspólnych celów.
 				</TextContent>
+				<div className="w-full h-full my-8 flex flex-col items-center gap-8 dp:flex-row dp:justify-center">
+					<div
+						className="w-full h-full dp:w-110 dp:h-110 cursor-pointer"
+						onClick={() => handleOpenDialog('Antoni')}
+					>
+						<Image
+							src={AboutImages.antoni.path}
+							alt={AboutImages.antoni.alt}
+							width={2400}
+							height={2400}
+							className="dp:object-cover h-full"
+						/>
+					</div>
+					<div
+						className="w-full h-full dp:w-110 dp:h-110 cursor-pointer"
+						onClick={() => handleOpenDialog('Jozef')}
+					>
+						<Image
+							src={AboutImages.jozef.path}
+							alt={AboutImages.jozef.alt}
+							width={2400}
+							height={2400}
+							className="dp:object-cover h-full"
+						/>
+					</div>
+					<div
+						className="w-full h-full dp:w-110 dp:h-110 cursor-pointer"
+						onClick={() => handleOpenDialog('Szymon')}
+					>
+						<Image
+							src={AboutImages.szymon.path}
+							alt={AboutImages.szymon.alt}
+							width={2400}
+							height={2400}
+							className="dp:object-cover h-full"
+						/>
+					</div>
+				</div>
 			</div>
-			<div
-				className="w-40 h-40 bg-blue-400 border-2 border-blue-700 cursor-pointer"
-				onClick={() => handleOpenDialog('Jozef')}
-			>
-				Józef
-			</div>
-			<div
-				className="w-40 h-40 bg-green-400 border-2 border-green-700 cursor-pointer"
-				onClick={() => handleOpenDialog('Szymon')}
-			>
-				Szymon
-			</div>
-			<div
-				className="w-40 h-40 bg-red-400 border-2 border-red-700 cursor-pointer"
-				onClick={() => handleOpenDialog('Antoni')}
-			>
-				Antoni
-			</div>
+
 			{isDialogOpen && (
 				<UserProfileDialog
 					isOpen={isDialogOpen}
