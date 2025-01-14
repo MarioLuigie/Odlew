@@ -41,7 +41,7 @@ export default function OfferPage() {
 			</div>
 			<div className="bg-background px-5">
 				<Title className="mb-8 dp:text-3xl">Poznaj nasz proces</Title>
-				<div className="flex flex-col gap-8 bg-yellow-300">
+				<div className="flex flex-col gap-8 dp:flex-row dp:flex-wrap dp:justify-center">
 					{/* {Array.from({ length: 12 }, (_, i) => (
 						<div key={i} className="flex flex-col gap-3">
 							<div className="flex justify-start items-center gap-2">
@@ -54,7 +54,7 @@ export default function OfferPage() {
 						</div>
 					))} */}
 					{OfferImages.map((section, i) => (
-						<div key={i} className="w-full bg-red-300">
+						<div key={i}>
 							<div className="flex flex-col gap-3 dp:max-w-[600px]">
 								<div className="flex justify-start items-center gap-2">
 									<Drop className="dp:min-w-12 dp:min-h-12 dp:text-xl">
