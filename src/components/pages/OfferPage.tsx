@@ -18,8 +18,10 @@ export default function OfferPage() {
 					height={2400}
 					className="w-full"
 				/>
-				<div className='p-5'>
-					<Title className="text-textLight pb-5 dp:text-3xl">Nasza Oferta</Title>
+				<div className="p-5">
+					<Title className="text-textLight pb-5 dp:text-3xl">
+						Nasza Oferta
+					</Title>
 					<TextContent className="text-textLight dp:text-xl">
 						Kompleksowo realizujemy zamysł i projekt klienta. Oferujemy
 						wykonanie gotowego odlewu od szkicu lub pomysłu autora.
@@ -38,8 +40,8 @@ export default function OfferPage() {
 				</div>
 			</div>
 			<div className="bg-background px-5">
-				<Title className="mb-8">Poznaj nasz proces</Title>
-				<div className="flex flex-col gap-8">
+				<Title className="mb-8 dp:text-3xl">Poznaj nasz proces</Title>
+				<div className="flex flex-col gap-8 bg-yellow-300">
 					{/* {Array.from({ length: 12 }, (_, i) => (
 						<div key={i} className="flex flex-col gap-3">
 							<div className="flex justify-start items-center gap-2">
@@ -52,25 +54,29 @@ export default function OfferPage() {
 						</div>
 					))} */}
 					{OfferImages.map((section, i) => (
-						<div key={i} className="flex flex-col gap-3 dp:max-w-[600px]">
-							<div className="flex justify-start items-center gap-2">
-								<Drop className='dp:min-w-12 dp:min-h-12 dp:text-xl'>{i + 1}</Drop>
-								<p className='dp:text-xl'>{section.title}</p>
-							</div>
-							{section.images.map((image, i) => (
-								<div
-									key={i}
-									className="w-full h-[300px] dp:h-full bg-backgroundDark rounded-lg flex justify-center items-center"
-								>
-									<Image
-										src={image.path}
-										alt={image.alt}
-										width={2500}
-										height={2500}
-										className="h-full object-cover rounded-lg"
-									/>
+						<div key={i} className="w-full bg-red-300">
+							<div className="flex flex-col gap-3 dp:max-w-[600px]">
+								<div className="flex justify-start items-center gap-2">
+									<Drop className="dp:min-w-12 dp:min-h-12 dp:text-xl">
+										{i + 1}
+									</Drop>
+									<p className="dp:text-xl">{section.title}</p>
 								</div>
-							))}
+								{section.images.map((image, i) => (
+									<div
+										key={i}
+										className="w-full h-[300px] dp:h-full bg-backgroundDark rounded-lg flex justify-center items-center"
+									>
+										<Image
+											src={image.path}
+											alt={image.alt}
+											width={2500}
+											height={2500}
+											className="h-full object-cover rounded-lg"
+										/>
+									</div>
+								))}
+							</div>
 						</div>
 					))}
 				</div>
