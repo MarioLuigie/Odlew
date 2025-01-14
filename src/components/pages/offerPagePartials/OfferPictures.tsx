@@ -3,11 +3,8 @@
 import Lightbox from 'yet-another-react-lightbox'
 import { useState } from 'react'
 import Image from 'next/image'
-// lib
-import { ProductImages } from '@/lib/constants/images'
 // styles
 import 'yet-another-react-lightbox/styles.css'
-
 // lib
 import { OfferImages } from '@/lib/constants/images'
 // components
@@ -54,10 +51,12 @@ export default function OfferPictures() {
 				open={open}
 				close={() => setOpen(false)}
 				index={currentIndex}
-				slides={ProductImages.map((productImage) => ({
-					src: productImage.image.path,
-					alt: productImage.image.alt,
-				}))}
+				slides={OfferImages.flatMap((section) =>
+					section.images.map((image) => ({
+						src: image.path,
+						alt: image.alt,
+					}))
+				)}
 				controller={{ closeOnBackdropClick: true }}
 				on={{
 					view: ({ index }) => setCurrentIndex(index),
