@@ -1,6 +1,5 @@
-// import Drop from '@/components/shared/Drop'
 
-export default function OfferPicture() {
+export default function OfferPictures() {
 	return (
     <div>
       
