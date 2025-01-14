@@ -55,7 +55,7 @@ export default function Drop({
 
 	return (
 		<div
-			className={cn(className, dropVariants({ corner, variant }))}
+			className={cn(dropVariants({ corner, variant }), className)}
 			style={containerStyle}
 		>
 			<div
