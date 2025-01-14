@@ -1,11 +1,11 @@
-import Title from '@/components/shared/Title'
+// modules
 import Image from 'next/image'
+// lib
 import { Images } from '@/lib/constants/images'
-import CustomButton from '../shared/CustomButton'
-
-import 'yet-another-react-lightbox/styles.css'
-
+// components
 import RealizationsPictures from '@/components/pages/realizationsPagePartials/RealizationsPictures'
+import Title from '@/components/shared/Title'
+import CustomButton from '@/components/shared/CustomButton'
 
 export default function RealizationsPage() {
 	return (

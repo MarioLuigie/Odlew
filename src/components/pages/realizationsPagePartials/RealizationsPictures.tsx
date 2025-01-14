@@ -1,9 +1,12 @@
 'use client'
-import Image from 'next/image'
-import { ProductImages } from '@/lib/constants/images'
+// modules
 import Lightbox from 'yet-another-react-lightbox'
-import 'yet-another-react-lightbox/styles.css'
 import { useState } from 'react'
+import Image from 'next/image'
+// lib
+import { ProductImages } from '@/lib/constants/images'
+// styles
+import 'yet-another-react-lightbox/styles.css'
 
 export default function RealizationsPictures() {
 	const [open, setOpen] = useState(false)
