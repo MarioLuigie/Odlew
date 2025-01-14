@@ -1,14 +1,15 @@
+'use client'
 import Title from '@/components/shared/Title'
 import Image from 'next/image'
 import { ProductImages, Images } from '@/lib/constants/images'
 import CustomButton from '../shared/CustomButton'
-import Lightbox from 'yet-another-react-lightbox';
-import 'yet-another-react-lightbox/styles.css';
-import { useState } from 'react';
+import Lightbox from 'yet-another-react-lightbox'
+import 'yet-another-react-lightbox/styles.css'
+import { useState } from 'react'
 
 export default function RealizationsPage() {
-	const [open, setOpen] = useState(false);
-	const [currentIndex, setCurrentIndex] = useState(0);
+	const [open, setOpen] = useState(false)
+	const [currentIndex, setCurrentIndex] = useState(0)
 
 	return (
 		<div className="min-h-customScreen bg-background">
@@ -28,10 +29,13 @@ export default function RealizationsPage() {
 			{/* Grid dla ProductImages z wyrównaniem wysokości */}
 			<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-5">
 				{ProductImages.map((productImage, i) => (
-					<div 
+					<div
 						className="flex flex-col gap-2 h-full cursor-pointer"
 						key={i}
-						onClick={() => { setCurrentIndex(i); setOpen(true); }}
+						onClick={() => {
+							setCurrentIndex(i)
+							setOpen(true)
+						}}
 					>
 						<div className="w-full min-h-[300px] dp:min-h-[800px] bg-backgroundDark rounded-lg flex justify-center items-center relative">
 							<Image
@@ -57,9 +61,12 @@ export default function RealizationsPage() {
 				index={currentIndex}
 				slides={ProductImages.map((productImage) => ({
 					src: productImage.image.path,
-					alt: productImage.image.alt
+					alt: productImage.image.alt,
 				}))}
-				onIndexChange={setCurrentIndex}
+				controller={{ closeOnBackdropClick: true }}
+				on={{
+					view: ({ index }) => setCurrentIndex(index),
+				}}
 			/>
 
 			<div className="p-5 pb-16 flex justify-center">
@@ -70,7 +77,6 @@ export default function RealizationsPage() {
 		</div>
 	)
 }
-
 
 // import Title from '@/components/shared/Title'
 // import Image from 'next/image'
@@ -123,7 +129,6 @@ export default function RealizationsPage() {
 // 		</div>
 // 	)
 // }
-
 
 // import Title from '@/components/shared/Title'
 // import Image from 'next/image'
@@ -178,7 +183,6 @@ export default function RealizationsPage() {
 // 	)
 // }
 
-
 // import Title from '@/components/shared/Title'
 // import Image from 'next/image'
 // import { ProductImages, Images } from '@/lib/constants/images'
@@ -231,7 +235,6 @@ export default function RealizationsPage() {
 // 		</div>
 // 	)
 // }
-
 
 // // import Title from '@/components/shared/Title'
 // // import Image from 'next/image'
