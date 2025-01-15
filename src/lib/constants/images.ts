@@ -99,113 +99,207 @@ export const AboutImages = {
 
 export const OfferImages = [
 	{
-		title: 'Wykonanie szkicu koncepcyjnego',
-		images: [
-			{
-				path: ImagesPath.OFFER_1,
-				alt: ImagesAlt.OFFER,
-			},
-		],
+			title: 'Wykonanie szkicu koncepcyjnego',
+			path: ImagesPath.OFFER_1,
+			alt: ImagesAlt.OFFER,
 	},
 	{
-		title: 'Tworzenie modelu woskowego',
-		images: [
-			{
-				path: ImagesPath.OFFER_2,
-				alt: ImagesAlt.OFFER,
-			},
-			{
-				path: ImagesPath.OFFER_3,
-				alt: ImagesAlt.OFFER,
-			},
-		],
+			title: 'Tworzenie modelu woskowego',
+			path: ImagesPath.OFFER_2,
+			alt: ImagesAlt.OFFER,
 	},
 	{
-		title: 'Budowanie układu modelowego',
-		images: [
-			{
-				path: ImagesPath.OFFER_4,
-				alt: ImagesAlt.OFFER,
-			},
-		],
+			title: 'Tworzenie modelu woskowego',
+			path: ImagesPath.OFFER_3,
+			alt: ImagesAlt.OFFER,
 	},
 	{
-		title: 'Przygotowanie formy do zalewania ciekłym metalem',
-		images: [
-			{
-				path: ImagesPath.OFFER_5,
-				alt: ImagesAlt.OFFER,
-			},
-			{
-				path: ImagesPath.OFFER_6,
-				alt: ImagesAlt.OFFER,
-			},
-			{
-				path: ImagesPath.OFFER_7,
-				alt: ImagesAlt.OFFER,
-			},
-			{
-				path: ImagesPath.OFFER_8,
-				alt: ImagesAlt.OFFER,
-			},
-			{
-				path: ImagesPath.OFFER_9,
-				alt: ImagesAlt.OFFER,
-			},
-			{
-				path: ImagesPath.OFFER_10,
-				alt: ImagesAlt.OFFER,
-			},
-			{
-				path: ImagesPath.OFFER_11,
-				alt: ImagesAlt.OFFER,
-			},
-			{
-				path: ImagesPath.OFFER_12,
-				alt: ImagesAlt.OFFER,
-			},
-			{
-				path: ImagesPath.OFFER_13,
-				alt: ImagesAlt.OFFER,
-			},
-		],
+			title: 'Budowanie układu modelowego',
+			path: ImagesPath.OFFER_4,
+			alt: ImagesAlt.OFFER,
 	},
 	{
-		title: 'Zalewanie formy ciekłym metalem',
-		images: [
-			{
-				path: ImagesPath.OFFER_14,
-				alt: ImagesAlt.OFFER,
-			},
-		],
+			title: 'Przygotowanie formy do zalewania ciekłym metalem',
+			path: ImagesPath.OFFER_5,
+			alt: ImagesAlt.OFFER,
 	},
 	{
-		title: 'Obróbka surowego odlewu',
-		images: [
-			{
-				path: ImagesPath.OFFER_15,
-				alt: ImagesAlt.OFFER,
-			},
-			{
-				path: ImagesPath.OFFER_16,
-				alt: ImagesAlt.OFFER,
-			},
-		],
+			title: 'Przygotowanie formy do zalewania ciekłym metalem',
+			path: ImagesPath.OFFER_6,
+			alt: ImagesAlt.OFFER,
 	},
 	{
-		title: 'Prezentacja gotowego odlewu',
-		images: [
-			{
-				path: ImagesPath.OFFER_17,
-				alt: ImagesAlt.OFFER,
-			},
-			{
-				path: ImagesPath.OFFER_18,
-				alt: ImagesAlt.OFFER,
-			},
-		],
+			title: 'Przygotowanie formy do zalewania ciekłym metalem',
+			path: ImagesPath.OFFER_7,
+			alt: ImagesAlt.OFFER,
 	},
-]
+	{
+			title: 'Przygotowanie formy do zalewania ciekłym metalem',
+			path: ImagesPath.OFFER_8,
+			alt: ImagesAlt.OFFER,
+	},
+	{
+			title: 'Przygotowanie formy do zalewania ciekłym metalem',
+			path: ImagesPath.OFFER_9,
+			alt: ImagesAlt.OFFER,
+	},
+	{
+			title: 'Przygotowanie formy do zalewania ciekłym metalem',
+			path: ImagesPath.OFFER_10,
+			alt: ImagesAlt.OFFER,
+	},
+	{
+			title: 'Przygotowanie formy do zalewania ciekłym metalem',
+			path: ImagesPath.OFFER_11,
+			alt: ImagesAlt.OFFER,
+	},
+	{
+			title: 'Przygotowanie formy do zalewania ciekłym metalem',
+			path: ImagesPath.OFFER_12,
+			alt: ImagesAlt.OFFER,
+	},
+	{
+			title: 'Przygotowanie formy do zalewania ciekłym metalem',
+			path: ImagesPath.OFFER_13,
+			alt: ImagesAlt.OFFER,
+	},
+	{
+			title: 'Zalewanie formy ciekłym metalem',
+			path: ImagesPath.OFFER_14,
+			alt: ImagesAlt.OFFER,
+	},
+	{
+			title: 'Obróbka surowego odlewu',
+			path: ImagesPath.OFFER_15,
+			alt: ImagesAlt.OFFER,
+	},
+	{
+			title: 'Obróbka surowego odlewu',
+			path: ImagesPath.OFFER_16,
+			alt: ImagesAlt.OFFER,
+	},
+	{
+			title: 'Prezentacja gotowego odlewu',
+			path: ImagesPath.OFFER_17,
+			alt: ImagesAlt.OFFER,
+	},
+	{
+			title: 'Prezentacja gotowego odlewu',
+			path: ImagesPath.OFFER_18,
+			alt: ImagesAlt.OFFER,
+	}
+];
+
+
+// export const OfferImages = [
+// 	{
+// 		title: 'Wykonanie szkicu koncepcyjnego',
+// 		images: [
+// 			{
+// 				path: ImagesPath.OFFER_1,
+// 				alt: ImagesAlt.OFFER,
+// 			},
+// 		],
+// 	},
+// 	{
+// 		title: 'Tworzenie modelu woskowego',
+// 		images: [
+// 			{
+// 				path: ImagesPath.OFFER_2,
+// 				alt: ImagesAlt.OFFER,
+// 			},
+// 			{
+// 				path: ImagesPath.OFFER_3,
+// 				alt: ImagesAlt.OFFER,
+// 			},
+// 		],
+// 	},
+// 	{
+// 		title: 'Budowanie układu modelowego',
+// 		images: [
+// 			{
+// 				path: ImagesPath.OFFER_4,
+// 				alt: ImagesAlt.OFFER,
+// 			},
+// 		],
+// 	},
+// 	{
+// 		title: 'Przygotowanie formy do zalewania ciekłym metalem',
+// 		images: [
+// 			{
+// 				path: ImagesPath.OFFER_5,
+// 				alt: ImagesAlt.OFFER,
+// 			},
+// 			{
+// 				path: ImagesPath.OFFER_6,
+// 				alt: ImagesAlt.OFFER,
+// 			},
+// 			{
+// 				path: ImagesPath.OFFER_7,
+// 				alt: ImagesAlt.OFFER,
+// 			},
+// 			{
+// 				path: ImagesPath.OFFER_8,
+// 				alt: ImagesAlt.OFFER,
+// 			},
+// 			{
+// 				path: ImagesPath.OFFER_9,
+// 				alt: ImagesAlt.OFFER,
+// 			},
+// 			{
+// 				path: ImagesPath.OFFER_10,
+// 				alt: ImagesAlt.OFFER,
+// 			},
+// 			{
+// 				path: ImagesPath.OFFER_11,
+// 				alt: ImagesAlt.OFFER,
+// 			},
+// 			{
+// 				path: ImagesPath.OFFER_12,
+// 				alt: ImagesAlt.OFFER,
+// 			},
+// 			{
+// 				path: ImagesPath.OFFER_13,
+// 				alt: ImagesAlt.OFFER,
+// 			},
+// 		],
+// 	},
+// 	{
+// 		title: 'Zalewanie formy ciekłym metalem',
+// 		images: [
+// 			{
+// 				path: ImagesPath.OFFER_14,
+// 				alt: ImagesAlt.OFFER,
+// 			},
+// 		],
+// 	},
+// 	{
+// 		title: 'Obróbka surowego odlewu',
+// 		images: [
+// 			{
+// 				path: ImagesPath.OFFER_15,
+// 				alt: ImagesAlt.OFFER,
+// 			},
+// 			{
+// 				path: ImagesPath.OFFER_16,
+// 				alt: ImagesAlt.OFFER,
+// 			},
+// 		],
+// 	},
+// 	{
+// 		title: 'Prezentacja gotowego odlewu',
+// 		images: [
+// 			{
+// 				path: ImagesPath.OFFER_17,
+// 				alt: ImagesAlt.OFFER,
+// 			},
+// 			{
+// 				path: ImagesPath.OFFER_18,
+// 				alt: ImagesAlt.OFFER,
+// 			},
+// 		],
+// 	},
+// ]
 
 export const ProductImages = [
 	{
