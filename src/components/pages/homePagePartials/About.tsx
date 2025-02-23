@@ -25,7 +25,7 @@ export default function About() {
 								<p>Dokąd zmierzamy?</p>
 							</div>
 						</Title>
-						<TextContent className="px-5 dp:text-lg">
+						<TextContent className="px-5 dp:text-[18px]">
 							<p>
 								Jesteśmy rodzinną firmą zajmującą się odlewnictwem
 								artystycznym. Założoną w 2020 roku jako ewolucja
@@ -45,7 +45,7 @@ export default function About() {
 				</div>
 
 				{/* IMAGES */}
-				<div className="dp:w-1/2 dp:pt-2 dp:bg-background">
+				<div className="dp:w-1/2 dp:pt-2 dp:bg-background dp:p-36">
 					<div className="mt-12 dp:mt-0 flex gap-2 dp:gap-6 overflow-x-auto dp:flex-col dp:overflow-y-auto dp:max-h-customScreen">
 						{HomeAboutImages.map((image, i) => (
 							<Image
