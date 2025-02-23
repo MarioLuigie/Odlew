@@ -3,7 +3,7 @@ import CustomButton from '@/components/shared/CustomButton'
 
 export default function Start() {
 	return (
-		<section className="w-full dp:flex">
+		<section className="w-full dp:flex pb-24 dp:bg-background">
 			{/* DESKTOP */}
 			<div className="hidden dp:flex dp:flex-col dp:justify-center dp:items-end dp:w-1/2 dp:bg-backgroundDark dp:p-8">
 				<div className="hidden dp:text-textDark dp:flex dp:flex-col dp:text-right">
