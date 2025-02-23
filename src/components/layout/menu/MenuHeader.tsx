@@ -20,7 +20,7 @@ export default function MenuHeader({ className, capitalize }: MenuHeaderProps) {
 						<Link href={item.path} key={item.label}>
 							<li
 								className={cn(
-									'min-w-[120px] xl:max-w-[190px] xl:min-w-[170px] py-2 flex justify-center items-center border-b-[1px] border-zinc-700',
+									'min-w-[120px] xl:max-w-[190px] xl:min-w-[170px] py-2 flex justify-center items-center border-b-[2px] border-zinc-700',
 									path === item.path ? 'border-accent' : ''
 								)}
 							>
