@@ -23,7 +23,7 @@ const config: Config = {
                 menuBottomBg: '#DAD7D1',
                 opinionBg: '#ebebeb',
                 inputBg: '#ebebeb',
-                accent: '#E36A00',
+                accent: '#B75601',
                 accentHover: '#D06101',
                 textLight: '#EEE9E2',
                 textDark: '#383638',
