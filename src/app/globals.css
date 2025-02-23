@@ -32,7 +32,7 @@ body {
 	}
 
 	.titlePage {
-		@apply mb-6 dp:mb-16 px-5 dp:text-[40px] lg:text-[45px] xl:text-[54px] dp:leading-[50px] lg:leading-[55px] xl:leading-[65px] dp:font-medium
+		@apply text-textDark mb-6 dp:mb-16 px-5 dp:text-[40px] lg:text-[45px] xl:text-[54px] dp:leading-[50px] lg:leading-[55px] xl:leading-[65px] dp:font-medium
 	}
 
 	.textPageContainer {
@@ -116,4 +116,13 @@ body {
 		background-size: cover;
 		background-position: center;
 	}
+
+	.text-shadow-lg {
+		text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3);
+	}
 }
+
+
+
+
+

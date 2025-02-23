@@ -7,7 +7,7 @@ export default function Start() {
 			{/* DESKTOP */}
 			<div className="hidden dp:flex dp:flex-col dp:justify-center dp:items-end dp:w-1/2 dp:bg-backgroundDark dp:p-8">
 				<div className="hidden dp:text-textDark dp:flex dp:flex-col dp:text-right">
-					<p className="text-[30px] xl:text-[45px]">P.S Odlew</p>
+					<p className="text-[30px] xl:text-[45px]">P.S. ODLEW</p>
 					<p className="text-[65px] xl:text-[105px] leading-[75px] xl:leading-[110px]">
 						Odlewnia Artystyczna
 					</p>
@@ -24,7 +24,7 @@ export default function Start() {
 			{/* MOBILE */}
 			<div
 				id="home"
-				className="h-customScreen p-5 dp:px-10 pb-28 flex flex-col justify-end dp:w-1/2 dp:justify-end dp:items-start gap-4 homepage-background scroll-mt-header"
+				className="h-customScreen p-5 dp:px-10 dp:pb-28 flex flex-col justify-end dp:w-1/2 dp:justify-end dp:items-start gap-4 homepage-background scroll-mt-header"
 			>
 				<CompanyName mode="light" className="dp:hidden" />
 				<CustomButton navlink path="/realizacje" className="dp:hidden">

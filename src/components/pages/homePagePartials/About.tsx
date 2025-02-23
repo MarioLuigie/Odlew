@@ -1,5 +1,8 @@
+'use client'
 // modules
 import Image from 'next/image'
+import { ScrollArea } from '@/components/ui/scroll-area'
+
 // lib
 import { HomeAboutImages } from '@/lib/constants/images'
 // components
@@ -13,9 +16,9 @@ export default function About() {
 			id="o-nas"
 			className="min-h-customScreen flex flex-col bg-background scroll-mt-header"
 		>
-			<div className="dp:flex dp:min-h-customScreen">
+			<div className="dp:flex dp:min-h-[900px]">
 				{/* TEXT */}
-				<div className="dp:w-1/2 textPageContainer">
+				<div className="dp:w-2/3 textPageContainer">
 					<div>
 						<Title className="titlePage">
 							<p className="dp:hidden">Kim jesteśmy?</p>
@@ -26,7 +29,7 @@ export default function About() {
 							</div>
 						</Title>
 						<TextContent className="px-5 dp:text-[18px]">
-							<p>
+							<p className='dp:w-[800px]'>
 								Jesteśmy rodzinną firmą zajmującą się odlewnictwem
 								artystycznym. Założoną w 2020 roku jako ewolucja
 								trwającej ponad 40 lat rzemieślniczej pracy artysty
@@ -45,8 +48,8 @@ export default function About() {
 				</div>
 
 				{/* IMAGES */}
-				<div className="dp:w-1/2 dp:pt-2 dp:bg-background dp:p-44">
-					<div className="mt-12 dp:mt-0 flex gap-2 dp:gap-6 overflow-x-auto dp:flex-col dp:overflow-y-auto dp:max-h-customScreen" style={{ direction: 'rtl' }}>
+				<div className="dp:w-1/3 dp:bg-background dp:pr-[72px]">
+					{/* <div className="mt-12 dp:mt-0 flex gap-2 dp:gap-6 overflow-x-auto dp:flex-col dp:justify-start dp:overflow-y-auto dp:max-h-customScreen" style={{ direction: 'rtl' }}>
 						{HomeAboutImages.map((image, i) => (
 							<Image
 								key={i}
@@ -55,11 +58,30 @@ export default function About() {
 								width={2400}
 								height={2400}
 								priority
-								className="w-[360px] h-[245px] object-cover grayscale hover:grayscale-0 transition duration-500 ease-in-out cursor-pointer"
+								className="w-[450px] object-cover grayscale hover:grayscale-0 transition duration-500 ease-in-out cursor-pointer"
 								style={{ willChange: "filter" }}
 							/>
 						))}
-					</div>
+					</div> */}
+
+					<ScrollArea className="h-[900px] w-[500px] rounded-none border-l-[2px]">
+						<div className="flex flex-col gap-6 items-end">
+							{HomeAboutImages.map((image, i) => (
+								<Image
+									key={i}
+									src={image.path}
+									alt={image.alt}
+									width={2400}
+									height={2400}
+									priority
+									className="w-[440px] object-cover grayscale contrast-75 hover:grayscale-0 hover:contrast-100 transition duration-500 ease-in-out cursor-pointer"
+									style={{
+										willChange: 'filter',
+									}}
+								/>
+							))}
+						</div>
+					</ScrollArea>
 				</div>
 			</div>
 
