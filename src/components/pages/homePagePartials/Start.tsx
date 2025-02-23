@@ -3,7 +3,7 @@ import CustomButton from '@/components/shared/CustomButton'
 
 export default function Start() {
 	return (
-		<section className="w-full dp:flex pb-24 dp:bg-background">
+		<section className="w-full dp:flex pb-24 dp:bg-background relative">
 			{/* DESKTOP */}
 			<div className="hidden dp:flex dp:flex-col dp:justify-center dp:items-end dp:w-1/2 dp:bg-backgroundDark dp:p-8">
 				<div className="hidden dp:text-textDark dp:flex dp:flex-col dp:text-right">
@@ -30,6 +30,12 @@ export default function Start() {
 				<CustomButton navlink path="/realizacje" className="dp:hidden">
 					Zobacz realizacje
 				</CustomButton>
+			</div>
+
+			<div className='hidden dp:block absolute bottom-0 left-[50px]'>
+				<div className='bg-red-300 w-[180px] h-[240px]'>
+
+				</div>
 			</div>
 		</section>
 	)

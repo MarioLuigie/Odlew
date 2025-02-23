@@ -20,8 +20,8 @@ export default function About() {
 						<Title className="titlePage">
 							<p className="dp:hidden">Kim jesteśmy?</p>
 							<div className="hidden dp:block">
-								<p>Kim jesteśmy,</p>
-								<p>Co tworzymy,</p>
+								<p>Kim jesteśmy?</p>
+								<p>Co tworzymy?</p>
 								<p>Dokąd zmierzamy?</p>
 							</div>
 						</Title>
