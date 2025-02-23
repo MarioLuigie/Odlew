@@ -64,7 +64,7 @@ export default function About() {
 						))}
 					</div> */}
 
-					<ScrollArea className="h-[900px] w-[500px] rounded-none border-l-[2px]">
+					<ScrollArea className="hidden dp:block h-[900px] w-[500px] rounded-none border-l-[2px]">
 						<div className="flex flex-col gap-6 items-end">
 							{HomeAboutImages.map((image, i) => (
 								<Image
@@ -74,7 +74,7 @@ export default function About() {
 									width={2400}
 									height={2400}
 									priority
-									className="w-[440px] object-cover grayscale contrast-75 hover:grayscale-0 hover:contrast-100 transition duration-500 ease-in-out cursor-pointer"
+									className="w-[455px] object-cover grayscale contrast-75 hover:grayscale-0 hover:contrast-100 transition duration-500 ease-in-out cursor-pointer"
 									style={{
 										willChange: 'filter',
 									}}

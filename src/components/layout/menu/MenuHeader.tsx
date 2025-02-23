@@ -24,7 +24,7 @@ export default function MenuHeader({ className, capitalize }: MenuHeaderProps) {
 									path === item.path ? 'border-accent' : ''
 								)}
 							>
-								<p className="text-textLight text-md">
+								<p className="text-textLight text-base">
 									{capitalize === 'entire'
 										? capitalizeEntireText(item.label)
 										: capitalize === 'first'
