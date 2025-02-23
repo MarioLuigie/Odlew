@@ -45,8 +45,8 @@ export default function About() {
 				</div>
 
 				{/* IMAGES */}
-				<div className="dp:w-1/2 dp:pt-2 dp:bg-background dp:p-36">
-					<div className="mt-12 dp:mt-0 flex gap-2 dp:gap-6 overflow-x-auto dp:flex-col dp:overflow-y-auto dp:max-h-customScreen">
+				<div className="dp:w-1/2 dp:pt-2 dp:bg-background dp:p-44">
+					<div className="mt-12 dp:mt-0 flex gap-2 dp:gap-6 overflow-x-auto dp:flex-col dp:overflow-y-auto dp:max-h-customScreen" style={{ direction: 'rtl' }}>
 						{HomeAboutImages.map((image, i) => (
 							<Image
 								key={i}
@@ -55,7 +55,8 @@ export default function About() {
 								width={2400}
 								height={2400}
 								priority
-								className="w-full"
+								className="w-[360px] h-[245px] object-cover grayscale hover:grayscale-0 transition duration-500 ease-in-out cursor-pointer"
+								style={{ willChange: "filter" }}
 							/>
 						))}
 					</div>

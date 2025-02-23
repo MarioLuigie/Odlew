@@ -43,6 +43,35 @@ export const HomeAboutImages = [
 		path: ImagesPath.HOME_ABOUT_3,
 		alt: ImagesAlt.ABOUT,
 	},
+
+	{
+		path: ImagesPath.HOME_ABOUT_3,
+		alt: ImagesAlt.ABOUT,
+	},
+	{
+		path: ImagesPath.HOME_ABOUT_3,
+		alt: ImagesAlt.ABOUT,
+	},
+	{
+		path: ImagesPath.HOME_ABOUT_3,
+		alt: ImagesAlt.ABOUT,
+	},
+	{
+		path: ImagesPath.HOME_ABOUT_3,
+		alt: ImagesAlt.ABOUT,
+	},
+	{
+		path: ImagesPath.HOME_ABOUT_3,
+		alt: ImagesAlt.ABOUT,
+	},
+	{
+		path: ImagesPath.HOME_ABOUT_3,
+		alt: ImagesAlt.ABOUT,
+	},
+	{
+		path: ImagesPath.HOME_ABOUT_3,
+		alt: ImagesAlt.ABOUT,
+	},
 ]
 
 // HOME-OFFER
