@@ -36,7 +36,7 @@ body {
 	}
 
 	.textPageContainer {
-		@apply dp:flex dp:items-center dp:px-6 lg:px-16 xl:px-28 2xl:px-36
+		@apply dp:flex dp:items-center dp:px-6 xl:px-28 2xl:px-36
 	}
 }
 

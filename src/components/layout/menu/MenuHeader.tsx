@@ -14,14 +14,14 @@ export default function MenuHeader({ className, capitalize }: MenuHeaderProps) {
 
 	return (
 		<div className="hidden dp:block">
-			<nav className="w-full">
+			<nav className="w-full pr-[155px]">
 				<ul className={cn('flex justify-end items-center', className)}>
 					{MenuContent.map((item) => (
 						<Link href={item.path} key={item.label}>
 							<li
 								className={cn(
-									'min-w-[120px] xl:max-w-[190px] xl:min-w-[170px] py-2 flex justify-center items-center border-b-[2px] border-zinc-700',
-									path === item.path ? 'border-accent' : ''
+									'min-w-[120px] xl:max-w-[190px] xl:min-w-[180px] py-2 flex justify-center items-center border-b-[2px] border-accentActive hover:border-accentHover transition-colors duration-500',
+									path === item.path ? 'border-[#383638]' : ''
 								)}
 							>
 								<p className="text-textLight text-base">

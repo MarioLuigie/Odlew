@@ -6,19 +6,23 @@ export default function Start() {
 		<section className="w-full dp:flex pb-[70px] dp:bg-background relative">
 			{/* DESKTOP */}
 			<div className="hidden dp:flex dp:flex-col dp:justify-center dp:items-end dp:w-1/2 dp:bg-backgroundDark dp:p-8">
-				<div className="hidden dp:text-textDark dp:flex dp:flex-col dp:text-right">
-					<p className="text-[30px] xl:text-[45px]">P.S. ODLEW</p>
-					<p className="text-[65px] xl:text-[105px] leading-[75px] xl:leading-[110px]">
-						Odlewnia Artystyczna
-					</p>
+				<div className="hidden dp:text-textDark dp:flex dp:flex-col w-[100%]">
+					<div className="w-[100%]">
+						<p className="text-[30px] xl:text-[54px] dp:text-right pr-20 pb-8">
+							P.S. ODLEW
+						</p>
+					</div>
+					<div className="w-[100%]">
+						<p className="text-[65px] xl:text-[68px] leading-[75px] xl:leading-[80px] w-[439px] dp:text-left pl-6">
+							Odlewnia artystyczna
+						</p>
+					</div>
 				</div>
-				<CustomButton
-					navlink
-					path="/realizacje"
-					className="mt-16"
-				>
-					Zobacz realizacje
-				</CustomButton>
+				<div className='w-[100%] flex justify-end pr-20'>
+					<CustomButton navlink path="/realizacje" className="mt-32">
+						Zobacz realizacje
+					</CustomButton>
+				</div>
 			</div>
 
 			{/* MOBILE */}
@@ -32,10 +36,8 @@ export default function Start() {
 				</CustomButton>
 			</div>
 
-			<div className='hidden dp:block absolute bottom-0 left-[40px]'>
-				<div className='bg-red-300 w-[229px] h-[300px]'>
-
-				</div>
+			<div className="hidden dp:block absolute bottom-0 left-[40px]">
+				<div className="bg-red-300 w-[229px] h-[300px]"></div>
 			</div>
 		</section>
 	)
