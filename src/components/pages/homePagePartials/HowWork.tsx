@@ -6,6 +6,8 @@ import { capitalizeEntireText, cn } from '@/lib/utils'
 import { HowWorkContent } from '@/lib/constants/texts'
 // components
 import Title from '@/components/shared/Title'
+import CustomButton from '@/components/shared/CustomButton'
+import Drop from '@/components/shared/Drop'
 
 interface TabProps {
 	onClick: () => void
@@ -19,8 +21,10 @@ function Tab({ onClick, activeTabIndex, label, index }: TabProps) {
 		<button
 			onClick={onClick}
 			className={cn(
-				'relative w-full py-2 dp:py-4 rounded-l-full rounded-br-full text-right dp:text-3xl transition-all ease-in-out',
-				activeTabIndex === index ? 'text-accent font-semibold' : ''
+				'relative w-full py-2 dp:py-0 rounded-l-full rounded-br-full text-right dp:text-[36px] transition-all ease-in-out',
+				activeTabIndex === index
+					? 'text-[#AA5002] -translate-x-12 underline transition-all duration-500'
+					: ''
 			)}
 		>
 			<p>{capitalizeEntireText(label)}</p>
@@ -28,15 +32,87 @@ function Tab({ onClick, activeTabIndex, label, index }: TabProps) {
 	)
 }
 
+// export default function HowWork() {
+// 	const [activeTabIndex, setActiveTabIndex] = useState<number>()
+
+// 	const handleTabClick = (index: number) => () => {
+// 		setActiveTabIndex(index)
+// 	}
+
+// 	return (
+// 		<div className="mb-4 dp:mb-0 dp:flex dp:border-b-[1px] dp:border-zinc-400 dp:min-h-customScreen">
+// 			<div className="dp:w-1/2 bg-red-300">
+// 				<div
+// 					id="tab-content"
+// 					className="w-full flex justify-center items-center min-h-[240px] dp:h-full px-5 py-8 transition-all ease-in-out bg-menuTopBg dp:p-20"
+// 				>
+// 					<p className="text-justify text-textLight dp:text-xl dp:leading-9">
+// 						{HowWorkContent[activeTabIndex].tabContent}
+// 					</p>
+// 				</div>
+// 			</div>
+// 			<div className="dp:w-1/2 textPageContainer dp:justify-end">
+// 				<div>
+// 					<Title className="titlePage">
+// 						<p>Jak pracujemy?</p>
+// 					</Title>
+// 					<menu className="w-full px-5 py-4 flex flex-col items-center text-textDark">
+// 						{HowWorkContent.map((tab, index) => (
+// 							<div
+// 								key={index}
+// 								className="w-full flex flex-col items-center"
+// 							>
+// 								<Tab
+// 									onClick={handleTabClick(index)}
+// 									activeTabIndex={activeTabIndex}
+// 									label={tab.tabLabel}
+// 									index={index}
+// 								/>
+// 							</div>
+// 						))}
+// 					</menu>
+// 				</div>
+// 			</div>
+// 		</div>
+// 	)
+// }
+
 export default function HowWork() {
-	const [activeTabIndex, setActiveTabIndex] = useState<number>(0)
+	const [activeTabIndex, setActiveTabIndex] = useState<number | null>(null)
 
 	const handleTabClick = (index: number) => () => {
 		setActiveTabIndex(index)
 	}
 
 	return (
-		<div className="mb-4 dp:mb-0 dp:flex dp:border-b-[1px] dp:border-zinc-400 dp:min-h-customScreen">
+		<div className="relative mb-4 dp:mb-0 dp:flex dp:border-b-[1px] dp:border-zinc-400 dp:min-h-customScreen">
+			<div className='absolute right-1/2 top-1/2 translate-x-[25px]'>
+				<Drop className='w-[50px] h-[50px] transition-all duration-300' color='#E36A00' corner={activeTabIndex !== null ? 'bottom-left' : 'bottom-right'}/>
+			</div>
+			{/* Texts */}
+			<div className="dp:w-1/2 bg-red-300">
+				<div
+					id="tab-content"
+					className="p-32 w-full flex justify-center items-center min-h-[240px] dp:h-full py-8 transition-all ease-in-out bg-menuTopBg"
+				>
+					<div>
+						{activeTabIndex !== null ? (
+							<div>
+								<div className="min-h-[240px] pb-4">
+									<p className="text-textLight font-medium dp:text-lg">
+										{HowWorkContent[activeTabIndex].tabContent}
+									</p>
+								</div>
+								<CustomButton navlink path="/oferta">
+									Przejdź do oferty
+								</CustomButton>
+							</div>
+						) : null}
+					</div>
+				</div>
+			</div>
+
+			{/* Tabs */}
 			<div className="dp:w-1/2 textPageContainer dp:justify-end">
 				<div>
 					<Title className="titlePage">
@@ -50,23 +126,13 @@ export default function HowWork() {
 							>
 								<Tab
 									onClick={handleTabClick(index)}
-									activeTabIndex={activeTabIndex}
+									activeTabIndex={activeTabIndex ?? -1} // Domyślnie nieaktywne
 									label={tab.tabLabel}
 									index={index}
 								/>
 							</div>
 						))}
 					</menu>
-				</div>
-			</div>
-			<div className="dp:w-1/2 bg-red-300">
-				<div
-					id="tab-content"
-					className="w-full flex justify-center items-center min-h-[240px] dp:h-full px-5 py-8 transition-all ease-in-out bg-menuTopBg dp:p-20"
-				>
-					<p className="text-justify text-textLight dp:text-xl dp:leading-9">
-						{HowWorkContent[activeTabIndex].tabContent}
-					</p>
 				</div>
 			</div>
 		</div>
