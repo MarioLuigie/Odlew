@@ -7,7 +7,7 @@ import { getOpinions } from '@/lib/actions/opinion.actions'
 import CustomButton from '@/components/shared/CustomButton'
 import TextContent from '@/components/shared/TextContent'
 import Title from '@/components/shared/Title'
-import Opinions from '@/components/pages/homePagePartials/Opinions'
+import Opinions from '@/components/pages/aboutPagePartials/Opinions'
 import HowWork from '@/components/pages/homePagePartials/HowWork'
 import { checkIsAdmin } from '@/lib/utils/services'
 
