@@ -2,20 +2,13 @@
 import Image from 'next/image'
 // lib
 import { HomeProductImages } from '@/lib/constants/images'
-import { getOpinions } from '@/lib/actions/opinion.actions'
 // components
 import CustomButton from '@/components/shared/CustomButton'
 import TextContent from '@/components/shared/TextContent'
 import Title from '@/components/shared/Title'
-import Opinions from '@/components/pages/aboutPagePartials/Opinions'
-import HowWork from '@/components/pages/homePagePartials/HowWork'
-import { checkIsAdmin } from '@/lib/utils/services'
 
-export default async function Realizations() {
-	const { data: opinions } = await getOpinions()
-	const isAdmin = await checkIsAdmin()
+export default function Realizations() {
 
-	console.log(opinions)
 	return (
 		<section
 			id="realizacje"
@@ -70,8 +63,6 @@ export default async function Realizations() {
 						</div>
 					</div>
 				</div>
-				<HowWork />
-				<Opinions opinions={opinions} isAdmin={isAdmin} />
 			</div>
 		</section>
 	)
