@@ -12,7 +12,7 @@ export default function Contact() {
 	return (
 		<section
 			id="kontakt"
-			className="min-h-customScreen bg-background scroll-mt-header border-y-[1px] border-zinc-400"
+			className="min-h-customScreen dp:bg-backgroundDark scroll-mt-header border-y-[1px] border-zinc-400"
 		>
 			<div className="dp:flex dp:min-h-customScreen">
 				<div className="dp:w-1/2 textPageContainer">
