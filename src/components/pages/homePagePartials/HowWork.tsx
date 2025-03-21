@@ -124,7 +124,7 @@ export default function HowWork() {
 			</div>
 
 			{/* Tabs */}
-			<div className="dp:w-1/2 textPageContainer dp:justify-end">
+			<div className="dp:w-1/2 textPageContainer dp:justify-end bg-[#DAD7D1]">
 				<div>
 					<Title className="titlePage">
 						<p>Jak pracujemy?</p>

@@ -3,6 +3,7 @@ import tailwindcssAnimate from "tailwindcss-animate"; // Użyj importu zamiast r
 
 // dimensions
 export const headerHeight = '100px'
+export const sectionHeight = '820px'
 
 const config: Config = {
     darkMode: ["class"],
@@ -47,6 +48,7 @@ const config: Config = {
             minHeight: {
                 customScreen: `calc(100vh - ${headerHeight})`,
                 header: headerHeight,
+                sectionHeight: sectionHeight
             },
             maxHeight: {
                 customScreen: `calc(100vh - ${headerHeight})`,
