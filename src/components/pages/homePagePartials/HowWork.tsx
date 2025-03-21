@@ -8,6 +8,7 @@ import { HowWorkContent } from '@/lib/constants/texts'
 import Title from '@/components/shared/Title'
 import CustomButton from '@/components/shared/CustomButton'
 import Drop from '@/components/shared/Drop'
+import { MoveDownRight, MoveDownLeft } from 'lucide-react'
 
 interface TabProps {
 	onClick: () => void
@@ -86,8 +87,18 @@ export default function HowWork() {
 
 	return (
 		<div className="relative mb-4 dp:mb-0 dp:flex dp:border-b-[1px] dp:border-zinc-400 dp:min-h-customScreen">
-			<div className='absolute right-1/2 top-1/2 translate-x-[25px] -translate-y-40'>
-				<Drop className='w-[50px] h-[50px] transition-all duration-300' color='#E36A00' corner={activeTabIndex !== null ? 'bottom-left' : 'bottom-right'}/>
+			<div className="absolute right-1/2 top-1/2 translate-x-[25px] -translate-y-40">
+				<Drop
+					className="w-[50px] h-[50px] transition-all duration-300"
+					color="#E36A00"
+					corner={activeTabIndex !== null ? 'bottom-left' : 'bottom-right'}
+				>
+					{activeTabIndex !== null ? (
+						<MoveDownLeft size={35} color="#463E46" />
+					) : (
+						<MoveDownRight size={35} color="#463E46" />
+					)}
+				</Drop>
 			</div>
 			{/* Texts */}
 			<div className="dp:w-1/2 bg-red-300">
