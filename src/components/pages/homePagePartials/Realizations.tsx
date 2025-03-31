@@ -8,16 +8,48 @@ export default function Realizations() {
 			id="realizacje"
 			className="w-full dp:min-h-sectionHeight dp:flex dp:justify-center dp:items-stretch bg-background scroll-mt-header dp:relative"
 		>
-			<div className="w-1/3 bg-red-300">1</div>
+			<div className="w-1/2 bg-yellow-300 dp:relative flex">
+				<div className="w-[180px] h-[180px] border-neutral-950 border-2 dp:absolute dp:right-0 dp:top-0">
+					product-15.jpg
+				</div>
 
-			<div className="w-1/3 bg-blue-300">2</div>
+				{/* 3 PHOTOS WITH ABSOLUTE POSITION */}
+				<div className="dp:absolute dp:top-[170px] dp:left-[40px] w-[230px] h-[180px] border-neutral-950 border-2">
+					product-11.jpg
+				</div>
 
-			<div className="w-1/3 bg-green-300">3</div>
+				<div className="dp:absolute dp:top-[320px] dp:left-[150px] w-[300px] h-[400px] border-neutral-950 border-2">
+					product-17.jpg
+				</div>
+
+				<div className="dp:absolute dp:bottom-0 dp:left-[410px] w-[180px] h-[180px] border-neutral-950 border-2">
+					product-13.jpg
+				</div>
+			</div>
+
+			{/* <div className="bg-blue-300">2</div> */}
+
+			<div className="w-1/2 bg-green-300">
+
+				<div className="w-[400px] h-[300px] border-neutral-950 border-2 dp:absolute dp:right-[40px] dp:top-[55px]">
+					product-14.jpg
+				</div>
+
+				{/* 3 PHOTOS WITH ABSOLUTE POSITION */}
+				<div className="dp:absolute dp:top-[310px] dp:right-[245px] w-[230px] h-[290px] border-neutral-950 border-2">
+					product-12.jpg
+				</div>
+
+				<div className="dp:absolute dp:bottom-[110px] dp:right-[90px] w-[180px] h-[180px] border-neutral-950 border-2">
+					product-16.jpg
+				</div>
+
+			</div>
 
 			{/* Our realizations title */}
-			<div className="dp:absolute dp:flex dp:justify-center dp:items-center dp:max-h-customScreen">
+			<div className="dp:absolute dp:inset-0 dp:flex dp:justify-center dp:items-center">
 				{/* desktop */}
-				<div className="flex flex-col justify-center items-center bg-red-300">
+				<div className="flex flex-col justify-center items-center bg-transparent">
 					<Title className="titlePage">
 						<div className="flex flex-col justify-center items-center">
 							<p>Nasze</p>
