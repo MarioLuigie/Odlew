@@ -10,6 +10,7 @@ export const IconsPath = {
   CLOSE_MEDIUM_GREY: '/assets/icons/close-medium-grey.svg',
   ITEM_BOTTOM_RIGHT_SMALL: '/assets/icons/item-bottom-right-small.svg',
   ITEM_TOP_LEFT_SMALL: '/assets/icons/item-top-left-small.svg',
+  PLAY_SOLID: '/assets/icons/play-solid.svg'
 }
 
 export const ImagesPath = {
@@ -17,6 +18,7 @@ export const ImagesPath = {
   LOGO_MIN: '/assets/images/logo-min.png',
   LOGO_WHITE: '/assets/images/logo-white.png',
   LOGO_WHITE_MIN: '/assets/images/logo-white-min.png',
+  START_1: '/assets/images/start-1.jpg',
   HOME_ABOUT_1: '/assets/images/about-1.jpg',
   HOME_ABOUT_2: '/assets/images/about-2.jpg',
   HOME_ABOUT_3: '/assets/images/about-3.jpg',

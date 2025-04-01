@@ -1,6 +1,8 @@
 // components
 import CustomButton from '@/components/shared/CustomButton'
 import Drop from '@/components/shared/Drop'
+import SVG from '@/components/shared/SVG'
+import { Icons } from '@/lib/constants/icons'
 
 export default function Motto() {
 	return (
@@ -18,7 +20,9 @@ export default function Motto() {
 								corner="bottom-right"
 								variant="outline"
 								className="w-[60px] h-[60px] -rotate-45"
-							/>
+							>
+								<SVG src={Icons.PLAY_SOLID.path} className='rotate-45 translate-x-[4px] translate-y-[4px]'/>
+							</Drop>
 						</div>
 						<div className="w-full text-end">
 							<p>ale nie niemożliwe</p>

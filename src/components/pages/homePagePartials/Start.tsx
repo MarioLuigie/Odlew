@@ -1,5 +1,7 @@
 import CompanyName from '@/components/content/CompanyName'
 import CustomButton from '@/components/shared/CustomButton'
+import { Images } from '@/lib/constants/images'
+import Image from 'next/image'
 
 export default function Start() {
 	return (
@@ -18,7 +20,7 @@ export default function Start() {
 						</p>
 					</div>
 				</div>
-				<div className='w-[100%] flex justify-end pr-20'>
+				<div className="w-[100%] flex justify-end pr-20">
 					<CustomButton navlink path="/realizacje" className="mt-32">
 						Zobacz realizacje
 					</CustomButton>
@@ -37,7 +39,15 @@ export default function Start() {
 			</div>
 
 			<div className="hidden dp:block absolute bottom-0 left-[40px]">
-				<div className="bg-red-300 w-[229px] h-[300px]"></div>
+				<div className="bg-red-300 w-[230px]">
+					<Image
+						src={Images.START.path}
+						alt={Images.START.path}
+						width={512}
+						height={512}
+						className="w-full"
+					/>
+				</div>
 			</div>
 		</section>
 	)

@@ -38,7 +38,7 @@ export default function Contact() {
 						alt={HomeContactImages[0].alt}
 						width={2400}
 						height={2400}
-            className="h-full min-w-[300px] object-cover"
+            className="h-full dp:w-[320px] dp:h-[450px] object-cover"
 					/>
 				</div>
 			</div>

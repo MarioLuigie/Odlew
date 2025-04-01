@@ -27,6 +27,10 @@ export const Images = {
 		path: ImagesPath.OFFER_19,
 		alt: ImagesAlt.OFFER,
 	},
+	START: {
+		path: ImagesPath.START_1,
+		alt: ImagesAlt.ABOUT,
+	},
 }
 
 // HOME-ABOUT

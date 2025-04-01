@@ -25,5 +25,9 @@ export const Icons = {
   ITEM_TOP_LEFT_SMALL: {
     path: IconsPath.ITEM_TOP_LEFT_SMALL,
     alt: IconsAlt.ITEM
+  },
+  PLAY_SOLID: {
+    path: IconsPath.PLAY_SOLID,
+    alt: IconsAlt.ITEM
   }
 }
