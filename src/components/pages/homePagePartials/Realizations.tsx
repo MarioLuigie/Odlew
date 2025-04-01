@@ -8,6 +8,7 @@ export default function Realizations() {
 			id="realizacje"
 			className="w-full dp:min-h-sectionHeight dp:flex dp:justify-center dp:items-stretch bg-background scroll-mt-header dp:relative"
 		>
+			{/*LEFT SIDE*/}
 			<div className="w-1/2 bg-yellow-300 dp:relative flex">
 				<div className="w-[180px] h-[180px] border-neutral-950 border-2 dp:absolute dp:right-0 dp:top-0">
 					product-15.jpg
@@ -27,15 +28,13 @@ export default function Realizations() {
 				</div>
 			</div>
 
-			{/* <div className="bg-blue-300">2</div> */}
-
+			{/*RIGHT SIDE*/}
 			<div className="w-1/2 bg-green-300">
 
 				<div className="w-[400px] h-[300px] border-neutral-950 border-2 dp:absolute dp:right-[40px] dp:top-[55px]">
 					product-14.jpg
 				</div>
 
-				{/* 3 PHOTOS WITH ABSOLUTE POSITION */}
 				<div className="dp:absolute dp:top-[310px] dp:right-[245px] w-[230px] h-[290px] border-neutral-950 border-2">
 					product-12.jpg
 				</div>
