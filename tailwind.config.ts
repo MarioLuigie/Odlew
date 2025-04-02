@@ -2,7 +2,7 @@ import type { Config } from "tailwindcss";
 import tailwindcssAnimate from "tailwindcss-animate"; // Użyj importu zamiast require
 
 // dimensions
-export const headerHeight = '100px'
+export const headerHeight = '110px'
 export const sectionHeight = '820px'
 
 const config: Config = {

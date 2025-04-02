@@ -5,22 +5,22 @@ import Image from 'next/image'
 
 export default function Start() {
 	return (
-		<section className="w-full md:flex pb-[70px] md:bg-background relative">
+		<section className="w-full lg:flex pb-[70px] lg:bg-background relative">
 			{/* DESKTOP */}
-			<div className="h-customScreen md:max-h-[820px] hidden md:flex md:flex-col md:justify-center md:items-end md:w-1/2 md:bg-backgroundDark md:p-8">
-				<div className="hidden md:text-textDark md:flex md:flex-col w-[100%]">
+			<div className="h-customScreen lg:max-h-[820px] hidden lg:flex lg:flex-col lg:justify-center lg:items-end lg:w-1/2 lg:bg-backgroundDark lg:p-8">
+				<div className="hidden lg:text-textDark lg:flex lg:flex-col w-[100%]">
 					<div className="w-[100%]">
-						<p className="text-[30px] xl:text-[54px] md:text-right pr-20 pb-8">
+						<p className="text-[54px] xl:text-[54px] lg:text-right pr-20 pb-8">
 							P.S. ODLEW
 						</p>
 					</div>
 					<div className="w-[100%]">
-						<p className="text-[65px] xl:text-[68px] leading-[75px] xl:leading-[80px] w-[439px] md:text-left pl-6">
+						<p className="text-[68px] xl:text-[68px] leading-[80px] xl:leading-[80px] w-[439px] md:text-left pl-6">
 							Odlewnia artystyczna
 						</p>
 					</div>
 				</div>
-				<div className="w-[100%] flex justify-end pr-20">
+				<div className="w-[100%] flex justify-end xl:pr-20">
 					<CustomButton navlink path="/realizacje" className="mt-32">
 						Zobacz realizacje
 					</CustomButton>
@@ -30,15 +30,15 @@ export default function Start() {
 			{/* MOBILE */}
 			<div
 				id="home"
-				className="h-customScreen md:max-h-[820px] p-5 md:px-10 md:pb-28 flex flex-col justify-end md:w-1/2 md:justify-end md:items-start gap-4 homepage-background scroll-mt-header"
+				className="h-customScreen lg:max-h-[820px] p-5 lg:px-10 lg:pb-28 flex flex-col justify-end lg:w-1/2 lg:justify-end lg:items-start gap-4 homepage-background scroll-mt-header"
 			>
-				<CompanyName mode="light" className="md:hidden" />
-				<CustomButton navlink path="/realizacje" className="md:hidden">
+				<CompanyName mode="light" className="lg:hidden" />
+				<CustomButton navlink path="/realizacje" className="lg:hidden">
 					Zobacz realizacje
 				</CustomButton>
 			</div>
 
-			<div className="hidden md:block absolute bottom-0 left-[40px]">
+			<div className="hidden lg:block absolute bottom-0 left-[40px]">
 				<div className="w-[230px] h-[300px] bg-transparent">
 					<Image
 						src={Images.START.path}

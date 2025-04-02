@@ -14,7 +14,7 @@ export default function MenuHeader({ className, capitalize }: MenuHeaderProps) {
 
 	return (
 		<div className="hidden md:block">
-			<nav className="w-full pr-[155px]">
+			<nav className="w-full">
 				<ul className={cn('flex justify-end items-center', className)}>
 					{MenuContent.map((item) => (
 						<Link href={item.path} key={item.label}>
