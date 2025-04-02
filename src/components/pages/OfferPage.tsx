@@ -19,10 +19,10 @@ export default function OfferPage() {
 					className="w-full"
 				/>
 				<div className="p-5">
-					<Title className="text-textLight pb-5 dp:text-3xl">
+					<Title className="text-textLight pb-5 md:text-3xl">
 						Nasza Oferta
 					</Title>
-					<TextContent className="text-textLight dp:text-xl">
+					<TextContent className="text-textLight md:text-xl">
 						Kompleksowo realizujemy zamysł i projekt klienta. Oferujemy
 						wykonanie gotowego odlewu od szkicu lub pomysłu autora.
 						Wykonujemy pomniki, tablice pamiątkowe, statuetki, medale
@@ -40,7 +40,7 @@ export default function OfferPage() {
 				</div>
 			</div>
 			<div className="bg-background px-5">
-				<Title className="mb-8 dp:text-3xl">Poznaj nasz proces</Title>
+				<Title className="mb-8 md:text-3xl">Poznaj nasz proces</Title>
 				<OfferPictures />
 			</div>
 		</div>

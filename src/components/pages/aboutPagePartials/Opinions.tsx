@@ -29,13 +29,13 @@ export default function Opinions({
 	}
 
 	return (
-		<div className="dp:flex dp:min-h-customScreen">
-			<div className="dp:w-1/2 dp:bg-backgroundDark textPageContainer">
+		<div className="md:flex md:min-h-customScreen">
+			<div className="md:w-1/2 md:bg-backgroundDark textPageContainer">
 				<div>
-					<Title className="mb-12 px-5 hidden dp:flex dp:text-[55px] dp:font-normal titlePage">
+					<Title className="mb-12 px-5 hidden md:flex md:text-[55px] md:font-normal titlePage">
 						<p>Opinie klientów</p>
 					</Title>
-					<TextContent className="px-5 dp:text-lg hidden dp:block">
+					<TextContent className="px-5 md:text-lg hidden md:block">
 						<p>
 							Dziękujemy, że wybraliście naszą ofertę! Wasza opinia jest
 							dla nas niezwykle cenna i pomaga nam stale się rozwijać, by
@@ -49,9 +49,9 @@ export default function Opinions({
 					</TextContent>
 				</div>
 			</div>
-			<div className="dp:w-1/2 textPageContainer">
+			<div className="md:w-1/2 textPageContainer">
 				<div>
-					<Title className="mb-12 px-5 dp:hidden">
+					<Title className="mb-12 px-5 md:hidden">
 						<p>Opinie klientów</p>
 					</Title>
 

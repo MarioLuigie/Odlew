@@ -25,7 +25,7 @@ export default function RealizationsPictures() {
 							setOpen(true)
 						}}
 					>
-						<div className="w-full min-h-[300px] dp:min-h-[800px] bg-backgroundDark rounded-lg flex justify-center items-center relative">
+						<div className="w-full min-h-[300px] md:min-h-[800px] bg-backgroundDark rounded-lg flex justify-center items-center relative">
 							<Image
 								src={productImage.image.path}
 								alt={productImage.image.alt}

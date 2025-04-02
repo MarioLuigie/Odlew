@@ -7,13 +7,13 @@ import { SignedIn, SignedOut, SignOutButton } from '@clerk/nextjs'
 
 export default function Footer() {
 	return (
-		<footer className="flex flex-col items-center justify-center bg-footerBg text-white px-10 py-12 dp:pt-20">
-			<div className="flex flex-col items-center gap-12 dp:gap-0 w-full dp:flex-row dp:w-full dp:justify-center">
-				<div className="dp:w-1/2 dp:flex dp:justify-end dp:pr-12">
-					<Logo variant="mono" w={270} className="dp:hidden" />
-					<Logo variant="mono" w={400} className="hidden dp:block" />
+		<footer className="flex flex-col items-center justify-center bg-footerBg text-white px-10 py-12 md:pt-20">
+			<div className="flex flex-col items-center gap-12 md:gap-0 w-full md:flex-row md:w-full md:justify-center">
+				<div className="md:w-1/2 md:flex md:justify-end md:pr-12">
+					<Logo variant="mono" w={270} className="md:hidden" />
+					<Logo variant="mono" w={400} className="hidden md:block" />
 				</div>
-				<div className='dp:w-1/2'>
+				<div className='md:w-1/2'>
 					<div className="flex justify-center w-full min-w-[250px] max-w-[420px]">
 						<div className="w-[2px] bg-accent"></div>
 						<MenuFooter />

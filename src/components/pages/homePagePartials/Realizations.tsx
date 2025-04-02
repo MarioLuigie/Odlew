@@ -6,24 +6,24 @@ export default function Realizations() {
 	return (
 		<section
 			id="realizacje"
-			className="w-full dp:min-h-sectionHeight dp:flex dp:justify-center dp:items-stretch bg-background scroll-mt-header dp:relative"
+			className="w-full md:min-h-sectionHeight md:flex md:justify-center md:items-stretch bg-background scroll-mt-header md:relative"
 		>
 			{/*LEFT SIDE*/}
-			<div className="w-1/2 bg-yellow-300 dp:relative flex">
-				<div className="w-[180px] h-[180px] border-neutral-950 border-2 dp:absolute dp:right-0 dp:top-0">
+			<div className="w-1/2 bg-yellow-300 md:relative flex">
+				<div className="w-[180px] h-[180px] border-neutral-950 border-2 md:absolute md:right-0 md:top-0">
 					product-15.jpg
 				</div>
 
 				{/* 3 PHOTOS WITH ABSOLUTE POSITION */}
-				<div className="dp:absolute dp:top-[170px] dp:left-[40px] w-[230px] h-[180px] border-neutral-950 border-2">
+				<div className="md:absolute md:top-[170px] md:left-[40px] w-[230px] h-[180px] border-neutral-950 border-2">
 					product-11.jpg
 				</div>
 
-				<div className="dp:absolute dp:top-[320px] dp:left-[150px] w-[300px] h-[400px] border-neutral-950 border-2">
+				<div className="md:absolute md:top-[320px] md:left-[150px] w-[300px] h-[400px] border-neutral-950 border-2">
 					product-17.jpg
 				</div>
 
-				<div className="dp:absolute dp:bottom-0 dp:left-[410px] w-[180px] h-[180px] border-neutral-950 border-2">
+				<div className="md:absolute md:bottom-0 md:left-[410px] w-[180px] h-[180px] border-neutral-950 border-2">
 					product-13.jpg
 				</div>
 			</div>
@@ -31,38 +31,38 @@ export default function Realizations() {
 			{/*RIGHT SIDE*/}
 			<div className="w-1/2 bg-green-300">
 
-				<div className="w-[400px] h-[300px] border-neutral-950 border-2 dp:absolute dp:right-[40px] dp:top-[55px]">
+				<div className="w-[400px] h-[300px] border-neutral-950 border-2 md:absolute md:right-[40px] md:top-[55px]">
 					product-14.jpg
 				</div>
 
-				<div className="dp:absolute dp:top-[310px] dp:right-[245px] w-[230px] h-[290px] border-neutral-950 border-2">
+				<div className="md:absolute md:top-[310px] md:right-[245px] w-[230px] h-[290px] border-neutral-950 border-2">
 					product-12.jpg
 				</div>
 
-				<div className="dp:absolute dp:bottom-[110px] dp:right-[90px] w-[180px] h-[180px] border-neutral-950 border-2">
+				<div className="md:absolute md:bottom-[110px] md:right-[90px] w-[180px] h-[180px] border-neutral-950 border-2">
 					product-16.jpg
 				</div>
 
 			</div>
 
 			{/* Our realizations title */}
-			<div className="dp:absolute dp:inset-0 dp:flex dp:justify-center dp:items-center">
+			<div className="md:absolute md:inset-0 md:flex md:justify-center md:items-center">
 				{/* desktop */}
 				<div className="flex flex-col justify-center items-center bg-transparent">
-					<Title className="titlePage dp:text-[54px]">
+					<Title className="titlePage md:text-[54px]">
 						<div className="flex flex-col justify-center items-center">
 							<p>Nasze</p>
 							<p>realizacje</p>
 						</div>
 					</Title>
-					<div className="px-5 my-12 dp:my-0 dp:flex dp:justify-center dp:items-center dp:w-full hidden">
+					<div className="px-5 my-12 md:my-0 md:flex md:justify-center md:items-center md:w-full hidden">
 						<CustomButton navlink path="/realizacje">
 							Zobacz więcej
 						</CustomButton>
 					</div>
 				</div>
 				{/* Mobile */}
-				<div className="px-5 my-12 dp:hidden">
+				<div className="px-5 my-12 md:hidden">
 					<CustomButton navlink path="/realizacje">
 						Zobacz więcej
 					</CustomButton>
@@ -89,15 +89,15 @@ export default function Realizations() {
 // 			id="realizacje"
 // 			className="min-h-customScreen bg-background scroll-mt-header"
 // 		>
-// 			<div className="dp:flex dp:flex-col dp:min-h-customScreen">
-// 				<div className='dp:flex border-b-[1px] border-zinc-400 dp:max-h-customScreen'>
-// 					<div className="dp:w-1/2 textPageContainer">
+// 			<div className="md:flex md:flex-col md:min-h-customScreen">
+// 				<div className='md:flex border-b-[1px] border-zinc-400 md:max-h-customScreen'>
+// 					<div className="md:w-1/2 textPageContainer">
 // 						<div>
 // 							<Title className="titlePage">
 // 								<p>Nasze realizacje</p>
 // 								<p>i ich znaczenie</p>
 // 							</Title>
-// 							<TextContent className="px-5 dp:text-lg">
+// 							<TextContent className="px-5 md:text-lg">
 // 								<p>
 // 									Nasze realizacje to nie tylko dzieła sztuki, ale
 // 									także wyjątkowe projekty, które łączą pasję z
@@ -109,15 +109,15 @@ export default function Realizations() {
 // 									oraz prywatnych kolekcjach.
 // 								</p>
 // 							</TextContent>
-// 							<div className="px-5 my-12 dp:block hidden">
+// 							<div className="px-5 my-12 md:block hidden">
 // 								<CustomButton navlink path="/realizacje">
 // 									Zobacz więcej
 // 								</CustomButton>
 // 							</div>
 // 						</div>
 // 					</div>
-// 					<div className="dp:w-1/2 dp:bg-backgroundDark dp:flex dp:justify-center dp:items-center overflow-hidden">
-// 						<div className="mt-12 dp:mt-0 flex flex-col gap-1">
+// 					<div className="md:w-1/2 md:bg-backgroundDark md:flex md:justify-center md:items-center overflow-hidden">
+// 						<div className="mt-12 md:mt-0 flex flex-col gap-1">
 // 							{HomeProductImages.slice(1, 2).map((image, i) => (
 // 								<Image
 // 									key={i}
@@ -131,7 +131,7 @@ export default function Realizations() {
 // 							))}
 // 						</div>
 
-// 						<div className="px-5 my-12 dp:hidden">
+// 						<div className="px-5 my-12 md:hidden">
 // 							<CustomButton navlink path="/realizacje">
 // 								Zobacz więcej
 // 							</CustomButton>

@@ -22,7 +22,7 @@ function Tab({ onClick, activeTabIndex, label, index }: TabProps) {
 		<button
 			onClick={onClick}
 			className={cn(
-				'relative w-full py-2 dp:py-0 rounded-l-full rounded-br-full text-right dp:text-[36px] transition-all ease-in-out',
+				'relative w-full py-2 md:py-0 rounded-l-full rounded-br-full text-right md:text-[36px] transition-all ease-in-out',
 				activeTabIndex === index
 					? 'text-[#AA5002] -translate-x-12 underline transition-all duration-500'
 					: ''
@@ -41,18 +41,18 @@ function Tab({ onClick, activeTabIndex, label, index }: TabProps) {
 // 	}
 
 // 	return (
-// 		<div className="mb-4 dp:mb-0 dp:flex dp:border-b-[1px] dp:border-zinc-400 dp:min-h-customScreen">
-// 			<div className="dp:w-1/2 bg-red-300">
+// 		<div className="mb-4 md:mb-0 md:flex md:border-b-[1px] md:border-zinc-400 md:min-h-customScreen">
+// 			<div className="md:w-1/2 bg-red-300">
 // 				<div
 // 					id="tab-content"
-// 					className="w-full flex justify-center items-center min-h-[240px] dp:h-full px-5 py-8 transition-all ease-in-out bg-menuTopBg dp:p-20"
+// 					className="w-full flex justify-center items-center min-h-[240px] md:h-full px-5 py-8 transition-all ease-in-out bg-menuTopBg md:p-20"
 // 				>
-// 					<p className="text-justify text-textLight dp:text-xl dp:leading-9">
+// 					<p className="text-justify text-textLight md:text-xl md:leading-9">
 // 						{HowWorkContent[activeTabIndex].tabContent}
 // 					</p>
 // 				</div>
 // 			</div>
-// 			<div className="dp:w-1/2 textPageContainer dp:justify-end">
+// 			<div className="md:w-1/2 textPageContainer md:justify-end">
 // 				<div>
 // 					<Title className="titlePage">
 // 						<p>Jak pracujemy?</p>
@@ -86,7 +86,7 @@ export default function HowWork() {
 	}
 
 	return (
-		<div className="h-customScreen dp:max-h-[820px] relative mb-4 dp:mb-0 dp:flex dp:border-b-[1px] dp:border-zinc-400">
+		<div className="h-customScreen md:max-h-[820px] relative mb-4 md:mb-0 md:flex md:border-b-[1px] md:border-zinc-400">
 			<div className="absolute right-1/2 top-1/2 translate-x-[25px] -translate-y-40">
 				<Drop
 					className="w-[50px] h-[50px] transition-all duration-300"
@@ -101,16 +101,16 @@ export default function HowWork() {
 				</Drop>
 			</div>
 			{/* Texts */}
-			<div className="dp:w-1/2 bg-red-300">
+			<div className="md:w-1/2 bg-red-300">
 				<div
 					id="tab-content"
-					className="p-32 w-full flex justify-center items-center min-h-[240px] dp:h-full py-8 transition-all ease-in-out bg-menuTopBg"
+					className="p-32 w-full flex justify-center items-center min-h-[240px] md:h-full py-8 transition-all ease-in-out bg-menuTopBg"
 				>
 					<div>
 						{activeTabIndex !== null ? (
 							<div>
 								<div className="min-h-[240px] pb-4">
-									<p className="text-textLight font-medium dp:text-lg">
+									<p className="text-textLight font-medium md:text-lg">
 										{HowWorkContent[activeTabIndex].tabContent}
 									</p>
 								</div>
@@ -124,7 +124,7 @@ export default function HowWork() {
 			</div>
 
 			{/* Tabs */}
-			<div className="dp:w-1/2 textPageContainer dp:justify-end bg-[#DAD7D1]">
+			<div className="md:w-1/2 textPageContainer md:justify-end bg-[#DAD7D1]">
 				<div>
 					<Title className="titlePage">
 						<p>Jak pracujemy?</p>

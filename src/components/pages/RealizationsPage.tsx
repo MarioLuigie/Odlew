@@ -57,7 +57,7 @@ export default function RealizationsPage() {
 // 			<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-5">
 // 				{ProductImages.map((productImage, i) => (
 // 					<div className="flex flex-col gap-2 h-full" key={i}>
-// 						<div className="w-full min-h-[300px] dp:min-h-[800px] bg-backgroundDark rounded-lg flex justify-center items-center relative">
+// 						<div className="w-full min-h-[300px] md:min-h-[800px] bg-backgroundDark rounded-lg flex justify-center items-center relative">
 // 							<Image
 // 								src={productImage.image.path}
 // 								alt={productImage.image.alt}

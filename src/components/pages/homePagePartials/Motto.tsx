@@ -8,8 +8,8 @@ export default function Motto() {
 	return (
 		<section className="flex flex-col bg-background scroll-mt-header">		
 			{/* MOTTO */}
-			<div className="dp:h-customScreen dp:max-h-[820px] relative p-[40px] flex flex-col justify-center items-center bg-mottoBg_grey hover:bg-mottoBg transition-colors duration-1000">
-				<div className="w-full flex flex-col justify-center items-center text-[30px] leading-[70px] dp:text-[76px] dp:leading-[150px] font-light text-textLight">
+			<div className="md:h-customScreen md:max-h-[820px] relative p-[40px] flex flex-col justify-center items-center bg-mottoBg_grey hover:bg-mottoBg transition-colors duration-1000">
+				<div className="w-full flex flex-col justify-center items-center text-[30px] leading-[70px] md:text-[76px] md:leading-[150px] font-light text-textLight">
 					<div className="w-full">
 						<div className="w-full">
 							<p>Są rzeczy trudne</p>
@@ -19,7 +19,7 @@ export default function Motto() {
 								color="#E36A00"
 								corner="bottom-right"
 								variant="outline"
-								className="w-[60px] h-[60px] -rotate-45"
+								className="w-[60px] h-[60px] -rotate-45 cursor-pointer"
 							>
 								<SVG src={Icons.PLAY_SOLID.path} className='rotate-45 translate-x-[4px] translate-y-[4px]'/>
 							</Drop>

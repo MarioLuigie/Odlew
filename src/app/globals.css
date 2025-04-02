@@ -32,11 +32,11 @@ body {
 	}
 
 	.titlePage {
-		@apply text-textDark mb-6 dp:mb-16 px-5 dp:text-[40px] lg:text-[45px] xl:text-[54px] dp:leading-[50px] lg:leading-[55px] xl:leading-[65px] dp:font-medium
+		@apply text-textDark mb-6 md:mb-16 px-5 md:text-[40px] lg:text-[45px] xl:text-[54px] md:leading-[50px] lg:leading-[55px] xl:leading-[65px] md:font-medium
 	}
 
 	.textPageContainer {
-		@apply dp:flex dp:items-center dp:px-6 xl:px-28 2xl:px-36
+		@apply md:flex md:items-center md:px-6 xl:px-28 2xl:px-36
 	}
 }
 

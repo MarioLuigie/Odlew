@@ -16,22 +16,22 @@ export default function CustomProfileSection({
 	return (
 		<div
 			className={cn(
-				'dp:h-full flex flex-col pb-8 dp:pb-0 dp:flex-row dp:border-b-[1px] border-zinc-400',
+				' md:h-full flex flex-col pb-8 md:pb-0 md:flex-row md:border-b-[1px] border-zinc-400',
 				className
 			)}
 		>
 			{picture && (
-				<div className="dp:w-1/2 dp:h-full">
+				<div className="md:w-1/2 md:h-full">
 					<Image
 						src={picture.path}
 						alt={picture.alt}
 						width={2400}
 						height={2400}
-						className="dp:object-cover dp:h-full mt-4 dp:mt-0"
+						className="md:object-cover md:h-full mt-4 md:mt-0"
 					/>
 				</div>
 			)}
-			<div className="dp:w-1/2 dp:flex dp:flex-col dp:items-center dp:justify-center">
+			<div className="md:w-1/2 md:flex md:flex-col md:items-center md:justify-center">
 				{children}
 			</div>
 		</div>

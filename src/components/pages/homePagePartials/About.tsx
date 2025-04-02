@@ -16,19 +16,19 @@ export default function About() {
 			id="o-nas"
 			className="flex flex-col bg-background scroll-mt-header"
 		>
-			<div className="dp:h-customScreen dp:max-h-[820px] dp:flex dp:justify-between pr-[72px]">
+			<div className="md:h-customScreen md:max-h-[820px] md:flex md:justify-between pr-[72px]">
 				{/* TEXT */}
 				<div className="textPageContainer">
 					<div className="min-w-[250px] max-w-[600px]">
 						<Title className="titlePage">
-							<p className="dp:hidden">Kim jesteśmy?</p>
-							<div className="hidden dp:block">
+							<p className="md:hidden">Kim jesteśmy?</p>
+							<div className="hidden md:block">
 								<p>Kim jesteśmy?</p>
 								<p>Co tworzymy?</p>
 								<p>Dokąd zmierzamy?</p>
 							</div>
 						</Title>
-						<TextContent className="px-5 dp:text-[18px]">
+						<TextContent className="px-5 md:text-[18px]">
 							<p>
 								Jesteśmy rodzinną firmą zajmującą się odlewnictwem
 								artystycznym. Założoną w 2020 roku jako ewolucja
@@ -39,7 +39,7 @@ export default function About() {
 								najwyższą jakość.
 							</p>
 						</TextContent>
-						<div className="px-5 mt-6 dp:mt-12">
+						<div className="px-5 mt-6 md:mt-12">
 							<CustomButton navlink path="/o-nas">
 								Czytaj więcej
 							</CustomButton>
@@ -48,8 +48,8 @@ export default function About() {
 				</div>
 
 				{/* IMAGES */}
-				<div className="dp:bg-background">
-					{/* <div className="mt-12 dp:mt-0 flex gap-2 dp:gap-6 overflow-x-auto dp:flex-col dp:justify-start dp:overflow-y-auto dp:max-h-customScreen" style={{ direction: 'rtl' }}>
+				<div className="md:bg-background">
+					{/* <div className="mt-12 md:mt-0 flex gap-2 md:gap-6 overflow-x-auto md:flex-col md:justify-start md:overflow-y-auto md:max-h-customScreen" style={{ direction: 'rtl' }}>
 						{HomeAboutImages.map((image, i) => (
 							<Image
 								key={i}
@@ -65,7 +65,7 @@ export default function About() {
 					</div> */}
 
 					<div>
-						<ScrollArea className="hidden dp:flex dp:h-[820px] rounded-none border-l-[2px]">
+						<ScrollArea className="hidden md:flex md:h-[820px] rounded-none border-l-[2px]">
 							<div className="flex flex-col gap-6 items-end">
 								{HomeAboutImages.map((image, i) => (
 									<Image

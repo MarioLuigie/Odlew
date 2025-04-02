@@ -13,7 +13,7 @@ export default function MenuHeader({ className, capitalize }: MenuHeaderProps) {
 	const path = usePathname()
 
 	return (
-		<div className="hidden dp:block">
+		<div className="hidden md:block">
 			<nav className="w-full pr-[155px]">
 				<ul className={cn('flex justify-end items-center', className)}>
 					{MenuContent.map((item) => (

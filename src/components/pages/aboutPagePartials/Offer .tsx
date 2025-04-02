@@ -13,14 +13,14 @@ export default function Offer() {
 			id="oferta"
 			className="min-h-customScreen bg-background scroll-mt-header border-b-[1px] border-zinc-400"
 		>
-			<div className="dp:flex dp:min-h-customScreen">
-				<div className="dp:w-1/2 textPageContainer">
+			<div className="md:flex md:min-h-customScreen">
+				<div className="md:w-1/2 textPageContainer">
 					<div>
 						<Title className="titlePage">
 							<p>Co oferujemy</p>
 							<p>i dla kogo?</p>
 						</Title>
-						<TextContent className="px-5 dp:text-lg">
+						<TextContent className="px-5 md:text-lg">
 							<p>
 								Współpracujemy z artystami, którzy swoje prace tworzą w
 								plastycznym materiale tj. wosk, glina, plastelina lub
@@ -39,7 +39,7 @@ export default function Offer() {
 						</div>
 					</div>
 				</div>
-				<div className="dp:w-1/2 dp:bg-backgroundDark">
+				<div className="md:w-1/2 md:bg-backgroundDark">
 					<div className="flex gap-2 overflow-x-auto">
 						{HomeOfferImages.map((image, i) => (
 							<Image

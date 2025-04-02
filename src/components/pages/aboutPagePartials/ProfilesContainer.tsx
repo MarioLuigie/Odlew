@@ -52,10 +52,10 @@ export default function AboutPage() {
           className="w-full"
         />
         <div className="bg-menuTopBg p-5 pb-10 grow flex flex-col justify-center">
-          <Title className="text-textLight pb-5 dp:text-3xl">
+          <Title className="text-textLight pb-5 md:text-3xl">
             Nasz Zespół
           </Title>
-          <TextContent className="text-textLight dp:text-xl">
+          <TextContent className="text-textLight md:text-xl">
             Dzięki więzom rodzinnym nasz zespół doskonale się rozumie, co
             przekłada się na efektywną i harmonijną współpracę.
             Fundamentem naszych działań jest wzajemne zaufanie, które
@@ -64,9 +64,9 @@ export default function AboutPage() {
             naszą relację zawodową. Taka atmosfera sprzyja tworzeniu
             wyjątkowych projektów i osiąganiu wspólnych celów.
           </TextContent>
-          <div className="w-full h-full my-8 flex flex-col items-center gap-8 dp:flex-row dp:justify-center">
+          <div className="w-full h-full my-8 flex flex-col items-center gap-8 md:flex-row md:justify-center">
             <div
-              className="w-full h-full dp:w-110 dp:h-110 cursor-pointer"
+              className="w-full h-full md:w-110 md:h-110 cursor-pointer"
               onClick={() => handleOpenDialog('Antoni')}
             >
               <Image
@@ -74,11 +74,11 @@ export default function AboutPage() {
                 alt={AboutImages.antoni.alt}
                 width={2400}
                 height={2400}
-                className="dp:object-cover h-full"
+                className="md:object-cover h-full"
               />
             </div>
             <div
-              className="w-full h-full dp:w-110 dp:h-110 cursor-pointer"
+              className="w-full h-full md:w-110 md:h-110 cursor-pointer"
               onClick={() => handleOpenDialog('Jozef')}
             >
               <Image
@@ -86,11 +86,11 @@ export default function AboutPage() {
                 alt={AboutImages.jozef.alt}
                 width={2400}
                 height={2400}
-                className="dp:object-cover h-full"
+                className="md:object-cover h-full"
               />
             </div>
             <div
-              className="w-full h-full dp:w-110 dp:h-110 cursor-pointer"
+              className="w-full h-full md:w-110 md:h-110 cursor-pointer"
               onClick={() => handleOpenDialog('Szymon')}
             >
               <Image
@@ -98,7 +98,7 @@ export default function AboutPage() {
                 alt={AboutImages.szymon.alt}
                 width={2400}
                 height={2400}
-                className="dp:object-cover h-full"
+                className="md:object-cover h-full"
               />
             </div>
           </div>

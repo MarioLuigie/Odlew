@@ -26,7 +26,7 @@ export default function MenuSheet() {
 	}
 
 	return (
-		<div className="dp:hidden">
+		<div className="md:hidden">
 			<CustomSheet
 				side="top"
 				className="h-screen flex flex-col gap-0"
