@@ -49,7 +49,7 @@ export default function Realizations() {
 			<div className="dp:absolute dp:inset-0 dp:flex dp:justify-center dp:items-center">
 				{/* desktop */}
 				<div className="flex flex-col justify-center items-center bg-transparent">
-					<Title className="titlePage">
+					<Title className="titlePage dp:text-[54px]">
 						<div className="flex flex-col justify-center items-center">
 							<p>Nasze</p>
 							<p>realizacje</p>

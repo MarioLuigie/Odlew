@@ -86,7 +86,7 @@ export default function HowWork() {
 	}
 
 	return (
-		<div className="relative mb-4 dp:mb-0 dp:flex dp:border-b-[1px] dp:border-zinc-400 dp:min-h-customScreen">
+		<div className="h-customScreen dp:max-h-[820px] relative mb-4 dp:mb-0 dp:flex dp:border-b-[1px] dp:border-zinc-400">
 			<div className="absolute right-1/2 top-1/2 translate-x-[25px] -translate-y-40">
 				<Drop
 					className="w-[50px] h-[50px] transition-all duration-300"
