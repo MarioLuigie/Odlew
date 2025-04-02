@@ -14,9 +14,9 @@ export default function About() {
 	return (
 		<section
 			id="o-nas"
-			className="min-h-customScreen flex flex-col bg-background scroll-mt-header"
+			className="flex flex-col bg-background scroll-mt-header"
 		>
-			<div className="dp:flex dp:justify-between dp:h-[820px] pr-[72px]">
+			<div className="dp:h-customScreen dp:max-h-[1080px] dp:flex dp:justify-between pr-[72px]">
 				{/* TEXT */}
 				<div className="textPageContainer">
 					<div className="min-w-[250px] max-w-[600px]">

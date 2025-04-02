@@ -6,9 +6,9 @@ import { Icons } from '@/lib/constants/icons'
 
 export default function Motto() {
 	return (
-		<section className="min-h-customScreen flex flex-col bg-background scroll-mt-header">
+		<section className="flex flex-col bg-background scroll-mt-header">
 			{/* MOTTO */}
-			<div className="dp:h-[820px] relative p-[40px] h-customScreen flex flex-col justify-center items-center bg-mottoBg_grey hover:bg-mottoBg transition-colors duration-1000">
+			<div className="dp:h-customScreen dp:max-h-[1080px] relative p-[40px] flex flex-col justify-center items-center bg-mottoBg_grey hover:bg-mottoBg transition-colors duration-1000">
 				<div className="w-full flex flex-col justify-center items-center text-[30px] leading-[70px] dp:text-[76px] dp:leading-[150px] font-light text-textLight">
 					<div className="w-full">
 						<div className="w-full">
