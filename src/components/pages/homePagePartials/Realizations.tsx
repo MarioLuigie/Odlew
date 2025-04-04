@@ -15,15 +15,15 @@ export default function Realizations() {
 				</div>
 
 				{/* 3 PHOTOS WITH ABSOLUTE POSITION */}
-				<div className="md:absolute md:top-[170px] md:left-[40px] w-[230px] h-[180px] border-neutral-950 border-2">
+				<div className="md:absolute md:top-[170px] md:left-[40px] 2xl:left-[140px] w-[230px] h-[180px] border-neutral-950 border-2">
 					product-11.jpg
 				</div>
 
-				<div className="md:absolute md:top-[320px] md:left-[150px] w-[300px] h-[400px] border-neutral-950 border-2">
+				<div className="md:absolute md:top-[320px] md:left-[150px] 2xl:left-[250px] w-[300px] h-[400px] border-neutral-950 border-2">
 					product-17.jpg
 				</div>
 
-				<div className="md:absolute md:bottom-0 md:left-[410px] w-[180px] h-[180px] border-neutral-950 border-2">
+				<div className="md:absolute md:bottom-0 md:left-[410px] 2xl:left-[510px] w-[180px] h-[180px] border-neutral-950 border-2">
 					product-13.jpg
 				</div>
 			</div>
@@ -31,15 +31,15 @@ export default function Realizations() {
 			{/*RIGHT SIDE*/}
 			<div className="w-1/2 bg-green-300">
 
-				<div className="w-[400px] h-[300px] border-neutral-950 border-2 md:absolute md:right-[40px] md:top-[55px]">
+				<div className="w-[400px] h-[300px] border-neutral-950 border-2 md:absolute md:right-[40px] 2xl:right-[140px] md:top-[55px]">
 					product-14.jpg
 				</div>
 
-				<div className="md:absolute md:top-[310px] md:right-[245px] w-[230px] h-[290px] border-neutral-950 border-2">
+				<div className="md:absolute md:top-[310px] md:right-[245px] 2xl:right-[345px] w-[230px] h-[290px] border-neutral-950 border-2">
 					product-12.jpg
 				</div>
 
-				<div className="md:absolute md:bottom-[110px] md:right-[90px] w-[180px] h-[180px] border-neutral-950 border-2">
+				<div className="md:absolute md:bottom-[110px] md:right-[90px] 2xl:right-[190px] w-[180px] h-[180px] border-neutral-950 border-2">
 					product-16.jpg
 				</div>
 
