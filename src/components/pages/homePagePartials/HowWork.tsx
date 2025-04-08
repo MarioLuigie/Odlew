@@ -5,10 +5,10 @@ import { useState } from 'react'
 import { capitalizeEntireText, cn } from '@/lib/utils'
 import { HowWorkContent } from '@/lib/constants/texts'
 // components
-import Title from '@/components/shared/Title'
 import CustomButton from '@/components/shared/CustomButton'
 import Drop from '@/components/shared/Drop'
 import { MoveDownRight, MoveDownLeft } from 'lucide-react'
+import TextVertical from '@/components/shared/TextVertical'
 
 interface TabProps {
 	onClick: () => void
@@ -126,9 +126,11 @@ export default function HowWork() {
 			{/* Tabs */}
 			<div className="md:w-1/2 textPageContainer md:justify-end bg-[#DAD7D1]">
 				<div>
-					<Title className="titlePage">
+					{/* <Title className="titlePage">
 						<p>Jak pracujemy?</p>
-					</Title>
+					</Title> */}
+
+					<TextVertical>Jak pracujemy</TextVertical>
 					<menu className="w-full px-5 py-4 flex flex-col items-center text-textDark">
 						{HowWorkContent.map((tab, index) => (
 							<div

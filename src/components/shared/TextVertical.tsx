@@ -7,7 +7,7 @@ type TextVerticalProps = {
 
 export default function TextVertical({
 	children,
-	right = false,
+	right = true,
 }: TextVerticalProps) {
 	return (
 		<div className="h-[400px] w-[80px]">

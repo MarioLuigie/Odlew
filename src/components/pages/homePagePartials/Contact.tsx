@@ -22,7 +22,7 @@ export default function Contact() {
 							<p>Kontakt</p>
 						</Title> */}
 
-						<TextVertical>Kontakt</TextVertical>
+						<TextVertical right={false}>Kontakt</TextVertical>
 
 						<div className="p-6 flex flex-col">
 							<CompanyName mode="dark" />
