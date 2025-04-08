@@ -1,33 +1,32 @@
 import Logo from '@/components/content/Logo'
 import MenuFooter from '@/components/layout/menu/MenuFooter'
-import Copyright from '@/components/content/Copyright'
 import Link from 'next/link'
 import { Routes } from '@/lib/constants/paths'
 import { SignedIn, SignedOut, SignOutButton } from '@clerk/nextjs'
 
 export default function Footer() {
 	return (
-		<footer className="flex flex-col items-center justify-center bg-footerBg text-white px-10 py-12 md:pt-20">
-			<div className="flex flex-col items-center gap-12 md:gap-0 w-full md:flex-row md:w-full md:justify-center">
-				<div className="md:w-1/2 md:flex md:justify-end md:pr-12">
-					<Logo variant="mono" w={270} className="md:hidden" />
-					<Logo variant="mono" w={400} className="hidden md:block" />
+		<footer className="xl:h-footerHeight flex flex-col items-center justify-center bg-footerBg text-white xl:pl-0 xl:pr-10 xl:pt-6">
+			<div className="flex flex-col items-center gap-12 xl:gap-0 w-full xl:flex-row xl:w-full xl:justify-center xl:items-center">
+				{/* LOGO */}
+				<div className="xl:h-full xl:w-[540px] xl:flex xl:justify-center xl:items-center xl:px-28">
+					<Logo variant="mono" w={270} className="xl:hidden" />
+					<Logo variant="mono" w={270} className="hidden xl:block" />
 				</div>
-				<div className='md:w-1/2'>
-					<div className="flex justify-center w-full min-w-[250px] max-w-[420px]">
+
+				{/* MENU */}
+				<div className="xl:w-full xl:pr-12">
+					<div className="flex justify-center w-full min-w-[250px]">
 						<div className="w-[2px] bg-accent"></div>
 						<MenuFooter />
 					</div>
 				</div>
 			</div>
 
-			<div className="flex flex-col justify-center items-center mt-14">
-				<Copyright />
-				<small className="text-teal-600 mb-4">
-					Created by &copy; ARWcode 2024
-				</small>
+			{/* ADMIN */}
+			<div>
 				<SignedOut>
-					<Link href={Routes.SIGN_IN} className="text-center">
+					<Link href={Routes.SIGN_IN} className="text-center text-teal-600">
 						<small>admin</small>
 					</Link>
 				</SignedOut>

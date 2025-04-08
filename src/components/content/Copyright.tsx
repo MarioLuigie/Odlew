@@ -3,8 +3,8 @@ import { App } from '@/lib/constants/texts'
 
 export default function Copyright() {
 	return (
-		<div className="w-full pt-2">
-			<small className="flex justify-center text-textLight w-full">
+		<div className="w-full">
+			<small className="flex justify-start text-textLight w-full">
 				&copy; {App.NAME}
 				{', '}
 				{App.SUBNAME} 2024

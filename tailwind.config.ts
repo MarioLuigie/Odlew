@@ -43,15 +43,22 @@ const config: Config = {
                 header: headerHeight,
                 // customScreen: `calc(100vh - ${headerHeight})`,
                 customScreen: '100vh',
-
+                footerHeight: '490px',
             },
             minHeight: {
                 customScreen: `calc(100vh - ${headerHeight})`,
                 header: headerHeight,
-                sectionHeight: sectionHeight
+                sectionHeight: sectionHeight,
+                footerHeight: '490px',
             },
             maxHeight: {
                 customScreen: `calc(100vh - ${headerHeight})`,
+            },
+            width: {
+                footerHeight: '490px',
+            },
+            minWidth: {
+                footerHeight: '490px',
             },
             margin: {
                 header: headerHeight,
