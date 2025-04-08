@@ -34,9 +34,6 @@ export default function MenuFooter() {
 			</ul>
 			<div className="flex flex-col items-start w-full xl:pt-8">
 				<Copyright />
-				<small className="text-teal-600">
-					Created by &copy; ARWcode 2024
-				</small>
 			</div>
 		</nav>
 	)

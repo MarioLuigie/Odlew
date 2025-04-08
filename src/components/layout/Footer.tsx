@@ -6,7 +6,7 @@ import { SignedIn, SignedOut, SignOutButton } from '@clerk/nextjs'
 
 export default function Footer() {
 	return (
-		<footer className="xl:h-footerHeight flex flex-col items-center justify-center bg-footerBg text-white xl:pl-0 xl:pr-10 xl:pt-6">
+		<footer className="xl:h-footerHeight flex flex-col items-center justify-center bg-footerBg text-white xl:px-10 xl:pt-6">
 			<div className="flex flex-col items-center gap-12 xl:gap-0 w-full xl:flex-row xl:w-full xl:justify-center xl:items-center">
 				{/* LOGO */}
 				<div className="xl:h-full xl:w-[540px] xl:flex xl:justify-center xl:items-center xl:px-28">
@@ -24,10 +24,11 @@ export default function Footer() {
 			</div>
 
 			{/* ADMIN */}
-			<div>
+			<div className="flex items-center justify-center gap-2 xl:mt-4 text-teal-600">
+				<small>Created by &copy; ARWcode 2024</small>
 				<SignedOut>
-					<Link href={Routes.SIGN_IN} className="text-center text-teal-600">
-						<small>admin</small>
+					<Link href={Routes.SIGN_IN} className='pb-[4px]'>
+						<small>| Admin |</small>
 					</Link>
 				</SignedOut>
 				<SignedIn>
