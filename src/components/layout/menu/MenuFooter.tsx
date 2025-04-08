@@ -14,8 +14,8 @@ function MenuContentItem({ item }: { item: MenuContentItem }) {
 	return (
 		<div className="w-full border-b-[1px]">
 			<Link href={item.path} key={item.label} className="inline-block pr-3">
-				<li className="py-2">
-					<p className="text-menuTextLight text-[18px]">
+				<li className="pb-2 pt-4">
+					<p className="text-menuTextLight text-[14px] font-medium">
 						{capitalizeFirstLetter(item.label)}
 					</p>
 				</li>
@@ -32,7 +32,7 @@ export default function MenuFooter() {
 					<MenuContentItem item={item} key={item.label} />
 				))}
 			</ul>
-			<div className="flex flex-col items-start w-full xl:pt-8">
+			<div className="flex flex-col items-start w-full xl:pt-10">
 				<Copyright />
 			</div>
 		</nav>
