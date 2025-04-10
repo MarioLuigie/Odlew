@@ -43,7 +43,7 @@ export default function HowWork() {
 	return (
 		<div className="h-customScreen md:max-h-[820px] relative mb-4 md:mb-0 md:flex md:border-b-[1px] md:border-zinc-400">
 
-			{/* Menu */}
+			{/* DROP AND HALF LINE */}
 			<div className="absolute right-1/2 top-1/2 translate-x-[25px] -translate-y-40">
 				<Drop
 					className="w-[50px] h-[50px] transition-all duration-300"
@@ -59,10 +59,10 @@ export default function HowWork() {
 			</div>
 
 			{/* Texts */}
-			<div className="md:w-1/2 bg-red-300">
+			<div className="md:w-1/2">
 				<div
 					id="tab-content"
-					className="p-32 w-full flex justify-center items-center min-h-[240px] md:h-full py-8 transition-all ease-in-out bg-menuTopBg"
+					className="lg:px-12 lg:py-4 xl:px-24 xl:pb-8 xl:pt-0 w-full flex justify-center items-center min-h-[240px] md:h-full transition-all ease-in-out bg-menuTopBg"
 				>
 					<div>
 						{activeTabIndex !== null ? (
@@ -82,10 +82,10 @@ export default function HowWork() {
 			</div>
 
 			{/* Tabs */}
-			<div className="md:w-1/2 textPageContainer md:justify-end bg-[#DAD7D1]">
-				<div>
+			<div className="md:w-1/2 md:px-8 xl:px-12 2xl:px-20 bg-[#DAD7D1]">
+				<div className='xl:flex xl:flex-col xl:items-end xl:gap-20'>
 					<TextVerticalHowWork>Jak pracujemy</TextVerticalHowWork>
-					<menu className="w-full px-5 py-4 flex flex-col items-center text-textDark">
+					<menu className="w-full xl:pr-20 flex flex-col items-center text-textDark">
 						{HowWorkContent.map((tab, index) => (
 							<div
 								key={index}

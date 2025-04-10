@@ -9,7 +9,7 @@ export default function Realizations() {
 			className="w-full md:min-h-sectionHeight md:flex md:justify-center md:items-stretch bg-background scroll-mt-header md:relative"
 		>
 			{/*LEFT SIDE*/}
-			<div className="w-1/2 bg-yellow-300 md:relative flex">
+			<div className="w-1/2 bg-[#DEDCD8] md:relative flex">
 				<div className="w-[180px] h-[180px] border-neutral-950 border-2 md:absolute md:right-0 md:top-0">
 					product-15.jpg
 				</div>
@@ -29,7 +29,7 @@ export default function Realizations() {
 			</div>
 
 			{/*RIGHT SIDE*/}
-			<div className="w-1/2 bg-green-300">
+			<div className="w-1/2 bg-[#DEDCD8]">
 
 				<div className="w-[400px] h-[300px] border-neutral-950 border-2 md:absolute md:right-[40px] 2xl:right-[140px] md:top-[55px]">
 					product-14.jpg
