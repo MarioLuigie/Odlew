@@ -26,7 +26,7 @@ export default function Realizations() {
 						product-17.jpg
 					</div>
 
-					<div className="md:absolute md:-bottom-[26px] md:left-[410px] 2xl:left-[510px] w-[180px] h-[180px] border-neutral-950 border-2">
+					<div className="md:absolute z-50 md:-bottom-[26px] md:left-[410px] 2xl:left-[510px] w-[180px] h-[180px] border-neutral-950 border-2">
 						product-13.jpg
 					</div>
 				</div>

@@ -83,7 +83,7 @@ export default function HowWork() {
 
 			{/* Tabs */}
 			<div className="md:w-1/2 md:px-8 xl:px-12 2xl:px-20 bg-[#DAD7D1]">
-				<div className='xl:flex xl:flex-col xl:items-end xl:gap-20'>
+				<div className='lg:flex lg:flex-col lg:items-end lg:gap-20'>
 					<TextVerticalHowWork>Jak pracujemy</TextVerticalHowWork>
 					<menu className="w-full xl:pr-20 flex flex-col items-center text-textDark">
 						{HowWorkContent.map((tab, index) => (

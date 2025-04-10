@@ -66,7 +66,7 @@ export default function About() {
 
 					<div>
 						<ScrollArea className="hidden md:flex md:h-[820px] rounded-none border-l-[2px]">
-							<div className="flex flex-col gap-6 items-end">
+							<div className="flex flex-col gap-6 items-end min-w-[300px] lg:max-w-[450px] xl:max-w-[500px] 2xl:max-w-[650px]">
 								{HomeAboutImages.map((image, i) => (
 									<Image
 										key={i}
@@ -75,7 +75,7 @@ export default function About() {
 										width={2400}
 										height={2400}
 										priority
-										className="min-w-[250px] max-w-[500px] w-[85%] object-cover grayscale contrast-75 hover:grayscale-0 hover:contrast-100 transition duration-500 ease-in-out cursor-pointer"
+										className="lg:w-[80%] xl:w-[80%] object-cover grayscale contrast-75 hover:grayscale-0 hover:contrast-100 transition duration-500 ease-in-out cursor-pointer"
 										style={{
 											willChange: 'filter',
 										}}
