@@ -8,7 +8,7 @@ import { HowWorkContent } from '@/lib/constants/texts'
 import CustomButton from '@/components/shared/CustomButton'
 import Drop from '@/components/shared/Drop'
 import { MoveDownRight, MoveDownLeft } from 'lucide-react'
-import TextVertical from '@/components/shared/TextVertical'
+import TextVerticalHowWork from '@/components/shared/TextVerticalHowWork'
 
 interface TabProps {
 	onClick: () => void
@@ -32,51 +32,6 @@ function Tab({ onClick, activeTabIndex, label, index }: TabProps) {
 		</button>
 	)
 }
-
-// export default function HowWork() {
-// 	const [activeTabIndex, setActiveTabIndex] = useState<number>()
-
-// 	const handleTabClick = (index: number) => () => {
-// 		setActiveTabIndex(index)
-// 	}
-
-// 	return (
-// 		<div className="mb-4 md:mb-0 md:flex md:border-b-[1px] md:border-zinc-400 md:min-h-customScreen">
-// 			<div className="md:w-1/2 bg-red-300">
-// 				<div
-// 					id="tab-content"
-// 					className="w-full flex justify-center items-center min-h-[240px] md:h-full px-5 py-8 transition-all ease-in-out bg-menuTopBg md:p-20"
-// 				>
-// 					<p className="text-justify text-textLight md:text-xl md:leading-9">
-// 						{HowWorkContent[activeTabIndex].tabContent}
-// 					</p>
-// 				</div>
-// 			</div>
-// 			<div className="md:w-1/2 textPageContainer md:justify-end">
-// 				<div>
-// 					<Title className="titlePage">
-// 						<p>Jak pracujemy?</p>
-// 					</Title>
-// 					<menu className="w-full px-5 py-4 flex flex-col items-center text-textDark">
-// 						{HowWorkContent.map((tab, index) => (
-// 							<div
-// 								key={index}
-// 								className="w-full flex flex-col items-center"
-// 							>
-// 								<Tab
-// 									onClick={handleTabClick(index)}
-// 									activeTabIndex={activeTabIndex}
-// 									label={tab.tabLabel}
-// 									index={index}
-// 								/>
-// 							</div>
-// 						))}
-// 					</menu>
-// 				</div>
-// 			</div>
-// 		</div>
-// 	)
-// }
 
 export default function HowWork() {
 	const [activeTabIndex, setActiveTabIndex] = useState<number | null>(null)
@@ -126,11 +81,7 @@ export default function HowWork() {
 			{/* Tabs */}
 			<div className="md:w-1/2 textPageContainer md:justify-end bg-[#DAD7D1]">
 				<div>
-					{/* <Title className="titlePage">
-						<p>Jak pracujemy?</p>
-					</Title> */}
-
-					<TextVertical>Jak pracujemy</TextVertical>
+					<TextVerticalHowWork>Jak pracujemy</TextVerticalHowWork>
 					<menu className="w-full px-5 py-4 flex flex-col items-center text-textDark">
 						{HowWorkContent.map((tab, index) => (
 							<div
@@ -152,6 +103,50 @@ export default function HowWork() {
 	)
 }
 
+// export default function HowWork() {
+// 	const [activeTabIndex, setActiveTabIndex] = useState<number>()
+
+// 	const handleTabClick = (index: number) => () => {
+// 		setActiveTabIndex(index)
+// 	}
+
+// 	return (
+// 		<div className="mb-4 md:mb-0 md:flex md:border-b-[1px] md:border-zinc-400 md:min-h-customScreen">
+// 			<div className="md:w-1/2 bg-red-300">
+// 				<div
+// 					id="tab-content"
+// 					className="w-full flex justify-center items-center min-h-[240px] md:h-full px-5 py-8 transition-all ease-in-out bg-menuTopBg md:p-20"
+// 				>
+// 					<p className="text-justify text-textLight md:text-xl md:leading-9">
+// 						{HowWorkContent[activeTabIndex].tabContent}
+// 					</p>
+// 				</div>
+// 			</div>
+// 			<div className="md:w-1/2 textPageContainer md:justify-end">
+// 				<div>
+// 					<Title className="titlePage">
+// 						<p>Jak pracujemy?</p>
+// 					</Title>
+// 					<menu className="w-full px-5 py-4 flex flex-col items-center text-textDark">
+// 						{HowWorkContent.map((tab, index) => (
+// 							<div
+// 								key={index}
+// 								className="w-full flex flex-col items-center"
+// 							>
+// 								<Tab
+// 									onClick={handleTabClick(index)}
+// 									activeTabIndex={activeTabIndex}
+// 									label={tab.tabLabel}
+// 									index={index}
+// 								/>
+// 							</div>
+// 						))}
+// 					</menu>
+// 				</div>
+// 			</div>
+// 		</div>
+// 	)
+// }
 {
 	/* <button
 					onClick={() => setActiveContentIndex(0)}
