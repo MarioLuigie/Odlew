@@ -28,7 +28,7 @@ body {
 	}
 
 	.shad-textArea {
-		@apply bg-inputBg rounded-l-3xl rounded-br-3xl rounded-none shadow-md placeholder:text-zinc-400 min-h-32 max-h-64 focus-visible:ring-0 focus-visible:ring-offset-0 !important;
+		@apply bg-inputBg rounded-l-3xl rounded-br-3xl rounded-none shadow-md placeholder:text-zinc-400 min-h-24 max-h-64 focus-visible:ring-0 focus-visible:ring-offset-0 !important;
 	}
 
 	.titlePage {

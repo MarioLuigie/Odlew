@@ -3,10 +3,7 @@ import Image from 'next/image'
 // lib
 import { HomeContactImages } from '@/lib/constants/images'
 // components
-import Title from '@/components/shared/Title'
-import CompanyName from '@/components/content/CompanyName'
 import ContactForm from '@/components/forms/ContactForm'
-import ContactInfo from '@/components/content/ContactInfo'
 import TextVertical from '@/components/shared/TextVertical'
 
 export default function Contact() {
@@ -17,16 +14,39 @@ export default function Contact() {
 		>
 			<div className="md:flex md:min-h-customScreen">
 				<div className="md:w-1/2 md:flex md:flex-col md:justify-center md:pl-28 xl:pl-36">
-					<TextVertical right={false}>Kontakt</TextVertical>
+					<div className="flex items-end w-full">
+						<TextVertical right={false}>Kontakt</TextVertical>
+						<div className="pl-[56px] flex flex-col w-full">
+							<div className="pb-[13px] border-b-[1px] border-[#383638] w-full">
+								<p className="font-semibold text-lg text-[#383638]">
+									P.S. ODLEW Odlewnia Artystyczna
+								</p>
+							</div>
 
-					<div className="p-6 flex flex-col">
-						<CompanyName mode="dark" />
-						<ContactInfo />
+							<div className="py-[13px] border-b-[1px] border-[#EEE9E2] w-full">
+								<p className="font-medium text-sm text-[#383638]">
+									Adres: Jawornik 505, 32-400 Myślenice
+								</p>
+							</div>
+
+							<div className="py-[13px] border-b-[1px] border-[#EEE9E2] w-full">
+								<p className="font-medium text-sm text-[#383638]">
+									E-mail: polewka.szymon@gmail.com
+								</p>
+							</div>
+
+							<div className="py-[13px] border-b-[1px] border-[#EEE9E2] w-full">
+								<p className="font-medium text-sm text-[#383638]">
+									Tel.: +48 665 981 994
+								</p>
+							</div>
+
+							<div className="text-[36px] text-[#383638] font-normal pt-[80px]">
+								<p>Napisz do nas</p>
+							</div>
+						</div>
 					</div>
-					<Title className="mb-6 px-5">
-						<p>Napisz do nas</p>
-					</Title>
-					<div className="flex flex-col px-6 pb-4 md:pb-0">
+					<div className="flex flex-col pl-[56px] pt-8">
 						<ContactForm />
 					</div>
 				</div>

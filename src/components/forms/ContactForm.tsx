@@ -94,11 +94,11 @@ export default function ContactForm() {
 						// iconAlt={Icons.EMAIL_ICON.alt}
 					/>
 				</div>
-				<div>
-					<SubmitButton isLoading={isSubmitting} className="w-full mt-2">
-						Wyślij wiadomość
+				<div className='my-7'>
+					<SubmitButton isLoading={isSubmitting} className="w-[100px]">
+						Wyślij
 					</SubmitButton>
-					<FieldsRequiredDesc className='mt-2 md:justify-start'/>
+					<FieldsRequiredDesc className='mt-5 md:justify-start'/>
 				</div>
 			</form>
 		</Form>
