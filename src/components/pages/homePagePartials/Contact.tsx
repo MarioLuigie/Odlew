@@ -16,21 +16,18 @@ export default function Contact() {
 			className="min-h-customScreen md:bg-backgroundDark scroll-mt-header border-y-[1px] border-zinc-400"
 		>
 			<div className="md:flex md:min-h-customScreen">
-				<div className="md:w-1/2 textPageContainer">
-					<div className='md:w-full'>
+				<div className="md:w-1/2 md:flex md:flex-col md:justify-center md:px-6 xl:px-28 2xl:px-36">
+					<TextVertical right={false}>Kontakt</TextVertical>
 
-						<TextVertical right={false}>Kontakt</TextVertical>
-
-						<div className="p-6 flex flex-col">
-							<CompanyName mode="dark" />
-							<ContactInfo />
-						</div>
-						<Title className="mb-6 px-5">
-							<p>Napisz do nas</p>
-						</Title>
-						<div className="flex flex-col px-6 pb-4 md:pb-0">
-							<ContactForm />
-						</div>
+					<div className="p-6 flex flex-col">
+						<CompanyName mode="dark" />
+						<ContactInfo />
+					</div>
+					<Title className="mb-6 px-5">
+						<p>Napisz do nas</p>
+					</Title>
+					<div className="flex flex-col px-6 pb-4 md:pb-0">
+						<ContactForm />
 					</div>
 				</div>
 				<div className="hidden md:p-36 md:w-1/2 md:bg-backgroundDark md:flex md:justify-center md:items-center">
@@ -39,7 +36,7 @@ export default function Contact() {
 						alt={HomeContactImages[0].alt}
 						width={2400}
 						height={2400}
-            className="h-full md:w-[320px] md:h-[450px] object-cover"
+						className="h-full md:w-[320px] md:h-[450px] object-cover"
 					/>
 				</div>
 			</div>
