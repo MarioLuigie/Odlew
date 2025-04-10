@@ -10,11 +10,12 @@ export default function Contact() {
 	return (
 		<section
 			id="kontakt"
-			className="min-h-customScreen md:bg-backgroundDark scroll-mt-header border-y-[1px] border-zinc-400"
+			className="xl:min-h-customScreen md:bg-backgroundDark scroll-mt-header border-y-[1px] border-zinc-400"
 		>
-			<div className="md:flex md:min-h-customScreen">
+			<div className="md:flex xl:min-h-customScreen">
+
 				{/* CONTACT INFO */}
-				<div className="md:w-1/2 md:flex md:flex-col md:justify-center md:pl-28 xl:pl-36">
+				<div className="md:w-1/2 md:flex md:flex-col md:justify-start md:pl-28 xl:pl-36">
 					<div className="flex items-end w-full">
 						<TextVertical right={false}>Kontakt</TextVertical>
 						<div className="pl-[56px] flex flex-col w-full">
@@ -51,8 +52,9 @@ export default function Contact() {
 						<ContactForm />
 					</div>
 				</div>
+
 				{/* CONTACT IMAGE */}
-				<div className="hidden md:p-36 md:w-1/2 md:bg-backgroundDark md:flex md:justify-center md:items-center">
+				<div className="hidden md:px-28 md:pb-44 md:w-1/2 md:bg-backgroundDark md:flex md:justify-center md:items-end">
 					<Image
 						src={HomeContactImages[0].path}
 						alt={HomeContactImages[0].alt}
