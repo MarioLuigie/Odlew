@@ -13,6 +13,7 @@ export default function Contact() {
 			className="min-h-customScreen md:bg-backgroundDark scroll-mt-header border-y-[1px] border-zinc-400"
 		>
 			<div className="md:flex md:min-h-customScreen">
+				{/* CONTACT INFO */}
 				<div className="md:w-1/2 md:flex md:flex-col md:justify-center md:pl-28 xl:pl-36">
 					<div className="flex items-end w-full">
 						<TextVertical right={false}>Kontakt</TextVertical>
@@ -50,6 +51,7 @@ export default function Contact() {
 						<ContactForm />
 					</div>
 				</div>
+				{/* CONTACT IMAGE */}
 				<div className="hidden md:p-36 md:w-1/2 md:bg-backgroundDark md:flex md:justify-center md:items-center">
 					<Image
 						src={HomeContactImages[0].path}
