@@ -42,6 +42,8 @@ export default function HowWork() {
 
 	return (
 		<div className="h-customScreen md:max-h-[820px] relative mb-4 md:mb-0 md:flex md:border-b-[1px] md:border-zinc-400">
+
+			{/* Menu */}
 			<div className="absolute right-1/2 top-1/2 translate-x-[25px] -translate-y-40">
 				<Drop
 					className="w-[50px] h-[50px] transition-all duration-300"
@@ -55,6 +57,7 @@ export default function HowWork() {
 					)}
 				</Drop>
 			</div>
+
 			{/* Texts */}
 			<div className="md:w-1/2 bg-red-300">
 				<div
