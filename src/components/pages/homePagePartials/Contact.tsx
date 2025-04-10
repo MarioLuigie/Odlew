@@ -16,7 +16,7 @@ export default function Contact() {
 			className="min-h-customScreen md:bg-backgroundDark scroll-mt-header border-y-[1px] border-zinc-400"
 		>
 			<div className="md:flex md:min-h-customScreen">
-				<div className="md:w-1/2 md:flex md:flex-col md:justify-center md:px-6 xl:px-28 2xl:px-36">
+				<div className="md:w-1/2 md:flex md:flex-col md:justify-center md:pl-28 xl:pl-36">
 					<TextVertical right={false}>Kontakt</TextVertical>
 
 					<div className="p-6 flex flex-col">
