@@ -6,68 +6,71 @@ export default function Realizations() {
 	return (
 		<section
 			id="realizacje"
-			className="w-full md:min-h-sectionHeight md:flex md:justify-center md:items-stretch bg-background scroll-mt-header md:relative"
+			className=""
 		>
-			{/*LEFT SIDE*/}
-			<div className="w-1/2 bg-[#DEDCD8] md:relative flex">
-				<div className="w-[180px] h-[180px] border-neutral-950 border-2 md:absolute md:right-0 md:top-0">
-					product-15.jpg
+			<div className='h-[32px] bg-[#DEDCD8] w-full'></div>
+			<div className="md:relative w-full md:min-h-[790px] md:flex md:justify-center md:items-stretch bg-background scroll-mt-header">
+
+				{/*LEFT SIDE*/}
+				<div className="w-1/2 bg-[#DEDCD8] md:relative flex">
+					<div className="w-[180px] h-[180px] border-neutral-950 border-2 md:absolute md:right-0 md:top-0">
+						product-15.jpg
+					</div>
+
+					{/* 3 PHOTOS WITH ABSOLUTE POSITION */}
+					<div className="md:absolute md:top-[170px] md:left-[40px] 2xl:left-[140px] w-[230px] h-[180px] border-neutral-950 border-2">
+						product-11.jpg
+					</div>
+
+					<div className="md:absolute md:top-[320px] md:left-[150px] 2xl:left-[250px] w-[300px] h-[400px] border-neutral-950 border-2">
+						product-17.jpg
+					</div>
+
+					<div className="md:absolute md:-bottom-[26px] md:left-[410px] 2xl:left-[510px] w-[180px] h-[180px] border-neutral-950 border-2">
+						product-13.jpg
+					</div>
 				</div>
 
-				{/* 3 PHOTOS WITH ABSOLUTE POSITION */}
-				<div className="md:absolute md:top-[170px] md:left-[40px] 2xl:left-[140px] w-[230px] h-[180px] border-neutral-950 border-2">
-					product-11.jpg
+				{/*RIGHT SIDE*/}
+				<div className="w-1/2 md:relative bg-[#DEDCD8]">
+					<div className="w-[400px] h-[300px] border-neutral-950 border-2 md:absolute md:right-[40px] 2xl:right-[140px] md:top-[55px]">
+						product-14.jpg
+					</div>
+
+					<div className="md:absolute md:top-[310px] md:right-[245px] 2xl:right-[345px] w-[230px] h-[290px] border-neutral-950 border-2">
+						product-12.jpg
+					</div>
+
+					<div className="md:absolute md:bottom-[110px] md:right-[90px] 2xl:right-[190px] w-[180px] h-[180px] border-neutral-950 border-2">
+						product-16.jpg
+					</div>
 				</div>
 
-				<div className="md:absolute md:top-[320px] md:left-[150px] 2xl:left-[250px] w-[300px] h-[400px] border-neutral-950 border-2">
-					product-17.jpg
-				</div>
-
-				<div className="md:absolute md:bottom-0 md:left-[410px] 2xl:left-[510px] w-[180px] h-[180px] border-neutral-950 border-2">
-					product-13.jpg
-				</div>
-			</div>
-
-			{/*RIGHT SIDE*/}
-			<div className="w-1/2 bg-[#DEDCD8]">
-
-				<div className="w-[400px] h-[300px] border-neutral-950 border-2 md:absolute md:right-[40px] 2xl:right-[140px] md:top-[55px]">
-					product-14.jpg
-				</div>
-
-				<div className="md:absolute md:top-[310px] md:right-[245px] 2xl:right-[345px] w-[230px] h-[290px] border-neutral-950 border-2">
-					product-12.jpg
-				</div>
-
-				<div className="md:absolute md:bottom-[110px] md:right-[90px] 2xl:right-[190px] w-[180px] h-[180px] border-neutral-950 border-2">
-					product-16.jpg
-				</div>
-
-			</div>
-
-			{/* Our realizations title */}
-			<div className="md:absolute md:inset-0 md:flex md:justify-center md:items-center">
-				{/* desktop */}
-				<div className="flex flex-col justify-center items-center bg-transparent">
-					<Title className="titlePage md:text-[54px]">
-						<div className="flex flex-col justify-center items-center">
-							<p>Nasze</p>
-							<p>realizacje</p>
+				{/* MIDDLE TITLE */}
+				<div className="md:absolute md:inset-0 md:flex md:justify-center md:items-center">
+					{/* desktop */}
+					<div className="flex flex-col justify-center items-center bg-transparent">
+						<Title className="titlePage md:text-[54px]">
+							<div className="flex flex-col justify-center items-center">
+								<p>Nasze</p>
+								<p>realizacje</p>
+							</div>
+						</Title>
+						<div className="px-5 my-12 md:my-0 md:flex md:justify-center md:items-center md:w-full hidden">
+							<CustomButton navlink path="/realizacje">
+								Zobacz więcej
+							</CustomButton>
 						</div>
-					</Title>
-					<div className="px-5 my-12 md:my-0 md:flex md:justify-center md:items-center md:w-full hidden">
+					</div>
+					{/* Mobile */}
+					<div className="px-5 my-12 md:hidden">
 						<CustomButton navlink path="/realizacje">
 							Zobacz więcej
 						</CustomButton>
 					</div>
 				</div>
-				{/* Mobile */}
-				<div className="px-5 my-12 md:hidden">
-					<CustomButton navlink path="/realizacje">
-						Zobacz więcej
-					</CustomButton>
-				</div>
 			</div>
+			<div className='h-[100px] bg-[#DAD7D1] w-full'></div>
 		</section>
 	)
 }

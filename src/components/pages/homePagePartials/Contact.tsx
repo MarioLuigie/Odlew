@@ -18,9 +18,6 @@ export default function Contact() {
 			<div className="md:flex md:min-h-customScreen">
 				<div className="md:w-1/2 textPageContainer">
 					<div className='md:w-full'>
-						{/* <Title className="mb-6 md:mt-12 px-5 md:text-[55px] md:font-normal">
-							<p>Kontakt</p>
-						</Title> */}
 
 						<TextVertical right={false}>Kontakt</TextVertical>
 
