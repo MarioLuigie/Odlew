@@ -43,7 +43,7 @@ export default function Contact() {
 								</p>
 							</div>
 
-							<div className="text-[36px] text-[#383638] font-normal pt-[80px]">
+							<div className="text-[36px] text-[#383638] font-normal pt-[70px]">
 								<p>Napisz do nas</p>
 							</div>
 						</div>
