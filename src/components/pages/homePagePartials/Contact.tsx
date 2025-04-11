@@ -44,11 +44,11 @@ export default function Contact() {
 							</div>
 
 							<div className="text-[36px] text-[#383638] font-normal pt-[70px]">
-								<p>Napisz do nas</p>
+								<p className='leading-none'>Napisz do nas</p>
 							</div>
 						</div>
 					</div>
-					<div className="flex flex-col pl-[56px] pt-8">
+					<div className="flex flex-col pl-[56px] pt-10">
 						<ContactForm />
 					</div>
 				</div>
