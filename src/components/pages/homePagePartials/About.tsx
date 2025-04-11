@@ -2,13 +2,15 @@
 // modules
 import Image from 'next/image'
 import { ScrollArea } from '@/components/ui/scroll-area'
-
+// import Lightbox from 'yet-another-react-lightbox'
 // lib
 import { HomeAboutImages } from '@/lib/constants/images'
 // components
 import CustomButton from '@/components/shared/CustomButton'
 import TextContent from '@/components/shared/TextContent'
 import Title from '@/components/shared/Title'
+// styles
+import 'yet-another-react-lightbox/styles.css'
 
 export default function About() {
 	return (
