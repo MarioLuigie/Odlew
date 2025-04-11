@@ -209,7 +209,7 @@ export default function CustomFormField(props: CustomFormFieldProps) {
 					)}
 					<RenderField field={field} props={props} />
 					{description && <FormDescription>{description}</FormDescription>}
-					<FormMessage />
+					<FormMessage className='text-[#C93304]'/>
 				</FormItem>
 			)}
 		/>
