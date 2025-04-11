@@ -10,7 +10,7 @@ export default function Contact() {
 	return (
 		<section
 			id="kontakt"
-			className="xl:min-h-customScreen md:bg-backgroundDark scroll-mt-header border-y-[1px] border-zinc-400"
+			className="xl:min-h-customScreen md:bg-backgroundDark scroll-mt-header"
 		>
 			<div className="md:flex xl:min-h-customScreen">
 
