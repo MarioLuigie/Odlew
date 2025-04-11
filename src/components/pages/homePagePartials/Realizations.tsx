@@ -23,7 +23,7 @@ export default function Realizations() {
 						product-17.jpg
 					</div>
 
-					<div className="flex flex-col md:absolute z-50 md:-bottom-[80px] md:left-[410px] 2xl:left-[510px]">
+					<div className="flex flex-col md:absolute z-40 md:-bottom-[80px] md:left-[410px] 2xl:left-[510px]">
 						<div className="w-[180px] h-[180px] border-neutral-950 border-2">
 							product-13.jpg
 						</div>
@@ -57,7 +57,7 @@ export default function Realizations() {
 				</div>
 
 				{/* MIDDLE TITLE */}
-				<div className="md:absolute md:inset-0 md:flex md:justify-center md:items-center">
+				<div className="z-50 md:absolute md:inset-0 md:flex md:justify-center md:items-center">
 					{/* desktop */}
 					<div className="flex flex-col justify-center items-center bg-transparent">
 						<Title className="titlePage md:text-[54px]">
