@@ -1,16 +1,13 @@
 // components
 import CustomButton from '@/components/shared/CustomButton'
 import Title from '@/components/shared/Title'
+import { MoveLeft } from 'lucide-react'
 
 export default function Realizations() {
 	return (
-		<section
-			id="realizacje"
-			className=""
-		>
-			<div className='h-[32px] bg-[#DEDCD8] w-full'></div>
+		<section id="realizacje" className="">
+			<div className="h-[32px] bg-[#DEDCD8] w-full"></div>
 			<div className="md:relative w-full md:min-h-[790px] md:flex md:justify-center md:items-stretch bg-background scroll-mt-header">
-
 				{/*LEFT SIDE*/}
 				<div className="w-1/2 bg-[#DEDCD8] md:relative flex">
 					<div className="w-[180px] h-[180px] border-neutral-950 border-2 md:absolute md:right-0 md:top-0">
@@ -26,8 +23,21 @@ export default function Realizations() {
 						product-17.jpg
 					</div>
 
-					<div className="md:absolute z-50 md:-bottom-[26px] md:left-[410px] 2xl:left-[510px] w-[180px] h-[180px] border-neutral-950 border-2">
-						product-13.jpg
+					<div className="flex flex-col md:absolute z-50 md:-bottom-[80px] md:left-[410px] 2xl:left-[510px]">
+						<div className="w-[180px] h-[180px] border-neutral-950 border-2">
+							product-13.jpg
+						</div>
+						<div className='pt-2'>
+							<div className="flex items-center">
+								<p className="text-[#454345] text-sm font-medium">
+									Józef Polewka
+								</p>
+								<MoveLeft className='text-[#454345] ml-2 mt-[3px]'/>
+							</div>
+							<p className="text-[#817D78] text-xs font-medium leading-[12px]">
+								Cwaniara
+							</p>
+						</div>
 					</div>
 				</div>
 
@@ -70,7 +80,7 @@ export default function Realizations() {
 					</div>
 				</div>
 			</div>
-			<div className='h-[100px] bg-[#DAD7D1] w-full'></div>
+			<div className="h-[100px] bg-[#DAD7D1] w-full"></div>
 		</section>
 	)
 }
