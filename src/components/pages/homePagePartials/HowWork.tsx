@@ -24,7 +24,7 @@ function Tab({ onClick, activeTabIndex, label, index }: TabProps) {
 			className={cn(
 				'relative w-full py-2 md:py-0 rounded-l-full rounded-br-full text-right md:text-[36px] transition-all ease-in-out',
 				activeTabIndex === index
-					? 'text-[#AA5002] -translate-x-12 underline transition-all duration-500'
+					? 'text-[#AA5002] -translate-x-12 underline underline-offset-8 transition-all duration-500'
 					: ''
 			)}
 		>
