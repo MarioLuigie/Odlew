@@ -1,12 +1,12 @@
-type TextVerticalProps = {
+type TextVerticalContactProps = {
 	children: React.ReactNode
 	right?: boolean
 }
 
-export default function TextVertical({
+export default function TextVerticalContact({
 	children,
 	right = true,
-}: TextVerticalProps) {
+}: TextVerticalContactProps) {
 	return (
 		<div className="h-[374px]">
 			{right ? (

@@ -6,9 +6,8 @@ import { IOpinion } from '@/lib/models/opinion.model'
 // components
 import OpinionsCarouselList from '@/components/content/OpinionsCarouselList'
 import CustomButton from '@/components/shared/CustomButton'
-import Title from '@/components/shared/Title'
 import CreateOpinionDialog from '@/components/dialogs/CreateOpinionDialog'
-import TextContent from '@/components/shared/TextContent'
+import TextVerticalOpinions from '@/components/shared/TextVerticalOpinions'
 
 export default function Opinions({
 	opinions,
@@ -30,31 +29,11 @@ export default function Opinions({
 
 	return (
 		<div className="md:flex md:min-h-customScreen">
-			<div className="md:w-1/2 md:bg-background textPageContainer">
-				<div>
-					<Title className="mb-12 px-5 hidden md:flex md:text-[55px] md:font-normal titlePage">
-						<p>Opinie klientów</p>
-					</Title>
-					<TextContent className="px-5 md:text-lg hidden md:block">
-						<p>
-							Dziękujemy, że wybraliście naszą ofertę! Wasza opinia jest
-							dla nas niezwykle cenna i pomaga nam stale się rozwijać, by
-							lepiej spełniać Wasze oczekiwania. Jeśli jesteście
-							zadowoleni z naszych usług, podzielcie się swoją opinią na
-							naszej stronie - zajmie to tylko chwilę, a dla nas znaczy
-							naprawdę wiele. Każda recenzja to nie tylko wsparcie, ale
-							także motywacja do dalszego działania. Dziękujemy za
-							poświęcony czas i zaufanie!
-						</p>
-					</TextContent>
-				</div>
+			<div className="xl:w-1/2 flex md:bg-background md:pl-28 xl:pl-36">
+				<TextVerticalOpinions right={false}>Opinie klientów</TextVerticalOpinions>
 			</div>
 			<div className="md:w-1/2 textPageContainer">
 				<div>
-					<Title className="mb-12 px-5 md:hidden">
-						<p>Opinie klientów</p>
-					</Title>
-
 					<div className="w-full flex justify-center">
 						<OpinionsCarouselList opinions={opinions} isAdmin={isAdmin} />
 					</div>

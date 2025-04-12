@@ -4,7 +4,7 @@ import Image from 'next/image'
 import { HomeContactImages } from '@/lib/constants/images'
 // components
 import ContactForm from '@/components/forms/ContactForm'
-import TextVertical from '@/components/shared/TextVertical'
+import TextVerticalContact from '@/components/shared/TextVerticalContact'
 
 export default function Contact() {
 	return (
@@ -17,7 +17,7 @@ export default function Contact() {
 				{/* CONTACT INFO */}
 				<div className="md:w-1/2 md:flex md:flex-col md:justify-start md:pl-28 xl:pl-36">
 					<div className="flex items-end w-full">
-						<TextVertical right={false}>Kontakt</TextVertical>
+						<TextVerticalContact right={false}>Kontakt</TextVerticalContact>
 						<div className="pl-[56px] flex flex-col w-full">
 							<div className="pb-[13px] border-b-[1px] border-[#383638] w-full">
 								<p className="font-semibold text-lg text-[#383638]">
