@@ -59,7 +59,7 @@ export default function ProfilesContainer() {
 				<div className="bg-menuTopBg">
 					<div className="flex justify-between lg:pl-[40px] xl:pl-[135px]">
 						<div
-							className="w-[368px] h-[552px] mt-[80px] md:w-110 md:h-110 cursor-pointer"
+							className="relative w-[368px] h-[552px] mt-[80px] md:w-110 md:h-110 cursor-pointer"
 							onClick={() => handleOpenDialog('Szymon')}
 						>
 							<Image
@@ -69,6 +69,13 @@ export default function ProfilesContainer() {
 								height={2400}
 								className="md:object-cover w-full h-full object-[59%_90%]"
 							/>
+							<div className="absolute -bottom-[200px] left-[240px]">
+								<p className='w-[550px] text-[42px] font-normal text-[#DEDCD8]'>
+									Dzięki więzom rodzinnym, w pracy doskonale się
+									rozumiemy a współpraca opiera się na wzajemnym
+									zaufaniu.
+								</p>
+							</div>
 						</div>
 						<div className="flex justify-end">
 							<div
