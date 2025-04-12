@@ -1,9 +1,9 @@
 'use client'
 // modules
-import Lightbox from 'yet-another-react-lightbox'
 import { useState } from 'react'
-import Image from 'next/image'
 import { ScrollArea } from '@/components/ui/scroll-area'
+import Lightbox from 'yet-another-react-lightbox'
+import Image from 'next/image'
 // lib
 import { HomeAboutImages } from '@/lib/constants/images'
 // styles
