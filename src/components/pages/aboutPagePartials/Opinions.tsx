@@ -28,11 +28,11 @@ export default function Opinions({
 	}
 
 	return (
-		<div className="md:flex md:min-h-customScreen">
-			<div className="xl:w-1/2 flex md:bg-background md:pl-28 xl:pl-36">
+		<div className="md:flex lg:min-h-[650px] xl:min-h-customScreen">
+			<div className="lg:w-2/5 xl:w-1/2 flex bg-[#DAD7D1] md:pl-28 xl:pl-36">
 				<TextVerticalOpinions right={false}>Opinie klientów</TextVerticalOpinions>
 			</div>
-			<div className="md:w-1/2 textPageContainer">
+			<div className="lg:w-3/5 xl:w-1/2 bg-[#DAD7D1] md:flex md:items-center md:px-6 xl:px-28 2xl:px-36">
 				<div>
 					<div className="w-full flex justify-center">
 						<OpinionsCarouselList opinions={opinions} isAdmin={isAdmin} />

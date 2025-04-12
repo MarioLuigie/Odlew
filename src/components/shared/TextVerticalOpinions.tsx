@@ -16,7 +16,7 @@ export default function TextVerticalOpinions({
 				</div>
 			) : (
 				<div className="h-full relative">
-					<p className="absolute left-[-150px] top-[230px] -rotate-90 whitespace-nowrap text-[54px] text-[#383638]">{children}</p>
+					<p className="absolute left-[-250px] top-[210px] -rotate-90 whitespace-nowrap text-[54px] text-[#383638]">{children}</p>
 					<div className="w-[2px] h-full bg-[#463E46]"></div>
 				</div>
 			)}

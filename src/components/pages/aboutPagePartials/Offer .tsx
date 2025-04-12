@@ -43,7 +43,7 @@ export default function Offer() {
 				</div>
 
 				{/* BOTTOM SECTION */}
-				<div className="lg:pr-[120px] xl:pr-[300px]">
+				<div className="lg:pr-[120px] xl:pr-[300px] lg:min-h-[650px] xl:min-h-[820px]">
 					{HomeOfferImages.map((image, i) => (
 						<Image
 							key={i}
