@@ -1,8 +1,8 @@
-type TextVerticalHowWorkProps = {
+type TextVerticalTeamProps = {
 	children: React.ReactNode
 }
 
-export default function TextVerticalTeam({ children }: TextVerticalHowWorkProps) {
+export default function TextVerticalTeam({ children }: TextVerticalTeamProps) {
 	return (
 		<div className="h-[450px] w-[80px] lg:mr-[60px] xl:mr-[100px]">
 			<div className="h-full relative">
