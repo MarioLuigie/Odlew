@@ -10,13 +10,13 @@ import OfferPictures from '@/components/pages/offerPagePartials/OfferPictures'
 export default function OfferPage() {
 	return (
 		<div className="min-h-customScreen bg-background pb-12">
-			<div className="bg-menuTopBg">
+			<div className="bg-menuTopBg lg:h-[720px] xl:h-[720px] 2xl:h-[940px] overflow-hidden">
 				<Image
 					src={Images.OFFER.path}
 					alt={Images.OFFER.alt}
 					width={2400}
 					height={2400}
-					className="w-full"
+					className="w-full h-full object-cover lg:object-[60%_80%] xl:object-[50%_47%]"
 				/>
 				<div className="p-5">
 					<Title className="text-textLight pb-5 md:text-3xl">
