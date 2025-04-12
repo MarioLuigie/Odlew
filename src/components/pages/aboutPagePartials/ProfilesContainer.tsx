@@ -14,7 +14,7 @@ import UserProfileDialog from '@/components/dialogs/UserProfileDialog'
 
 type ProfileType = 'Jozef' | 'Szymon' | 'Antoni' | null
 
-export default function AboutPage() {
+export default function ProfilesContainer() {
   const [isDialogOpen, setIsDialogOpen] = useState<boolean>(false)
   const [selectedProfile, setSelectedProfile] = useState<ProfileType>(null)
 
