@@ -15,10 +15,10 @@ export default function Offer() {
 					{/* TEXT CONTAINER*/}
 					<div className="lg:w-[50%] xl:w-[62%] pr-16 lg:pl-[60px] xl:pl-[135px]">
 						<div className='flex flex-col justify-center h-full'>
-							<p className="text-[50px] font-normal text-[#383638]">
+							<p className="text-[54px] font-normal text-[#383638]">
 								Co oferujemy i dla kogo?
 							</p>
-							<p className="text-lg font-medium text-[#383638]">
+							<p className="text-lg font-medium text-[#383638] pt-8">
 								Współpracujemy z artystami, którzy swoje prace tworzą w
 								plastycznym materiale tj. wosk, glina, plastelina lub
 								drewno, a chcą je utrwalić w metalowej postaci. Z każdym
@@ -28,7 +28,7 @@ export default function Offer() {
 								organizacje, chcące upamiętnić ważne wydarzenia lub
 								osoby.
 							</p>
-							<div className="px-5 my-12">
+							<div className="my-16">
 								<CustomButton navlink path="/oferta">
 									Czytaj więcej
 								</CustomButton>
