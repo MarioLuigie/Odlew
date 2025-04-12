@@ -30,7 +30,7 @@ export default function Opinions({
 
 	return (
 		<div className="md:flex md:min-h-customScreen">
-			<div className="md:w-1/2 md:bg-backgroundDark textPageContainer">
+			<div className="md:w-1/2 md:bg-background textPageContainer">
 				<div>
 					<Title className="mb-12 px-5 hidden md:flex md:text-[55px] md:font-normal titlePage">
 						<p>Opinie klientów</p>

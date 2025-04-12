@@ -4,16 +4,16 @@ import Image from 'next/image'
 import { HomeOfferImages } from '@/lib/constants/images'
 // components
 import CustomButton from '@/components/shared/CustomButton'
-import ImagesVerticalLine from '@/components/shared/ImagesVerticalLine'
+import ImagesVerticalLine from '@/components/pages/aboutPagePartials/ImagesVerticalLine'
 
 export default function Offer() {
 	return (
 		<section id="oferta" className="bg-background pt-24 scroll-mt-header">
-			<div className="lg:flex lg:flex-col md:min-h-customScreen">
+			<div className="lg:flex lg:flex-col">
 				{/* TOP SECTION */}
-				<div className="lg:flex lg:min-h-[820px] pb-10">
+				<div className="lg:flex lg:min-h-[725px] pb-10">
 					{/* TEXT CONTAINER*/}
-					<div className="lg:w-6/12 xl:w-7/12 pr-16 lg:pl-[60px] xl:pl-[135px]">
+					<div className="lg:w-[50%] xl:w-[62%] pr-16 lg:pl-[60px] xl:pl-[135px]">
 						<div className='flex flex-col justify-center h-full'>
 							<p className="text-[50px] font-normal text-[#383638]">
 								Co oferujemy i dla kogo?
@@ -38,7 +38,7 @@ export default function Offer() {
 
 					{/* IMAGES CONTAINER*/}
 					<div className="grow">
-						<ImagesVerticalLine>dffghnghnnt</ImagesVerticalLine>
+						<ImagesVerticalLine />
 					</div>
 				</div>
 
