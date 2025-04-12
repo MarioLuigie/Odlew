@@ -27,20 +27,20 @@ export default function OpinionsCarouselList({
 			orientation="vertical"
 			className="w-full bg-transparent px-4"
 		>
-			<CarouselContent className="-mt-1 h-[260px]">
+			<CarouselContent className="-mt-1 h-[340px]">
 				{opinions &&
 					opinions.map((opinion, i) => (
 						<CarouselItem className="pt-1 md:basis-1/2" key={i}>
 							<Opinion
 								opinion={opinion}
-								className="h-[256px]"
+								className="h-[200px]"
 								isAdmin={isAdmin}
 							/>
 						</CarouselItem>
 					))}
 			</CarouselContent>
-			<CarouselPrevious className="-top-4" />
-			<CarouselNext className="-bottom-4" />
+			<CarouselPrevious className="-top-4 w-10 h-10 rounded-none rounded-tl-full rounded-tr-full rounded-bl-full rotate-90 bg-[#E36A00] hover:bg-accentHover border-0" />
+			<CarouselNext className="-bottom-4 w-10 h-10 rounded-none rounded-tr-full rounded-tl-full rounded-br-full bg-[#E36A00] hover:bg-accentHover border-0" />
 		</Carousel>
 	)
 }

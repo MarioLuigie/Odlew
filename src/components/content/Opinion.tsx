@@ -21,7 +21,7 @@ export default function Opinion({
 	return (
 		<div
 			className={cn(
-				'p-4 pb-12 min-h-[180px] bg-opinionBg rounded-3xl text-textDark',
+				'p-4 pb-12 min-h-[180px] bg-transparent rounded-3xl',
 				className
 			)}
 		>
@@ -32,8 +32,8 @@ export default function Opinion({
 					value={opinion.stars}
 					edit={false}
 					size={24}
-					color1={'#bebebe'}
-					color2={'#E36A00'}
+					color1={'#777777'}
+					color2={'#AA5002'}
 				/>
 				{isAdmin && (
 					<OpinionManipulation opinionId={opinion._id} />
@@ -41,15 +41,15 @@ export default function Opinion({
 			</div>
 
 			{/* CLIENT NAME AND DATE */}
-			<div className="flex justify-between w-full pb-6 text-sm text-textSecondary">
+			<div className="flex w-full pb-6 text-sm font-semibold text-[#87827E]">
 				<p>{opinion?.name}</p>
-				<p>
-					{opinion.createdAt ? formatDate(opinion.createdAt) : 'Brak daty'}
+				<p className='pl-5 text-sm font-semibold'>
+					dodano: {opinion.createdAt ? formatDate(opinion.createdAt, 'date') : 'Brak daty'}
 				</p>
 			</div>
 
 			{/* OPINION */}
-			<div className="text-sm">
+			<div className="text-lg font-medium text-[#454345]">
 				<p>{opinion?.opinion}</p>
 			</div>
 		</div>
