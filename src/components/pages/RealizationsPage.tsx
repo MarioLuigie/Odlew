@@ -25,7 +25,7 @@ export default function RealizationsPage() {
 			</div>
 			<RealizationsPictures />
 			<div className="p-5 pb-16 flex justify-center">
-				<CustomButton navlink path="/kontakt">
+				<CustomButton navlink path="/kontakt" className='min-w-[230px]'>
 					Skontaktuj się z nami
 				</CustomButton>
 			</div>
