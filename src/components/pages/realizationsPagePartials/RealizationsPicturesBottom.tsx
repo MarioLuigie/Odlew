@@ -102,7 +102,7 @@ export default function RealizationsPicturesBottom() {
 							src={ProductImages[9].image.path}
 							alt={ProductImages[9].image.alt}
 							fill
-							className="w-full h-full object-cover rounded-lg"
+							className="w-full h-full object-cover object-[50%_75%] rounded-lg scale-x-[-1]"
 						/>
 					</div>
 					<div className="flex flex-col pb-6 flex-grow">
@@ -126,7 +126,7 @@ export default function RealizationsPicturesBottom() {
 							src={ProductImages[10].image.path}
 							alt={ProductImages[10].image.alt}
 							fill
-							className="w-full h-full object-cover rounded-lg"
+							className="w-full h-full object-cover object-[20%_50%] rounded-lg"
 						/>
 					</div>
 					<div className="flex flex-col pb-6 flex-grow">
@@ -150,7 +150,7 @@ export default function RealizationsPicturesBottom() {
 							src={ProductImages[11].image.path}
 							alt={ProductImages[11].image.alt}
 							fill
-							className="w-full h-full object-cover rounded-lg"
+							className="w-full h-full object-cover object-[27%_50%] rounded-lg"
 						/>
 					</div>
 					<div className="flex flex-col pb-6 flex-grow">
