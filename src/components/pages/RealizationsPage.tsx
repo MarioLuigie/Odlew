@@ -18,27 +18,41 @@ export default function RealizationsPage() {
 			</div>
 
 			{/* IMAGES LIST TOP */}
-			<div className="mt-[80px] ml-[240px]">
+			<div className="mt-[80px] flex">
+				<div className="w-[215px] flex justify-end pr-[50px]">
+					<div className="w-[2px] bg-[#463E46]"></div>
+				</div>
 				<RealizationsPicturesTop />
 			</div>
 
+			<div className="flex justify-center mt-[120px] pb-[80px]">
+				<CustomButton navlink path="/kontakt" className="min-w-[230px]">
+					Skontaktuj się z nami
+				</CustomButton>
+			</div>
+
 			{/* MOTTO SECTION */}
-			<div className='bg-[#22403E] h-[550px] relative flex justify-center'>
-				<p className='w-full h-full flex justify-center items-center text-[#EEE9E2] text-[86px] font-light hover:scale-125 transition duration-500 ease-in-out'>Piękno ujarzmione</p>
+			<div className="bg-[#22403E] h-[550px] relative flex justify-center">
+				<p className="w-full h-full flex justify-center items-center text-[#EEE9E2] text-[86px] font-light hover:scale-125 transition duration-500 ease-in-out">
+					Piękno ujarzmione
+				</p>
 				<div className="flex justify-center absolute bottom-[100px]">
-					<CustomButton navlink path="/kontakt" className="min-w-[230px]">
-						Skontaktuj się z nami
+					<CustomButton navlink path="/oferta" className="min-w-[230px]">
+						Zobacz ofertę
 					</CustomButton>
 				</div>
 			</div>
 
 			{/* IMAGES LIST BOTTOM */}
-			<div className="mt-[80px] ml-[240px]">
+			<div className="mt-[80px] flex">
+				<div className="w-[215px] flex justify-end pr-[50px]">
+					<div className="w-[2px] bg-[#463E46]"></div>
+				</div>
 				<RealizationsPicturesBottom />
 			</div>
 
 			{/* BUTTON */}
-			<div className="p-5 pb-16 flex justify-center">
+			<div className="flex justify-center mt-[120px] pb-[80px]">
 				<CustomButton navlink path="/kontakt" className="min-w-[230px]">
 					Skontaktuj się z nami
 				</CustomButton>

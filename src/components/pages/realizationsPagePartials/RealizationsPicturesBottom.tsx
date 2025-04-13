@@ -15,7 +15,7 @@ export default function RealizationsPicturesBottom() {
 	return (
 		<div>
 			{/* Grid dla ProductImages z wyrównaniem wysokości */}
-			<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-5">
+			<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
 				{/* PRODUCT_3 */}
 				<div
 					className="flex flex-col gap-2 cursor-pointer hover:scale-105 transition duration-500 ease-in-out"
