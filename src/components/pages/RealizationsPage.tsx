@@ -1,26 +1,28 @@
 // modules
-import Image from 'next/image'
+// import Image from 'next/image'
 // lib
-import { Images } from '@/lib/constants/images'
+// import { Images } from '@/lib/constants/images'
 // components
 import RealizationsPictures from '@/components/pages/realizationsPagePartials/RealizationsPictures'
 import Title from '@/components/shared/Title'
 import CustomButton from '@/components/shared/CustomButton'
+import TextVerticalRealizations from '@/components/shared/TextVerticalRealizations'
 
 export default function RealizationsPage() {
 	return (
 		<div className="min-h-customScreen bg-background">
-			<Image
+			{/* <Image
 				src={Images.REALIZATIONS.path}
 				alt={Images.REALIZATIONS.alt}
 				width={2400}
 				height={2400}
 				className="w-full"
-			/>
-			<div className="bg-background p-5 py-8">
-				<Title className="text-textDark text-center">
-					Nasze Realizacje
-				</Title>
+			/> */}
+			<div className="w-full h-[130px] bg-[#DAD7D1]"></div>
+			<div className="w-full lg:h-[690px] 3xl:h-[800px] pl-36 realizationpage-background">
+				<TextVerticalRealizations right={false}>
+					Nasze realizacje
+				</TextVerticalRealizations>
 			</div>
 			<RealizationsPictures />
 			<div className="p-5 pb-16 flex justify-center">

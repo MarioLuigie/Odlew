@@ -138,6 +138,12 @@ body {
 			}
 		}
 
+		.realizationpage-background {
+			background-image: url('/assets/images/realization-bg.jpg');
+			background-size: cover;
+			background-position: center; /* default */
+		}
+
 	.text-shadow-lg {
 		text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3);
 	}

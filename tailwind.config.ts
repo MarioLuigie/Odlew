@@ -68,6 +68,7 @@ const config: Config = {
             },
             screens: {
                 'dp': '768px',
+                '3xl': '1920'
             }
         },
     },
