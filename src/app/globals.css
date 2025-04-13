@@ -114,13 +114,13 @@ body {
 	.homepage-background {
 		background-image: url('/assets/images/home-bg.jpg');
 		background-size: cover;
-		background-position: calc(50% - 150px) center; /* domyślne */
+		background-position: calc(50% - 150px) center; /* default */
 	}
 	
 	/* md (768px) */
 	@media (min-width: 768px) {
 		.homepage-background {
-			background-position: center; /* np. idealne na tablety */
+			background-position: center; /* tablets */
 		}
 	}
 	
@@ -131,7 +131,7 @@ body {
 		}
 	}
 
-		/* lg (1024px) */
+		/* lg (1536px) */
 		@media (min-width: 1536px) {
 			.homepage-background {
 				background-position: calc(50% - 130px) center;
