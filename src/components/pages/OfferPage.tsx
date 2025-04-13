@@ -2,7 +2,6 @@
 import { Images } from '@/lib/constants/images'
 // components
 import TextContent from '@/components/shared/TextContent'
-import Title from '@/components/shared/Title'
 import CustomButton from '@/components/shared/CustomButton'
 import Image from 'next/image'
 import OfferPictures from '@/components/pages/offerPagePartials/OfferPictures'
