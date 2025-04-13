@@ -53,7 +53,7 @@ export default function RealizationsPicturesTop() {
 							src={ProductImages[1].image.path}
 							alt={ProductImages[1].image.alt}
 							fill
-							className="w-full h-full object-cover rounded-lg"
+							className="w-full h-full object-cover object-[50%_18%] rounded-lg"
 						/>
 					</div>
 					<div className="flex flex-col pb-6 flex-grow">
