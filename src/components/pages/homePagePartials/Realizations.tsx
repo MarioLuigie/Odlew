@@ -57,7 +57,7 @@ export default function Realizations() {
 				</div>
 
 				{/* MIDDLE TITLE */}
-				<div className="z-50 md:absolute md:inset-0 md:flex md:justify-center md:items-center">
+				<div className="z-40 md:absolute md:inset-0 md:flex md:justify-center md:items-center">
 					{/* desktop */}
 					<div className="flex flex-col justify-center items-center bg-transparent">
 						<Title className="titlePage md:text-[54px]">
