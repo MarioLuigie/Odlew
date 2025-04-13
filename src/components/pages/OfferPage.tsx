@@ -12,16 +12,16 @@ export default function OfferPage() {
 		<div className="bg-background pb-12">
 			<div className="bg-[#DAD7D1] h-[130px]"></div>
 			<div className="relative bg-menuTopBg lg:h-[720px] xl:h-[920px] overflow-hidden">
-				<div className='w-[805px] h-[535px]'>
+				<div className='lg:w-[550px] xl:w-[805px] 2xl:w-[960px]'>
 					<Image
 						src={Images.OFFER.path}
 						alt={Images.OFFER.alt}
 						width={2400}
 						height={2400}
-						className="w-full h-full mt-[65px] ml-[40px] object-cover lg:object-[60%_80%] xl:object-[50%_60%]"
+						className="w-full h-full mt-[65px] lg:ml-[40px] 2xl:ml-[120px] object-cover lg:object-[60%_80%] xl:object-[50%_60%]"
 					/>
 				</div>
-				<div className="absolute bottom-[60px] right-[100px] w-[590px]">
+				<div className="absolute lg:bottom-[60px] lg:right-[50px] xl:bottom-[60px] xl:right-[100px] 2xl:right-[200px] lg:w-[500px] xl:w-[590px]">
 					<div className="font-normal text-[54px] text-[#EEE9E2] pb-5">
 						Co oferujemy?
 					</div>
