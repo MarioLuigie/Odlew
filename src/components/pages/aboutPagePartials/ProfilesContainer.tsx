@@ -67,7 +67,7 @@ export default function ProfilesContainer() {
 								alt={AboutImages.szymon.alt}
 								width={2400}
 								height={2400}
-								className="md:object-cover w-full h-full object-[59%_90%] rounded-tr-[40px] rounded-bl-[40px] transform transition-transform duration-200 ease-in-out hover:scale-110"
+								className="md:object-cover w-full h-full object-[59%_90%] rounded-tr-[40px] rounded-bl-[40px] transform transition-transform duration-300 ease-in-out hover:scale-110"
 							/>
 							<div className="absolute z-50 -bottom-[200px] left-[240px]">
 								<p className='w-[550px] text-[42px] font-normal text-[#DEDCD8]'>
@@ -87,7 +87,7 @@ export default function ProfilesContainer() {
 									alt={AboutImages.antoni.alt}
 									width={2400}
 									height={2400}
-									className="md:object-cover w-full h-full object-[20%_50%] rounded-tl-[40px] rounded-br-[40px] transform transition-transform duration-200 ease-in-out hover:scale-110"
+									className="md:object-cover w-full h-full object-[20%_50%] rounded-tl-[40px] rounded-br-[40px] transform transition-transform duration-300 ease-in-out hover:scale-110"
 								/>
 							</div>
 							<TextVerticalTeam>Nasz Zespół</TextVerticalTeam>
@@ -104,7 +104,7 @@ export default function ProfilesContainer() {
 								alt={AboutImages.jozef.alt}
 								width={2400}
 								height={2400}
-								className="md:object-cover h-full rounded-tr-[40px] rounded-bl-[40px] transform transition-transform duration-200 ease-in-out hover:scale-110"
+								className="md:object-cover h-full rounded-tr-[40px] rounded-bl-[40px] transform transition-transform duration-300 ease-in-out hover:scale-110"
 							/>
 						</div>
 					</div>

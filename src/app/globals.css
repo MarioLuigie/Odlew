@@ -114,8 +114,29 @@ body {
 	.homepage-background {
 		background-image: url('/assets/images/home-bg.jpg');
 		background-size: cover;
-		background-position: center;
+		background-position: calc(50% - 150px) center; /* domyślne */
 	}
+	
+	/* md (768px) */
+	@media (min-width: 768px) {
+		.homepage-background {
+			background-position: center; /* np. idealne na tablety */
+		}
+	}
+	
+	/* lg (1024px) */
+	@media (min-width: 1024px) {
+		.homepage-background {
+			background-position: calc(50% - 160px) center;
+		}
+	}
+
+		/* lg (1024px) */
+		@media (min-width: 1536px) {
+			.homepage-background {
+				background-position: calc(50% - 130px) center;
+			}
+		}
 
 	.text-shadow-lg {
 		text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3);
