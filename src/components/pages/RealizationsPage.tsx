@@ -8,7 +8,7 @@ export default function RealizationsPage() {
 	return (
 		<div className="min-h-customScreen bg-background">
 			{/* BACKGROUND UNDER HEADER */}
-			<div className="w-full h-[130px] bg-[#DAD7D1]"></div>
+			<div className="w-full h-[110px] bg-[#DAD7D1]"></div>
 
 			{/* FIRST IMAGE WITH TITLE */}
 			<div className="w-full lg:h-[690px] 3xl:h-[800px] pl-40 realizationpage-background">

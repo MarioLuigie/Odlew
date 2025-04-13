@@ -9,7 +9,7 @@ import OfferPictures from '@/components/pages/offerPagePartials/OfferPictures'
 export default function OfferPage() {
 	return (
 		<div className="bg-background pb-32">
-			<div className="bg-[#DAD7D1] h-[130px]"></div>
+			<div className="bg-[#DAD7D1] h-[110px]"></div>
 			<div className="relative bg-menuTopBg lg:h-[720px] xl:h-[920px] overflow-hidden">
 				<div className='lg:w-[550px] xl:w-[805px] 2xl:w-[960px]'>
 					<Image

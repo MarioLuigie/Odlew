@@ -134,7 +134,7 @@ body {
 		/* lg (1536px) */
 		@media (min-width: 1536px) {
 			.homepage-background {
-				background-position: calc(50% - 130px) center;
+				background-position: calc(50% - 110px) center;
 			}
 		}
 

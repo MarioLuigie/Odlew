@@ -77,7 +77,7 @@ export default function OfferPictures() {
 				</div>
 
 				{/* IMAGE_3 */}
-				<div className="absolute bottom-0 left-[210px] z-50">
+				<div className="absolute bottom-0 left-[210px] z-40">
 					<div
 						className="w-[520px] h-[390px] rounded-lg flex justify-center items-center cursor-pointer"
 						onClick={() => {
@@ -125,7 +125,7 @@ export default function OfferPictures() {
 			{/* IMAGES GROUP_5-6 */}
 			<div className="relative h-[760px]">
 				{/* IMAGE_5 */}
-				<div className="absolute top-0 left-[40px] z-50">
+				<div className="absolute top-0 left-[40px] z-40">
 					<div className="flex justify-start items-center gap-2">
 						<Drop className="md:min-w-12 md:min-h-12 md:text-xl">5</Drop>
 						<p className="md:text-xl">{OfferImages[4].title}</p>
@@ -189,7 +189,7 @@ export default function OfferPictures() {
 				</div>
 
 				{/* IMAGE_8 */}
-				<div className="absolute top-[195px] left-[440px] z-50">
+				<div className="absolute top-[195px] left-[440px] z-40">
 					<div
 						className="w-[450px] rounded-lg flex justify-center items-center cursor-pointer"
 						onClick={() => {
@@ -252,7 +252,7 @@ export default function OfferPictures() {
 				</div>
 
 				{/* IMAGE_11 */}
-				<div className="absolute bottom-[80px] right-[90px] z-50">
+				<div className="absolute bottom-[80px] right-[90px] z-40">
 					<div
 						className="w-[450px] rounded-lg flex justify-center items-center cursor-pointer"
 						onClick={() => {
@@ -312,7 +312,7 @@ export default function OfferPictures() {
 				</div>
 
 				{/* IMAGE_14 */}
-				<div className="absolute bottom-0 right-[155px] z-50">
+				<div className="absolute bottom-0 right-[155px] z-40">
 					<div
 						className="w-[690px] h-[460px] rounded-lg flex justify-center items-center cursor-pointer"
 						onClick={() => {
@@ -353,7 +353,7 @@ export default function OfferPictures() {
 				</div>
 
 				{/* IMAGE_16 */}
-				<div className="absolute bottom-0 right-[75px] z-50">
+				<div className="absolute bottom-0 right-[75px] z-40">
 					<div
 						className="w-[520px] h-[390px] rounded-lg flex justify-center items-center cursor-pointer border-2 border-black"
 						onClick={() => {
@@ -375,7 +375,7 @@ export default function OfferPictures() {
 			{/* IMAGES GROUP_17-18 */}
 			<div className="relative h-[1200px]">
 				{/* IMAGE_17 */}
-				<div className="absolute top-[200px] right-[40px] z-50">
+				<div className="absolute top-[200px] right-[40px] z-40">
 					<div
 						className="w-[690px] rounded-lg flex justify-center items-center cursor-pointer"
 						onClick={() => {
