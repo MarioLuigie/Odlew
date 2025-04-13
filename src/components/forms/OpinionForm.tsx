@@ -60,7 +60,7 @@ export default function OpinionForm() {
 				/>
 
 				{/* OPINION */}
-				<div className="flex flex-col lg:flex-row gap-4">
+				<div className="flex flex-col lg:flex-row gap-4 mb-[30px]">
 					<CustomFormField
 						control={form.control}
 						typeField={FormFieldType.TEXTAREA}
@@ -82,7 +82,7 @@ export default function OpinionForm() {
 					<SubmitButton isLoading={isSubmitting} className="w-full mt-2">
 						Wyślij opinię
 					</SubmitButton>
-					<FieldsRequiredDesc className="mt-2" />
+					<FieldsRequiredDesc className="mt-6" />
 				</div>
 			</form>
 		</Form>

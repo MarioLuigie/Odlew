@@ -6,7 +6,7 @@ export default function FieldsRequiredDesc({
 	className?: string
 }) {
 	return (
-		<div className={cn("flex justify-center items-center gap-1 text-zinc-500", className)}>
+		<div className={cn("flex items-center gap-1 text-zinc-500", className)}>
 			<small className="text-[20px]">*</small>
 			<small>Pola oznaczone gwiazdką są obowiązkowe</small>
 		</div>
