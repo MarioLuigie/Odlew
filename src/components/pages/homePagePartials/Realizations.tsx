@@ -2,6 +2,8 @@
 import CustomButton from '@/components/shared/CustomButton'
 import Title from '@/components/shared/Title'
 import { MoveLeft } from 'lucide-react'
+import Image from 'next/image'
+import { ProductImages } from '@/lib/constants/images'
 
 export default function Realizations() {
 	return (
@@ -10,29 +12,49 @@ export default function Realizations() {
 			<div className="md:relative w-full md:min-h-[790px] md:flex md:justify-center md:items-stretch bg-background scroll-mt-header">
 				{/*LEFT SIDE*/}
 				<div className="w-1/2 bg-[#DEDCD8] md:relative flex">
-					<div className="w-[180px] h-[180px] border-neutral-950 border-2 md:absolute md:right-0 md:top-0">
-						product-15.jpg
+					<div className="w-[180px] h-[180px] md:absolute md:right-0 md:top-0">
+						<Image
+							src={ProductImages[7].image.path}
+							alt={ProductImages[7].image.alt}
+							fill
+							className="w-full h-full object-cover"
+						/>
 					</div>
 
 					{/* 3 PHOTOS WITH ABSOLUTE POSITION */}
-					<div className="md:absolute md:top-[170px] md:left-[40px] 2xl:left-[140px] w-[230px] h-[180px] border-neutral-950 border-2">
-						product-11.jpg
+					<div className="md:absolute md:top-[160px] md:left-[40px] 2xl:left-[140px] w-[230px] h-[180px]">
+						<Image
+							src={ProductImages[10].image.path}
+							alt={ProductImages[10].image.alt}
+							fill
+							className="w-full h-full object-cover"
+						/>
 					</div>
 
-					<div className="md:absolute md:top-[320px] md:left-[150px] 2xl:left-[250px] w-[300px] h-[400px] border-neutral-950 border-2">
-						product-17.jpg
+					<div className="md:absolute md:top-[320px] md:left-[150px] 2xl:left-[250px] w-[300px] h-[400px]">
+						<Image
+							src={ProductImages[1].image.path}
+							alt={ProductImages[1].image.alt}
+							fill
+							className="w-full h-full object-cover"
+						/>
 					</div>
 
 					<div className="flex flex-col md:absolute z-40 md:-bottom-[80px] md:left-[410px] 2xl:left-[510px]">
-						<div className="w-[180px] h-[180px] border-neutral-950 border-2">
-							product-13.jpg
+						<div className="w-[180px] h-[180px] border-neutral-950 border-2 relative">
+							<Image
+								src={ProductImages[2].image.path}
+								alt={ProductImages[2].image.alt}
+								fill
+								className="w-full h-full object-cover"
+							/>
 						</div>
-						<div className='pt-2'>
+						<div className="pt-2">
 							<div className="flex items-center">
 								<p className="text-[#454345] text-sm font-medium">
 									Józef Polewka
 								</p>
-								<MoveLeft className='text-[#454345] ml-2 mt-[3px]'/>
+								<MoveLeft className="text-[#454345] ml-2 mt-[3px]" />
 							</div>
 							<p className="text-[#817D78] text-xs font-medium leading-[12px]">
 								Cwaniara
@@ -43,16 +65,31 @@ export default function Realizations() {
 
 				{/*RIGHT SIDE*/}
 				<div className="w-1/2 md:relative bg-[#DEDCD8]">
-					<div className="w-[400px] h-[300px] border-neutral-950 border-2 md:absolute md:right-[40px] 2xl:right-[140px] md:top-[55px]">
-						product-14.jpg
+					<div className="w-[400px] h-[300px] md:absolute md:right-[40px] 2xl:right-[140px] md:top-[55px]">
+						<Image
+							src={ProductImages[11].image.path}
+							alt={ProductImages[11].image.alt}
+							fill
+							className="w-full h-full object-cover"
+						/>
 					</div>
 
-					<div className="md:absolute md:top-[310px] md:right-[245px] 2xl:right-[345px] w-[230px] h-[290px] border-neutral-950 border-2">
-						product-12.jpg
+					<div className="md:absolute md:top-[310px] md:right-[245px] 2xl:right-[345px] w-[230px] h-[290px]">
+						<Image
+							src={ProductImages[9].image.path}
+							alt={ProductImages[9].image.alt}
+							fill
+							className="w-full h-full object-cover scale-x-[-1]"
+						/>
 					</div>
 
-					<div className="md:absolute md:bottom-[110px] md:right-[90px] 2xl:right-[190px] w-[180px] h-[180px] border-neutral-950 border-2">
-						product-16.jpg
+					<div className="md:absolute md:bottom-[80px] md:right-[90px] 2xl:right-[190px] w-[180px] h-[180px]">
+						<Image
+							src={ProductImages[3].image.path}
+							alt={ProductImages[3].image.alt}
+							fill
+							className="w-full h-full object-cover"
+						/>
 					</div>
 				</div>
 
