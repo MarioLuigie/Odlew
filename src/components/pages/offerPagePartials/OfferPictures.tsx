@@ -37,7 +37,6 @@ export default function OfferPictures() {
 							onClick={() => {
 								setCurrentIndex(0)
 								setOpen(true)
-								console.log('clicked')
 							}}
 						>
 							<Image
@@ -65,7 +64,6 @@ export default function OfferPictures() {
 						onClick={() => {
 							setCurrentIndex(1)
 							setOpen(true)
-							console.log('clicked')
 						}}
 					>
 						<Image
@@ -85,7 +83,6 @@ export default function OfferPictures() {
 						onClick={() => {
 							setCurrentIndex(2)
 							setOpen(true)
-							console.log('clicked')
 						}}
 					>
 						<Image
@@ -112,7 +109,6 @@ export default function OfferPictures() {
 						onClick={() => {
 							setCurrentIndex(3)
 							setOpen(true)
-							console.log('clicked')
 						}}
 					>
 						<Image
@@ -139,7 +135,6 @@ export default function OfferPictures() {
 						onClick={() => {
 							setCurrentIndex(4)
 							setOpen(true)
-							console.log('clicked')
 						}}
 					>
 						<Image
@@ -159,7 +154,6 @@ export default function OfferPictures() {
 						onClick={() => {
 							setCurrentIndex(5)
 							setOpen(true)
-							console.log('clicked')
 						}}
 					>
 						<Image
@@ -182,7 +176,6 @@ export default function OfferPictures() {
 						onClick={() => {
 							setCurrentIndex(6)
 							setOpen(true)
-							console.log('clicked')
 						}}
 					>
 						<Image
@@ -202,7 +195,6 @@ export default function OfferPictures() {
 						onClick={() => {
 							setCurrentIndex(7)
 							setOpen(true)
-							console.log('clicked')
 						}}
 					>
 						<Image
@@ -225,7 +217,6 @@ export default function OfferPictures() {
 						onClick={() => {
 							setCurrentIndex(8)
 							setOpen(true)
-							console.log('clicked')
 						}}
 					>
 						<Image
@@ -248,7 +239,6 @@ export default function OfferPictures() {
 						onClick={() => {
 							setCurrentIndex(9)
 							setOpen(true)
-							console.log('clicked')
 						}}
 					>
 						<Image
@@ -268,7 +258,6 @@ export default function OfferPictures() {
 						onClick={() => {
 							setCurrentIndex(10)
 							setOpen(true)
-							console.log('clicked')
 						}}
 					>
 						<Image
@@ -288,7 +277,6 @@ export default function OfferPictures() {
 						onClick={() => {
 							setCurrentIndex(11)
 							setOpen(true)
-							console.log('clicked')
 						}}
 					>
 						<Image
@@ -311,7 +299,6 @@ export default function OfferPictures() {
 						onClick={() => {
 							setCurrentIndex(12)
 							setOpen(true)
-							console.log('clicked')
 						}}
 					>
 						<Image
@@ -331,7 +318,6 @@ export default function OfferPictures() {
 						onClick={() => {
 							setCurrentIndex(13)
 							setOpen(true)
-							console.log('clicked')
 						}}
 					>
 						<Image
@@ -354,7 +340,6 @@ export default function OfferPictures() {
 						onClick={() => {
 							setCurrentIndex(14)
 							setOpen(true)
-							console.log('clicked')
 						}}
 					>
 						<Image
@@ -374,7 +359,6 @@ export default function OfferPictures() {
 						onClick={() => {
 							setCurrentIndex(15)
 							setOpen(true)
-							console.log('clicked')
 						}}
 					>
 						<Image
@@ -397,7 +381,6 @@ export default function OfferPictures() {
 						onClick={() => {
 							setCurrentIndex(16)
 							setOpen(true)
-							console.log('clicked')
 						}}
 					>
 						<Image
@@ -417,7 +400,6 @@ export default function OfferPictures() {
 						onClick={() => {
 							setCurrentIndex(17)
 							setOpen(true)
-							console.log('clicked')
 						}}
 					>
 						<Image
