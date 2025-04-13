@@ -128,6 +128,14 @@ export const AboutImages = {
 		path: ImagesPath.ABOUT_7,
 		alt: ImagesAlt.ABOUT,
 	},
+	offer_1: {
+		path: ImagesPath.ABOUT_OFFER_1,
+		alt: ImagesAlt.OFFER,
+	},
+	offer_2: {
+		path: ImagesPath.ABOUT_OFFER_2,
+		alt: ImagesAlt.OFFER,
+	}
 }
 
 export const OfferImages = [
