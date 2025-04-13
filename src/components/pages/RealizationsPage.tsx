@@ -18,7 +18,7 @@ export default function RealizationsPage() {
 				className="w-full"
 			/> */}
 			<div className="w-full h-[130px] bg-[#DAD7D1]"></div>
-			<div className="w-full lg:h-[690px] 3xl:h-[800px] pl-36 realizationpage-background">
+			<div className="w-full lg:h-[690px] 3xl:h-[800px] pl-40 realizationpage-background">
 				<TextVerticalRealizations right={false}>
 					Nasze realizacje
 				</TextVerticalRealizations>
