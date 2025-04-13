@@ -7,7 +7,6 @@ import Image from 'next/image'
 import { ProductImages } from '@/lib/constants/images'
 // styles
 import 'yet-another-react-lightbox/styles.css'
-import CustomButton from '@/components/shared/CustomButton'
 
 export default function RealizationsPicturesTop() {
 	const [open, setOpen] = useState(false)
