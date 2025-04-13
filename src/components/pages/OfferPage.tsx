@@ -5,11 +5,10 @@ import TextContent from '@/components/shared/TextContent'
 import CustomButton from '@/components/shared/CustomButton'
 import Image from 'next/image'
 import OfferPictures from '@/components/pages/offerPagePartials/OfferPictures'
-import TextVerticalProcess from '@/components/pages/offerPagePartials/TextVerticalProcess'
 
 export default function OfferPage() {
 	return (
-		<div className="bg-background pb-12">
+		<div className="bg-background pb-32">
 			<div className="bg-[#DAD7D1] h-[130px]"></div>
 			<div className="relative bg-menuTopBg lg:h-[720px] xl:h-[920px] overflow-hidden">
 				<div className='lg:w-[550px] xl:w-[805px] 2xl:w-[960px]'>
@@ -43,12 +42,7 @@ export default function OfferPage() {
 				</div>
 			</div>
 
-			<div className="bg-background px-5">
-				<div className="ml-36">
-					<TextVerticalProcess right={false}>
-						Poznaj nasz proces
-					</TextVerticalProcess>
-				</div>
+			<div className="bg-background">
 				<OfferPictures />
 			</div>
 		</div>

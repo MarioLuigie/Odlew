@@ -137,13 +137,13 @@ export const OfferImages = [
 		alt: ImagesAlt.OFFER,
 	},
 	{
-		title: 'Wykorzystanie wosku do tworzenia modelu',
-		path: ImagesPath.OFFER_3,
+		title: 'Tworzenie modelu woskowego',
+		path: ImagesPath.OFFER_2,
 		alt: ImagesAlt.OFFER,
 	},
 	{
-		title: 'Tworzenie modelu woskowego',
-		path: ImagesPath.OFFER_2,
+		title: 'Wykorzystanie wosku do tworzenia modelu',
+		path: ImagesPath.OFFER_3,
 		alt: ImagesAlt.OFFER,
 	},
 	{

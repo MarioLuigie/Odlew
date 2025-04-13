@@ -1,5 +1,9 @@
-import Contact from "@/components/pages/homePagePartials/Contact";
+import Contact from '@/components/pages/homePagePartials/Contact'
 
 export default function ContactPage() {
-  return <Contact />
+	return (
+		<div className='pt-[130px]'>
+			<Contact />
+		</div>
+	)
 }
