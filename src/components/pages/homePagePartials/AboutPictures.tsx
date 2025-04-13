@@ -33,7 +33,7 @@ export default function AboutPictures() {
 								width={2400}
 								height={2400}
 								priority
-								className="object-cover grayscale contrast-75 hover:grayscale-0 hover:contrast-100 transition duration-500 ease-in-out cursor-pointer"
+								className="object-cover grayscale contrast-75 hover:grayscale-0 hover:contrast-100 hover:scale-110 transition duration-500 ease-in-out cursor-pointer"
 								style={{
 									willChange: 'filter',
 								}}
