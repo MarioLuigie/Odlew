@@ -4,7 +4,6 @@
 // import { Images } from '@/lib/constants/images'
 // components
 import RealizationsPictures from '@/components/pages/realizationsPagePartials/RealizationsPictures'
-import Title from '@/components/shared/Title'
 import CustomButton from '@/components/shared/CustomButton'
 import TextVerticalRealizations from '@/components/shared/TextVerticalRealizations'
 
