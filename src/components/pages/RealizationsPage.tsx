@@ -1,31 +1,45 @@
-// modules
-// import Image from 'next/image'
-// lib
-// import { Images } from '@/lib/constants/images'
 // components
-import RealizationsPictures from '@/components/pages/realizationsPagePartials/RealizationsPictures'
+import RealizationsPicturesTop from '@/components/pages/realizationsPagePartials/RealizationsPicturesTop'
 import CustomButton from '@/components/shared/CustomButton'
 import TextVerticalRealizations from '@/components/shared/TextVerticalRealizations'
+import RealizationsPicturesBottom from '@/components/pages/realizationsPagePartials/RealizationsPicturesBottom'
 
 export default function RealizationsPage() {
 	return (
 		<div className="min-h-customScreen bg-background">
-			{/* <Image
-				src={Images.REALIZATIONS.path}
-				alt={Images.REALIZATIONS.alt}
-				width={2400}
-				height={2400}
-				className="w-full"
-			/> */}
+			{/* BACKGROUND UNDER HEADER */}
 			<div className="w-full h-[130px] bg-[#DAD7D1]"></div>
+
+			{/* FIRST IMAGE WITH TITLE */}
 			<div className="w-full lg:h-[690px] 3xl:h-[800px] pl-40 realizationpage-background">
 				<TextVerticalRealizations right={false}>
 					Nasze realizacje
 				</TextVerticalRealizations>
 			</div>
-			<RealizationsPictures />
+
+			{/* IMAGES LIST TOP */}
+			<div className="mt-[80px] ml-[240px]">
+				<RealizationsPicturesTop />
+			</div>
+
+			{/* MOTTO SECTION */}
+			<div className='bg-[#22403E] h-[550px] relative flex justify-center'>
+				<p className='w-full h-full flex justify-center items-center text-[#EEE9E2] text-[86px] font-light hover:scale-125 transition duration-500 ease-in-out'>Piękno ujarzmione</p>
+				<div className="flex justify-center absolute bottom-[100px]">
+					<CustomButton navlink path="/kontakt" className="min-w-[230px]">
+						Skontaktuj się z nami
+					</CustomButton>
+				</div>
+			</div>
+
+			{/* IMAGES LIST BOTTOM */}
+			<div className="mt-[80px] ml-[240px]">
+				<RealizationsPicturesBottom />
+			</div>
+
+			{/* BUTTON */}
 			<div className="p-5 pb-16 flex justify-center">
-				<CustomButton navlink path="/kontakt" className='min-w-[230px]'>
+				<CustomButton navlink path="/kontakt" className="min-w-[230px]">
 					Skontaktuj się z nami
 				</CustomButton>
 			</div>
