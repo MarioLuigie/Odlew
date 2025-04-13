@@ -79,7 +79,7 @@ export default function Realizations() {
 							src={ProductImages[9].image.path}
 							alt={ProductImages[9].image.alt}
 							fill
-							className="w-full h-full object-cover scale-x-[-1]"
+							className="w-full h-full object-cover object-[50%_75%] scale-x-[-1]"
 						/>
 					</div>
 
