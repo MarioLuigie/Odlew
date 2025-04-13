@@ -10,7 +10,6 @@ import { OfferImages } from '@/lib/constants/images'
 // components
 import Drop from '@/components/shared/Drop'
 import TextVerticalProcess from '@/components/pages/offerPagePartials/TextVerticalProcess'
-import CustomButton from '@/components/shared/CustomButton'
 
 export default function OfferPictures() {
 	const [open, setOpen] = useState(false)
@@ -430,12 +429,6 @@ export default function OfferPictures() {
 						/>
 					</div>
 				</div>
-			</div>
-
-			<div className="w-full flex justify-end pr-[140px] pt-[78px]">
-				<CustomButton navlink path="/kontakt">
-					Skontaktuj się z nami
-				</CustomButton>
 			</div>
 
 			<Lightbox

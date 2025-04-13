@@ -45,6 +45,11 @@ export default function OfferPage() {
 			<div className="bg-background">
 				<OfferPictures />
 			</div>
+			<div className="w-full flex justify-end pr-[140px] pt-[78px]">
+				<CustomButton navlink path="/kontakt" className='min-w-[220px]'>
+					Skontaktuj się z nami
+				</CustomButton>
+			</div>
 		</div>
 	)
 }
