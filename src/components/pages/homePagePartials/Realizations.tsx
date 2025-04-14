@@ -17,7 +17,7 @@ export default function Realizations() {
 							src={ProductImages[7].image.path}
 							alt={ProductImages[7].image.alt}
 							fill
-							className="w-full h-full object-cover transform transition-transform duration-300 hover:scale-110"
+							className="w-full h-full object-cover transform transition-all duration-300 hover:scale-110 hover:shadow-zinc-400 hover:shadow-lg"
 						/>
 					</div>
 
@@ -27,7 +27,7 @@ export default function Realizations() {
 							src={ProductImages[10].image.path}
 							alt={ProductImages[10].image.alt}
 							fill
-							className="w-full h-full object-cover transform transition-transform duration-300 hover:scale-110"
+							className="w-full h-full object-cover transform transition-all duration-300 hover:scale-110 hover:shadow-zinc-400 hover:shadow-lg"
 						/>
 					</div>
 
@@ -36,7 +36,7 @@ export default function Realizations() {
 							src={ProductImages[1].image.path}
 							alt={ProductImages[1].image.alt}
 							fill
-							className="w-full h-full object-cover transform transition-transform duration-300 hover:scale-110"
+							className="w-full h-full object-cover transform transition-all duration-300 hover:scale-110 hover:shadow-zinc-400 hover:shadow-lg"
 						/>
 					</div>
 
@@ -46,7 +46,7 @@ export default function Realizations() {
 								src={ProductImages[2].image.path}
 								alt={ProductImages[2].image.alt}
 								fill
-								className="w-full h-full object-cover transform transition-transform duration-300 hover:scale-110"
+								className="w-full h-full object-cover transform transition-all duration-300 hover:scale-110 hover:shadow-zinc-400 hover:shadow-lg"
 							/>
 						</div>
 						<div className="pt-2">
@@ -70,7 +70,7 @@ export default function Realizations() {
 							src={ProductImages[11].image.path}
 							alt={ProductImages[11].image.alt}
 							fill
-							className="w-full h-full object-cover transform transition-transform duration-300 hover:scale-110"
+							className="w-full h-full object-cover transform transition-all duration-300 hover:scale-110 hover:shadow-zinc-400 hover:shadow-lg"
 						/>
 					</div>
 
@@ -88,7 +88,7 @@ export default function Realizations() {
 							src={ProductImages[3].image.path}
 							alt={ProductImages[3].image.alt}
 							fill
-							className="w-full h-full object-cover transform transition-transform duration-300 hover:scale-110"
+							className="w-full h-full object-cover transform transition-all duration-300 hover:scale-110 hover:shadow-zinc-400 hover:shadow-lg"
 						/>
 					</div>
 				</div>
