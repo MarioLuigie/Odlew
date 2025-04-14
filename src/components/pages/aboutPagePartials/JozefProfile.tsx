@@ -11,12 +11,12 @@ export default function JozefProfile() {
 			className="bg-background"
 			picture={AboutImages.jozef}
 		>
-			<div className="md:p-24">
+			<div className="flex flex-col items-end w-full">
 				<TextVerticalLine className="p-5 h-[120px] text-right mt-4 md:mt-0 md:mb-12">
 					<p className="font-medium text-2xl md:text-5xl">Józef Polewka</p>
 					<p className="md:text-2xl">Artysta - rzeźbiarz</p>
 				</TextVerticalLine>
-				<TextContent className="px-5 mt-4 md:mt-0 md:text-xl">
+				<TextContent className="lg:w-[320px] mt-4 md:mt-0 md:text-lg font-medium">
 					Moja przygoda z płynnym brązem zaczęła się w szkole im. Kenara w
 					Zakopanem wraz z osobą nauczyciela Bronisława Krzysztofa.
 					Zaszczepiona pasja do dnia dzisiejszego nie wygasła, a nawet

@@ -31,8 +31,8 @@ export default function CustomProfileSection({
 					/>
 				</div>
 			)}
-			<div className="md:w-1/2 md:flex md:flex-col md:items-center md:justify-center">
-				{children}
+			<div className="md:w-1/2 md:flex md:flex-col md:items-end md:justify-center">
+				<div className='bg-red-300 w-full pr-24'>{children}</div>
 			</div>
 		</div>
 	)
