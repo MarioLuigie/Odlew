@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import localFont from 'next/font/local'
 import { ClerkProvider } from '@clerk/nextjs'
 import { Toaster } from "@/components/ui/toaster"
+import BlockCopy from '@/components/shared/BlockCopy'
 import './globals.css'
 
 const beVietnamPro = localFont({
@@ -51,6 +52,7 @@ export default function RootLayout({
 				>
 					{children}
 					<Toaster />
+          <BlockCopy />
 				</body>
 			</html>
 		</ClerkProvider>
