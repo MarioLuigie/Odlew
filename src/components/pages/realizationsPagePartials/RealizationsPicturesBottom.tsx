@@ -72,14 +72,26 @@ export default function RealizationsPicturesBottom() {
 						setOpen(true)
 					}}
 				>
-					<div className="w-[360px] h-[445px] bg-backgroundDark rounded-lg flex justify-center items-center relative">
+					{/* <div className="w-[360px] h-[445px] bg-backgroundDark rounded-lg flex justify-center items-center relative">
 						<Image
 							src={ProductImages[8].image.path}
 							alt={ProductImages[8].image.alt}
 							fill
-							className="w-full h-full object-cover rounded-lg"
+							className="w-full h-full object-cover scale-125 rounded-lg"
 						/>
+					</div> */}
+
+					<div className="w-[360px] h-[445px] bg-backgroundDark rounded-lg relative overflow-hidden">
+						<div className="absolute inset-0 transform scale-125">
+							<Image
+								src={ProductImages[8].image.path}
+								alt={ProductImages[8].image.alt}
+								fill
+								className="object-cover rounded-lg"
+							/>
+						</div>
 					</div>
+
 					<div className="flex flex-col pb-6 flex-grow">
 						<p className="font-semibold">{ProductImages[8].author}</p>
 						<p className="text-zinc-500 text-[14px]">
@@ -87,7 +99,6 @@ export default function RealizationsPicturesBottom() {
 						</p>
 					</div>
 				</div>
-
 
 				{/* PRODUCT_12 */}
 				<div
@@ -160,13 +171,6 @@ export default function RealizationsPicturesBottom() {
 						</p>
 					</div>
 				</div>
-
-
-
-
-
-
-
 			</div>
 
 			<Lightbox
@@ -185,4 +189,3 @@ export default function RealizationsPicturesBottom() {
 		</div>
 	)
 }
-
