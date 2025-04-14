@@ -12,12 +12,12 @@ export default function Realizations() {
 			<div className="md:relative w-full md:min-h-[790px] md:flex md:justify-center md:items-stretch bg-background scroll-mt-header">
 				{/*LEFT SIDE*/}
 				<div className="w-1/2 bg-[#DEDCD8] md:relative flex">
-					<div className="w-[180px] h-[180px] md:absolute md:right-0 md:top-0">
+					<div className="w-[180px] h-[180px] md:absolute md:right-[10px] md:top-0">
 						<Image
 							src={ProductImages[7].image.path}
 							alt={ProductImages[7].image.alt}
 							fill
-							className="w-full h-full object-cover"
+							className="w-full h-full object-cover transform transition-transform duration-300 hover:scale-110"
 						/>
 					</div>
 
@@ -27,7 +27,7 @@ export default function Realizations() {
 							src={ProductImages[10].image.path}
 							alt={ProductImages[10].image.alt}
 							fill
-							className="w-full h-full object-cover"
+							className="w-full h-full object-cover transform transition-transform duration-300 hover:scale-110"
 						/>
 					</div>
 
@@ -36,7 +36,7 @@ export default function Realizations() {
 							src={ProductImages[1].image.path}
 							alt={ProductImages[1].image.alt}
 							fill
-							className="w-full h-full object-cover"
+							className="w-full h-full object-cover transform transition-transform duration-300 hover:scale-110"
 						/>
 					</div>
 
@@ -46,7 +46,7 @@ export default function Realizations() {
 								src={ProductImages[2].image.path}
 								alt={ProductImages[2].image.alt}
 								fill
-								className="w-full h-full object-cover"
+								className="w-full h-full object-cover transform transition-transform duration-300 hover:scale-110"
 							/>
 						</div>
 						<div className="pt-2">
@@ -70,11 +70,11 @@ export default function Realizations() {
 							src={ProductImages[11].image.path}
 							alt={ProductImages[11].image.alt}
 							fill
-							className="w-full h-full object-cover"
+							className="w-full h-full object-cover transform transition-transform duration-300 hover:scale-110"
 						/>
 					</div>
 
-					<div className="md:absolute md:top-[310px] md:right-[245px] 2xl:right-[345px] w-[230px] h-[290px]">
+					<div className="md:absolute md:top-[315px] md:right-[255px] 2xl:right-[355px] w-[230px] h-[290px]">
 						<Image
 							src={ProductImages[9].image.path}
 							alt={ProductImages[9].image.alt}
@@ -83,18 +83,18 @@ export default function Realizations() {
 						/>
 					</div>
 
-					<div className="md:absolute md:bottom-[80px] md:right-[90px] 2xl:right-[190px] w-[180px] h-[180px]">
+					<div className="md:absolute md:bottom-[80px] md:right-[95px] 2xl:right-[195px] w-[180px] h-[180px]">
 						<Image
 							src={ProductImages[3].image.path}
 							alt={ProductImages[3].image.alt}
 							fill
-							className="w-full h-full object-cover"
+							className="w-full h-full object-cover transform transition-transform duration-300 hover:scale-110"
 						/>
 					</div>
 				</div>
 
 				{/* MIDDLE TITLE */}
-				<div className="z-40 md:absolute md:inset-0 md:flex md:justify-center md:items-center">
+				<div className="z-40 md:absolute md:inset-0 md:flex md:justify-center md:items-center pointer-events-none">
 					{/* desktop */}
 					<div className="flex flex-col justify-center items-center bg-transparent">
 						<Title className="titlePage md:text-[54px]">
@@ -103,14 +103,14 @@ export default function Realizations() {
 								<p>realizacje</p>
 							</div>
 						</Title>
-						<div className="px-5 my-12 md:my-0 md:flex md:justify-center md:items-center md:w-full hidden">
+						<div className="px-5 my-12 md:my-0 md:flex md:justify-center md:items-center md:w-full hidden pointer-events-auto">
 							<CustomButton navlink path="/realizacje">
 								Zobacz więcej
 							</CustomButton>
 						</div>
 					</div>
 					{/* Mobile */}
-					<div className="px-5 my-12 md:hidden">
+					<div className="px-5 my-12 md:hidden pointer-events-auto">
 						<CustomButton navlink path="/realizacje">
 							Zobacz więcej
 						</CustomButton>
