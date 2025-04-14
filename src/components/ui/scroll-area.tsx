@@ -107,6 +107,7 @@ const ScrollBar = React.forwardRef<
 	>
 		<ScrollAreaPrimitive.ScrollAreaThumb className="relative rounded-full">
 			<div className="relative flex justify-center items-start w-full h-[40px]">
+				<div className='absolute right-[1.5px] w-[2px] h-[40px] bg-[#E36A00]'></div>
 				<Drop color='#E36A00' variant='outline' corner='bottom-right' className="w-[40px] h-[40px] absolute -left-[23px] -rotate-45"></Drop>
 			</div>
 		</ScrollAreaPrimitive.ScrollAreaThumb>
