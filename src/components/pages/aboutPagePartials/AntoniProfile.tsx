@@ -13,7 +13,11 @@ export default function AntoniProfile() {
 		>
 			<div className="flex flex-col items-end w-full">
 				<TextVerticalLine className="p-5 h-[120px] text-right mt-4 md:mt-0 md:mb-12">
-					<p className="font-medium text-2xl md:text-5xl">Antoni Polewka</p>
+					<div className="w-full flex gap-8 items-end pt-[15px] pl-[50px]">
+						<p className="font-normal text-[44px]">
+							Antoni Polewka
+						</p>
+					</div>
 				</TextVerticalLine>
 				<TextContent className="lg:w-[320px] mt-4 md:mt-0 md:text-lg font-medium">
 					Jako najmłodszy w rodzinie już od młodzieńczych lat obcowałem z
