@@ -205,12 +205,12 @@ export const OfferImages = [
 		alt: ImagesAlt.OFFER,
 	},
 	{
-		title: 'Zalewanie formy ciekłym metalem po obróbce w piecu',
+		title: 'ZALEWANIE FORMY CIEKŁYM METALEM',
 		path: ImagesPath.OFFER_14,
 		alt: ImagesAlt.OFFER,
 	},
 	{
-		title: 'Obróbka surowego odlewu po usunięciu formy gipsowej',
+		title: 'OBRÓBKA SUROWEGO ODLEWU',
 		path: ImagesPath.OFFER_15,
 		alt: ImagesAlt.OFFER,
 	},
@@ -220,7 +220,7 @@ export const OfferImages = [
 		alt: ImagesAlt.OFFER,
 	},
 	{
-		title: 'Prezentacja gotowego odlewu',
+		title: 'GOTOWY ODLEW',
 		path: ImagesPath.OFFER_17,
 		alt: ImagesAlt.OFFER,
 	},

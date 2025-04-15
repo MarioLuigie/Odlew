@@ -58,7 +58,12 @@ export default function OfferPictures() {
 				{/* IMAGE_2 */}
 				<div className="absolute top-[100px] right-[40px]">
 					<div className="flex justify-end items-center gap-2 mb-6">
-						<Drop className="md:min-w-12 md:min-h-12 md:text-xl" corner='bottom-right'>2</Drop>
+						<Drop
+							className="md:min-w-12 md:min-h-12 md:text-xl"
+							corner="bottom-right"
+						>
+							2
+						</Drop>
 					</div>
 					<div
 						className="w-[805px] md:h-full rounded-lg flex justify-center items-center cursor-pointer"
@@ -104,8 +109,13 @@ export default function OfferPictures() {
 			<div className="relative h-[450px]">
 				{/* IMAGE_4 */}
 				<div className="absolute top-[20px] right-[95px]">
-					<div className="flex justify-start items-center gap-2 mb-6">
-						<Drop className="md:min-w-12 md:min-h-12 md:text-xl">4</Drop>
+					<div className="flex justify-end items-center gap-2 mb-6">
+						<Drop
+							className="md:min-w-12 md:min-h-12 md:text-xl"
+							corner="bottom-right"
+						>
+							3
+						</Drop>
 					</div>
 					<div
 						className="w-[520px] h-[390] rounded-lg flex justify-center items-center cursor-pointer"
@@ -122,7 +132,9 @@ export default function OfferPictures() {
 							className="h-full object-cover rounded-lg grayscale contrast-75 hover:grayscale-0 hover:contrast-100 hover:scale-110 transition duration-500 ease-in-out"
 						/>
 					</div>
-					<p className="absolute -bottom-[54px] left-2 text-[27px] font-normal text-[#6F6C6A] text-left">{OfferImages[3].title}</p>
+					<p className="absolute -bottom-[54px] left-2 text-[27px] font-normal text-[#6F6C6A] text-left">
+						{OfferImages[3].title}
+					</p>
 				</div>
 			</div>
 
@@ -131,8 +143,7 @@ export default function OfferPictures() {
 				{/* IMAGE_5 */}
 				<div className="absolute top-0 left-[40px] z-40">
 					<div className="flex justify-start items-center gap-2 mb-6">
-						<Drop className="md:min-w-12 md:min-h-12 md:text-xl">5</Drop>
-						<p className="absolute -bottom-[54px] right-2 text-[28px] font-normal text-[#6F6C6A] text-right">{OfferImages[4].title}</p>
+						<Drop className="md:min-w-12 md:min-h-12 md:text-xl">4</Drop>
 					</div>
 					<div
 						className="w-[440px] h-[330px] rounded-lg flex justify-center items-center cursor-pointer"
@@ -168,6 +179,9 @@ export default function OfferPictures() {
 							className="h-full object-cover rounded-lg object-[100%_50%] grayscale contrast-75 hover:grayscale-0 hover:contrast-100 hover:scale-110 transition duration-500 ease-in-out"
 						/>
 					</div>
+					<p className="absolute leading-9 -bottom-[92px] left-2 text-[28px] font-normal text-[#6F6C6A] text-left">
+						{OfferImages[4].title}
+					</p>
 				</div>
 			</div>
 
@@ -317,6 +331,14 @@ export default function OfferPictures() {
 
 				{/* IMAGE_14 */}
 				<div className="absolute bottom-0 right-[155px] z-40">
+					<div className="flex justify-end items-center gap-2 mb-6">
+						<Drop
+							className="md:min-w-12 md:min-h-12 md:text-xl"
+							corner="bottom-right"
+						>
+							5
+						</Drop>
+					</div>
 					<div
 						className="w-[690px] h-[460px] rounded-lg flex justify-center items-center cursor-pointer"
 						onClick={() => {
@@ -332,6 +354,9 @@ export default function OfferPictures() {
 							className="h-full object-cover rounded-lg object-[100%_50%] grayscale contrast-75 hover:grayscale-0 hover:contrast-100 hover:scale-110 transition duration-500 ease-in-out"
 						/>
 					</div>
+					<p className="absolute -bottom-[54px] right-2 text-[27px] font-normal text-[#6F6C6A] text-right">
+						{OfferImages[13].title}
+					</p>
 				</div>
 			</div>
 
@@ -339,6 +364,14 @@ export default function OfferPictures() {
 			<div className="relative h-[940px]">
 				{/* IMAGE_15 */}
 				<div className="absolute top-[200px] left-[155px]">
+					<div className="flex justify-start items-center gap-2 mb-6">
+						<Drop
+							className="md:min-w-12 md:min-h-12 md:text-xl"
+							corner="bottom-left"
+						>
+							6
+						</Drop>
+					</div>
 					<div
 						className="w-[805px] h-[535px] rounded-lg flex justify-center items-center cursor-pointer border-2 border-black"
 						onClick={() => {
@@ -354,6 +387,9 @@ export default function OfferPictures() {
 							className="h-full object-cover rounded-lg grayscale contrast-75 hover:grayscale-0 hover:contrast-100 hover:scale-110 transition duration-500 ease-in-out"
 						/>
 					</div>
+					<p className="absolute -bottom-[54px] left-2 text-[27px] font-normal text-[#6F6C6A] text-left">
+						{OfferImages[14].title}
+					</p>
 				</div>
 
 				{/* IMAGE_16 */}
@@ -380,6 +416,14 @@ export default function OfferPictures() {
 			<div className="relative h-[1200px]">
 				{/* IMAGE_17 */}
 				<div className="absolute top-[200px] right-[40px] z-40">
+					<div className="flex justify-start items-center gap-2 mb-6">
+						<Drop
+							className="md:min-w-12 md:min-h-12 md:text-xl"
+							corner="bottom-right"
+						>
+							7
+						</Drop>
+					</div>
 					<div
 						className="w-[690px] rounded-lg flex justify-center items-center cursor-pointer"
 						onClick={() => {
@@ -395,6 +439,9 @@ export default function OfferPictures() {
 							className="h-full object-cover rounded-lg grayscale contrast-75 hover:grayscale-0 hover:contrast-100 hover:scale-110 transition duration-500 ease-in-out"
 						/>
 					</div>
+					<p className="absolute -bottom-[54px] right-2 text-[27px] font-normal text-[#6F6C6A] text-right">
+						{OfferImages[16].title}
+					</p>
 				</div>
 
 				{/* IMAGE_18 */}
