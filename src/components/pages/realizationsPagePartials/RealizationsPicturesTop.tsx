@@ -19,7 +19,7 @@ export default function RealizationsPicturesTop() {
 	const [currentIndex, setCurrentIndex] = useState(0)
 
 	const showToggle = false
-	const descriptionTextAlign = "center"
+	const descriptionTextAlign = "start"
 	const descriptionMaxLines = 3
 
 	return (
@@ -178,7 +178,8 @@ export default function RealizationsPicturesTop() {
 				slides={ProductImages.map((productImage) => ({
 					src: productImage.image.path,
 					alt: productImage.image.alt,
-					description: 'qwerty 123456',
+					title: productImage.author,
+					description: productImage.title,
 				}))}
 				plugins={[Captions]}
 				captions={{ showToggle, descriptionTextAlign, descriptionMaxLines }}
@@ -202,7 +203,26 @@ export default function RealizationsPicturesTop() {
 					},
 					button: {
 						filter: 'none'
-					}
+					},
+					captionsTitle: {
+						color: '#454345',
+						fontSize: "18px",
+						fontWeight: "medium",
+					},
+					captionsDescription: {
+						color: '#817D78',
+						paddingBottom: "15px",
+						fontSize: "14px",
+						fontWeight: "normal"
+					},
+					captionsDescriptionContainer: {
+						backgroundColor: "transparent"
+					},
+					captionsTitleContainer: {
+						backgroundColor: "transparent",
+						top: "auto",
+						bottom: "37px",
+					},
 				}}
 				render={{
 					iconClose: () => (
@@ -220,20 +240,6 @@ export default function RealizationsPicturesTop() {
 					),
 					iconNext: () => (
 						<ChevronRight className="text-[#E36A00] w-[50px] h-[50px]" />
-					),
-					capti: ({ slide }) => (
-						<div
-							style={{
-								background: "transparent", // brak tła
-								padding: 0,                // brak paddingu
-								color: "#fff",             // kolor tekstu (np. biały)
-								textAlign: "center",
-								fontSize: "16px",
-							}}
-						>
-							<strong>{slide.title}</strong>
-							<div>{slide.description}</div>
-						</div>
 					),
 				}}
 			/>
