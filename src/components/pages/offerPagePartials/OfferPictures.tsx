@@ -7,6 +7,7 @@ import Image from 'next/image'
 import 'yet-another-react-lightbox/styles.css'
 // lib
 import { OfferImages } from '@/lib/constants/images'
+import { MoveDownRight, MoveDownLeft } from 'lucide-react'
 // components
 import Drop from '@/components/shared/Drop'
 import TextVerticalProcess from '@/components/pages/offerPagePartials/TextVerticalProcess'
@@ -27,7 +28,10 @@ export default function OfferPictures() {
 				<div className="w-full flex flex-col justify-end items-center">
 					<div className="relative">
 						<div className="flex justify-start items-center gap-2 mb-6">
-							<Drop className="md:min-w-12 md:min-h-12 md:text-xl">
+							<Drop
+								className="md:min-w-12 md:min-h-12 md:text-xl"
+								color="#E36A00"
+							>
 								1
 							</Drop>
 						</div>
@@ -61,10 +65,23 @@ export default function OfferPictures() {
 						<Drop
 							className="md:min-w-12 md:min-h-12 md:text-xl"
 							corner="bottom-right"
+							color="#E36A00"
 						>
 							2
 						</Drop>
 					</div>
+
+					<div className="absolute top-0 -left-20 flex justify-end items-center gap-2">
+						<Drop
+							className="md:min-w-12 md:min-h-12 md:text-xl"
+							corner="bottom-right"
+							color="#E36A00"
+							variant="outline"
+						>
+							<MoveDownRight size={35} color="#E36A00" />
+						</Drop>
+					</div>
+
 					<div
 						className="w-[805px] md:h-full rounded-lg flex justify-center items-center cursor-pointer"
 						onClick={() => {
@@ -113,10 +130,23 @@ export default function OfferPictures() {
 						<Drop
 							className="md:min-w-12 md:min-h-12 md:text-xl"
 							corner="bottom-right"
+							color="#E36A00"
 						>
 							3
 						</Drop>
 					</div>
+
+					<div className="absolute top-0 -left-20 flex justify-end items-center gap-2">
+						<Drop
+							className="md:min-w-12 md:min-h-12 md:text-xl"
+							corner="bottom-right"
+							color="#E36A00"
+							variant="outline"
+						>
+							<MoveDownRight size={35} color="#E36A00" />
+						</Drop>
+					</div>
+
 					<div
 						className="w-[520px] h-[390] rounded-lg flex justify-center items-center cursor-pointer"
 						onClick={() => {
@@ -143,7 +173,23 @@ export default function OfferPictures() {
 				{/* IMAGE_5 */}
 				<div className="absolute top-0 left-[40px] z-40">
 					<div className="flex justify-start items-center gap-2 mb-6">
-						<Drop className="md:min-w-12 md:min-h-12 md:text-xl">4</Drop>
+						<Drop
+							className="md:min-w-12 md:min-h-12 md:text-xl"
+							color="#E36A00"
+						>
+							4
+						</Drop>
+					</div>
+
+					<div className="absolute top-12 -right-20 flex justify-end items-center gap-2">
+						<Drop
+							className="md:min-w-12 md:min-h-12 md:text-xl transform rotate-45"
+							corner="bottom-left"
+							color="#E36A00"
+							variant="outline"
+						>
+							<MoveDownLeft size={35} color="#E36A00" />
+						</Drop>
 					</div>
 					<div
 						className="w-[440px] h-[330px] rounded-lg flex justify-center items-center cursor-pointer"
@@ -230,6 +276,16 @@ export default function OfferPictures() {
 			<div className="relative h-[450px]">
 				{/* IMAGE_9 */}
 				<div className="absolute top-[50px] left-[75px]">
+					<div className="absolute -top-[20px] -right-20 flex justify-end items-center gap-2">
+						<Drop
+							className="md:min-w-12 md:min-h-12 md:text-xl transform rotate-45"
+							corner="bottom-left"
+							color="#E36A00"
+							variant="outline"
+						>
+							<MoveDownLeft size={35} color="#E36A00" />
+						</Drop>
+					</div>
 					<div
 						className="w-[520px] h-[390] rounded-lg flex justify-center items-center cursor-pointer"
 						onClick={() => {
@@ -290,6 +346,16 @@ export default function OfferPictures() {
 
 				{/* IMAGE_12 */}
 				<div className="absolute top-[60px] left-[120px]">
+					<div className="absolute -top-20 right-0 flex justify-end items-center gap-2">
+						<Drop
+							className="md:min-w-12 md:min-h-12 md:text-xl"
+							corner="bottom-right"
+							color="#E36A00"
+							variant="outline"
+						>
+							<MoveDownRight size={35} color="#E36A00" />
+						</Drop>
+					</div>
 					<div
 						className="w-[805px] h-[535px] rounded-lg flex justify-center items-center cursor-pointer"
 						onClick={() => {
@@ -312,6 +378,16 @@ export default function OfferPictures() {
 			<div className="relative h-[700px]">
 				{/* IMAGE_13 */}
 				<div className="absolute top-[-180px] left-[40px]">
+					<div className="absolute -top-16 -right-16 flex justify-end items-center gap-2">
+						<Drop
+							className="md:min-w-12 md:min-h-12 md:text-xl"
+							corner="bottom-left"
+							color="#E36A00"
+							variant="outline"
+						>
+							<MoveDownLeft size={35} color="#E36A00" />
+						</Drop>
+					</div>
 					<div
 						className="w-[390px] h-[520px] rounded-lg flex justify-center items-center cursor-pointer"
 						onClick={() => {
@@ -335,10 +411,23 @@ export default function OfferPictures() {
 						<Drop
 							className="md:min-w-12 md:min-h-12 md:text-xl"
 							corner="bottom-right"
+							color="#E36A00"
 						>
 							5
 						</Drop>
 					</div>
+
+					<div className="absolute top-0 -left-12 flex justify-end items-center gap-2">
+						<Drop
+							className="md:min-w-12 md:min-h-12 md:text-xl"
+							corner="bottom-right"
+							color="#E36A00"
+							variant="outline"
+						>
+							<MoveDownRight size={35} color="#E36A00" />
+						</Drop>
+					</div>
+
 					<div
 						className="w-[690px] h-[460px] rounded-lg flex justify-center items-center cursor-pointer"
 						onClick={() => {
@@ -368,8 +457,20 @@ export default function OfferPictures() {
 						<Drop
 							className="md:min-w-12 md:min-h-12 md:text-xl"
 							corner="bottom-left"
+							color="#E36A00"
 						>
 							6
+						</Drop>
+					</div>
+
+					<div className="absolute top-[50px] -right-20 flex justify-end items-center gap-2">
+						<Drop
+							className="md:min-w-12 md:min-h-12 md:text-xl transform rotate-45"
+							corner="bottom-left"
+							color="#E36A00"
+							variant="outline"
+						>
+							<MoveDownLeft size={35} color="#E36A00" />
 						</Drop>
 					</div>
 					<div
@@ -420,10 +521,23 @@ export default function OfferPictures() {
 						<Drop
 							className="md:min-w-12 md:min-h-12 md:text-xl"
 							corner="bottom-right"
+							color="#E36A00"
 						>
 							7
 						</Drop>
 					</div>
+
+					<div className="absolute top-0 right-0 flex justify-end items-center gap-2">
+						<Drop
+							className="md:min-w-12 md:min-h-12 md:text-xl"
+							corner="bottom-left"
+							color="#E36A00"
+							variant="outline"
+						>
+							<MoveDownLeft size={35} color="#E36A00" />
+						</Drop>
+					</div>
+
 					<div
 						className="w-[690px] rounded-lg flex justify-center items-center cursor-pointer"
 						onClick={() => {
