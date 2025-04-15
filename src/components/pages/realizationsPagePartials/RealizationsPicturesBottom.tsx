@@ -10,9 +10,16 @@ import 'yet-another-react-lightbox/styles.css'
 import Drop from '@/components/shared/Drop'
 import { ChevronLeft, ChevronRight, X } from 'lucide-react'
 
+import Captions from 'yet-another-react-lightbox/plugins/captions'
+import 'yet-another-react-lightbox/plugins/captions.css'
+
 export default function RealizationsPicturesBottom() {
 	const [open, setOpen] = useState(false)
 	const [currentIndex, setCurrentIndex] = useState(0)
+
+	const showToggle = false
+	const descriptionTextAlign = 'start'
+	const descriptionMaxLines = 3
 
 	return (
 		<div>
@@ -182,7 +189,11 @@ export default function RealizationsPicturesBottom() {
 				slides={ProductImages.map((productImage) => ({
 					src: productImage.image.path,
 					alt: productImage.image.alt,
+					title: productImage.author,
+					description: productImage.title,
 				}))}
+				plugins={[Captions]}
+				captions={{ showToggle, descriptionTextAlign, descriptionMaxLines }}
 				controller={{ closeOnBackdropClick: true }}
 				on={{
 					view: ({ index }) => setCurrentIndex(index),
@@ -203,6 +214,25 @@ export default function RealizationsPicturesBottom() {
 					},
 					button: {
 						filter: 'none',
+					},
+					captionsTitle: {
+						color: '#454345',
+						fontSize: '18px',
+						fontWeight: 'medium',
+					},
+					captionsDescription: {
+						color: '#817D78',
+						paddingBottom: '15px',
+						fontSize: '14px',
+						fontWeight: 'normal',
+					},
+					captionsDescriptionContainer: {
+						backgroundColor: 'transparent',
+					},
+					captionsTitleContainer: {
+						backgroundColor: 'transparent',
+						top: 'auto',
+						bottom: '37px',
 					},
 				}}
 				render={{
