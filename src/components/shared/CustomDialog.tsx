@@ -9,7 +9,6 @@ import {
 	DialogDescription,
 	DialogHeader,
 	DialogTitle,
-	DialogTrigger,
 } from '@/components/ui/dialog'
 
 type CustomDialogProps = {
@@ -31,7 +30,7 @@ export default function CustomDialog({
 }: CustomDialogProps) {
 	return (
 		<Dialog open={isOpen} onOpenChange={handleClose}>
-			<DialogTrigger>Open</DialogTrigger>
+			{/* <DialogTrigger>Open</DialogTrigger> */}
 			<DialogContent className={cn('border-0 px-0', className)}>
 				<DialogHeader className='text-left mt-8 md:hidden'>
 					{title ? (
