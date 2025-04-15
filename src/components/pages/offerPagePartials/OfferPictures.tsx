@@ -46,7 +46,9 @@ export default function OfferPictures() {
 								className="h-full object-cover rounded-lg grayscale contrast-75 hover:grayscale-0 hover:contrast-100 hover:scale-110 transition duration-500 ease-in-out"
 							/>
 						</div>
-						<p className="absolute -bottom-[54px] right-2 text-[28px] font-normal text-[#6F6C6A] text-right">{OfferImages[0].title}</p>
+						<p className="absolute -bottom-[54px] right-2 text-[28px] font-normal text-[#6F6C6A] text-right">						
+							{OfferImages[0].title}
+						</p>
 					</div>
 				</div>
 			</div>
