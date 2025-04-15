@@ -202,6 +202,8 @@ export default function RealizationsPicturesBottom() {
 					container: {
 						backgroundColor: 'rgba(222, 220, 216, .8)',
 						backdropFilter: 'blur(5px)',
+						paddingTop: '50px',
+						paddingBottom: "50px",
 					},
 					navigationNext: {
 						color: '#FF6600', // kolor strzałek "prev" i "next"
