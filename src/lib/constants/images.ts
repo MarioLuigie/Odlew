@@ -140,7 +140,7 @@ export const AboutImages = {
 
 export const OfferImages = [
 	{
-		title: 'Wykonanie szkicu koncepcyjnego',
+		title: 'SZKIC KONCEPCYJNY',
 		path: ImagesPath.OFFER_1,
 		alt: ImagesAlt.OFFER,
 	},
