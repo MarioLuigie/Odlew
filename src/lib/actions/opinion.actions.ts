@@ -16,7 +16,7 @@ export async function getOpinions(): Promise<Result<IOpinion[]>> {
 
 		const opinions = await OpinionModel.find().sort({ _id: -1 }).lean()
 		
-		revalidatePath(Routes.HOME)
+		revalidatePath(Routes.ABOUT)
 
 		console.log('FETCHED OPINIONS:', opinions)
 
