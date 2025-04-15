@@ -25,7 +25,7 @@ export default function OfferPictures() {
 					</TextVerticalProcess>
 				</div>
 				<div className="w-full flex flex-col justify-end items-center">
-					<div className='relative'>
+					<div className="relative">
 						<div className="flex justify-start items-center gap-2 mb-6">
 							<Drop className="md:min-w-12 md:min-h-12 md:text-xl">
 								1
@@ -46,7 +46,7 @@ export default function OfferPictures() {
 								className="h-full object-cover rounded-lg grayscale contrast-75 hover:grayscale-0 hover:contrast-100 hover:scale-110 transition duration-500 ease-in-out"
 							/>
 						</div>
-						<p className="absolute -bottom-[54px] right-2 text-[28px] font-normal text-[#6F6C6A] text-right">						
+						<p className="absolute -bottom-[54px] right-2 text-[28px] font-normal text-[#6F6C6A] text-right">
 							{OfferImages[0].title}
 						</p>
 					</div>
@@ -57,9 +57,8 @@ export default function OfferPictures() {
 			<div className="relative h-[860px]">
 				{/* IMAGE_2 */}
 				<div className="absolute top-[100px] right-[40px]">
-					<div className="flex justify-start items-center gap-2">
-						<Drop className="md:min-w-12 md:min-h-12 md:text-xl">2</Drop>
-						<p className="md:text-xl">{OfferImages[1].title}</p>
+					<div className="flex justify-end items-center gap-2 mb-6">
+						<Drop className="md:min-w-12 md:min-h-12 md:text-xl" corner='bottom-right'>2</Drop>
 					</div>
 					<div
 						className="w-[805px] md:h-full rounded-lg flex justify-center items-center cursor-pointer"
@@ -76,6 +75,9 @@ export default function OfferPictures() {
 							className="h-full object-cover rounded-lg grayscale contrast-75 hover:grayscale-0 hover:contrast-100 hover:scale-110 transition duration-500 ease-in-out"
 						/>
 					</div>
+					<p className="absolute -bottom-[54px] right-2 text-[28px] font-normal text-[#6F6C6A] text-right">
+						{OfferImages[1].title}
+					</p>
 				</div>
 
 				{/* IMAGE_3 */}
@@ -102,9 +104,8 @@ export default function OfferPictures() {
 			<div className="relative h-[450px]">
 				{/* IMAGE_4 */}
 				<div className="absolute top-[20px] right-[95px]">
-					<div className="flex justify-start items-center gap-2">
+					<div className="flex justify-start items-center gap-2 mb-6">
 						<Drop className="md:min-w-12 md:min-h-12 md:text-xl">4</Drop>
-						<p className="md:text-xl">{OfferImages[3].title}</p>
 					</div>
 					<div
 						className="w-[520px] h-[390] rounded-lg flex justify-center items-center cursor-pointer"
@@ -121,6 +122,7 @@ export default function OfferPictures() {
 							className="h-full object-cover rounded-lg grayscale contrast-75 hover:grayscale-0 hover:contrast-100 hover:scale-110 transition duration-500 ease-in-out"
 						/>
 					</div>
+					<p className="absolute -bottom-[54px] left-2 text-[27px] font-normal text-[#6F6C6A] text-left">{OfferImages[3].title}</p>
 				</div>
 			</div>
 
@@ -128,9 +130,9 @@ export default function OfferPictures() {
 			<div className="relative h-[760px]">
 				{/* IMAGE_5 */}
 				<div className="absolute top-0 left-[40px] z-40">
-					<div className="flex justify-start items-center gap-2">
+					<div className="flex justify-start items-center gap-2 mb-6">
 						<Drop className="md:min-w-12 md:min-h-12 md:text-xl">5</Drop>
-						<p className="md:text-xl">{OfferImages[4].title}</p>
+						<p className="absolute -bottom-[54px] right-2 text-[28px] font-normal text-[#6F6C6A] text-right">{OfferImages[4].title}</p>
 					</div>
 					<div
 						className="w-[440px] h-[330px] rounded-lg flex justify-center items-center cursor-pointer"

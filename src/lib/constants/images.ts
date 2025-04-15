@@ -145,7 +145,7 @@ export const OfferImages = [
 		alt: ImagesAlt.OFFER,
 	},
 	{
-		title: 'Tworzenie modelu woskowego',
+		title: 'TWORZENIE MODELU WOSKOWEGO',
 		path: ImagesPath.OFFER_2,
 		alt: ImagesAlt.OFFER,
 	},
@@ -155,12 +155,12 @@ export const OfferImages = [
 		alt: ImagesAlt.OFFER,
 	},
 	{
-		title: 'Budowanie układu modelowego',
+		title: 'TWORZENIE UKŁADU MODELOWEGO',
 		path: ImagesPath.OFFER_4,
 		alt: ImagesAlt.OFFER,
 	},
 	{
-		title: 'Przygotowanie formy gipsowej do zalewania ciekłym metalem',
+		title: 'PRZYGOTOWANIE DO ZALEWANIA CIEKŁYM METALEM',
 		path: ImagesPath.OFFER_5,
 		alt: ImagesAlt.OFFER,
 	},
