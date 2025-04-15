@@ -3,14 +3,24 @@
 import Lightbox from 'yet-another-react-lightbox'
 import { useState } from 'react'
 import Image from 'next/image'
+import { X, ChevronRight, ChevronLeft } from 'lucide-react'
 // lib
 import { ProductImages } from '@/lib/constants/images'
 // styles
 import 'yet-another-react-lightbox/styles.css'
+// components
+import Drop from '@/components/shared/Drop'
+
+import Captions from "yet-another-react-lightbox/plugins/captions";
+import "yet-another-react-lightbox/plugins/captions.css";
 
 export default function RealizationsPicturesTop() {
 	const [open, setOpen] = useState(false)
 	const [currentIndex, setCurrentIndex] = useState(0)
+
+	const showToggle = false
+	const descriptionTextAlign = "center"
+	const descriptionMaxLines = 3
 
 	return (
 		<div>
@@ -168,15 +178,99 @@ export default function RealizationsPicturesTop() {
 				slides={ProductImages.map((productImage) => ({
 					src: productImage.image.path,
 					alt: productImage.image.alt,
+					description: 'qwerty 123456',
 				}))}
+				plugins={[Captions]}
+				captions={{ showToggle, descriptionTextAlign, descriptionMaxLines }}
 				controller={{ closeOnBackdropClick: true }}
 				on={{
 					view: ({ index }) => setCurrentIndex(index),
+				}}
+				styles={{
+					container: {
+						backgroundColor: 'rgba(222, 220, 216, .8)',
+						backdropFilter: 'blur(5px)',
+					},
+					navigationNext: {
+						color: '#FF6600', // kolor strzałek "prev" i "next"
+					},
+					navigationPrev: {
+						color: '#FF6600', // kolor strzałek "prev" i "next"
+					},
+					icon: {
+						color: '#FF6600',
+					},
+					button: {
+						filter: 'none'
+					}
+				}}
+				render={{
+					iconClose: () => (
+						<Drop
+							className="md:min-w-12 md:min-h-12 md:text-xl"
+							corner="top-right"
+							color="#cc5f00"
+							variant="outline"
+						>
+							<X />
+						</Drop>
+					),
+					iconPrev: () => (
+						<ChevronLeft className="text-[#E36A00] w-[50px] h-[50px]" />
+					),
+					iconNext: () => (
+						<ChevronRight className="text-[#E36A00] w-[50px] h-[50px]" />
+					),
+					capti: ({ slide }) => (
+						<div
+							style={{
+								background: "transparent", // brak tła
+								padding: 0,                // brak paddingu
+								color: "#fff",             // kolor tekstu (np. biały)
+								textAlign: "center",
+								fontSize: "16px",
+							}}
+						>
+							<strong>{slide.title}</strong>
+							<div>{slide.description}</div>
+						</div>
+					),
 				}}
 			/>
 		</div>
 	)
 }
+
+// render={{
+// 	iconClose: () => (
+// 		<Drop
+// 			className="md:min-w-12 md:min-h-12 md:text-xl"
+// 			corner="top-right"
+// 			color="#E36A00"
+// 			variant='outline'
+// 		>
+// 			<X />
+// 		</Drop>
+// 	),
+// 	iconPrev: () => (
+// 		<Drop
+// 			className="md:min-w-10 md:min-h-10 md:text-lg"
+// 			corner="top-left"
+// 			color="#E36A00"
+// 		>
+// 			‹
+// 		</Drop>
+// 	),
+// 	iconNext: () => (
+// 		<Drop
+// 			className="md:min-w-10 md:min-h-10 md:text-lg transform rotate-45"
+// 			corner="top-right"
+// 			color="#E36A00"
+// 		>
+// 			›
+// 		</Drop>
+// 	),
+// }}
 
 // 'use client'
 // // modules

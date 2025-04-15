@@ -8,6 +8,8 @@ import Image from 'next/image'
 import { HomeAboutImages } from '@/lib/constants/images'
 // styles
 import 'yet-another-react-lightbox/styles.css'
+import Drop from '@/components/shared/Drop'
+import { ChevronLeft, ChevronRight, X } from 'lucide-react'
 
 export default function AboutPictures() {
 	const [open, setOpen] = useState(false)
@@ -54,6 +56,42 @@ export default function AboutPictures() {
 				controller={{ closeOnBackdropClick: true }}
 				on={{
 					view: ({ index }) => setCurrentIndex(index),
+				}}
+				styles={{
+					container: {
+						backgroundColor: 'rgba(222, 220, 216, .8)',
+						backdropFilter: 'blur(5px)',
+					},
+					navigationNext: {
+						color: '#FF6600', // kolor strzałek "prev" i "next"
+					},
+					navigationPrev: {
+						color: '#FF6600', // kolor strzałek "prev" i "next"
+					},
+					icon: {
+						color: '#FF6600',
+					},
+					button: {
+						filter: 'none',
+					},
+				}}
+				render={{
+					iconClose: () => (
+						<Drop
+							className="md:min-w-12 md:min-h-12 md:text-xl"
+							corner="top-right"
+							color="#cc5f00"
+							variant="outline"
+						>
+							<X />
+						</Drop>
+					),
+					iconPrev: () => (
+						<ChevronLeft className="text-[#E36A00] w-[50px] h-[50px]" />
+					),
+					iconNext: () => (
+						<ChevronRight className="text-[#E36A00] w-[50px] h-[50px]" />
+					),
 				}}
 			/>
 		</div>
