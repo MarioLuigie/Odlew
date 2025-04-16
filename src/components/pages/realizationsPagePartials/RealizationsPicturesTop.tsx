@@ -23,9 +23,9 @@ export default function RealizationsPicturesTop() {
 	const descriptionMaxLines = 3
 
 	return (
-		<div>
+		<div className="bg-yellow-300 w-full max-w-[1200px]">
 			{/* Grid dla ProductImages z wyrównaniem wysokości */}
-			<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+			<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-6">
 				{/* PRODUCT_7 */}
 				<div
 					className="flex flex-col gap-2 cursor-pointer hover:scale-105 transition duration-500 ease-in-out"
@@ -34,7 +34,7 @@ export default function RealizationsPicturesTop() {
 						setOpen(true)
 					}}
 				>
-					<div className="w-[360px] h-[445px] bg-backgroundDark rounded-lg flex justify-center items-center relative">
+					<div className="min-w-[200px] max-w-[360px] h-[445px] bg-backgroundDark rounded-lg flex justify-center items-center relative">
 						<Image
 							src={ProductImages[0].image.path}
 							alt={ProductImages[0].image.alt}
@@ -58,7 +58,7 @@ export default function RealizationsPicturesTop() {
 						setOpen(true)
 					}}
 				>
-					<div className="w-[360px] h-[445px] bg-backgroundDark rounded-lg flex justify-center items-center relative">
+					<div className="min-w-[200px] max-w-[360px] h-[445px] bg-backgroundDark rounded-lg flex justify-center items-center relative">
 						<Image
 							src={ProductImages[1].image.path}
 							alt={ProductImages[1].image.alt}
