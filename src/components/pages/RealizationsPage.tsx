@@ -18,8 +18,8 @@ export default function RealizationsPage() {
 			</div>
 
 			{/* IMAGES LIST TOP */}
-			<div className="mt-[80px] flex">
-				<div className="w-[215px] flex justify-end pr-[50px]">
+			<div className="mt-[80px] flex bg-red-300">
+				<div className="w-[213px] flex justify-end pr-[50px] bg-blue-300">
 					<div className="w-[2px] bg-[#463E46]"></div>
 				</div>
 				<RealizationsPicturesTop />
