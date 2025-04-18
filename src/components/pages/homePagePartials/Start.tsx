@@ -9,18 +9,18 @@ export default function Start() {
 			{/* DESKTOP */}
 			<div className="h-customScreen lg:max-h-[820px] hidden lg:flex lg:flex-col lg:justify-center lg:items-end lg:w-1/2 lg:bg-backgroundDark lg:p-8">
 				<div className="hidden lg:text-textDark lg:flex lg:flex-col w-[100%]">
-					<div className="w-[100%] bg-yellow-300">
+					<div className="w-[100%]">
 						<p className="text-[54px] lg:text-right pr-20 3xl:pr-40 pb-8">
 							P.S. ODLEW
 						</p>
 					</div>
 					<div className="w-[100%]">
-						<p className="text-[68px] xl:text-[68px] leading-[80px] xl:leading-[80px] w-[439px] md:text-left pl-6">
+						<p className="text-[68px] xl:text-[68px] leading-[80px] xl:leading-[80px] w-[439px] md:text-left pl-6 3xl:pl-16">
 							Odlewnia artystyczna
 						</p>
 					</div>
 				</div>
-				<div className="w-[100%] flex justify-end xl:pr-20">
+				<div className="w-[100%] flex justify-end xl:pr-20 3xl:pr-40">
 					<CustomButton navlink path="/realizacje" className="mt-32">
 						Zobacz realizacje
 					</CustomButton>
@@ -38,7 +38,7 @@ export default function Start() {
 				</CustomButton>
 			</div>
 
-			<div className="hidden lg:block absolute bottom-0 left-[40px]">
+			<div className="hidden lg:block absolute bottom-0 left-[40px] 3xl:left-[105px]">
 				<div className="w-[230px] h-[300px] bg-transparent">
 					<Image
 						src={Images.START.path}
