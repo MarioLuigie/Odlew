@@ -23,9 +23,9 @@ export default function RealizationsPicturesTop() {
 	const descriptionMaxLines = 3
 
 	return (
-		<div className="bg-yellow-300 w-full max-w-[1200px]">
+		<div className="w-full max-w-[1150px]">
 			{/* Grid dla ProductImages z wyrównaniem wysokości */}
-			<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-6">
+			<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-3">
 				{/* PRODUCT_7 */}
 				<div
 					className="flex flex-col gap-2 cursor-pointer hover:scale-105 transition duration-500 ease-in-out"

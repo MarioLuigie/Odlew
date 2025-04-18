@@ -18,11 +18,13 @@ export default function RealizationsPage() {
 			</div>
 
 			{/* IMAGES LIST TOP */}
-			<div className="mt-[80px] flex 2xl:justify-between 2xl:pr-[100px]">
-				<div className="w-[220px] flex justify-end pr-[50px] bg-blue-300">
+			<div className="mt-[80px] flex">
+				<div className="w-[232px] flex justify-end pr-[50px]">
 					<div className="w-[2px] bg-[#463E46]"></div>
 				</div>
-				<RealizationsPicturesTop />
+				<div className="w-full flex justify-center">
+					<RealizationsPicturesTop />
+				</div>
 			</div>
 
 			<div className="flex justify-center mt-[120px] pb-[80px]">
@@ -45,10 +47,12 @@ export default function RealizationsPage() {
 
 			{/* IMAGES LIST BOTTOM */}
 			<div className="mt-[80px] flex">
-				<div className="w-[215px] flex justify-end pr-[50px]">
+				<div className="w-[232px] flex justify-end pr-[50px]">
 					<div className="w-[2px] bg-[#463E46]"></div>
 				</div>
-				<RealizationsPicturesBottom />
+				<div className='w-full flex justify-center'>
+					<RealizationsPicturesBottom />
+				</div>
 			</div>
 
 			{/* BUTTON */}
