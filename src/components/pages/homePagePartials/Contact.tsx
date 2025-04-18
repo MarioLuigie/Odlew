@@ -10,12 +10,12 @@ export default function Contact() {
 	return (
 		<section
 			id="kontakt"
-			className="xl:min-h-customScreen md:bg-backgroundDark scroll-mt-header"
+			className="md:bg-backgroundDark scroll-mt-header"
 		>
-			<div className="md:flex xl:min-h-customScreen">
+			<div className="md:flex pb-12">
 
 				{/* CONTACT INFO */}
-				<div className="md:w-1/2 md:flex md:flex-col md:justify-start md:pl-28 xl:pl-36">
+				<div className="md:w-1/2 md:flex md:flex-col md:justify-end md:pl-28 xl:pl-36">
 					<div className="flex items-end w-full">
 						<TextVerticalContact right={false}>Kontakt</TextVerticalContact>
 						<div className="pl-[56px] flex flex-col w-full">
@@ -54,13 +54,13 @@ export default function Contact() {
 				</div>
 
 				{/* CONTACT IMAGE */}
-				<div className="hidden md:px-28 md:pb-44 md:w-1/2 md:bg-backgroundDark md:flex md:justify-center md:items-end">
+				<div className="hidden md:pb-44 md:px-12 md:w-1/2 md:bg-backgroundDark md:flex md:justify-center md:items-end">
 					<Image
 						src={HomeContactImages[0].path}
 						alt={HomeContactImages[0].alt}
 						width={2400}
 						height={2400}
-						className="h-full md:w-[320px] md:h-[450px] object-cover"
+						className="h-full md:w-[320px] md:h-[450px] xl:w-[320px] xl:h-[450px] 3xl:w-[450px] 3xl:h-[640px] object-cover"
 					/>
 				</div>
 			</div>
