@@ -9,8 +9,8 @@ export default function Start() {
 			{/* DESKTOP */}
 			<div className="h-customScreen lg:max-h-[820px] hidden lg:flex lg:flex-col lg:justify-center lg:items-end lg:w-1/2 lg:bg-backgroundDark lg:p-8">
 				<div className="hidden lg:text-textDark lg:flex lg:flex-col w-[100%]">
-					<div className="w-[100%]">
-						<p className="text-[54px] xl:text-[54px] lg:text-right pr-20 pb-8">
+					<div className="w-[100%] bg-yellow-300">
+						<p className="text-[54px] lg:text-right pr-20 3xl:pr-40 pb-8">
 							P.S. ODLEW
 						</p>
 					</div>
