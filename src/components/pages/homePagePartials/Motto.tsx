@@ -10,7 +10,7 @@ export default function Motto() {
 			{/* MOTTO */}
 			<div className="md:h-customScreen md:max-h-[820px] relative p-[40px] flex flex-col justify-center items-center bg-mottoBg_grey hover:bg-mottoBg transition-colors duration-1000">
 				<div className="w-full flex flex-col justify-center items-center text-[30px] leading-[70px] md:text-[76px] md:leading-[150px] font-light text-textLight">
-					<div className="w-full">
+					<div className="w-full 3xl:px-[170px]">
 						<div className="w-full">
 							<p>Są rzeczy trudne</p>
 						</div>

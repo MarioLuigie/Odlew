@@ -22,7 +22,7 @@ export default function Realizations() {
 					</div>
 
 					{/* 3 PHOTOS WITH ABSOLUTE POSITION */}
-					<div className="md:absolute md:top-[160px] md:left-[40px] 2xl:left-[140px] w-[230px] h-[180px]">
+					<div className="md:absolute md:top-[160px] md:left-[40px] 2xl:left-[140px] 3xl:left-[200px] w-[230px] h-[180px]">
 						<Image
 							src={ProductImages[10].image.path}
 							alt={ProductImages[10].image.alt}
@@ -31,7 +31,7 @@ export default function Realizations() {
 						/>
 					</div>
 
-					<div className="md:absolute md:top-[320px] md:left-[150px] 2xl:left-[250px] w-[300px] h-[400px]">
+					<div className="md:absolute md:top-[320px] md:left-[150px] 2xl:left-[250px] 3xl:left-[310px] w-[300px] h-[400px]">
 						<Image
 							src={ProductImages[1].image.path}
 							alt={ProductImages[1].image.alt}
@@ -40,7 +40,7 @@ export default function Realizations() {
 						/>
 					</div>
 
-					<div className="flex flex-col md:absolute z-30 md:-bottom-[80px] md:left-[410px] 2xl:left-[510px]">
+					<div className="flex flex-col md:absolute z-30 md:-bottom-[80px] md:left-[410px] 2xl:left-[510px] 3xl:left-[570px]">
 						<div className="w-[180px] h-[180px] border-neutral-950 border-2 relative">
 							<Image
 								src={ProductImages[2].image.path}
@@ -65,7 +65,7 @@ export default function Realizations() {
 
 				{/*RIGHT SIDE*/}
 				<div className="w-1/2 md:relative bg-[#DEDCD8]">
-					<div className="w-[400px] h-[300px] md:absolute md:right-[40px] 2xl:right-[140px] md:top-[55px]">
+					<div className="w-[400px] h-[300px] md:absolute md:right-[40px] 2xl:right-[140px] 3xl:right-[200px] md:top-[55px]">
 						<Image
 							src={ProductImages[11].image.path}
 							alt={ProductImages[11].image.alt}
@@ -74,7 +74,7 @@ export default function Realizations() {
 						/>
 					</div>
 
-					<div className="md:absolute md:top-[315px] md:right-[255px] 2xl:right-[355px] w-[230px] h-[290px]">
+					<div className="md:absolute md:top-[315px] md:right-[255px] 2xl:right-[355px] 3xl:right-[415px] w-[230px] h-[290px]">
 						<Image
 							src={ProductImages[9].image.path}
 							alt={ProductImages[9].image.alt}
@@ -83,7 +83,7 @@ export default function Realizations() {
 						/>
 					</div>
 
-					<div className="md:absolute md:bottom-[80px] md:right-[95px] 2xl:right-[195px] w-[180px] h-[180px]">
+					<div className="md:absolute md:bottom-[80px] md:right-[95px] 2xl:right-[195px] 3xl:right-[255px] w-[180px] h-[180px]">
 						<Image
 							src={ProductImages[3].image.path}
 							alt={ProductImages[3].image.alt}
@@ -98,7 +98,7 @@ export default function Realizations() {
 					{/* desktop */}
 					<div className="flex flex-col justify-center items-center bg-transparent">
 						<Title className="titlePage md:text-[54px]">
-							<div className="flex flex-col justify-center items-center">
+							<div className="flex flex-col justify-center items-center 3xl:text-7xl text-[#383638]">
 								<p>Nasze</p>
 								<p>realizacje</p>
 							</div>
