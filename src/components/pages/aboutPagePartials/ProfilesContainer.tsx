@@ -51,7 +51,7 @@ export default function ProfilesContainer() {
 						alt={AboutImages.team.alt}
 						width={2400}
 						height={2400}
-						className="w-full h-full object-cover lg:object-[60%_80%] xl:object-[0%_78%]" // <-- to manipulujesz!
+						className="w-full h-full object-cover lg:object-[60%_80%] xl:object-[0%_78%]"
 					/>
 				</div>
 
@@ -59,7 +59,7 @@ export default function ProfilesContainer() {
 				<div className="bg-menuTopBg">
 					<div className="flex justify-between lg:pl-[40px] xl:pl-[135px]">
 						<div
-							className="relative w-[368px] h-[552px] mt-[80px] md:w-110 md:h-110 cursor-pointer"
+							className="relative w-[368px] h-[552px] mt-[80px] md:w-110 md:h-110 3xl:ml-[120px] cursor-pointer"
 							onClick={() => handleOpenDialog('Szymon')}
 						>
 							<Image
@@ -69,8 +69,8 @@ export default function ProfilesContainer() {
 								height={2400}
 								className="md:object-cover w-full h-full object-[59%_90%] rounded-tr-[40px] rounded-bl-[40px] transform transition-transform duration-300 ease-in-out hover:scale-110"
 							/>
-							<div className="absolute z-50 -bottom-[200px] left-[240px]">
-								<p className='w-[550px] text-[42px] font-normal text-[#DEDCD8]'>
+							<div className="absolute z-50 -bottom-[200px] left-[240px] 3xl:left-[300px]">
+								<p className="w-[550px] text-[42px] font-normal text-[#DEDCD8]">
 									Dzięki więzom rodzinnym, w pracy doskonale się
 									rozumiemy a współpraca opiera się na wzajemnym
 									zaufaniu.
@@ -79,7 +79,7 @@ export default function ProfilesContainer() {
 						</div>
 						<div className="flex justify-end">
 							<div
-								className="w-[300px] h-[300px] mt-[150px] md:w-110 md:h-110 cursor-pointer lg:mr-[80px] xl:mr-[130px]"
+								className="w-[300px] h-[300px] mt-[150px] md:w-110 md:h-110 cursor-pointer lg:mr-[80px] xl:mr-[130px] 3xl:mr-[250px]"
 								onClick={() => handleOpenDialog('Antoni')}
 							>
 								<Image
@@ -96,7 +96,7 @@ export default function ProfilesContainer() {
 
 					<div className="w-full h-full my-8 flex justify-end">
 						<div
-							className="w-[460px] h-[370px] md:w-110 md:h-110 cursor-pointer lg:mr-[60px] xl:mr-[40px]"
+							className="w-[460px] h-[370px] md:w-110 md:h-110 cursor-pointer lg:mr-[60px] xl:mr-[40px] 3xl:mr-[120px]"
 							onClick={() => handleOpenDialog('Jozef')}
 						>
 							<Image
