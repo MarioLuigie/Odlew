@@ -20,7 +20,7 @@ export default function OfferPage() {
 						className="w-full h-full mt-[65px] lg:ml-[40px] 2xl:ml-[120px] object-cover lg:object-[60%_80%] xl:object-[50%_60%]"
 					/>
 				</div>
-				<div className="absolute lg:bottom-[60px] lg:right-[50px] xl:bottom-[60px] xl:right-[100px] 2xl:right-[200px] lg:w-[500px] xl:w-[590px]">
+				<div className="absolute lg:bottom-[60px] lg:right-[50px] xl:bottom-[60px] xl:right-[100px] 2xl:right-[200px] 3xl:right-[340px] lg:w-[500px] xl:w-[590px]">
 					<div className="font-normal text-[54px] text-[#EEE9E2] pb-5">
 						Co oferujemy?
 					</div>
@@ -45,7 +45,7 @@ export default function OfferPage() {
 			<div className="bg-background">
 				<OfferPictures />
 			</div>
-			<div className="w-full flex justify-end pr-[140px] pt-[78px]">
+			<div className="w-full flex justify-end pr-[140px] 3xl:pr-[360px] pt-[78px]">
 				<CustomButton navlink path="/kontakt" className='min-w-[220px]'>
 					Skontaktuj się z nami
 				</CustomButton>
