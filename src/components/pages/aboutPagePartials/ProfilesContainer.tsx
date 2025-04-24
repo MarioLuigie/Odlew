@@ -69,7 +69,7 @@ export default function ProfilesContainer() {
 								height={2400}
 								className="md:object-cover w-full h-full object-[59%_90%] rounded-tr-[40px] rounded-bl-[40px] transform transition-transform duration-300 ease-in-out hover:scale-110"
 							/>
-							<div className="absolute z-50 -bottom-[200px] left-[240px] 3xl:left-[300px]">
+							<div className="pointer-events-none absolute z-50 -bottom-[200px] left-[240px] 3xl:left-[300px]">
 								<p className="w-[550px] text-[42px] font-normal text-[#DEDCD8]">
 									Dzięki więzom rodzinnym, w pracy doskonale się
 									rozumiemy a współpraca opiera się na wzajemnym
