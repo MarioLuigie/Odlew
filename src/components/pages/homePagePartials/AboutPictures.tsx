@@ -61,8 +61,8 @@ export default function AboutPictures() {
 					container: {
 						backgroundColor: 'rgba(222, 220, 216, .8)',
 						backdropFilter: 'blur(5px)',
-						paddingTop: "70px",
-						paddingBottom: "70px",
+						paddingTop: '70px',
+						paddingBottom: '70px',
 					},
 					navigationNext: {
 						color: '#FF6600', // kolor strzałek "prev" i "next"
