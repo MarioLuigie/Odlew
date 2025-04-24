@@ -48,7 +48,7 @@ export default function RootLayout({
 		>
 			<html lang="pl">
 				<body
-					className={`${beVietnamPro.variable} antialiased bg-headerBg`}
+					className={`${beVietnamPro.variable} antialiased bg-[#f1f1f1]`}
 				>
 					{children}
 					<Toaster />
