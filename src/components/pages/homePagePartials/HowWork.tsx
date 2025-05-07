@@ -22,9 +22,9 @@ function Tab({ onClick, activeTabIndex, label, index }: TabProps) {
 		<button
 			onClick={onClick}
 			className={cn(
-				'relative w-full py-2 md:py-0 rounded-l-full rounded-br-full text-right md:text-[36px] transition-all ease-in-out',
+				'relative w-full py-2 md:py-0 rounded-l-full rounded-br-full text-right md:text-[36px] transition-all ease-in-out hover:text-[#AA5002] duration-500',
 				activeTabIndex === index
-					? 'text-[#AA5002] -translate-x-12 underline underline-offset-8 transition-all duration-500'
+					? 'text-[#AA5002] -translate-x-12 underline underline-offset-8'
 					: ''
 			)}
 		>
