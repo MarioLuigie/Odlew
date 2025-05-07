@@ -47,7 +47,7 @@ export default function OfferPictures() {
 								alt={OfferImages[0].alt}
 								width={2400}
 								height={2400}
-								className="h-full object-cover rounded-lg grayscale contrast-75 hover:grayscale-0 hover:contrast-100 hover:scale-110 transition duration-500 ease-in-out"
+								className="h-full object-cover rounded-lg grayscale contrast-75 hover:grayscale-0 hover:contrast-100 hover:scale-105 transition duration-500 ease-in-out"
 							/>
 						</div>
 						<p className="absolute -bottom-[54px] right-2 text-[28px] font-normal text-[#6F6C6A] text-right">
@@ -94,7 +94,7 @@ export default function OfferPictures() {
 							alt={OfferImages[1].alt}
 							width={2400}
 							height={2400}
-							className="h-full object-cover rounded-lg grayscale contrast-75 hover:grayscale-0 hover:contrast-100 hover:scale-110 transition duration-500 ease-in-out"
+							className="h-full object-cover rounded-lg grayscale contrast-75 hover:grayscale-0 hover:contrast-100 hover:scale-105 transition duration-500 ease-in-out"
 						/>
 					</div>
 					<p className="absolute -bottom-[54px] right-2 text-[28px] font-normal text-[#6F6C6A] text-right">
@@ -116,7 +116,7 @@ export default function OfferPictures() {
 							alt={OfferImages[2].alt}
 							width={2400}
 							height={2400}
-							className="h-full object-cover rounded-lg object-[100%_50%] grayscale contrast-75 hover:grayscale-0 hover:contrast-100 hover:scale-110 transition duration-500 ease-in-out"
+							className="h-full object-cover rounded-lg object-[100%_50%] grayscale contrast-75 hover:grayscale-0 hover:contrast-100 hover:scale-105 transition duration-500 ease-in-out"
 						/>
 					</div>
 				</div>
@@ -159,7 +159,7 @@ export default function OfferPictures() {
 							alt={OfferImages[3].alt}
 							width={2400}
 							height={2400}
-							className="h-full object-cover rounded-lg grayscale contrast-75 hover:grayscale-0 hover:contrast-100 hover:scale-110 transition duration-500 ease-in-out"
+							className="h-full object-cover rounded-lg grayscale contrast-75 hover:grayscale-0 hover:contrast-100 hover:scale-105 transition duration-500 ease-in-out"
 						/>
 					</div>
 					<p className="absolute -bottom-[54px] left-2 text-[27px] font-normal text-[#6F6C6A] text-left">
@@ -203,7 +203,7 @@ export default function OfferPictures() {
 							alt={OfferImages[4].alt}
 							width={2400}
 							height={2400}
-							className="h-full object-cover rounded-lg grayscale contrast-75 hover:grayscale-0 hover:contrast-100 hover:scale-110 transition duration-500 ease-in-out"
+							className="h-full object-cover rounded-lg grayscale contrast-75 hover:grayscale-0 hover:contrast-100 hover:scale-105 transition duration-500 ease-in-out"
 						/>
 					</div>
 				</div>
@@ -222,7 +222,7 @@ export default function OfferPictures() {
 							alt={OfferImages[5].alt}
 							width={2400}
 							height={2400}
-							className="h-full object-cover rounded-lg object-[100%_50%] grayscale contrast-75 hover:grayscale-0 hover:contrast-100 hover:scale-110 transition duration-500 ease-in-out"
+							className="h-full object-cover rounded-lg object-[100%_50%] grayscale contrast-75 hover:grayscale-0 hover:contrast-100 hover:scale-105 transition duration-500 ease-in-out"
 						/>
 					</div>
 					<p className="absolute leading-9 -bottom-[92px] left-2 text-[28px] font-normal text-[#6F6C6A] text-left">
@@ -247,7 +247,7 @@ export default function OfferPictures() {
 							alt={OfferImages[6].alt}
 							width={2400}
 							height={2400}
-							className="h-full object-cover rounded-lg grayscale contrast-75 hover:grayscale-0 hover:contrast-100 hover:scale-110 transition duration-500 ease-in-out"
+							className="h-full object-cover rounded-lg grayscale contrast-75 hover:grayscale-0 hover:contrast-100 hover:scale-105 transition duration-500 ease-in-out"
 						/>
 					</div>
 				</div>
@@ -266,7 +266,7 @@ export default function OfferPictures() {
 							alt={OfferImages[7].alt}
 							width={2400}
 							height={2400}
-							className="h-full object-cover rounded-lg object-[100%_50%] grayscale contrast-75 hover:grayscale-0 hover:contrast-100 hover:scale-110 transition duration-500 ease-in-out"
+							className="h-full object-cover rounded-lg object-[100%_50%] grayscale contrast-75 hover:grayscale-0 hover:contrast-100 hover:scale-105 transition duration-500 ease-in-out"
 						/>
 					</div>
 				</div>
@@ -298,7 +298,7 @@ export default function OfferPictures() {
 							alt={OfferImages[8].alt}
 							width={2400}
 							height={2400}
-							className="h-full object-cover rounded-lg grayscale contrast-75 hover:grayscale-0 hover:contrast-100 hover:scale-110 transition duration-500 ease-in-out"
+							className="h-full object-cover rounded-lg grayscale contrast-75 hover:grayscale-0 hover:contrast-100 hover:scale-105 transition duration-500 ease-in-out"
 						/>
 					</div>
 				</div>
@@ -320,7 +320,7 @@ export default function OfferPictures() {
 							alt={OfferImages[9].alt}
 							width={2400}
 							height={2400}
-							className="h-full object-cover rounded-lg grayscale contrast-75 hover:grayscale-0 hover:contrast-100 hover:scale-110 transition duration-500 ease-in-out"
+							className="h-full object-cover rounded-lg grayscale contrast-75 hover:grayscale-0 hover:contrast-100 hover:scale-105 transition duration-500 ease-in-out"
 						/>
 					</div>
 				</div>
@@ -339,7 +339,7 @@ export default function OfferPictures() {
 							alt={OfferImages[10].alt}
 							width={2400}
 							height={2400}
-							className="h-full object-cover rounded-lg object-[100%_50%] grayscale contrast-75 hover:grayscale-0 hover:contrast-100 hover:scale-110 transition duration-500 ease-in-out"
+							className="h-full object-cover rounded-lg object-[100%_50%] grayscale contrast-75 hover:grayscale-0 hover:contrast-100 hover:scale-105 transition duration-500 ease-in-out"
 						/>
 					</div>
 				</div>
@@ -368,7 +368,7 @@ export default function OfferPictures() {
 							alt={OfferImages[11].alt}
 							width={2400}
 							height={2400}
-							className="h-full object-cover rounded-lg object-[100%_50%] grayscale contrast-75 hover:grayscale-0 hover:contrast-100 hover:scale-110 transition duration-500 ease-in-out"
+							className="h-full object-cover rounded-lg object-[100%_50%] grayscale contrast-75 hover:grayscale-0 hover:contrast-100 hover:scale-105 transition duration-500 ease-in-out"
 						/>
 					</div>
 				</div>
@@ -400,7 +400,7 @@ export default function OfferPictures() {
 							alt={OfferImages[12].alt}
 							width={2400}
 							height={2400}
-							className="h-full object-cover rounded-lg grayscale contrast-75 hover:grayscale-0 hover:contrast-100 hover:scale-110 transition duration-500 ease-in-out"
+							className="h-full object-cover rounded-lg grayscale contrast-75 hover:grayscale-0 hover:contrast-100 hover:scale-105 transition duration-500 ease-in-out"
 						/>
 					</div>
 				</div>
@@ -440,7 +440,7 @@ export default function OfferPictures() {
 							alt={OfferImages[13].alt}
 							width={2400}
 							height={2400}
-							className="h-full object-cover rounded-lg object-[100%_50%] grayscale contrast-75 hover:grayscale-0 hover:contrast-100 hover:scale-110 transition duration-500 ease-in-out"
+							className="h-full object-cover rounded-lg object-[100%_50%] grayscale contrast-75 hover:grayscale-0 hover:contrast-100 hover:scale-105 transition duration-500 ease-in-out"
 						/>
 					</div>
 					<p className="absolute -bottom-[54px] right-2 text-[27px] font-normal text-[#6F6C6A] text-right">
@@ -485,7 +485,7 @@ export default function OfferPictures() {
 							alt={OfferImages[14].alt}
 							width={2400}
 							height={2400}
-							className="h-full object-cover rounded-lg grayscale contrast-75 hover:grayscale-0 hover:contrast-100 hover:scale-110 transition duration-500 ease-in-out"
+							className="h-full object-cover rounded-lg grayscale contrast-75 hover:grayscale-0 hover:contrast-100 hover:scale-105 transition duration-500 ease-in-out"
 						/>
 					</div>
 					<p className="absolute -bottom-[54px] left-2 text-[27px] font-normal text-[#6F6C6A] text-left">
@@ -507,7 +507,7 @@ export default function OfferPictures() {
 							alt={OfferImages[15].alt}
 							width={2400}
 							height={2400}
-							className="h-full object-cover rounded-lg object-[100%_50%] grayscale contrast-75 hover:grayscale-0 hover:contrast-100 hover:scale-110 transition duration-500 ease-in-out"
+							className="h-full object-cover rounded-lg object-[100%_50%] grayscale contrast-75 hover:grayscale-0 hover:contrast-100 hover:scale-105 transition duration-500 ease-in-out"
 						/>
 					</div>
 				</div>
@@ -550,7 +550,7 @@ export default function OfferPictures() {
 							alt={OfferImages[16].alt}
 							width={2400}
 							height={2400}
-							className="h-full object-cover rounded-lg grayscale contrast-75 hover:grayscale-0 hover:contrast-100 hover:scale-110 transition duration-500 ease-in-out"
+							className="h-full object-cover rounded-lg grayscale contrast-75 hover:grayscale-0 hover:contrast-100 hover:scale-105 transition duration-500 ease-in-out"
 						/>
 					</div>
 					<p className="absolute -bottom-[54px] right-2 text-[27px] font-normal text-[#6F6C6A] text-right">
@@ -572,7 +572,7 @@ export default function OfferPictures() {
 							alt={OfferImages[17].alt}
 							width={2400}
 							height={2400}
-							className="h-full object-cover rounded-lg object-[100%_50%] grayscale contrast-75 hover:grayscale-0 hover:contrast-100 hover:scale-110 transition duration-500 ease-in-out"
+							className="h-full object-cover rounded-lg object-[100%_50%] grayscale contrast-75 hover:grayscale-0 hover:contrast-100 hover:scale-105 transition duration-500 ease-in-out"
 						/>
 					</div>
 				</div>

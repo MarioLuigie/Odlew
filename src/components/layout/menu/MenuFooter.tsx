@@ -15,7 +15,7 @@ function MenuContentItem({ item }: { item: MenuContentItem }) {
 		<div className="w-full border-b-[1px]">
 			<Link href={item.path} key={item.label} className="inline-block pr-3">
 				<li className="pb-2 pt-4">
-					<p className="text-menuTextLight text-[14px] font-medium">
+					<p className="text-menuTextLight text-[14px] font-medium transition-all ease-in-out hover:text-accentHover duration-500">
 						{capitalizeFirstLetter(item.label)}
 					</p>
 				</li>

@@ -1,8 +1,8 @@
-import Logo from '@/components/content/Logo'
-import MenuFooter from '@/components/layout/menu/MenuFooter'
-import Link from 'next/link'
-import { Routes } from '@/lib/constants/paths'
-import { SignedIn, SignedOut, SignOutButton } from '@clerk/nextjs'
+import Logo from '@/components/content/Logo';
+import MenuFooter from '@/components/layout/menu/MenuFooter';
+import Link from 'next/link';
+import { Routes } from '@/lib/constants/paths';
+import { SignedIn, SignedOut, SignOutButton } from '@clerk/nextjs';
 
 export default function Footer() {
 	return (
@@ -24,17 +24,24 @@ export default function Footer() {
 			</div>
 
 			{/* ADMIN */}
-			<div className="w-full flex items-center justify-end gap-2 xl:mt-4 text-teal-600">
-				<small>Created by &copy; ARWcode 2024</small>
-				<SignedOut>
-					<Link href={Routes.SIGN_IN} className='pb-[4px]'>
-						<small>| Admin |</small>
-					</Link>
-				</SignedOut>
-				<SignedIn>
-					<SignOutButton />
-				</SignedIn>
+			<div className="w-full flex flex-col items-end justify-center">
+				<div className='flex flex-col items-start justify-center'>
+					<div className="flex items-center justify-end gap-2 text-teal-600">
+						<small>Created by &copy; ARWcode 2024</small>
+						<SignedOut>
+							<Link href={Routes.SIGN_IN} className="pb-[4px]">
+								<small>| Admin |</small>
+							</Link>
+						</SignedOut>
+						<SignedIn>
+							<SignOutButton />
+						</SignedIn>
+					</div>
+					<div className="text-teal-600">
+						<small>UI-UX Design by Dominika Zborowska</small>
+					</div>
+				</div>
 			</div>
 		</footer>
-	)
+	);
 }
