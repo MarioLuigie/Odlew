@@ -8,7 +8,7 @@ import OfferPictures from '@/components/pages/offerPagePartials/OfferPictures'
 
 export default function OfferPage() {
 	return (
-		<div className="bg-background pb-32">
+		<div className="bg-background lg:pb-16 xl:pb-24">
 			<div className="bg-[#DAD7D1] h-[110px]"></div>
 			<div className="relative bg-menuTopBg lg:h-[720px] xl:h-[920px] overflow-hidden">
 				<div className='lg:w-[550px] xl:w-[805px] 2xl:w-[960px]'>
@@ -45,7 +45,7 @@ export default function OfferPage() {
 			<div className="bg-background">
 				<OfferPictures />
 			</div>
-			<div className="w-full flex justify-end pr-[140px] 3xl:pr-[360px] pt-[78px]">
+			<div className="w-full flex justify-end pr-[140px] 3xl:pr-[320px] lg:pt-[20px] xl:pt-[78px]">
 				<CustomButton navlink path="/kontakt" className='min-w-[220px]'>
 					Skontaktuj się z nami
 				</CustomButton>
