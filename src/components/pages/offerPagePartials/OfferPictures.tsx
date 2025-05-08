@@ -20,7 +20,7 @@ export default function OfferPictures() {
 		<div className="flex flex-col bg-[#DEDCD8]">
 			{/* IMAGE_1 */}
 			<div className="flex">
-				<div className="ml-36">
+				<div className="ml-24 lg:ml-36">
 					<TextVerticalProcess right={false}>
 						Poznaj nasz proces
 					</TextVerticalProcess>
@@ -36,7 +36,7 @@ export default function OfferPictures() {
 							</Drop>
 						</div>
 						<div
-							className="lg:w-[690px] lg:h-[460px] rounded-lg flex justify-center items-center cursor-pointer"
+							className="w-[480px] h-auto lg:w-[690px] lg:h-[460px] rounded-lg flex justify-center items-center cursor-pointer"
 							onClick={() => {
 								setCurrentIndex(0)
 								setOpen(true)
@@ -83,7 +83,7 @@ export default function OfferPictures() {
 					</div>
 
 					<div
-						className="lg:w-[805px] lg:h-full rounded-lg flex justify-center items-center cursor-pointer"
+						className="w-[480px] h-auto lg:w-[805px] lg:h-full rounded-lg flex justify-center items-center cursor-pointer"
 						onClick={() => {
 							setCurrentIndex(1)
 							setOpen(true)
@@ -105,7 +105,7 @@ export default function OfferPictures() {
 				{/* IMAGE_3 */}
 				<div className="absolute bottom-0 lg:left-[40px] xl:left-[100px] 1xl:left-[210px] 2xl:left-[210px] 3xl:left-[400px] z-40">
 					<div
-						className="lg:w-[520px] lg:h-[390px] rounded-lg flex justify-center items-center cursor-pointer"
+						className="w-[480px] h-auto lg:w-[520px] lg:h-[390px] rounded-lg flex justify-center items-center cursor-pointer"
 						onClick={() => {
 							setCurrentIndex(2)
 							setOpen(true)
@@ -148,7 +148,7 @@ export default function OfferPictures() {
 					</div>
 
 					<div
-						className="lg:w-[520px] lg:h-[390] rounded-lg flex justify-center items-center cursor-pointer"
+						className="w-[480px] h-auto lg:w-[520px] lg:h-[390] rounded-lg flex justify-center items-center cursor-pointer"
 						onClick={() => {
 							setCurrentIndex(3)
 							setOpen(true)
@@ -192,7 +192,7 @@ export default function OfferPictures() {
 						</Drop>
 					</div>
 					<div
-						className="lg:w-[440px] lg:h-[330px] rounded-lg flex justify-center items-center cursor-pointer"
+						className="w-[480px] h-auto lg:w-[440px] lg:h-[330px] rounded-lg flex justify-center items-center cursor-pointer"
 						onClick={() => {
 							setCurrentIndex(4)
 							setOpen(true)
@@ -211,7 +211,7 @@ export default function OfferPictures() {
 				{/* IMAGE_6 */}
 				<div className="absolute bottom-0 lg:right-[150px] xl:right-[350px] 1xl:right-[470px] 2xl:right-[470px] 3xl:right-[730px]">
 					<div
-						className="lg:w-[690px] lg:h-[460px] rounded-lg flex justify-center items-center cursor-pointer"
+						className="w-[480px] h-auto lg:w-[690px] lg:h-[460px] rounded-lg flex justify-center items-center cursor-pointer"
 						onClick={() => {
 							setCurrentIndex(5)
 							setOpen(true)
@@ -236,7 +236,7 @@ export default function OfferPictures() {
 				{/* IMAGE_7 */}
 				<div className="absolute lg:top-[120px] xl:top-[80px] 1xl:top-[80px] 3xl:top-[70px] right-[80px] xl:right-[80px] 1xl:right-[80px] 2xl:right-[160px] 3xl:right-[340px]">
 					<div
-						className="lg:w-[390px] lg:h-[520px] rounded-lg flex justify-center items-center cursor-pointer"
+						className="w-[480px] h-auto lg:w-[390px] lg:h-[520px] rounded-lg flex justify-center items-center cursor-pointer"
 						onClick={() => {
 							setCurrentIndex(6)
 							setOpen(true)
@@ -255,7 +255,7 @@ export default function OfferPictures() {
 				{/* IMAGE_8 */}
 				<div className="absolute top-[195px] lg:left-[70px] xl:left-[320px] 1xl:left-[490px] 2xl:left-[500px] 3xl:left-[700px] z-40">
 					<div
-						className="lg:w-[450px] rounded-lg flex justify-center items-center cursor-pointer"
+						className="w-[480px] h-auto lg:w-[450px] rounded-lg flex justify-center items-center cursor-pointer"
 						onClick={() => {
 							setCurrentIndex(7)
 							setOpen(true)
@@ -287,7 +287,7 @@ export default function OfferPictures() {
 						</Drop>
 					</div>
 					<div
-						className="lg:w-[520px] lg:h-[390] rounded-lg flex justify-center items-center cursor-pointer"
+						className="w-[480px] h-auto lg:w-[520px] lg:h-[390] rounded-lg flex justify-center items-center cursor-pointer"
 						onClick={() => {
 							setCurrentIndex(8)
 							setOpen(true)
@@ -309,7 +309,7 @@ export default function OfferPictures() {
 				{/* IMAGE_10 */}
 				<div className="absolute top-[35px] xl:top-[150px] 1xl:top-[35px] right-[40px] xl:right-[40px] 1xl:right-[40px] 2xl:right-[105px] 3xl:right-[215px] z-40">
 					<div
-						className="lg:w-[440px] lg:h-[330px] rounded-lg flex justify-center items-center cursor-pointer"
+						className="w-[480px] h-auto lg:w-[440px] lg:h-[330px] rounded-lg flex justify-center items-center cursor-pointer"
 						onClick={() => {
 							setCurrentIndex(9)
 							setOpen(true)
@@ -328,7 +328,7 @@ export default function OfferPictures() {
 				{/* IMAGE_11 */}
 				<div className="absolute bottom-[60px] lg:right-[40px] xl:right-[110px] 1xl:right-[120px] 2xl:right-[190px] 3xl:right-[340px] z-40">
 					<div
-						className="lg:w-[450px] rounded-lg flex justify-center items-center cursor-pointer"
+						className="w-[480px] h-auto lg:w-[450px] rounded-lg flex justify-center items-center cursor-pointer"
 						onClick={() => {
 							setCurrentIndex(10)
 							setOpen(true)
@@ -357,7 +357,7 @@ export default function OfferPictures() {
 						</Drop>
 					</div>
 					<div
-						className="lg:w-[805px] lg:h-[535px] rounded-lg flex justify-center items-center cursor-pointer"
+						className="w-[480px] h-auto lg:w-[805px] lg:h-[535px] rounded-lg flex justify-center items-center cursor-pointer"
 						onClick={() => {
 							setCurrentIndex(11)
 							setOpen(true)
@@ -389,7 +389,7 @@ export default function OfferPictures() {
 						</Drop>
 					</div>
 					<div
-						className="lg:w-[390px] lg:h-[520px] rounded-lg flex justify-center items-center cursor-pointer"
+						className="w-[480px] h-auto lg:w-[390px] lg:h-[520px] rounded-lg flex justify-center items-center cursor-pointer"
 						onClick={() => {
 							setCurrentIndex(12)
 							setOpen(true)
@@ -429,7 +429,7 @@ export default function OfferPictures() {
 					</div>
 
 					<div
-						className="lg:w-[690px] lg:h-[460px] rounded-lg flex justify-center items-center cursor-pointer"
+						className="w-[480px] h-auto lg:w-[690px] lg:h-[460px] rounded-lg flex justify-center items-center cursor-pointer"
 						onClick={() => {
 							setCurrentIndex(13)
 							setOpen(true)
@@ -474,7 +474,7 @@ export default function OfferPictures() {
 						</Drop>
 					</div>
 					<div
-						className="lg:w-[805px] lg:h-[535px] rounded-lg flex justify-center items-center cursor-pointer border-2 border-black"
+						className="w-[480px] h-auto lg:w-[805px] lg:h-[535px] rounded-lg flex justify-center items-center cursor-pointer border-2 border-black"
 						onClick={() => {
 							setCurrentIndex(14)
 							setOpen(true)
@@ -496,7 +496,7 @@ export default function OfferPictures() {
 				{/* IMAGE_16 */}
 				<div className="absolute bottom-0 lg:right-[40px] xl:right-[75px] 1xl:right-[75px] 2xl:right-[150px] 3xl:right-[340px] z-40">
 					<div
-						className="lg:w-[520px] lg:h-[390px] rounded-lg flex justify-center items-center cursor-pointer border-2 border-black"
+						className="w-[480px] h-auto lg:w-[520px] lg:h-[390px] rounded-lg flex justify-center items-center cursor-pointer border-2 border-black"
 						onClick={() => {
 							setCurrentIndex(15)
 							setOpen(true)
@@ -539,7 +539,7 @@ export default function OfferPictures() {
 					</div>
 
 					<div
-						className="lg:w-[690px] rounded-lg flex justify-center items-center cursor-pointer"
+						className="w-[480px] h-auto lg:w-[690px] rounded-lg flex justify-center items-center cursor-pointer"
 						onClick={() => {
 							setCurrentIndex(16)
 							setOpen(true)
@@ -561,7 +561,7 @@ export default function OfferPictures() {
 				{/* IMAGE_18 */}
 				<div className="absolute lg:bottom-[80px] xl:bottom-[50px] lg:left-[40px] xl:left-[40px] 1xl:left-[40px] 2xl:left-[60px] 3xl:left-[280px]">
 					<div
-						className="lg:w-[850px] rounded-lg flex justify-center items-center cursor-pointer"
+						className="w-[480px] h-auto lg:w-[850px] rounded-lg flex justify-center items-center cursor-pointer"
 						onClick={() => {
 							setCurrentIndex(17)
 							setOpen(true)
