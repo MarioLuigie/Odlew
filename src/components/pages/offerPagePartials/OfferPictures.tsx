@@ -103,7 +103,7 @@ export default function OfferPictures() {
 				</div>
 
 				{/* IMAGE_3 */}
-				<div className="absolute bottom-0 lg:left-[40px] xl:left-[100px] 1xl:left-[210px] 2xl:left-[210px] 3xl:left-[400px] z-40">
+				<div className="absolute bottom-0 md:left-[40px] lg:left-[40px] xl:left-[100px] 1xl:left-[210px] 2xl:left-[210px] 3xl:left-[400px] z-40">
 					<div
 						className="w-[480px] h-auto lg:w-[520px] lg:h-[390px] rounded-lg flex justify-center items-center cursor-pointer"
 						onClick={() => {
@@ -125,7 +125,7 @@ export default function OfferPictures() {
 			{/* IMAGES GROUP_4 */}
 			<div className="relative h-[450px]">
 				{/* IMAGE_4 */}
-				<div className="absolute -top-[50px] right-[95px] xl:right-[50px] 1xl:right-[50px] 2xl:right-[100px] 3xl:right-[250px]">
+				<div className="absolute -top-[50px] right-[95px] md:right-[35px] lg:right-[95px] xl:right-[50px] 1xl:right-[50px] 2xl:right-[100px] 3xl:right-[250px]">
 					<div className="flex justify-end items-center gap-2 mb-6">
 						<Drop
 							className="md:min-w-12 md:min-h-12 md:text-xl"
@@ -209,7 +209,7 @@ export default function OfferPictures() {
 				</div>
 
 				{/* IMAGE_6 */}
-				<div className="absolute bottom-0 lg:right-[150px] xl:right-[350px] 1xl:right-[470px] 2xl:right-[470px] 3xl:right-[730px]">
+				<div className="absolute bottom-0 md:right-[35px] lg:right-[150px] xl:right-[350px] 1xl:right-[470px] 2xl:right-[470px] 3xl:right-[730px]">
 					<div
 						className="w-[480px] h-auto lg:w-[690px] lg:h-[460px] rounded-lg flex justify-center items-center cursor-pointer"
 						onClick={() => {
@@ -234,7 +234,7 @@ export default function OfferPictures() {
 			{/* IMAGES GROUP_7-8 */}
 			<div className="relative h-[600px]">
 				{/* IMAGE_7 */}
-				<div className="absolute lg:top-[120px] xl:top-[80px] 1xl:top-[80px] 3xl:top-[70px] right-[80px] xl:right-[80px] 1xl:right-[80px] 2xl:right-[160px] 3xl:right-[340px]">
+				<div className="absolute md:top-[80px] lg:top-[120px] xl:top-[80px] 1xl:top-[80px] 3xl:top-[70px] right-[80px] md:right-[80px] lg:right-[80px] xl:right-[80px] 1xl:right-[80px] 2xl:right-[160px] 3xl:right-[340px]">
 					<div
 						className="w-[480px] h-auto lg:w-[390px] lg:h-[520px] rounded-lg flex justify-center items-center cursor-pointer"
 						onClick={() => {
@@ -253,7 +253,7 @@ export default function OfferPictures() {
 				</div>
 
 				{/* IMAGE_8 */}
-				<div className="absolute top-[195px] lg:left-[70px] xl:left-[320px] 1xl:left-[490px] 2xl:left-[500px] 3xl:left-[700px] z-40">
+				<div className="absolute md:top-[300px] lg:top-[195px] md:left-[35px] lg:left-[70px] xl:left-[320px] 1xl:left-[490px] 2xl:left-[500px] 3xl:left-[700px] z-40">
 					<div
 						className="w-[480px] h-auto lg:w-[450px] rounded-lg flex justify-center items-center cursor-pointer"
 						onClick={() => {
@@ -275,7 +275,7 @@ export default function OfferPictures() {
 			{/* IMAGES GROUP_9 */}
 			<div className="relative h-[450px]">
 				{/* IMAGE_9 */}
-				<div className="absolute lg:top-[90px] xl:top-[70px] lg:left-[75px] xl:left-[75px] 1xl:left-[75px] 2xl:left-[75px] 3xl:left-[350px]">
+				<div className="absolute md:top-[100px] lg:top-[90px] xl:top-[70px] md:left-[120px] lg:left-[75px] xl:left-[75px] 1xl:left-[75px] 2xl:left-[75px] 3xl:left-[350px]">
 					<div className="absolute -top-[20px] -right-20 flex justify-end items-center gap-2">
 						<Drop
 							className="md:min-w-12 md:min-h-12 md:text-xl transform rotate-45"
@@ -307,7 +307,7 @@ export default function OfferPictures() {
 			{/* IMAGES GROUP_10-12 */}
 			<div className="relative h-[930px]">
 				{/* IMAGE_10 */}
-				<div className="absolute top-[35px] xl:top-[150px] 1xl:top-[35px] right-[40px] xl:right-[40px] 1xl:right-[40px] 2xl:right-[105px] 3xl:right-[215px] z-40">
+				<div className="absolute md:top-[280px] lg:top-[35px] xl:top-[150px] 1xl:top-[35px] md:right-[35px] xl:right-[40px] 1xl:right-[40px] 2xl:right-[105px] 3xl:right-[215px] z-40">
 					<div
 						className="w-[480px] h-auto lg:w-[440px] lg:h-[330px] rounded-lg flex justify-center items-center cursor-pointer"
 						onClick={() => {
@@ -326,7 +326,7 @@ export default function OfferPictures() {
 				</div>
 
 				{/* IMAGE_11 */}
-				<div className="absolute bottom-[60px] lg:right-[40px] xl:right-[110px] 1xl:right-[120px] 2xl:right-[190px] 3xl:right-[340px] z-40">
+				<div className="absolute md:bottom-[0] lg:bottom-[60px] md:right-[35px] lg:right-[40px] xl:right-[110px] 1xl:right-[120px] 2xl:right-[190px] 3xl:right-[340px] z-40">
 					<div
 						className="w-[480px] h-auto lg:w-[450px] rounded-lg flex justify-center items-center cursor-pointer"
 						onClick={() => {
@@ -345,7 +345,7 @@ export default function OfferPictures() {
 				</div>
 
 				{/* IMAGE_12 */}
-				<div className="absolute top-[100px] lg:left-[40px] xl:left-[80px] 1xl:left-[120px] 2xl:left-[145px] 3xl:left-[420px]">
+				<div className="absolute md:top-[100px] lg:top-[100px] md:left-[35px] lg:left-[40px] xl:left-[80px] 1xl:left-[120px] 2xl:left-[145px] 3xl:left-[420px]">
 					<div className="absolute -top-20 right-0 flex justify-end items-center gap-2">
 						<Drop
 							className="md:min-w-12 md:min-h-12 md:text-xl"
@@ -377,7 +377,7 @@ export default function OfferPictures() {
 			{/* IMAGES GROUP_13-14 */}
 			<div className="relative h-[700px]">
 				{/* IMAGE_13 */}
-				<div className="absolute top-[-150px] lg:left-[40px] xl:left-[40px] 1xl:left=[40px] 2xl:left-[80px] 3xl:left-[230px]">
+				<div className="absolute md:top-[90px] lg:top-[-150px] md:left-[35px] lg:left-[40px] xl:left-[40px] 1xl:left=[40px] 2xl:left-[80px] 3xl:left-[230px]">
 					<div className="absolute -top-16 -right-16 flex justify-end items-center gap-2">
 						<Drop
 							className="md:min-w-12 md:min-h-12 md:text-xl"
@@ -406,7 +406,7 @@ export default function OfferPictures() {
 				</div>
 
 				{/* IMAGE_14 */}
-				<div className="absolute -bottom-[40px] lg:right-[40px] xl:right-[70px] 1xl:right-[200px] 2xl:right-[270px] 3xl:right-[500px] z-40">
+				<div className="absolute md:-bottom-[140px] lg:-bottom-[40px] md:right-[35px] lg:right-[40px] xl:right-[70px] 1xl:right-[200px] 2xl:right-[270px] 3xl:right-[500px] z-40">
 					<div className="flex justify-end items-center gap-2 mb-6">
 						<Drop
 							className="md:min-w-12 md:min-h-12 md:text-xl"
@@ -450,9 +450,9 @@ export default function OfferPictures() {
 			</div>
 
 			{/* IMAGES GROUP_15-16 */}
-			<div className="relative h-[890px]">
+			<div className="relative md:h-[1000px] lg:h-[890px]">
 				{/* IMAGE_15 */}
-				<div className="absolute lg:top-[90px] xl:top-[90px] 1xl:top-[100px] 2xl:top-[100px] 3xl:top-[100px] lg:left-[40px] xl:left-[40px] 1xl:left-[155px] 2xl:left-[] 3xl:left-[340px]">
+				<div className="absolute md:top-[200px] lg:top-[90px] xl:top-[90px] 1xl:top-[100px] 2xl:top-[100px] 3xl:top-[100px] md:left-[35px] lg:left-[40px] xl:left-[40px] 1xl:left-[155px] 2xl:left-[] 3xl:left-[340px]">
 					<div className="flex justify-start items-center gap-2 mb-6">
 						<Drop
 							className="md:min-w-12 md:min-h-12 md:text-xl"
@@ -494,7 +494,7 @@ export default function OfferPictures() {
 				</div>
 
 				{/* IMAGE_16 */}
-				<div className="absolute bottom-0 lg:right-[40px] xl:right-[75px] 1xl:right-[75px] 2xl:right-[150px] 3xl:right-[340px] z-40">
+				<div className="absolute md:bottom-[0] lg:bottom-0 md:right-[35px] lg:right-[40px] xl:right-[75px] 1xl:right-[75px] 2xl:right-[150px] 3xl:right-[340px] z-40">
 					<div
 						className="w-[480px] h-auto lg:w-[520px] lg:h-[390px] rounded-lg flex justify-center items-center cursor-pointer border-2 border-black"
 						onClick={() => {
@@ -514,9 +514,9 @@ export default function OfferPictures() {
 			</div>
 
 			{/* IMAGES GROUP_17-18 */}
-			<div className="relative lg:h-[1130px] xl:h-[1200px]">
+			<div className="relative md:h-[700px] lg:h-[1130px] xl:h-[1200px]">
 				{/* IMAGE_17 */}
-				<div className="absolute lg:top-[60px] xl:top-[100px] 2xl:top-[100px] 3xl:top-[100px] right-[40px] xl:right-[40px] 1xl:right-[40px] 2xl:right-[60px] 3xl:right-[200px] z-40">
+				<div className="absolute md:top-[45px] lg:top-[60px] xl:top-[100px] 2xl:top-[100px] 3xl:top-[100px] right-[40px] xl:right-[40px] 1xl:right-[40px] 2xl:right-[60px] 3xl:right-[200px] z-40">
 					<div className="flex justify-start items-center gap-2 mb-6">
 						<Drop
 							className="md:min-w-12 md:min-h-12 md:text-xl"
@@ -559,7 +559,7 @@ export default function OfferPictures() {
 				</div>
 
 				{/* IMAGE_18 */}
-				<div className="absolute lg:bottom-[80px] xl:bottom-[50px] lg:left-[40px] xl:left-[40px] 1xl:left-[40px] 2xl:left-[60px] 3xl:left-[280px]">
+				<div className="absolute md:bottom-[0] lg:bottom-[80px] xl:bottom-[50px] md:left-[35px] lg:left-[40px] xl:left-[40px] 1xl:left-[40px] 2xl:left-[60px] 3xl:left-[280px]">
 					<div
 						className="w-[480px] h-auto lg:w-[850px] rounded-lg flex justify-center items-center cursor-pointer"
 						onClick={() => {
