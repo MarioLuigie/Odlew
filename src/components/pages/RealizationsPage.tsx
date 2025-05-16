@@ -22,7 +22,7 @@ export default function RealizationsPage() {
 				<div className="w-[232px] flex justify-end pr-[50px]">
 					<div className="w-[2px] bg-[#463E46]"></div>
 				</div>
-				<div className="w-full flex justify-center bg-red-300">
+				<div className="w-full flex justify-center pr-[20px]">
 					<RealizationsPicturesTop />
 				</div>
 			</div>
@@ -50,7 +50,7 @@ export default function RealizationsPage() {
 				<div className="w-[232px] flex justify-end pr-[50px]">
 					<div className="w-[2px] bg-[#463E46]"></div>
 				</div>
-				<div className='w-full flex justify-center'>
+				<div className='w-full flex justify-center pr-[20px]'>
 					<RealizationsPicturesBottom />
 				</div>
 			</div>

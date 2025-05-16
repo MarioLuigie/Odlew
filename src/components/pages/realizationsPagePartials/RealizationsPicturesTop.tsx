@@ -25,7 +25,7 @@ export default function RealizationsPicturesTop() {
 	return (
 		<div className="w-full max-w-[1150px]">
 			{/* Grid dla ProductImages z wyrównaniem wysokości */}
-			<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-3">
+			<div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-3">
 				{/* PRODUCT_7 */}
 				<div
 					className="flex flex-col gap-2 cursor-pointer hover:scale-105 transition duration-500 ease-in-out"
@@ -82,7 +82,7 @@ export default function RealizationsPicturesTop() {
 						setOpen(true)
 					}}
 				>
-					<div className="w-[360px] h-[360px] bg-backgroundDark rounded-lg flex justify-center items-center relative">
+					<div className="min-w-[200px] max-w-[360px] aspect-square bg-backgroundDark rounded-lg flex justify-center items-center relative">
 						<Image
 							src={ProductImages[2].image.path}
 							alt={ProductImages[2].image.alt}
@@ -106,7 +106,7 @@ export default function RealizationsPicturesTop() {
 						setOpen(true)
 					}}
 				>
-					<div className="w-[360px] h-[360px] bg-backgroundDark rounded-lg flex justify-center items-center relative">
+					<div className="min-w-[200px] max-w-[360px] aspect-square bg-backgroundDark rounded-lg flex justify-center items-center relative">
 						<Image
 							src={ProductImages[3].image.path}
 							alt={ProductImages[3].image.alt}
@@ -130,7 +130,7 @@ export default function RealizationsPicturesTop() {
 						setOpen(true)
 					}}
 				>
-					<div className="w-[360px] h-[445px] bg-backgroundDark rounded-lg flex justify-center items-center relative">
+					<div className="min-w-[200px] max-w-[360px] h-[445px] bg-backgroundDark rounded-lg flex justify-center items-center relative">
 						<Image
 							src={ProductImages[4].image.path}
 							alt={ProductImages[4].image.alt}
@@ -154,7 +154,7 @@ export default function RealizationsPicturesTop() {
 						setOpen(true)
 					}}
 				>
-					<div className="w-[360px] h-[445px] bg-backgroundDark rounded-lg flex justify-center items-center relative">
+					<div className="min-w-[200px] max-w-[360px] h-[445px] bg-backgroundDark rounded-lg flex justify-center items-center relative">
 						<Image
 							src={ProductImages[5].image.path}
 							alt={ProductImages[5].image.alt}

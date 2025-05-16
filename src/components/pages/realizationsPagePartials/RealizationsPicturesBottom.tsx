@@ -24,7 +24,7 @@ export default function RealizationsPicturesBottom() {
 	return (
 		<div className="w-full max-w-[1150px]">
 			{/* Grid dla ProductImages z wyrównaniem wysokości */}
-			<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-3">
+			<div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-3">
 				{/* PRODUCT_3 */}
 				<div
 					className="flex flex-col gap-2 cursor-pointer hover:scale-105 transition duration-500 ease-in-out"
@@ -33,7 +33,7 @@ export default function RealizationsPicturesBottom() {
 						setOpen(true)
 					}}
 				>
-					<div className="w-[360px] h-[445px] bg-backgroundDark rounded-lg flex justify-center items-center relative">
+					<div className="min-w-[200px] max-w-[360px] h-[445px] bg-backgroundDark rounded-lg flex justify-center items-center relative">
 						<Image
 							src={ProductImages[6].image.path}
 							alt={ProductImages[6].image.alt}
@@ -57,7 +57,7 @@ export default function RealizationsPicturesBottom() {
 						setOpen(true)
 					}}
 				>
-					<div className="w-[360px] h-[360px] bg-backgroundDark rounded-lg flex justify-center items-center relative">
+					<div className="min-w-[200px] max-w-[360px] aspect-square bg-backgroundDark rounded-lg flex justify-center items-center relative">
 						<Image
 							src={ProductImages[7].image.path}
 							alt={ProductImages[7].image.alt}
@@ -90,7 +90,7 @@ export default function RealizationsPicturesBottom() {
 						/>
 					</div> */}
 
-					<div className="w-[360px] h-[445px] bg-backgroundDark rounded-lg relative overflow-hidden">
+					<div className="min-w-[200px] max-w-[360px] h-[445px] bg-backgroundDark rounded-lg relative overflow-hidden">
 						<div className="absolute inset-0 transform scale-125">
 							<Image
 								src={ProductImages[8].image.path}
@@ -117,7 +117,7 @@ export default function RealizationsPicturesBottom() {
 						setOpen(true)
 					}}
 				>
-					<div className="w-[360px] h-[445px] bg-backgroundDark rounded-lg flex justify-center items-center relative">
+					<div className="min-w-[200px] max-w-[360px] h-[445px] bg-backgroundDark rounded-lg flex justify-center items-center relative">
 						<Image
 							src={ProductImages[9].image.path}
 							alt={ProductImages[9].image.alt}
@@ -141,7 +141,7 @@ export default function RealizationsPicturesBottom() {
 						setOpen(true)
 					}}
 				>
-					<div className="w-[360px] h-[360px] bg-backgroundDark rounded-lg flex justify-center items-center relative">
+					<div className="min-w-[200px] max-w-[360px] aspect-square bg-backgroundDark rounded-lg flex justify-center items-center relative">
 						<Image
 							src={ProductImages[10].image.path}
 							alt={ProductImages[10].image.alt}
@@ -165,7 +165,7 @@ export default function RealizationsPicturesBottom() {
 						setOpen(true)
 					}}
 				>
-					<div className="w-[360px] h-[360px] bg-backgroundDark rounded-lg flex justify-center items-center relative">
+					<div className="min-w-[200px] max-w-[360px] h-[360px] bg-backgroundDark rounded-lg flex justify-center items-center relative">
 						<Image
 							src={ProductImages[11].image.path}
 							alt={ProductImages[11].image.alt}
