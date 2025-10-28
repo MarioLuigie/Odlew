@@ -1,20 +1,20 @@
-'use client'
+'use client';
 // modules
-import { useState } from 'react'
+import { useState } from 'react';
 // lib
-import { capitalizeEntireText, cn } from '@/lib/utils'
-import { HowWorkContent } from '@/lib/constants/texts'
+import { capitalizeEntireText, cn } from '@/lib/utils';
+import { HowWorkContent } from '@/lib/constants/texts';
 // components
-import CustomButton from '@/components/shared/CustomButton'
-import Drop from '@/components/shared/Drop'
-import { MoveDownRight, MoveDownLeft } from 'lucide-react'
-import TextVerticalHowWork from '@/components/shared/TextVerticalHowWork'
+import CustomButton from '@/components/shared/CustomButton';
+import Drop from '@/components/shared/Drop';
+import { MoveDownRight, MoveDownLeft, MoveUpRight } from 'lucide-react';
+import TextVerticalHowWork from '@/components/shared/TextVerticalHowWork';
 
 interface TabProps {
-	onClick: () => void
-	activeTabIndex: number
-	label: string
-	index: number
+	onClick: () => void;
+	activeTabIndex: number;
+	label: string;
+	index: number;
 }
 
 function Tab({ onClick, activeTabIndex, label, index }: TabProps) {
@@ -22,7 +22,7 @@ function Tab({ onClick, activeTabIndex, label, index }: TabProps) {
 		<button
 			onClick={onClick}
 			className={cn(
-				'relative w-full py-2 md:py-0 rounded-l-full rounded-br-full text-right md:text-[36px] transition-all ease-in-out hover:text-[#AA5002] duration-500',
+				'relative w-full py-1 rounded-l-full rounded-br-full text-[#383638] text-right text-[22px] font-medium md:text-[36px] transition-all ease-in-out hover:text-[#AA5002] duration-500',
 				activeTabIndex === index
 					? 'text-[#AA5002] -translate-x-12 underline underline-offset-8'
 					: ''
@@ -30,23 +30,22 @@ function Tab({ onClick, activeTabIndex, label, index }: TabProps) {
 		>
 			<p>{capitalizeEntireText(label)}</p>
 		</button>
-	)
+	);
 }
 
 export default function HowWork() {
-	const [activeTabIndex, setActiveTabIndex] = useState<number | null>(null)
+	const [activeTabIndex, setActiveTabIndex] = useState<number | null>(null);
 
 	const handleTabClick = (index: number) => () => {
-		setActiveTabIndex(index)
-	}
+		setActiveTabIndex(index);
+	};
 
 	return (
-		<div className="h-customScreen md:max-h-[820px] relative mb-4 md:mb-0 md:flex md:border-b-[1px] md:border-zinc-400">
-
+		<div className="h-customScreen md:max-h-[820px] relative flex flex-col md:flex md:flex-row md:border-b-[1px] md:border-zinc-400 bg-[#DAD7D1]">
 			{/* DROP */}
-			<div className="absolute right-1/2 top-1/2 translate-x-[25px] -translate-y-40">
+			<div className="absolute right-1/2 top-1/2 translate-x-[25px] -translate-y-[30px]  md:translate-x-[25px] md:-translate-y-40">
 				<Drop
-					className="w-[50px] h-[50px] transition-all duration-300"
+					className="w-[50px] h-[50px] transition-all duration-300 hidden md:flex"
 					color="#E36A00"
 					corner={activeTabIndex !== null ? 'bottom-left' : 'bottom-right'}
 				>
@@ -56,25 +55,39 @@ export default function HowWork() {
 						<MoveDownRight size={35} color="#463E46" />
 					)}
 				</Drop>
+
+				<Drop
+					className="w-[50px] h-[50px] transition-all duration-300 md:hidden"
+					color="#E36A00"
+					corner={activeTabIndex !== null ? 'bottom-left' : 'top-right'}
+				>
+					{activeTabIndex !== null ? (
+						<MoveDownLeft size={35} color="#463E46" />
+					) : (
+						<MoveUpRight size={35} color="#463E46" />
+					)}
+				</Drop>
 			</div>
 
 			{/* Texts */}
-			<div className="md:w-1/2">
+			<div className="h-1/2 md:h-auto md:w-1/2 order-2 md:order-1">
 				<div
 					id="tab-content"
-					className="lg:px-12 lg:py-4 xl:px-24 xl:pb-8 xl:pt-0 3xl:px-44 w-full flex justify-center items-center min-h-[240px] md:h-full transition-all ease-in-out bg-menuTopBg"
+					className="h-full lg:px-12 lg:py-4 xl:px-24 xl:pb-8 xl:pt-0 3xl:px-44 w-full flex justify-center items-center min-h-[240px] md:h-full transition-all ease-in-out bg-menuTopBg"
 				>
 					<div>
 						{activeTabIndex !== null ? (
 							<div>
-								<div className="min-h-[240px] pb-4">
+								<div className="min-h-[240px] p-6 pt-0">
 									<p className="text-textLight font-medium md:text-lg">
 										{HowWorkContent[activeTabIndex].tabContent}
 									</p>
 								</div>
-								<CustomButton navlink path="/oferta">
-									Przejdź do oferty
-								</CustomButton>
+								<div className="px-6">
+									<CustomButton navlink path="/oferta">
+										Przejdź do oferty
+									</CustomButton>
+								</div>
 							</div>
 						) : null}
 					</div>
@@ -82,10 +95,15 @@ export default function HowWork() {
 			</div>
 
 			{/* Tabs */}
-			<div className="md:w-1/2 md:px-8 xl:px-12 2xl:px-20 bg-[#DAD7D1]">
-				<div className='lg:flex lg:flex-col lg:items-end lg:gap-20'>
-					<TextVerticalHowWork>Jak pracujemy</TextVerticalHowWork>
-					<menu className="w-full xl:pr-20 flex flex-col items-center text-textDark">
+			<div className="h-1/2 md:h-auto md:w-1/2 md:px-8 xl:px-12 2xl:px-20 bg-[#DAD7D1]order-1 md:order-2">
+				<div className='md:hidden border-b-2 border-b-[#463E46] mx-6 pt-6'>
+					<p className='text-[28px] text-[#383638] font-medium leading-[55px]'>Jak pracujemy?</p>
+				</div>
+				<div className="lg:flex lg:flex-col lg:items-end lg:gap-20">
+					<div className="hidden md:block">
+						<TextVerticalHowWork>Jak pracujemy</TextVerticalHowWork>
+					</div>
+					<menu className="w-full p-6 xl:pt-0 xl:p-0 xl:pr-20 flex flex-col items-center text-textDark mt-10 md:mt-0">
 						{HowWorkContent.map((tab, index) => (
 							<div
 								key={index}
@@ -103,7 +121,7 @@ export default function HowWork() {
 				</div>
 			</div>
 		</div>
-	)
+	);
 }
 
 // export default function HowWork() {

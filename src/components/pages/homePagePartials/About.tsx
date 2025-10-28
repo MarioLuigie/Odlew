@@ -1,8 +1,10 @@
 // components
-import CustomButton from '@/components/shared/CustomButton'
-import TextContent from '@/components/shared/TextContent'
-import Title from '@/components/shared/Title'
-import AboutPictures from '@/components/pages/homePagePartials/AboutPictures'
+import CustomButton from '@/components/shared/CustomButton';
+import TextContent from '@/components/shared/TextContent';
+import Title from '@/components/shared/Title';
+import AboutPictures from '@/components/pages/homePagePartials/AboutPictures';
+import Image from 'next/image';
+import { Images } from '@/lib/constants/images';
 
 export default function About() {
 	return (
@@ -10,12 +12,24 @@ export default function About() {
 			id="o-nas"
 			className="flex flex-col bg-background scroll-mt-header"
 		>
-			<div className="md:h-customScreen md:max-h-[820px] md:flex md:justify-between pr-[72px]">
+			<div className="md:h-customScreen md:max-h-[820px] md:flex md:justify-between md:pr-[72px]">
 				{/* TEXT */}
 				<div className="textPageContainer">
 					<div className="min-w-[250px] max-w-[600px]">
+						<div className='w-full flex justify-end pr-6 pt-10 md:hidden'>
+							<div className="w-[170px] h-[225px] bg-transparent">
+								<Image
+									src={Images.START.path}
+									alt={Images.START.path}
+									width={512}
+									height={668}
+									className="w-full"
+								/>
+							</div>
+						</div>
+
 						<Title className="titlePage">
-							<p className="md:hidden">Kim jesteśmy?</p>
+							<p className="md:hidden text-2xl">Kim jesteśmy?</p>
 							<div className="hidden md:block">
 								<p>Kim jesteśmy?</p>
 								<p>Co tworzymy?</p>
@@ -33,7 +47,7 @@ export default function About() {
 								najwyższą jakość.
 							</p>
 						</TextContent>
-						<div className="px-5 mt-6 md:mt-12">
+						<div className="px-5 mt-6 mb-6 md:mt-12">
 							<CustomButton navlink path="/o-nas">
 								Czytaj więcej
 							</CustomButton>
@@ -47,5 +61,5 @@ export default function About() {
 				</div>
 			</div>
 		</section>
-	)
+	);
 }

@@ -1,54 +1,56 @@
 // modules
-import Image from 'next/image'
+import Image from 'next/image';
 // lib
-import { HomeContactImages } from '@/lib/constants/images'
+import { HomeContactImages } from '@/lib/constants/images';
 // components
-import ContactForm from '@/components/forms/ContactForm'
-import TextVerticalContact from '@/components/shared/TextVerticalContact'
+import ContactForm from '@/components/forms/ContactForm';
+import TextVerticalContact from '@/components/shared/TextVerticalContact';
 
 export default function Contact() {
 	return (
-		<section
-			id="kontakt"
-			className="md:bg-backgroundDark scroll-mt-header"
-		>
-			<div className="md:flex pb-12">
-
+		<section id="kontakt" className="bg-backgroundDark scroll-mt-header">
+			<div className="md:flex md:pb-12">
 				{/* CONTACT INFO */}
 				<div className="md:w-1/2 md:flex md:flex-col md:justify-end md:pl-28 xl:pl-36">
 					<div className="flex items-end w-full">
-						<TextVerticalContact right={false}>Kontakt</TextVerticalContact>
-						<div className="pl-[56px] flex flex-col w-full">
-							<div className="pb-[13px] border-b-[1px] border-[#383638] w-full">
-								<p className="font-semibold text-lg text-[#383638]">
-									P.S. ODLEW Odlewnia Artystyczna
-								</p>
+						<div className="hidden md:block">
+							<TextVerticalContact right={false}>
+								Kontakt
+							</TextVerticalContact>
+						</div>
+						<div className="pt-8 pl-8 pr-8 md:pl-[56px] flex flex-col justify-between w-full">
+							<div>
+								<div className="pb-[13px] border-b-[1px] border-[#383638] w-full">
+									<p className="font-semibold text-base text-[#383638]">
+										P.S. ODLEW Odlewnia Artystyczna
+									</p>
+								</div>
+
+								<div className="py-[13px] border-b-[1px] border-[#EEE9E2] w-full">
+									<p className="font-medium text-sm text-[#383638]">
+										Adres: Jawornik 505, 32-400 Myślenice
+									</p>
+								</div>
+
+								<div className="py-[13px] border-b-[1px] border-[#EEE9E2] w-full">
+									<p className="font-medium text-sm text-[#383638]">
+										E-mail: polewka.szymon@gmail.com
+									</p>
+								</div>
+
+								<div className="py-[13px] border-b-[1px] border-[#EEE9E2] w-full">
+									<p className="font-medium text-sm text-[#383638]">
+										Tel.: +48 665 981 994
+									</p>
+								</div>
 							</div>
 
-							<div className="py-[13px] border-b-[1px] border-[#EEE9E2] w-full">
-								<p className="font-medium text-sm text-[#383638]">
-									Adres: Jawornik 505, 32-400 Myślenice
-								</p>
-							</div>
-
-							<div className="py-[13px] border-b-[1px] border-[#EEE9E2] w-full">
-								<p className="font-medium text-sm text-[#383638]">
-									E-mail: polewka.szymon@gmail.com
-								</p>
-							</div>
-
-							<div className="py-[13px] border-b-[1px] border-[#EEE9E2] w-full">
-								<p className="font-medium text-sm text-[#383638]">
-									Tel.: +48 665 981 994
-								</p>
-							</div>
-
-							<div className="text-[36px] text-[#383638] font-normal pt-[70px]">
-								<p className='leading-none'>Napisz do nas</p>
+							<div className="text-2xl md:text-[36px] text-[#383638] font-normal pt-[70px]">
+								<p className="leading-none">Napisz do nas</p>
 							</div>
 						</div>
 					</div>
-					<div className="flex flex-col pl-[56px] pt-10">
+					<div className="flex flex-col p-8 md:pl-[56px] md:pt-10">
 						<ContactForm />
 					</div>
 				</div>
@@ -65,5 +67,5 @@ export default function Contact() {
 				</div>
 			</div>
 		</section>
-	)
+	);
 }

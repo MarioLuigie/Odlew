@@ -8,8 +8,8 @@ export default function Motto() {
 	return (
 		<section className="flex flex-col bg-background scroll-mt-header">		
 			{/* MOTTO */}
-			<div className="md:h-customScreen md:max-h-[820px] relative p-[40px] flex flex-col justify-center items-center bg-mottoBg_grey hover:bg-mottoBg transition-colors duration-1000">
-				<div className="w-full flex flex-col justify-center items-center text-[30px] leading-[70px] md:text-[76px] md:leading-[150px] font-light text-textLight">
+			<div className="h-customScreen md:max-h-[820px] relative p-[40px] flex flex-col justify-center items-center bg-mottoBg_grey hover:bg-mottoBg transition-colors duration-1000">
+				<div className="w-full flex flex-col justify-center items-center text-[32px] leading-[120px] md:text-[76px] md:leading-[150px] font-light text-textLight text-center md:text-start">
 					<div className="w-full 3xl:px-[170px]">
 						<div className="w-full">
 							<p>Są rzeczy trudne</p>
@@ -30,7 +30,7 @@ export default function Motto() {
 					</div>
 				</div>
 
-				<div className="w-full flex justify-center absolute bottom-[50px]">
+				<div className="w-full flex justify-center absolute bottom-[50px] px-6">
 					<CustomButton
 						className="bg-transparent border-2 border-[#D06101] shadow-none text-[#D06101] hover:text-zinc-50 hover:bg-[#D06101]"
 						navlink

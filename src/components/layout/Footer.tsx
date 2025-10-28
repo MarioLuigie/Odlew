@@ -3,10 +3,11 @@ import MenuFooter from '@/components/layout/menu/MenuFooter';
 import Link from 'next/link';
 import { Routes } from '@/lib/constants/paths';
 import { SignedIn, SignedOut, SignOutButton } from '@clerk/nextjs';
+import Copyright from '../content/Copyright';
 
 export default function Footer() {
 	return (
-		<footer className="lg:h-footerHeight xl:h-footerHeight flex flex-col items-center justify-center bg-footerBg text-white lg:px-8 xl:px-10 xl:pt-6">
+		<footer className="lg:h-footerHeight xl:h-footerHeight flex flex-col items-center justify-center bg-footerBg text-white px-4 md:px-8 pt-6 lg:px-8 xl:px-10 xl:pt-6">
 			<div className="flex flex-col items-center gap-12 xl:gap-0 w-full lg:flex-row xl:flex-row xl:w-full xl:justify-center xl:items-center">
 				{/* LOGO */}
 				<div className="xl:h-full lg:w-[400px] xl:w-[540px] xl:flex xl:justify-center xl:items-center xl:px-28">
@@ -23,9 +24,13 @@ export default function Footer() {
 				</div>
 			</div>
 
+			<div className="pt-10 w-full">
+				<Copyright />
+			</div>
+
 			{/* ADMIN */}
-			<div className="w-full flex flex-col items-end justify-center">
-				<div className='flex flex-col items-start justify-center'>
+			<div className="w-full flex flex-col items-center md:items-end justify-center py-3 md:pt-0">
+				<div className="flex flex-col items-center md:items-start justify-center">
 					<div className="flex items-center justify-end gap-2 text-teal-600">
 						<small>Created by &copy; ARWcode 2024</small>
 						<SignedOut>

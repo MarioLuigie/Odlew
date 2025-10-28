@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 export default function Start() {
 	return (
-		<section className="w-full lg:flex pb-[70px] lg:bg-background relative">
+		<section className="w-full lg:flex md:pb-[70px] lg:bg-background relative">
 			{/* DESKTOP */}
 			<div className="h-customScreen lg:max-h-[820px] hidden lg:flex lg:flex-col lg:justify-center lg:items-end lg:w-1/2 lg:bg-backgroundDark lg:p-8">
 				<div className="hidden lg:text-textDark lg:flex lg:flex-col w-[100%]">

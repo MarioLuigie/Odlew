@@ -95,7 +95,7 @@ export default function ContactForm() {
 					/>
 				</div>
 				<div className='my-7'>
-					<SubmitButton isLoading={isSubmitting} className="w-[100px]">
+					<SubmitButton isLoading={isSubmitting} className="w-full md:w-[100px]">
 						Wyślij
 					</SubmitButton>
 					<FieldsRequiredDesc className='mt-5 md:justify-start'/>

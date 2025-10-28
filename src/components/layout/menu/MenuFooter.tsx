@@ -3,7 +3,6 @@ import Link from 'next/link'
 // lib
 import { MenuFooterContent } from '@/lib/constants'
 import { capitalizeFirstLetter } from '@/lib/utils'
-import Copyright from '@/components/content/Copyright'
 
 type MenuContentItem = {
 	label: string
@@ -26,15 +25,12 @@ function MenuContentItem({ item }: { item: MenuContentItem }) {
 
 export default function MenuFooter() {
 	return (
-		<nav className="flex flex-col w-full ml-16">
+		<nav className="flex flex-col w-full ml-8 md:ml-16">
 			<ul className="flex flex-col gap-2">
 				{MenuFooterContent.map((item) => (
 					<MenuContentItem item={item} key={item.label} />
 				))}
 			</ul>
-			<div className="flex flex-col items-start w-full xl:pt-10">
-				<Copyright />
-			</div>
 		</nav>
 	)
 }
